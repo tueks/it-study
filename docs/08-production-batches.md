@@ -6,8 +6,9 @@
 - **Documento:** Producción por lotes.
 - **Nombre oficial:** IT Study — Producción por lotes.
 - **Ruta oficial:** `docs/08-production-batches.md`.
-- **Estado:** propuesta normativa para revisión y aprobación; no constituye inventario, autorización de lotes concretos ni contrato ejecutable.
+- **Estado:** aprobado como estrategia normativa de producción por lotes del MVP; no constituye inventario, autorización de lotes concretos ni contrato ejecutable.
 - **Fecha:** 2026-07-20.
+- **Fecha de aprobación:** 2026-07-20.
 - **Documentos de autoridad, en orden:**
   1. `00-bootstrap-brief.md`;
   2. `docs/00-project-charter.md`;
