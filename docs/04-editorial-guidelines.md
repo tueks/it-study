@@ -131,27 +131,28 @@ La voz de IT Study es clara, profesional, didáctica, neutral, directa, respetuo
 
 ### 5.1 Idioma principal
 
-El cuerpo se redactará en español. Se conservará el término inglés cuando sea la forma profesional predominante, no exista traducción asentada o traducirlo introduzca ambigüedad. La explicación circundante continuará en español.
+El cuerpo explicativo se redactará en español, pero los términos técnicos en inglés prevalecerán cuando sean la forma habitual o predominante en el ámbito profesional. En esos casos, el término inglés será la forma principal utilizada en la prosa y la traducción al español se incorporará únicamente como explicación o alias cuando aporte claridad. No se sustituirá un término profesional reconocible por una traducción menos utilizada, artificial o ambigua.
 
 ### 5.2 Nombre canónico, nombre inglés y alias
 
 - `canonicalName` contiene la denominación normalizada adoptada por IT Study.
 - `englishName` registra el nombre inglés cuando sea diferente, relevante o predominante.
 - `aliases` registra siglas, abreviaturas, traducciones frecuentes, grafías y nombres históricos equivalentes.
-- El cuerpo emplea preferentemente el nombre canónico; puede introducir el nombre inglés para reconocimiento profesional y búsqueda.
+- El cuerpo emplea preferentemente el término inglés cuando este prevalece en el uso profesional, aunque `canonicalName`, `englishName` y `aliases` conserven las funciones estructurales definidas por el modelo.
+- Cuando el término español sea también habitual, puede introducirse después del término inglés para facilitar comprensión y búsqueda, sin desplazar la denominación profesional predominante.
 - Una traducción o sigla no crea una entrada duplicada.
 
 ### 5.3 Traducciones y préstamos
 
-- Usar traducciones asentadas cuando sean claras: “integración continua” para *continuous integration*.
-- Conservar formas como `backend`, `frontend` o `Site Reliability Engineering` cuando la traducción no sea predominante o pueda confundir.
+- Usar como forma principal el término inglés predominante y, cuando resulte útil, acompañarlo de la traducción asentada: `continuous integration` (integración continua).
+- Conservar formas como `backend`, `frontend`, `cloud computing`, `machine learning`, `framework`, `Site Reliability Engineering` o `Platform Engineering` cuando sean las reconocibles profesionalmente.
 - No inventar traducciones literales. Ante falta de traducción estable, mantener el término original y explicar su significado.
-- Evitar anglicismos innecesarios cuando exista un equivalente español claro y profesional: “despliegue” en lugar de *deployment*, salvo que el término inglés sea objeto de la entrada o necesario como alias.
+- Utilizar el equivalente español cuando sea claramente predominante en el uso profesional de la audiencia o cuando el anglicismo no aporte reconocimiento técnico. Esta excepción no deberá aplicarse de forma mecánica para reemplazar términos ingleses consolidados.
 - Aplicar cursivas a un extranjerismo ocasional en prosa solo cuando ayude a distinguirlo; no aplicarlas mecánicamente a nombres canónicos, siglas, código o marcas.
 
 ### 5.4 Acrónimos, siglas y abreviaturas
 
-1. Desarrollar un acrónimo la primera vez que aparezca en el cuerpo: “interfaz de programación de aplicaciones (API)”.
+1. Desarrollar un acrónimo la primera vez que aparezca en el cuerpo, conservando la expansión inglesa cuando sea la forma profesional de referencia: `Application Programming Interface` (API; interfaz de programación de aplicaciones).
 2. Usar después la sigla si mejora legibilidad.
 3. Registrar la sigla y, cuando proceda, la expansión en `aliases`.
 4. No desarrollar una sigla en cada sección si la entrada se lee como unidad; el `summary` debe seguir siendo autónomo y puede requerir desarrollo propio.
@@ -815,7 +816,7 @@ Un estado no sustituye revisión: `approved` exige contenido y metadatos válido
 ### 33.1 Decisiones editoriales adoptadas
 
 - Voz clara, profesional, didáctica, neutral, directa y no promocional.
-- Español como idioma principal, con conservación controlada de términos profesionales en inglés.
+- Español como idioma explicativo, con prevalencia de los términos técnicos en inglés cuando sean la forma profesional habitual o predominante.
 - Desarrollo de acrónimos en la primera aparición y registro de siglas o traducciones como alias.
 - Nivel predeterminado `contextual-understanding`, con límites explícitos frente a tutoriales.
 - Rangos recomendados, flexibles y máximos justificados para campos y estructuras.
