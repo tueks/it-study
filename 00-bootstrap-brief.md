@@ -555,3 +555,62 @@ Además, deberá ser posible responder claramente:
 ## 25. Próximo paso
 
 Utilizar este documento como fuente principal para generar la documentación formal de la fase de definición. La siguiente actividad no debe ser implementar la aplicación, sino convertir las intenciones aquí registradas en contratos, taxonomías, plantillas, criterios y reglas verificables.
+
+## 26. Documentos pendientes por generar
+
+Los siguientes archivos conforman la documentación y los contratos operativos que todavía deben generarse durante la fase de definición. Los nombres y rutas indicados son la referencia oficial inicial; cualquier cambio deberá registrarse en el documento de decisiones.
+
+```text
+docs/
+├── 00-project-charter.md
+├── 01-scope-and-audience.md
+├── 02-taxonomy.md
+├── 03-content-model.md
+├── 04-editorial-guidelines.md
+├── 05-relationship-rules.md
+├── 06-design-boundaries.md
+├── 07-mvp-definition.md
+├── 08-production-batches.md
+├── 09-quality-criteria.md
+└── 10-decision-log.md
+
+work/
+├── WORK-INSTRUCTIONS.md
+├── RESEARCH-PROTOCOL.md
+├── CONTENT-PRODUCTION-CONTRACT.md
+├── BATCH-TEMPLATE.md
+├── SOURCE-POLICY.md
+├── REVIEW-CHECKLIST.md
+└── HANDOFF-TO-CODEX.md
+
+examples/
+├── domain-example.md
+├── concept-example.md
+├── role-example.md
+├── comparison-example.md
+└── scenario-example.md
+
+inventories/
+├── domains.yaml
+├── classifications.yaml
+└── initial-terms.csv
+
+AGENTS.md
+README.md
+```
+
+### 26.1 Documentos compartidos
+
+Los archivos de `docs/`, `examples/` e `inventories/` serán la referencia común para el chat coordinador, ChatGPT Trabajo y Codex. No deberán existir copias independientes de la taxonomía, el modelo de contenido o las reglas editoriales para cada agente.
+
+### 26.2 Documentos específicos de ChatGPT Trabajo
+
+Los archivos de `work/` definirán cómo debe investigar, producir, revisar y entregar contenido ChatGPT Trabajo. Estos documentos deberán apuntar a las fuentes compartidas de `docs/` en lugar de duplicarlas.
+
+### 26.3 Documento específico de Codex
+
+`AGENTS.md` será el contrato operativo principal de Codex dentro del repositorio. Deberá referenciar la documentación compartida y establecer las reglas técnicas, de validación y de separación entre contenido y presentación.
+
+### 26.4 Estado inicial
+
+Mientras estos archivos no existan o no hayan sido aprobados, deberán considerarse pendientes. La presencia de las carpetas reservadas mediante archivos `.gitkeep` no significa que su documentación esté terminada.
