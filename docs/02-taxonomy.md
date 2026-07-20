@@ -9,8 +9,9 @@
   1. `00-bootstrap-brief.md`;
   2. `docs/00-project-charter.md`;
   3. `docs/01-scope-and-audience.md`.
-- **Estado:** propuesta inicial adoptada para continuar la fase de definición; las decisiones marcadas como pendientes requieren aprobación o resolución en el documento especializado indicado.
+- **Estado:** taxonomía inicial aprobada para continuar la fase de definición. Las recomendaciones taxonómicas de la sección 14.2 fueron ratificadas el 2026-07-20; permanecen reservadas únicamente las decisiones asignadas a documentos posteriores.
 - **Fecha de elaboración y consulta de fuentes:** 2026-07-19.
+- **Fecha de ratificación de decisiones taxonómicas:** 2026-07-20.
 
 Esta taxonomía organiza el conocimiento necesario para la alfabetización teórica y contextual en tecnologías de la información. Su finalidad es que una persona pueda reconocer un término, ubicarlo, comprender su propósito y relacionarlo con disciplinas vecinas sin exigir dominio práctico.
 
@@ -51,7 +52,7 @@ Las fuentes externas confirman que las disciplinas de computación se solapan y 
 - **Relación:** puede reunir dominios, pero no forma parte de la jerarquía canónica inicial.
 - **Ejemplo:** el área editorial “Creación de productos digitales” podría mostrar desarrollo de software, ingeniería y producto.
 - **Ambigüedad:** en el lenguaje común “área” y “dominio” suelen intercambiarse.
-- **Decisión IT Study:** consolidarla como estructura editorial opcional. **Pendiente** decidir en `docs/03-content-model.md` si requiere representación explícita.
+- **Decisión IT Study:** conservarla únicamente como estructura editorial opcional, fuera de la jerarquía canónica. Su representación técnica podrá definirse en `docs/03-content-model.md`, pero no alterará este carácter no taxonómico.
 
 ### 3.2 Dominio
 
@@ -102,16 +103,18 @@ Los identificadores `DOM-01` a `DOM-12` son **identificadores candidatos estable
 - **Solapamientos:** programación introductoria puede aparecer aquí como fundamento y en DOM-03 como práctica de construcción.
 - **Justificación:** proporciona el sustrato estable y neutral que evita explicar cada tecnología de forma aislada; CC2020 distingue fundamentos compartidos y perfiles disciplinares [S4].
 
-### DOM-02 — Sistemas de cómputo y computación especializada / Computer Systems and Specialized Computing
+### DOM-02 — Sistemas de cómputo y sistemas ciberfísicos / Computer Systems and Cyber-Physical Systems
 
 - **Definición:** diseño y funcionamiento de componentes físicos, software de sistema y sistemas que interactúan estrechamente con el mundo físico.
 - **Propósito en IT:** explicar qué ejecuta el software y cómo se integran hardware, sistema operativo, firmware y dispositivos.
-- **Incluye:** arquitectura de computadores; hardware; sistemas operativos; firmware; sistemas embebidos; IoT; robótica; sistemas ciberfísicos; aceleradores y fundamentos de áreas especializadas.
+- **Incluye:** arquitectura de computadores; hardware; sistemas operativos; firmware; sistemas embebidos; IoT; robótica; sistemas ciberfísicos y aceleradores de cómputo.
 - **Excluye:** administración cotidiana de infraestructura, redes como disciplina principal y desarrollo general de aplicaciones.
-- **Subdominios candidatos:** hardware y arquitectura de computadores; sistemas operativos; embebidos y firmware; IoT y sistemas ciberfísicos; robótica; computación especializada.
+- **Subdominios candidatos:** hardware y arquitectura de computadores; sistemas operativos; embebidos y firmware; IoT y sistemas ciberfísicos; robótica.
 - **Dominios vecinos:** Fundamentos; Redes; Infraestructura; Desarrollo; IA.
 - **Solapamientos:** edge computing e IoT combinan dispositivo, red, cloud, datos y seguridad; el componente físico tendrá hogar aquí.
 - **Justificación:** la integración hardware-software constituye una frontera reconocible de la ingeniería de computación [S4] y evita dispersar firmware, IoT y robótica.
+
+El contenedor genérico `computación especializada` no se conserva. Cada especialidad futura deberá evaluarse por fundamentos propios, relevancia profesional, estabilidad terminológica, fuentes confiables y capacidad de ubicarse en los dominios existentes.
 
 ### DOM-03 — Desarrollo de software / Software Development
 
@@ -152,7 +155,7 @@ Los identificadores `DOM-01` a `DOM-12` son **identificadores candidatos estable
 - **Propósito en IT:** conectar infraestructura tradicional, cloud, operación, confiabilidad, plataformas internas y gestión de servicios.
 - **Incluye:** cómputo, almacenamiento e infraestructura; virtualización; cloud; contenedores y orquestación; automatización operativa; DevOps; SRE; Platform Engineering; observabilidad; soporte técnico; ITSM; continuidad y operación de servicios.
 - **Excluye:** desarrollo funcional de aplicaciones, gobierno empresarial de IT y seguridad como cuerpo completo.
-- **Subdominios candidatos:** infraestructura y virtualización; cloud computing; contenedores y orquestación; entrega y automatización DevOps; confiabilidad y SRE; ingeniería de plataformas; observabilidad; soporte e ITSM.
+- **Agrupaciones internas aprobadas:** (1) infraestructura, virtualización, cloud, contenedores y orquestación; (2) entrega, automatización DevOps e ingeniería de plataformas; (3) confiabilidad, SRE y observabilidad; (4) soporte técnico, continuidad e ITSM. Estas agrupaciones podrán materializarse como subdominios relacionados en el modelo de contenido.
 - **Dominios vecinos:** Redes; Ingeniería de software; Ciberseguridad; Gobierno; Integración.
 - **Solapamientos:** DevOps es una orientación sociotécnica y conjunto de prácticas; SRE trata operación como problema de software [S9]; Platform Engineering crea capacidades y plataformas internas [S10]; ITSM gestiona productos y servicios digitales [S11]. No se asumen como sinónimos.
 - **Justificación:** todos convergen en entregar y operar capacidades tecnológicas, pero se conservan como subdominios o disciplinas para enseñar sus diferencias.
@@ -252,7 +255,7 @@ Los niveles estructurales no son tipos de ficha equivalentes. Las entidades desc
 
 | Candidato | Definición y criterio de uso | Diferencia y ejemplo | Estado propuesto |
 |---|---|---|---|
-| Área | Agrupación amplia para orientación o planificación. | No es pertenencia canónica. Ej.: “Creación de productos digitales”. | Convertir en estructura editorial opcional; pendiente de modelo. |
+| Área | Agrupación amplia para orientación o planificación. | No es pertenencia canónica. Ej.: “Creación de productos digitales”. | Conservar únicamente como estructura editorial opcional. |
 | Dominio | Campo principal con familia coherente de problemas y capacidades. | Más estable y amplio que un subdominio. Ej.: Datos y analítica. | Conservar. |
 | Subdominio | Partición temática de un dominio. | Agrupa múltiples entradas; no es una ficha. Ej.: Ingeniería de datos. | Conservar. |
 | Disciplina | Cuerpo de conocimiento y práctica con aplicación profesional, a menudo transversal. | No es un tercer nivel. Ej.: accesibilidad. | Conservar como clasificación transversal. |
@@ -263,8 +266,8 @@ Los niveles estructurales no son tipos de ficha equivalentes. Las entidades desc
 |---|---|---|---|
 | Rol | Función contextual asumida por una persona o equipo. | “Revisor de código”; no implica contrato ni título. | Conservar. |
 | Puesto | Designación organizacional que agrupa roles, responsabilidades y nivel. | “Backend Developer Senior”. | Conservar separado de rol; representación técnica pendiente. |
-| Responsabilidad | Resultado, obligación o ámbito del que alguien responde. | “Aprobar cambios”; no es identidad profesional. | Convertir en entidad ligera o relación; pendiente. |
-| Competencia | Capacidad demostrable que combina conocimiento, habilidad y contexto. | “Facilitar respuesta a incidentes”. | Conservar, posiblemente como entidad reutilizable. |
+| Responsabilidad | Resultado, obligación o ámbito del que alguien responde. | “Aprobar cambios”; no es identidad profesional. | Representar principalmente como declaración estructurada o relación; ficha propia solo cuando tenga valor transversal. |
+| Competencia | Capacidad demostrable que combina conocimiento, habilidad y contexto. | “Facilitar respuesta a incidentes”. | Conservar como entidad reutilizable. |
 | Concepto | Idea con significado propio necesaria para comprender IT. | “Idempotencia”. | Conservar como tipo base. |
 | Principio | Regla o proposición orientadora relativamente estable. | “Mínimo privilegio”; guía decisiones, no prescribe pasos. | Conservar como subtipo conceptual. |
 | Paradigma | Marco general que determina cómo se concibe o estructura una clase de soluciones. | Programación funcional. | Conservar como subtipo conceptual. |
@@ -284,16 +287,16 @@ Los niveles estructurales no son tipos de ficha equivalentes. Las entidades desc
 | Herramienta | Implementación utilizada para ejecutar una tarea. | Git. | Conservar; separar capacidad y marca. |
 | Plataforma | Entorno integrado que ofrece capacidades a otros sistemas, equipos o usuarios. | Kubernetes como plataforma de orquestación según contexto. | Conservar; exigir descripción de consumidores y capacidades. |
 | Servicio | Capacidad ofrecida mediante una interfaz o acuerdo a consumidores. | DNS administrado o servicio de identidad. | Conservar; no equivale automáticamente a producto. |
-| Producto | Oferta gestionada a lo largo de un ciclo de vida para usuarios o clientes. | Puede incorporar plataforma, servicio y herramientas. | **Añadir como candidato** para resolver la frontera comercial; aprobación pendiente. |
-| Marca | Identificador comercial o institucional del proveedor u oferta. | Microsoft no es una tecnología. | **Añadir como metadato**, no como tipo de conocimiento principal. |
+| Producto | Oferta gestionada a lo largo de un ciclo de vida para usuarios o clientes. | Puede incorporar plataforma, servicio y herramientas. | Conservar como tipo de contenido explícito. |
+| Marca | Identificador comercial o institucional del proveedor u oferta. | Microsoft no es una tecnología. | Conservar como metadato, no como tipo de conocimiento principal. |
 | Artefacto | Resultado tangible o registrable producido por una actividad. | ADR, backlog, diagrama o informe. | Conservar. |
 | Métrica | Regla y valor de medición de una propiedad. | Latencia p95. | Conservar. |
-| Indicador | Interpretación de una o varias métricas para apoyar una decisión. | Indicador de cumplimiento de SLO. | Consolidar bajo medición como subtipo candidato; pendiente. |
+| Indicador | Interpretación de una o varias métricas para apoyar una decisión. | Indicador de cumplimiento de SLO. | Conservar como subtipo diferenciado dentro de la familia de medición. |
 | Objetivo | Estado o resultado deseado, idealmente con criterio verificable. | “99.9 % de disponibilidad mensual”. | No añadir como clasificación general; modelar según contexto. |
 | Certificación | Credencial emitida tras evaluar criterios definidos. | Certificación profesional o de producto. | Conservar; diferenciar emisor, alcance y vigencia. |
 | Cuerpo de conocimiento | Compilación estructurada y mantenida de conocimiento de una profesión o disciplina. | BABOK Guide. | Tratar como publicación/artefacto de referencia, no como certificación. |
 
-Las categorías `producto`, `marca`, `indicador` y `cuerpo de conocimiento` no amplían todavía el catálogo definitivo: se incorporan para cerrar distinciones semánticas y quedan sujetas al modelo de contenido.
+Se aprueban `producto` como tipo de contenido, `marca` como metadato e `indicador` como subtipo de medición. `Cuerpo de conocimiento` se tratará como publicación o artefacto de referencia, no como certificación. El modelo técnico exacto permanece reservado a `docs/03-content-model.md`.
 
 ### 6.3 Relaciones
 
@@ -361,7 +364,7 @@ Una misma implementación puede ser herramienta en un contexto y plataforma en o
 3. **Dominios secundarios con evidencia.** Añadirlos solo cuando el término tenga aplicación sustantiva, no por una asociación remota.
 4. **Multidisciplinariedad sin copias.** Mantener una ficha canónica y representar otras perspectivas mediante relaciones y contexto.
 5. **Alias, no duplicados.** Variantes lingüísticas, siglas, traducciones y nombres históricos remiten a la entrada canónica.
-6. **Sentidos distintos.** Si un término tiene significados incompatibles, crear sentidos diferenciados y calificados, por ejemplo, “framework (software)” y “marco de trabajo (gestión)”.
+6. **Sentidos distintos.** Mantener una entrada con acepciones cuando estas compartan un núcleo conceptual; crear entradas diferenciadas y calificadas cuando los significados o relaciones sean incompatibles, por ejemplo, “framework (software)” y “marco de trabajo (gestión)”.
 7. **Capacidad antes que comercio.** Clasificar primero el concepto general; vincular productos o marcas como implementaciones cuando tengan relevancia contextual.
 8. **Tecnología emergente.** Ubicarla por el problema duradero que aborda y declarar madurez o inestabilidad; no crear dominio por popularidad.
 9. **Especificidad proporcional.** Aplazar variantes menores, versiones, funcionalidades efímeras o términos que no justifiquen significado propio.
@@ -391,7 +394,7 @@ Antes de aprobar una entrada deberán responderse estas preguntas:
 6. Usar plural solo para familias convencionales (`bases de datos`, `redes`) y singular para entradas individuales.
 7. Registrar nombres históricos y traducciones frecuentes como alias sin crear fichas duplicadas.
 8. Identificar marcas y símbolos registrados cuando sea pertinente, pero no usarlos como nombre de una capacidad general.
-9. Calificar términos polisémicos por contexto: `servicio (arquitectura)`, `servicio (gestión)` si el modelo exige entradas separadas.
+9. Calificar términos polisémicos por contexto. Usar una entrada con acepciones si comparten el núcleo conceptual y entradas separadas, como `servicio (arquitectura)` y `servicio (gestión)`, cuando sus significados o relaciones sean incompatibles.
 10. Evitar nombres ligados a una versión salvo que la versión sea parte esencial del estándar o documento.
 
 Los slugs, prefijos, longitud, formato verificable y política final de IDs quedan **pendientes** para `docs/03-content-model.md` o `docs/10-decision-log.md`.
@@ -450,9 +453,9 @@ Las dos fuentes que enumeran áreas (`00-bootstrap-brief.md` y `docs/01-scope-an
 | Gobierno de IT | Conservar y normalizar | DOM-12 | Subdominio | Estrategia y gobierno | Sí | No | Evalúa, dirige y supervisa información y tecnología [S12]. |
 | Gestión financiera de tecnología | Conservar | DOM-12 | Subdominio y disciplina | Gobierno tecnológico | Sí | No | Trata costo, inversión, valor y economía de servicios tecnológicos. |
 | Liderazgo tecnológico | Reclasificar | DOM-12 | Disciplina/competencia | Estrategia y organización | Sí | No | Capacidad humana y organizacional, no tecnología. |
-| IoT, robótica y tecnologías especializadas | Descomponer | DOM-02; conexiones con DOM-09 | Subdominios y conjunto candidato | Sistemas ciberfísicos | Sí | Parcial | IoT y robótica se conservan; “tecnologías especializadas” requiere admisión caso por caso. |
+| IoT, robótica y tecnologías especializadas | Descomponer y eliminar el contenedor genérico | DOM-02 para IoT y robótica; otras especialidades se evaluarán individualmente | Subdominios y candidatos individuales | Sistemas ciberfísicos | Sí | Parcial | IoT y robótica se conservan; “tecnologías especializadas” no se mantiene como categoría y cada especialidad futura deberá superar criterios de admisión. |
 
-Ningún elemento se elimina. Solo `tecnologías especializadas` queda parcialmente aplazado porque funciona como contenedor abierto y no posee una frontera verificable sin ejemplos concretos.
+Ningún tema concreto se elimina. La etiqueta abierta `tecnologías especializadas` deja de ser categoría taxonómica; las especialidades no enumeradas quedan aplazadas para evaluación individual mediante los criterios de evolución de la sección 12.
 
 ## 11. Ambigüedades y solapamientos
 
@@ -532,11 +535,11 @@ Todo cambio estructural deberá incluir:
 | `inventories/classifications.yaml` | Formalizará tipos conservados, subtipos y restricciones; no deberá reintroducir como tipos las estructuras editoriales. |
 | `inventories/initial-terms.csv` | Asignará cada término a un dominio principal, secundarios y tipo conforme a las reglas; no se genera todavía. |
 
-## 14. Decisiones adoptadas y pendientes
+## 14. Decisiones adoptadas y reservadas
 
 ### 14.1 Decisiones taxonómicas iniciales adoptadas
 
-- Se proponen 12 dominios principales, enumerados en la sección 4.
+- Se aprueban 12 dominios principales, enumerados en la sección 4.
 - La jerarquía inicial utiliza únicamente dominio y subdominio.
 - Área queda como agrupación editorial opcional; disciplina, como clasificación transversal.
 - Cada término tendrá una entrada canónica, un dominio principal cuando sea razonable y dominios secundarios justificados.
@@ -550,15 +553,24 @@ Todo cambio estructural deberá incluir:
 - Antipatrón se consolida como subtipo de patrón; filosofía como orientación conceptual; marca como metadato.
 - Los identificadores `DOM-01` a `DOM-12` son candidatos de trazabilidad, no esquema técnico definitivo.
 
-### 14.2 Propuestas sujetas a aprobación
+### 14.2 Decisiones ratificadas el 2026-07-20
 
-- Nombre final y fronteras exactas de los 12 dominios.
-- Incorporar `producto` como tipo explícito y `marca` como metadato.
-- Representar competencia como entidad reutilizable y responsabilidad como entidad ligera o relación.
-- Representar indicador como subtipo de medición.
-- Usar área como agrupación persistida o generada únicamente para navegación.
-- Grado de descomposición de “computación especializada” y criterios para promover una especialidad.
-- Tratamiento estructural de sentidos polisémicos: entradas separadas o una entrada con acepciones.
+| N.º | Decisión aprobada | Consecuencia taxonómica |
+|---|---|---|
+| 1 | Aprobar los 12 dominios principales. | Constituyen la taxonomía inicial de referencia para los documentos posteriores. |
+| 2 | Renombrar DOM-02 como `Sistemas de cómputo y sistemas ciberfísicos`. | Se elimina del nombre el contenedor ambiguo “computación especializada”. |
+| 3 | Mantener DOM-06 como un dominio único con cuatro agrupaciones internas. | Se conserva una jerarquía controlada sin confundir infraestructura, plataformas, confiabilidad y gestión de servicios. |
+| 4 | Incorporar `producto` como tipo de contenido. | Podrá distinguirse de herramienta, plataforma, servicio y marca. |
+| 5 | Representar `marca` como metadato. | Una marca no constituirá por sí sola una categoría técnica. |
+| 6 | Utilizar `área` solo como agrupación editorial opcional. | No formará parte de la jerarquía canónica `dominio > subdominio`. |
+| 7 | Conservar `competencia` como entidad reutilizable. | Podrá relacionarse con diferentes roles, puestos, disciplinas y rutas. |
+| 8 | Representar `responsabilidad` principalmente como declaración o relación. | Solo tendrá ficha propia cuando aporte valor transversal suficiente. |
+| 9 | Diferenciar métrica e indicador dentro de una familia de medición. | Ambos conservarán significado propio sin elevar `objetivo` a clasificación global. |
+| 10 | No conservar el contenedor genérico `tecnologías especializadas`. | Cada especialidad futura se evaluará individualmente mediante criterios de admisión. |
+| 11 | Separar acepciones polisémicas únicamente cuando sean incompatibles. | Los sentidos compatibles compartirán entrada; los incompatibles tendrán entradas calificadas. |
+| 12 | Reservar IDs, catálogo de relaciones y cantidades del MVP para documentos especializados. | La taxonomía define principios, pero no anticipa contratos técnicos ni cobertura de producto. |
+
+No quedan propuestas taxonómicas de esta sección pendientes de aprobación. La materialización técnica de las decisiones se realizará en los documentos indicados en la sección 14.3.
 
 ### 14.3 Decisiones reservadas a documentos posteriores
 
