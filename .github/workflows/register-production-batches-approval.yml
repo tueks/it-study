@@ -1,0 +1,46 @@
+name: Register production batches approval
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/register-production-batches-approval.yml
+
+permissions:
+  contents: write
+
+jobs:
+  register-approval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Update approval metadata
+        shell: python
+        run: |
+          from pathlib import Path
+
+          path = Path("docs/08-production-batches.md")
+          content = path.read_text(encoding="utf-8")
+          old = (
+              "- **Estado:** propuesta normativa para revisión y aprobación; "
+              "no constituye inventario, autorización de lotes concretos ni contrato ejecutable.\n"
+              "- **Fecha:** 2026-07-20.\n"
+          )
+          new = (
+              "- **Estado:** aprobado como estrategia normativa de producción por lotes del MVP; "
+              "no constituye inventario, autorización de lotes concretos ni contrato ejecutable.\n"
+              "- **Fecha:** 2026-07-20.\n"
+              "- **Fecha de aprobación:** 2026-07-20.\n"
+          )
+          if old not in content:
+              raise SystemExit("Expected approval header was not found")
+          path.write_text(content.replace(old, new, 1), encoding="utf-8")
+      - name: Commit approval
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/08-production-batches.md
+          git commit -m "docs: record production batches approval"
+          git push origin main
