@@ -13,8 +13,9 @@
   5. `docs/03-content-model.md`;
   6. `docs/04-editorial-guidelines.md`;
   7. `docs/05-relationship-rules.md`.
-- **Estado:** fronteras de diseño iniciales definidas para condicionar documentos posteriores y la futura implementación; no constituyen diseño UX/UI ni arquitectura técnica ejecutable.
+- **Estado:** aprobado el 2026-07-20; constituye la fuente de autoridad vigente para las fronteras entre contenido, navegación y presentación, y no un diseño UX/UI ni una arquitectura técnica ejecutable.
 - **Fecha:** 2026-07-20.
+- **Fecha de aprobación:** 2026-07-20.
 
 ### 1.1 Propósito
 
