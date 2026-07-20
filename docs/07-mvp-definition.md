@@ -6,8 +6,9 @@
 - **Documento:** Definición del Minimum Viable Product (MVP).
 - **Nombre oficial:** IT Study — Definición del MVP.
 - **Ruta oficial:** `docs/07-mvp-definition.md`.
-- **Estado:** propuesta normativa para revisión y aprobación. Tras su aprobación condicionará producción, calidad, inventarios, arquitectura técnica y UX/UI.
+- **Estado:** aprobado como definición normativa del MVP.
 - **Fecha:** 2026-07-20.
+- **Fecha de aprobación:** 2026-07-20.
 - **Propósito:** delimitar la primera versión capaz de validar el mapa de conocimiento y glosario contextual de IT Study.
 - **Alcance:** valor, usuarios, capacidades, cobertura, cantidades, exclusiones, flujos, terminación, aceptación, riesgos y dependencias del MVP; no implementación ni diseño visual.
 - **Audiencia:** coordinación del proyecto, ChatGPT Trabajo, revisores humanos, Codex y futuros responsables de contenido, producto, arquitectura y experiencia.
