@@ -11,8 +11,9 @@
   3. `docs/01-scope-and-audience.md`;
   4. `docs/02-taxonomy.md`;
   5. `docs/03-content-model.md`.
-- **Estado:** lineamientos editoriales iniciales aprobables para orientar autoría y revisión; no constituyen fichas, política completa de fuentes ni contrato operativo por lote.
+- **Estado:** lineamientos editoriales iniciales aprobados para orientar autoría y revisión; no constituyen fichas, política completa de fuentes ni contrato operativo por lote.
 - **Fecha:** 2026-07-20.
+- **Fecha de aprobación:** 2026-07-20.
 
 ### 1.1 Propósito
 
