@@ -6,7 +6,7 @@
 - **Documento:** Reglas de relaciones
 - **Ruta oficial:** `docs/05-relationship-rules.md`
 - **Documentos de autoridad, en orden:** `00-bootstrap-brief.md`, `docs/00-project-charter.md`, `docs/01-scope-and-audience.md`, `docs/02-taxonomy.md`, `docs/03-content-model.md` y `docs/04-editorial-guidelines.md`.
-- **Estado:** propuesta normativa para revisión y aprobación; no constituye implementación.
+- **Estado:** aprobado el 2026-07-20; constituye la fuente de autoridad vigente para relaciones y no una implementación.
 
 ### 1.1 Propósito
 
