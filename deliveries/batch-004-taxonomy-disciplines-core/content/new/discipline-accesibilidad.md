@@ -15,12 +15,13 @@ sources: [source-it-study-taxonomy, source-it-study-content-model, source-w3c-wc
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: versioned-standard
-editorialStatus: draft
+editorialStatus: approved
 owner: Codex
 decisionRefs: [decision-0003-taxonomy-structure, decision-0005-content-format-and-identifiers, decision-0020-batch-plan-authorization]
 batch: batch-004-taxonomy-disciplines-core
 createdAt: 2026-07-21
-verificationStatus: pending
+reviewedAt: 2026-07-21
+verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"
 ---

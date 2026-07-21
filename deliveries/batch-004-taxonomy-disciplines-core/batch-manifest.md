@@ -4,7 +4,7 @@
 |---|---|
 | `batchId` | `batch-004-taxonomy-disciplines-core` |
 | Título | Disciplinas transversales mínimas |
-| Estado del lote | `in-review` |
+| Estado del lote | `accepted` |
 | Fase / nivel | F1 / mínimo obligatorio |
 | Tipo | `discipline`; taxonomía transversal |
 | `manifestVersion` / contrato | `v1` / `1.0` |
@@ -25,3 +25,4 @@
 | `proposed` | `authorized` | `2026-07-21` | Responsable del proyecto | Decisión 0020 e inventario v1. |
 | `authorized` | `in-production` | `2026-07-21` | Codex | Preflight conforme; dominios aprobados y fuentes disponibles. |
 | `in-production` | `in-review` | `2026-07-21` | Codex | Entrega `d1` preservada en `04f774e`: 8 borradores, 12 reportes y validaciones automatizables conformes. |
+| `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | Revisión independiente completa 8/8; aprobación explícita de `d1`; cero hallazgos abiertos. |

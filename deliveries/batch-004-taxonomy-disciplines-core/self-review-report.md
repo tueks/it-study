@@ -9,6 +9,6 @@
 | Fuentes | 28 referencias a 11 fuentes; 0 rotas |
 | No duplicación | Regla explícita en 8/8 |
 | Diseño | 0 HTML o propiedades visuales |
-| Estados | 8 `draft`; ninguna autoaprobación |
+| Estados | 8 `approved` tras decisión independiente; lote `accepted` |
 
 Recomendación del autor: revisión independiente completa. Atención sugerida a la elección de hogar para arquitectura y automatización, y a los límites entre disciplina general y especializaciones.

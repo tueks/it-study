@@ -15,11 +15,11 @@
 | `validation-005` | Jerarquía y relaciones | 18 padres únicos; 0 tercer nivel; 0 relaciones ordinarias |
 | `validation-006` | Cobertura | Aporte 18; acumulado previsto 36; exactamente 3 por dominio |
 | `validation-007` | Fuentes | 84 referencias; 15 IDs canónicos; 0 sin resolver |
-| `validation-008` | Estados y gobierno | 18 `draft`; `verificationStatus: pending`; lote `in-review` |
+| `validation-008` | Estados y gobierno | 18 `approved`; `verificationStatus: verified`; lote `accepted` por decisión independiente |
 | `validation-009` | Contenido prohibido | 0 placeholders; 0 HTML; 0 propiedades visuales; 0 contenido fuera de alcance |
 | `validation-010` | Formato del diff | `git diff --check` conforme |
 | `validation-011` | Vocabularios controlados | 18 prioridades, profundidades, estabilidades y estados dentro de `inventories/classifications.yaml`; defecto `fast-evolution` de `d1` corregido en `d2` |
 
-Huella de `content/new/` para `d2`: los 18 pares `nombre:SHA-256`, ordenados por nombre y unidos con LF, producen `28372af877bb6751b3d574dd207a9cc1a0d5cad4986e6fc64124e1920e5b6360`.
+Huella de la entrega aceptada `content/new/` para `d2`: los 18 pares `nombre:SHA-256`, ordenados por nombre y unidos con LF, producen `e34c04709564d9c81f90d7658972e6e45710a07d7e0d1ba581eb5e69a4bf3c76`.
 
 Limitaciones: no existe schema o CI autorizado; las validaciones semánticas, editoriales, de suficiencia de fuentes y de relevancia final pertenecen a revisión independiente.

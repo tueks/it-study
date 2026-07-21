@@ -12,7 +12,8 @@
 | `validation-008` | No duplicación | 8 reglas presentes; 0 subdominios o tercer nivel |
 | `validation-009` | Relaciones/diseño | 0 `relations[]`, inversas, HTML o propiedades visuales |
 | `validation-010` | Diff | `git diff --check` conforme |
+| `validation-011` | Estados tras revisión | 8 `approved`; `verificationStatus: verified`; lote `accepted` |
 
-Huella de `content/new/`: `0803294dc4a09413ce30226e7eb80f8ac48d11fdcfc97c2a3294f93be1e29b65`.
+Huella de la entrega aceptada `content/new/`: `2cfda7da2391436c6097cd29175cc3db298f1e6676c7869060e4885bc015c946`.
 
 Limitaciones: no existe schema o CI autorizado; semántica, suficiencia de fuentes, hogares y aplicaciones requieren revisión independiente.

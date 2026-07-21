@@ -7,7 +7,7 @@
 | `batchId` | `batch-003-taxonomy-subdomains-core-b` |
 | Título | Subdominios mínimos, parte B |
 | Objetivo | Crear 18 subdominios para completar 36 acumulados y exactamente tres por dominio. |
-| Estado del lote | `in-review` |
+| Estado del lote | `accepted` |
 | Fase | `F1` — Taxonomía materializada |
 | Tipo autorizado | Taxonomía materializada |
 | Nivel | Mínimo obligatorio |
@@ -60,3 +60,5 @@ Se exigen los doce reportes y la topología de `work/BATCH-TEMPLATE.md`. Los arc
 | `in-production` | `in-review` | `2026-07-21` | Codex | Entrega `d1` preservada en `a667cf8`: 18 borradores, reportes 12/12 y validaciones 001–010 conformes. | Habilita revisión independiente; no aprueba ni acepta contenido. |
 
 La entrega vigente para revisión es `d2`, preservada en `f31cc84`. Sustituye `d1` únicamente para corregir el enum de estabilidad de `subdomain-ia-generativa` de `fast-evolution` a `changing-technology`; no cambia alcance, identidad, clasificación, definición ni fuentes.
+
+| `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | Revisión independiente completa 18/18; aprobación explícita de `d2`; cero hallazgos abiertos. | Habilita handoff e integración; no implica cierre ni publicación. |

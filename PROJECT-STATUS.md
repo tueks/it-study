@@ -45,7 +45,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Completar las revisiones independientes de B003 `d2` y B004 `d1`, ambos `in-review`. B003 `d2` está preservada en `f31cc84`; B004 `d1`, con 8 disciplinas `draft`, está preservada en `04f774e`. B005 y F2 permanecen bloqueados hasta revisar y aceptar el piso taxonómico. Ningún borrador cuenta todavía como cobertura publicable.
+Crear un commit de aceptación para B003 `d2` y B004 `d1`, ahora `accepted` por revisión independiente del Responsable del proyecto. Después, ejecutar sus handoffs de integración de forma atómica. Aceptación no equivale todavía a integración, cierre o publicación.
 
 Después de B003 sigue `batch-004-taxonomy-disciplines-core`. La salida mínima de F1 requiere 36 subdominios y 8 disciplinas; el objetivo recomendado de F1 es 48 subdominios y 12 disciplinas mediante B005.
 

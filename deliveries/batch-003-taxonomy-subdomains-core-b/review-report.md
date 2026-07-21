@@ -5,11 +5,11 @@
 | `batchId` | `batch-003-taxonomy-subdomains-core-b` |
 | `manifestVersion` | `v1` |
 | `deliveryVersion` | `d2` |
-| `reportVersion` | `r2` |
-| Estado | `pending-independent-review` |
+| `reportVersion` | `r3` |
+| Estado | `complete` |
 | Referencia de entrega | `f31cc84`; no revisar `d1` de `a667cf8`. |
 | Alcance requerido | Revisión completa 18/18 |
-| Revisor | Pendiente; debe ser independiente de Codex como autor |
-| Decisión | `pending` |
+| Revisor | Responsable del proyecto, independiente de Codex como autor |
+| Decisión | `accepted` |
 
-La entrega está completa para revisión. Este archivo no contiene aprobación, aceptación ni recomendación atribuida a un revisor inexistente. El revisor debe registrar cobertura, hallazgos, severidad, evidencia, disposición y decisión conforme a `work/REVIEW-CHECKLIST.md`.
+El Responsable del proyecto confirmó revisión independiente completa 18/18 y aceptó explícitamente `d2`. Hallazgos abiertos: `none`; severidad: no aplica; excepciones: `none`. Las 18 fichas pasan a `approved`. La decisión habilita integración, pero no implica `integrated`, `closed` ni publicación.

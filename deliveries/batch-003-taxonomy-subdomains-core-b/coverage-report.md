@@ -22,4 +22,4 @@
 | Estrategia y gobierno | 1 | 2 | 3 |
 | **Total** | **18** | **18** | **36** |
 
-B003 completa el piso de 36 solo después de aprobación e integración. Durante revisión, sus 18 borradores no cuentan como cobertura publicable.
+B003 tiene 18 fichas `approved` y el lote `accepted`; completará el piso de 36 cuando se integre. Aceptación todavía no equivale a cobertura integrada o publicable.
