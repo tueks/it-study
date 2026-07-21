@@ -268,7 +268,34 @@ Debe conservar contexto temporal, autoría, fecha, edición y procedencia. Una f
 El contenido `emerging`, `changing-technology` o `changing-tool-product` requiere:
 
 - fuentes actuales y fechas de consulta;
-- distinción entre capacidad disponible, anuncio, preview, …508 tokens truncated…do sin cambiar el ID. Si cambia el contenido material, se registra versión, nueva fuente o relación histórica según corresponda; no se sobrescribe evidencia silenciosamente.
+- distinción entre capacidad disponible, anuncio, preview, propuesta y expectativa;
+- contraste independiente cuando se generalice más allá del emisor;
+- terminología no uniforme e incertidumbre explícitas;
+- `verificationStatus`, `reviewedAt` y `reviewDueAt` cuando correspondan;
+- señales de revisión y riesgo residual registrados.
+
+No deben presentarse predicciones, material promocional o anuncios como hechos consolidados. Una fecha reciente no compensa falta de autoridad o evidencia.
+
+## 13. Comparaciones, relaciones e historia
+
+Las comparaciones deben usar dimensiones equivalentes y evidencia comparable para cada elemento. Deben distinguir hechos, criterios editoriales y decisiones de IT Study. La ausencia de una capacidad no se afirma solo porque una documentación no la mencione.
+
+Las relaciones siguen `docs/05-relationship-rules.md`:
+
+- relaciones temporales, históricas, de versión, comerciales, normativas o causales usan `sourceIds` cuando el catálogo lo exige;
+- una fuente incluida en la ficha no respalda automáticamente todas sus relaciones;
+- la arista debe vincular la evidencia específica;
+- las relaciones derivadas del campo de autoridad heredan esa autoridad y no duplican fuentes sin necesidad;
+- evolución, influencia, sustitución y reemplazo requieren evidencia explícita; no mera semejanza o cronología;
+- no se inventan relaciones genéricas para completar navegación o conteos.
+
+## 14. Registro, referencias y deduplicación
+
+Antes de crear un nuevo `source-*`, debe buscarse un registro existente por organización, autor, título, designación, URL canónica, versión, identificadores y variantes. Se reutiliza el registro cuando representa la misma obra y edición pertinente.
+
+Se crea un registro separado cuando una edición, versión, traducción o estado posee diferencias materiales que deben rastrearse. No se crean duplicados por URL alternativa, espejo, formato, idioma de interfaz o campaña de seguimiento.
+
+Si una URL cambia pero la obra y evidencia son las mismas, se actualiza la localización conforme a un lote autorizado sin cambiar el ID. Si cambia el contenido material, se registra versión, nueva fuente o relación histórica según corresponda; no se sobrescribe evidencia silenciosamente.
 
 Los IDs se referencian en `sources` o `sourceIds` según el contrato de cada ficha o relación. `batchId` pertenece a manifiestos y reportes; no debe inventarse como campo de fuente o ficha.
 
@@ -605,4 +632,3 @@ El responsable del proyecto aprobó explícitamente esta política en versión `
 Esta política ofrece un criterio operativo común para que cada afirmación de IT Study sea verificable, proporcionada y mantenible. La evidencia debe poder reconstruirse desde el repositorio, conservar sus límites y continuar separada de decisiones propias, presentación visual y automatización técnica.
 
 Desde su aprobación explícita, este documento es la política vigente dentro de su materia y debe aplicarse en coordinación con las autoridades que lo preceden.
-
