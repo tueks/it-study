@@ -6,17 +6,17 @@
 | `manifestVersion` | `v1` |
 | `deliveryVersion` | `d1` |
 | `reportVersion` | `r1` |
-| Fecha | `pending` |
-| Revisor | `pending` |
-| Alcance | Revisión completa 18/18 prevista |
-| Estado | `pending` |
+| Fecha | `2026-07-21` |
+| Revisor | Responsable del proyecto, independiente de la autoría |
+| Alcance | Revisión completa 18/18 confirmada |
+| Estado | `complete` |
 
 | Decisión | Valor |
 |---|---|
-| Independencia | `pending` |
-| Hallazgos | `pending` |
-| Severidad | `pending` |
-| Excepciones | `none` registradas por autoría |
-| Decisión final | `pending` |
+| Independencia | confirmada |
+| Hallazgos | `none` |
+| Severidad | no aplica; cero hallazgos abiertos |
+| Excepciones | `none` |
+| Decisión final | `accepted` |
 
-Este archivo no aprueba contenido ni acepta, integra, cierra o publica el lote.
+La decisión explícita del Responsable del proyecto aprueba las 18 fichas de `d1` y acepta el lote. Integración se autoriza por separado en la misma instrucción; cierre y publicación permanecen pendientes.

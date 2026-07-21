@@ -16,11 +16,12 @@ sources: [source-it-study-taxonomy, source-it-study-domain-inventory, source-it-
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution
-editorialStatus: draft
+editorialStatus: approved
 owner: Codex
 decisionRefs: [decision-0003-taxonomy-structure, decision-0005-content-format-and-identifiers]
 batch: batch-002-taxonomy-subdomains-core-a
 createdAt: 2026-07-21
+reviewedAt: 2026-07-21
 verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"

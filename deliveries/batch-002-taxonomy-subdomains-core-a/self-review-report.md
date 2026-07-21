@@ -16,8 +16,8 @@
 | Duplicados | conforme | `duplicate-report.md` |
 | Fuentes | conforme estructuralmente | 14 fuentes canónicas; 81 referencias resueltas |
 | Relaciones | conforme | 18 `parentDomain`; 0 ordinarias |
-| Estados | conforme | 18 `draft`; lote `in-production` |
+| Estados | conforme tras decisión independiente | 18 `approved`; lote `accepted` |
 | Separación diseño/contenido | conforme | Sin HTML, componentes, colores o layout |
 | Preguntas/excepciones | none | Reportes correspondientes |
 
-Recomendación de autoría: entregar `d1` a revisión independiente sin cambiar estados.
+La recomendación de autoría quedó superada por la aprobación independiente de `d1`; esta autoevaluación no sustituye ni amplía la decisión.

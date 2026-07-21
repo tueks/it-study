@@ -6,7 +6,7 @@
 |---|---|
 | `batchId` | `batch-002-taxonomy-subdomains-core-a` |
 | Título | Subdominios mínimos, parte A |
-| Estado del lote | `in-production` |
+| Estado del lote | `accepted` |
 | Fase | `F1` — Taxonomía materializada |
 | Nivel | mínimo obligatorio |
 | `manifestVersion` | `v1` |
@@ -44,5 +44,7 @@ Crear exactamente los 18 subdominios enumerados en `inventories/batch-002-taxono
 |---|---|---|---|---|
 | `proposed` | `authorized` | `2026-07-21` | Responsable del proyecto | Autorización general de batches y coincidencia exacta con autoridades. |
 | `authorized` | `in-production` | `2026-07-21` | Codex | Inventario exacto, IDs, dependencias y duplicados comprobados. |
+| `in-production` | `in-review` | `2026-07-21` | Responsable del proyecto | Entrega `d1` preservada en `e09d446`; revisión completa 18/18. |
+| `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | Aprobación explícita; `review-report.md` r1; cero hallazgos abiertos. |
 
-Aceptación, integración, cierre y publicación permanecen `pending` y requieren sus puertas independientes.
+Integración está autorizada y en ejecución. Cierre y publicación permanecen `pending` y requieren puertas independientes.
