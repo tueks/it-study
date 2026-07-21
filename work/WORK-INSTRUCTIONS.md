@@ -272,16 +272,18 @@ En una fase posterior es responsable de:
 
 Codex no decide semántica, suficiencia conceptual, clasificación ambigua, autoridad final de fuentes, excepciones ni aprobación editorial.
 
-### 4.6 Responsables nominales y permisos
+### 4.6 Responsable del proyecto, delegaciones y permisos
 
-Los responsables nominales, delegaciones, sustituciones, conflictos de interés y permisos concretos continúan pendientes conforme a `decision-0016-operational-ownership`.
+Conforme a `decision-0016-operational-ownership`:
 
-Regla de contención:
-
-- se utilizan roles, no nombres inventados;
-- ninguna persona o agente presume facultad no asignada;
+- el usuario propietario de IT Study y de `tueks/it-study` es el Responsable del proyecto y la autoridad final de aprobación;
 - ChatGPT Trabajo y Codex no se autoaprueban;
-- una perspectiva de revisión debe registrarse aunque una misma persona cubra varias funciones.
+- autoría y revisión independiente de una misma unidad deben recaer en participantes distintos;
+- las asignaciones operativas se registran por lote o entrega;
+- no existe sustitución ni delegación permanente implícita;
+- toda delegación debe registrar autoridad delegante, delegado, alcance, transiciones permitidas, vigencia y revocación;
+- ante ausencia de delegación aplicable, la transición que exige autoridad final queda pendiente;
+- los conflictos se escalan al Responsable del proyecto.
 
 ---
 
@@ -1494,7 +1496,7 @@ Este documento funciona antes de que existan los complementos, pero no resuelve 
 | Corregir contenido cerrado sin lote | Rompe historial y revisión | Abrir lote de corrección | `batch-summary.md`, `exceptions-report.md` | Bloqueante |
 | Confundir `accepted` con `approved` | Mezcla estado de lote y estado editorial | Registrar ambos estados de forma separada | `coverage-report.md` | Mayor o bloqueante |
 | Inventar calendario uniforme | Resuelve `decision-0017` sin autoridad | Justificar revisión por riesgo y estabilidad | `unresolved-questions.md` | Mayor |
-| Asignar nombre a un responsable | Resuelve `decision-0016` sin autoridad | Usar roles hasta decisión formal | `batch-manifest.md` | Mayor |
+| Presumir una delegación o permiso no registrado | Excede `decision-0016` | Registrar autoridad, alcance, transiciones y vigencia | `batch-manifest.md` o decisión aplicable | Mayor |
 
 ---
 
@@ -1563,7 +1565,7 @@ Se adopta reconstrucción desde repositorio, conciliación de cambios concurrent
 - plantilla completa de lote;
 - checks y firmas de revisión;
 - paquete técnico de handoff;
-- responsables nominales y permisos cuando se resuelva `decision-0016`;
+- asignaciones y delegaciones concretas conforme a `decision-0016`;
 - calendario operativo cuando se resuelva `decision-0017`.
 
 ### 40.14 Asuntos reservados para Codex
@@ -1605,11 +1607,10 @@ Se adopta reconstrucción desde repositorio, conciliación de cambios concurrent
 - `decision-0013-symmetric-relations-storage`;
 - `decision-0014-certification-issuer-model`;
 - `decision-0015-dark-mode-delivery`;
-- `decision-0016-operational-ownership`;
 - `decision-0017-review-calendars`;
 - `decision-0018-final-technical-metrics`.
 
-Ninguno se resuelve ni se convierte en autoridad mediante este documento. Se aplican sus reglas de contención vigentes.
+`decision-0016-operational-ownership` está aceptada y se aplica conforme a la sección 4.6. Las decisiones enumeradas permanecen sin resolver y conservan sus reglas de contención.
 
 ### 40.18 Contradicciones encontradas
 
