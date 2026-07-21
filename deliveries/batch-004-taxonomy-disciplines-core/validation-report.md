@@ -17,3 +17,5 @@
 Huella de la entrega aceptada `content/new/`: `2cfda7da2391436c6097cd29175cc3db298f1e6676c7869060e4885bc015c946`.
 
 Limitaciones: no existe schema o CI autorizado; semántica, suficiencia de fuentes, hogares y aplicaciones requieren revisión independiente.
+
+Postintegración: baseline y entrega aceptada `9d36271`; 8/8 archivos coinciden por SHA-256 con `content/taxonomy/disciplines/`; 0 diferencias.

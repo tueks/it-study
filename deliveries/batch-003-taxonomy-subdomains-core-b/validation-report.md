@@ -23,3 +23,5 @@
 Huella de la entrega aceptada `content/new/` para `d2`: los 18 pares `nombre:SHA-256`, ordenados por nombre y unidos con LF, producen `e34c04709564d9c81f90d7658972e6e45710a07d7e0d1ba581eb5e69a4bf3c76`.
 
 Limitaciones: no existe schema o CI autorizado; las validaciones semánticas, editoriales, de suficiencia de fuentes y de relevancia final pertenecen a revisión independiente.
+
+Postintegración: baseline y entrega aceptada `9d36271`; 18/18 archivos coinciden por SHA-256 con `content/taxonomy/subdomains/`; cobertura canónica total 36; 0 diferencias.
