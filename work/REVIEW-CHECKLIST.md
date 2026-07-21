@@ -36,7 +36,7 @@ Este checklist se interpreta conforme a los siguientes documentos, en este orden
 16. `work/BATCH-TEMPLATE.md`;
 17. `work/SOURCE-POLICY.md`.
 
-Todos están aprobados en la fecha de elaboración. Sus asuntos expresamente pendientes conservan ese estado. En particular, `decision-0016-operational-ownership` y `decision-0017-review-calendars` permanecen `proposed`; este checklist no asigna responsables nominales, permisos no aprobados ni calendarios uniformes.
+Todos están aprobados en la fecha de elaboración. Sus asuntos expresamente pendientes conservan ese estado. En particular, `decision-0016-operational-ownership` está `accepted` y `decision-0017-review-calendars` permanece `proposed`; este checklist aplica la autoridad final del Responsable del proyecto, no presume delegaciones y no fija calendarios uniformes.
 
 ### 1.2 Propósito
 
@@ -134,7 +134,7 @@ Si existe conflicto material sin disposición autorizada, la perspectiva afectad
 
 ### 5.3 Contención por decisión pendiente
 
-Mientras `decision-0016-operational-ownership` siga `proposed`, se usan roles y no nombres. Ningún participante presume permiso para cambiar estados, aceptar excepciones, integrar o publicar. La ausencia de responsable nominal no autoriza autoaprobación.
+Conforme a `decision-0016-operational-ownership`, el Responsable del proyecto conserva la autoridad final. Ningún participante presume una delegación para cambiar estados, aceptar excepciones, integrar o publicar; la falta de una asignación aplicable no autoriza autoaprobación.
 
 ## 6. Unidad, alcance y perspectivas
 
@@ -835,7 +835,7 @@ El documento es utilizable cuando permite comprobar que:
 
 Permanecen reservados:
 
-- responsables nominales, grupos, sustituciones, delegaciones y permisos para `decision-0016-operational-ownership`;
+- asignaciones, sustituciones y delegaciones concretas conforme a `decision-0016-operational-ownership`;
 - calendarios y periodicidades uniformes para `decision-0017-review-calendars`;
 - recepción técnica, integración, rollback y derivados para `work/HANDOFF-TO-CODEX.md`;
 - schemas, validadores, CI y automatización para Codex;
@@ -858,7 +858,7 @@ Este checklist materializa sin cambiar su semántica:
 
 ### 37.2 Dependencias pendientes preservadas
 
-`decision-0016-operational-ownership` permanece `proposed`. Se usan roles, declaración de conflicto y autoridad documentada; no se inventan nombres, delegaciones ni permisos.
+`decision-0016-operational-ownership` está `accepted`. El Responsable del proyecto conserva la autoridad final; se exigen declaración de conflicto y delegaciones documentadas.
 
 `decision-0017-review-calendars` permanece `proposed`. Se revisa por estabilidad, riesgo y señales extraordinarias; no se inventa periodicidad uniforme.
 
@@ -870,7 +870,7 @@ No se detectaron contradicciones materiales entre autoridades aprobadas. La tens
 
 ### 37.4 Aprobación registrada e intervención pendiente
 
-El responsable del proyecto aprobó explícitamente este checklist en versión `1.0.0` el `2026-07-20`. La aprobación no resuelve ni acepta por implicación `decision-0016-operational-ownership` ni `decision-0017-review-calendars`; ambas permanecen `proposed` y deben mantenerse pendientes o resolverse por separado conforme a `docs/10-decision-log.md`.
+El responsable del proyecto aprobó explícitamente este checklist en versión `1.0.0` el `2026-07-20`. La aprobación original no resolvía `decision-0016-operational-ownership`; esa decisión fue aceptada posteriormente el `2026-07-21` y ahora se aplica. `decision-0017-review-calendars` permanece `proposed` y debe conservarse pendiente conforme a `docs/10-decision-log.md`.
 
 ## 38. Cierre
 
