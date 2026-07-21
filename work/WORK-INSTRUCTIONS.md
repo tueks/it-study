@@ -7,8 +7,8 @@
 | Proyecto | IT Study |
 | Nombre oficial | IT Study — Instrucciones operativas maestras para ChatGPT Trabajo |
 | Ruta oficial | `work/WORK-INSTRUCTIONS.md` |
-| Estado | **Propuesta operativa sujeta a revisión y aprobación** |
-| Versión | `0.1.0` |
+| Estado | **Aprobado** |
+| Versión | `1.0.0` |
 | Fecha | `2026-07-20` |
 | Autoridad de aprobación | Responsable del proyecto, conforme a los roles vigentes |
 | Ámbito | Investigación, clasificación asistida, producción editorial, trazabilidad, autoevaluación y preparación de entregables |
