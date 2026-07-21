@@ -1,0 +1,386 @@
+# Vocabularios controlados de IT Study
+#
+# Artefacto de definición. Las descripciones son ayudas de validación y no sustituyen
+# a los documentos de autoridad ni autorizan contenido o producción.
+schemaVersion: "1.0"
+authority:
+  taxonomy: docs/02-taxonomy.md
+  contentModel: docs/03-content-model.md
+  relationships: docs/05-relationship-rules.md
+  mvp: docs/07-mvp-definition.md
+  batches: docs/08-production-batches.md
+  quality: docs/09-quality-criteria.md
+  decisions: docs/10-decision-log.md
+
+families:
+  authority: docs/03-content-model.md#10-modelos-por-familia-de-entidades
+  values:
+    - value: people-capabilities
+      description: Personas, funciones y capacidades demostrables.
+    - value: ideas-orientations
+      description: Ideas, principios, orientaciones y modelos.
+    - value: ways-of-working
+      description: Sistemas, secuencias y formas recurrentes de realizar trabajo.
+    - value: solutions-structures
+      description: Soluciones recurrentes y organización arquitectónica.
+    - value: specifications-implementations
+      description: Reglas de interacción, especificaciones e implementaciones concretas.
+    - value: results-measurement
+      description: Resultados registrables, medición e interpretación.
+    - value: accreditation-reference
+      description: Credenciales y publicaciones de referencia.
+
+entityTypes:
+  authority: docs/03-content-model.md#10-modelos-por-familia-de-entidades
+  values:
+    - value: role
+      family: people-capabilities
+      description: Función contextual; no equivale a puesto.
+    - value: position
+      family: people-capabilities
+      description: Designación organizacional que agrupa roles y responsabilidades.
+    - value: competency
+      family: people-capabilities
+      description: Capacidad demostrable en contexto.
+    - value: responsibility
+      family: people-capabilities
+      description: Obligación o resultado; ficha propia solo de forma excepcional.
+    - value: concept
+      family: ideas-orientations
+      description: Idea con significado propio necesaria para comprender IT.
+    - value: principle
+      family: ideas-orientations
+      description: Regla o proposición orientadora relativamente estable.
+    - value: paradigm
+      family: ideas-orientations
+      description: Marco general para concebir o estructurar soluciones.
+    - value: conceptual-orientation
+      family: ideas-orientations
+      description: Conjunto amplio de valores y supuestos; incluye filosofía.
+    - value: model
+      family: ideas-orientations
+      description: Representación simplificada con propósito y límites.
+    - value: methodology
+      family: ways-of-working
+      description: Sistema coherente de métodos, reglas y justificación.
+    - value: work-framework
+      family: ways-of-working
+      description: Marco adaptable de roles, eventos, artefactos o reglas.
+    - value: process
+      family: ways-of-working
+      description: Sistema de actividades con entradas, resultados y control.
+    - value: practice
+      family: ways-of-working
+      description: Forma recurrente de realizar trabajo.
+    - value: technique
+      family: ways-of-working
+      description: Procedimiento específico para una tarea.
+    - value: pattern
+      family: solutions-structures
+      description: Solución general reutilizable a un problema recurrente.
+      allowedSubtypes:
+        - pattern
+        - antipattern
+    - value: architectural-style
+      family: solutions-structures
+      description: Restricciones y organización de alto nivel de un sistema.
+    - value: protocol
+      family: specifications-implementations
+      description: Reglas de interacción e intercambio.
+    - value: standard
+      family: specifications-implementations
+      description: Especificación publicada por un organismo o comunidad identificable.
+    - value: technology
+      family: specifications-implementations
+      description: Capacidad técnica general; usar solo cuando no exista tipo más preciso.
+    - value: tool
+      family: specifications-implementations
+      description: Implementación utilizada para ejecutar una tarea.
+    - value: platform
+      family: specifications-implementations
+      description: Entorno integrado que ofrece capacidades a consumidores.
+    - value: service
+      family: specifications-implementations
+      description: Capacidad ofrecida mediante interfaz o acuerdo.
+    - value: product
+      family: specifications-implementations
+      description: Oferta gestionada a lo largo de un ciclo de vida.
+    - value: artifact
+      family: results-measurement
+      description: Resultado tangible o registrable.
+      allowedSubtypes:
+        - reference-publication
+    - value: metric
+      family: results-measurement
+      description: Regla de medición de una propiedad.
+    - value: indicator
+      family: results-measurement
+      description: Interpretación de una o varias métricas para apoyar decisiones.
+    - value: certification
+      family: accreditation-reference
+      description: Credencial emitida tras evaluar criterios definidos; emisor sujeto a decision-0014.
+
+taxonomyAndStructureTypes:
+  authority: docs/03-content-model.md#3-capas-del-modelo
+  values:
+    - value: domain
+      applicability: taxonomy
+    - value: subdomain
+      applicability: taxonomy
+    - value: discipline
+      applicability: taxonomy-cross-cutting
+    - value: comparison
+      applicability: editorial-structure
+    - value: scenario
+      applicability: editorial-structure
+    - value: learning-path
+      applicability: editorial-structure
+    - value: source
+      applicability: evidence
+    - value: area
+      applicability: optional-editorial-grouping
+    - value: collection
+      applicability: editorial-navigation
+
+metadataOnly:
+  authority: docs/02-taxonomy.md#62-tipos-de-contenido-o-entidades
+  values:
+    - value: brand
+      description: Identidad comercial o institucional; nunca tipo principal de conocimiento.
+
+priorities:
+  authority: docs/03-content-model.md#171-prioridad
+  values:
+    - value: essential
+      description: Necesario para el mapa mental básico o para comprender múltiples entradas.
+    - value: important
+      description: Comprensión frecuente o relación significativa.
+    - value: specialized
+      description: Contexto acotado de una disciplina.
+    - value: emerging
+      description: Candidato relevante cuya consolidación debe vigilarse.
+
+knowledgeLevels:
+  authority: docs/03-content-model.md#172-profundidad
+  values:
+    - value: recognition
+      description: Identificación, tipo, dominio y problema general.
+    - value: contextual-understanding
+      description: Propósito, uso, participantes, relaciones, diferencias, ventajas y límites aplicables.
+    - value: future-expanded-reference
+      description: Ampliación futura; fuera de producción ordinaria del MVP.
+
+stability:
+  authority: docs/03-content-model.md#15-vigencia-y-estabilidad
+  values:
+    - value: stable-foundation
+      description: Fundamento con cambios conceptuales infrecuentes.
+    - value: slow-evolution
+      description: Conocimiento de evolución gradual.
+    - value: versioned-standard
+      description: Especificación gobernada por versión.
+    - value: changing-technology
+      description: Tecnología con capacidades o terminología cambiantes.
+    - value: changing-tool-product
+      description: Herramienta, servicio o producto de cambio frecuente.
+    - value: emerging
+      description: Adopción o terminología todavía en consolidación.
+    - value: deprecated
+      description: Contenido retirado o superado.
+
+editorialStatuses:
+  authority: docs/03-content-model.md#16-estados-editoriales
+  values:
+    - planned
+    - draft
+    - in-review
+    - approved
+    - needs-update
+    - deprecated
+    - rejected
+
+verificationStatuses:
+  authority: docs/03-content-model.md#6-campos-comunes
+  values:
+    - verified
+    - pending
+    - uncertain
+
+domains:
+  authority: docs/02-taxonomy.md#4-taxonomia-principal-propuesta
+  values:
+    - id: domain-fundamentos-computacion
+      documentaryCode: DOM-01
+    - id: domain-sistemas-computo-ciberfisicos
+      documentaryCode: DOM-02
+    - id: domain-desarrollo-software
+      documentaryCode: DOM-03
+    - id: domain-ingenieria-software
+      documentaryCode: DOM-04
+    - id: domain-redes-telecomunicaciones
+      documentaryCode: DOM-05
+    - id: domain-infraestructura-operacion
+      documentaryCode: DOM-06
+    - id: domain-ciberseguridad-riesgo
+      documentaryCode: DOM-07
+    - id: domain-datos-analitica
+      documentaryCode: DOM-08
+    - id: domain-inteligencia-artificial
+      documentaryCode: DOM-09
+    - id: domain-integracion-sistemas-empresariales
+      documentaryCode: DOM-10
+    - id: domain-producto-experiencia
+      documentaryCode: DOM-11
+    - id: domain-estrategia-gobierno-liderazgo
+      documentaryCode: DOM-12
+
+disciplinePlanningValues:
+  authority: docs/02-taxonomy.md#5-disciplinas-y-capacidades-transversales
+  note: "Valores aprobados para planificación transversal; no crean registros ni sustituyen inventories de disciplinas."
+  values:
+    - security
+    - architecture
+    - observability
+    - automation
+    - accessibility
+    - quality
+    - governance
+    - integration
+    - reliability
+    - risk-management
+    - privacy
+    - leadership
+
+relationships:
+  authority: docs/05-relationship-rules.md#6-catalogo-final
+  storageNotes:
+    - "Usar el campo especializado cuando sea autoridad; no duplicar la misma semántica en relations[]."
+    - "No persistir inversas generadas."
+    - "La representación física de relaciones simétricas permanece pendiente en decision-0013."
+    - "related-to exige note y es último recurso."
+  persistibleWhenNoFieldAuthority:
+    - requires
+    - recommended-before
+    - builds-on
+    - uses
+    - applies-to
+    - implements
+    - supports
+    - part-of
+    - instance-of
+    - produces
+    - consumes
+    - performed-by
+    - responsible-for
+    - measures
+    - indicates
+    - governed-by
+    - constrained-by
+    - verified-by
+    - evaluated-by
+    - alternative-to
+    - complementary-to
+    - similar-to
+    - evolved-from
+    - influenced-by
+    - supersedes
+    - replaces
+    - version-of
+    - related-to
+  derivedOrFieldAuthority:
+    - belongs-to-domain
+    - belongs-to-subdomain
+    - home-domain
+    - applies-to-domain
+    - parent-domain
+    - contains-subdomain
+    - prerequisite-of
+    - used-by
+    - implemented-by
+    - supported-by
+    - has-part
+    - produced-by
+    - consumed-by
+    - performs
+    - responsibility-of
+    - requires-competency
+    - competency-for
+    - collaborates-with
+    - measured-by
+    - governs
+    - confused-with
+    - superseded-by
+    - replaced-by
+  reserved:
+    - value: certified-by
+      decisionRef: decision-0014-certification-issuer-model
+
+sourceTypes:
+  authority: docs/03-content-model.md#14-modelo-de-fuentes
+  values:
+    - primary-source
+    - institutional-source
+    - standard
+    - official-documentation
+    - academic-publication
+    - secondary-source
+    - vendor-source
+    - historical-source
+
+sourceAuthorityLevels:
+  authority: docs/03-content-model.md#14-modelo-de-fuentes
+  values:
+    - authoritative
+    - strong
+    - supporting
+    - contextual
+
+sourceAvailabilityStatuses:
+  authority: docs/03-content-model.md#14-modelo-de-fuentes
+  values:
+    - available
+    - partially-available
+    - archived
+    - unavailable
+    - unchecked
+
+scenarioComplexity:
+  authority: docs/03-content-model.md#12-modelo-de-escenario
+  values:
+    - introductory
+    - intermediate
+    - advanced-contextual
+
+batchStatuses:
+  authority: docs/08-production-batches.md#21-estados-del-lote
+  values:
+    - proposed
+    - authorized
+    - in-production
+    - in-review
+    - changes-requested
+    - accepted
+    - integrated
+    - closed
+    - cancelled
+
+decisionStatuses:
+  authority: docs/10-decision-log.md#6-estados-de-una-decision
+  values:
+    - proposed
+    - under-review
+    - accepted
+    - rejected
+    - superseded
+    - deprecated
+    - expired
+    - cancelled
+
+pendingDecisions:
+  - decision-0012-related-relations-migration
+  - decision-0013-symmetric-relations-storage
+  - decision-0014-certification-issuer-model
+  - decision-0015-dark-mode-delivery
+  - decision-0016-operational-ownership
+  - decision-0017-review-calendars
+  - decision-0018-final-technical-metrics
