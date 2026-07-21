@@ -715,7 +715,7 @@ Se materializan la topología, manifiesto, estados, entregables, puertas, severi
 
 ### 28.2 Pendientes preservados
 
-Permanecen `decision-0012-related-relations-migration`, `decision-0013-symmetric-relations-storage`, `decision-0014-certification-issuer-model`, `decision-0015-dark-mode-delivery`, `decision-0016-operational-ownership`, `decision-0017-review-calendars` y `decision-0018-final-technical-metrics`. Esta plantilla no los resuelve. En particular, no fija responsables nominales, calendarios, métricas técnicas ni representación física relacional.
+`decision-0016-operational-ownership` está aceptada: el Responsable del proyecto conserva la autoridad final y las asignaciones o delegaciones concretas deben registrarse en el lote. Permanecen `decision-0012-related-relations-migration`, `decision-0013-symmetric-relations-storage`, `decision-0014-certification-issuer-model`, `decision-0015-dark-mode-delivery`, `decision-0017-review-calendars` y `decision-0018-final-technical-metrics`. Esta plantilla no los resuelve ni fija calendarios, métricas técnicas o representación física relacional.
 
 ### 28.3 Contradicciones o tensiones detectadas
 
