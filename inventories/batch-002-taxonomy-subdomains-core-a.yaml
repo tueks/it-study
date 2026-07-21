@@ -1,0 +1,37 @@
+# Inventario autorizado para batch-002-taxonomy-subdomains-core-a.
+# Planificación operativa: no equivale a contenido aprobado.
+schemaVersion: "1.0"
+batchId: batch-002-taxonomy-subdomains-core-a
+manifestVersion: v1
+status: authorized
+authority:
+  - docs/02-taxonomy.md
+  - docs/03-content-model.md
+  - docs/08-production-batches.md
+  - inventories/domains.yaml
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules:
+  expectedCount: 18
+  uniqueParentRequired: true
+  thirdLevelForbidden: true
+  editorialStatus: planned
+entries:
+  - { id: subdomain-teoria-modelos-computacion, name: teoría y modelos de computación, englishName: Theory and Models of Computation, parentDomain: domain-fundamentos-computacion }
+  - { id: subdomain-algoritmos-estructuras-datos, name: algoritmos y estructuras de datos, englishName: Algorithms and Data Structures, parentDomain: domain-fundamentos-computacion }
+  - { id: subdomain-hardware-arquitectura-computadores, name: hardware y arquitectura de computadores, englishName: Hardware and Computer Architecture, parentDomain: domain-sistemas-computo-ciberfisicos }
+  - { id: subdomain-sistemas-operativos, name: sistemas operativos, englishName: Operating Systems, parentDomain: domain-sistemas-computo-ciberfisicos }
+  - { id: subdomain-desarrollo-web-frontend, name: desarrollo web frontend, englishName: Frontend Web Development, parentDomain: domain-desarrollo-software }
+  - { id: subdomain-backend-servicios, name: backend y servicios, englishName: Backend and Services, parentDomain: domain-desarrollo-software }
+  - { id: subdomain-ingenieria-requisitos, name: ingeniería de requisitos, englishName: Requirements Engineering, parentDomain: domain-ingenieria-software }
+  - { id: subdomain-diseno-arquitectura-software, name: diseño y arquitectura de software, englishName: Software Design and Architecture, parentDomain: domain-ingenieria-software }
+  - { id: subdomain-fundamentos-protocolos-red, name: fundamentos y protocolos, englishName: Networking Foundations and Protocols, parentDomain: domain-redes-telecomunicaciones }
+  - { id: subdomain-infraestructura-virtualizacion-cloud, name: infraestructura, virtualización y cloud, englishName: Infrastructure, Virtualization and Cloud, parentDomain: domain-infraestructura-operacion }
+  - { id: subdomain-contenedores-orquestacion, name: contenedores y orquestación, englishName: Containers and Orchestration, parentDomain: domain-infraestructura-operacion }
+  - { id: subdomain-fundamentos-arquitectura-seguridad, name: fundamentos y arquitectura de seguridad, englishName: Security Foundations and Architecture, parentDomain: domain-ciberseguridad-riesgo }
+  - { id: subdomain-identidad-acceso, name: identidad y acceso, englishName: Identity and Access, parentDomain: domain-ciberseguridad-riesgo }
+  - { id: subdomain-bases-datos, name: bases de datos, englishName: Databases, parentDomain: domain-datos-analitica }
+  - { id: subdomain-fundamentos-sistemas-inteligentes, name: fundamentos y sistemas inteligentes, englishName: AI Foundations and Intelligent Systems, parentDomain: domain-inteligencia-artificial }
+  - { id: subdomain-apis-interoperabilidad, name: APIs e interoperabilidad, englishName: APIs and Interoperability, parentDomain: domain-integracion-sistemas-empresariales }
+  - { id: subdomain-producto-digital, name: producto digital, englishName: Digital Product, parentDomain: domain-producto-experiencia }
+  - { id: subdomain-estrategia-gobierno-it, name: estrategia y gobierno de IT, englishName: IT Strategy and Governance, parentDomain: domain-estrategia-gobierno-liderazgo }

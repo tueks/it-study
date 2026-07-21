@@ -1,0 +1,48 @@
+# IT Study — Manifiesto de `batch-002-taxonomy-subdomains-core-a`
+
+## Identidad
+
+| Campo | Valor |
+|---|---|
+| `batchId` | `batch-002-taxonomy-subdomains-core-a` |
+| Título | Subdominios mínimos, parte A |
+| Estado del lote | `in-production` |
+| Fase | `F1` — Taxonomía materializada |
+| Nivel | mínimo obligatorio |
+| `manifestVersion` | `v1` |
+| `deliveryVersion` | `d1` |
+| Fecha de autorización | `2026-07-21` |
+| Autoridad | Responsable del proyecto |
+| Responsable de producción | Codex |
+| Revisión | Independiente pendiente |
+
+## Alcance autorizado
+
+Crear exactamente los 18 subdominios enumerados en `inventories/batch-002-taxonomy-subdomains-core-a.yaml`, todos con `type: subdomain`, un único `parentDomain` canónico y sin tercer nivel. El inventario representa los 12 dominios; seis reciben dos unidades por carga fundacional y seis reciben una. Ninguna asignación cambia los 48 candidatos aprobados de `inventories/domains.yaml`.
+
+| Magnitud | Autorizado | Máximo | Producido | Aprobado | Integrado |
+|---|---:|---:|---:|---:|---:|
+| Subdominios nuevos | 18 | 18 | 18 | 0 | 0 |
+| Padres únicos | 18 | 18 | 18 | 0 | 0 |
+| Relaciones ordinarias | 0 | 0 | 0 | 0 | 0 |
+
+## Dependencias y límites
+
+| Campo | Valor |
+|---|---|
+| Dependencias obligatorias | `batch-001-taxonomy-domains` integrado en `733d9ae`; 12 dominios canónicos `approved`; contratos vigentes. |
+| Fuentes | Autoridades internas y fuentes canónicas ya integradas aplicables. |
+| Inclusiones | Definición, propósito, alcance, exclusiones, pertenencia, promoción, fuentes y gobierno de 18 subdominios. |
+| Exclusiones | No crear tercer nivel, disciplinas, entidades educativas, relaciones ordinarias, aliases no autorizados, nuevos dominios ni derivados. |
+| Criterio de salida de producción | 18 borradores completos; IDs, padres, fuentes y conteos resueltos; reportes obligatorios completos. |
+| Condición de revisión | Los 18 registros permanecen `draft` y el lote `in-production` hasta revisión independiente. |
+| Bloqueos | `none` al iniciar. |
+
+## Historial
+
+| Estado anterior | Estado nuevo | Fecha | Rol | Evidencia |
+|---|---|---|---|---|
+| `proposed` | `authorized` | `2026-07-21` | Responsable del proyecto | Autorización general de batches y coincidencia exacta con autoridades. |
+| `authorized` | `in-production` | `2026-07-21` | Codex | Inventario exacto, IDs, dependencias y duplicados comprobados. |
+
+Aceptación, integración, cierre y publicación permanecen `pending` y requieren sus puertas independientes.
