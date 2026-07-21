@@ -14,10 +14,11 @@ language: en
 authorityLevel: strong
 notes: Fuente curricular; no se presenta como taxonomía universal de IT Study.
 availabilityStatus: available
-editorialStatus: draft
+editorialStatus: approved
 owner: Responsable del proyecto
 batch: batch-001-taxonomy-domains
 createdAt: 2026-07-21
+reviewedAt: 2026-07-21
 verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"

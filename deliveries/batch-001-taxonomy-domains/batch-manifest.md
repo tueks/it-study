@@ -7,7 +7,7 @@
 | `batchId` | `batch-001-taxonomy-domains` |
 | Título | Materialización de los dominios aprobados |
 | Objetivo | Materializar, sin redefinir, los doce dominios aprobados de IT Study como fichas canónicas `domain`. |
-| Estado del lote | `in-production` |
+| Estado del lote | `accepted` |
 | Fase | `F1` — Taxonomía materializada |
 | Tipo o combinación autorizada | `taxonomía` |
 | Variante operativa | `taxonomía materializada` |
@@ -97,13 +97,15 @@ La autorización inicial procede de la instrucción explícita del Responsable d
 |---|---|---|---|---|---|---|---|
 | `proposed` | `authorized` | `2026-07-21` | Responsable del proyecto | Instrucción explícita transcrita en este manifiesto. | ID, alcance, dependencias, límites, fuentes iniciales, duplicados/aliases y revisión definidos. | `none`: comprobación inicial sin colisiones materiales. | La producción todavía no ha comenzado. |
 | `authorized` | `in-production` | `2026-07-21` | ChatGPT Trabajo | Commit de puerta inicial, `sources-report.md` r1 y `duplicate-report.md` r1. | Manifiesto autorizado; plan de fuentes y comprobación inicial de duplicados/aliases registrados. | `none` bloqueante. | Se inicia investigación y producción sin cambiar `manifestVersion`. |
+| `in-production` | `in-review` | `2026-07-21` | Responsable del proyecto | Paquete `d2` preservado en `4d62f2e`; revisión completa confirmada. | 30 registros y reportes disponibles. | `none`. | Transición registrada a partir de la aprobación explícita de `d2`. |
+| `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | `review-report.md` r2; aprobación explícita de `d2`. | 30 registros `approved`; cero hallazgos abiertos. | `none`. | Habilita integración; no implica cierre ni publicación. |
 
 ## Decisiones terminales
 
 | Decisión | Resultado | Fecha | Rol responsable | Evidencia | Impacto/acciones |
 |---|---|---|---|---|---|
-| Aceptación | `pending` | `pending` | Revisor independiente y coordinación | `review-report.md` | No puede decidirla la autoría. |
-| Integración | `pending` | `pending` | Responsable de integración | Handoff futuro | Fuera del alcance actual. |
+| Aceptación | `accepted` | `2026-07-21` | Responsable del proyecto | `review-report.md` r2; `4d62f2e` | Habilita handoff de `d2`. |
+| Integración | `pending` | `pending` | Responsable de integración | Handoff en ejecución | Se decidirá tras validaciones postintegración. |
 | Cierre o cancelación | `pending` | `pending` | Coordinación | Dossier futuro | Fuera del alcance actual. |
 
 Modificar alcance, tamaño, tipos, profundidad, dependencias, entregables o criterios exige una nueva `manifestVersion` autorizada. Una nueva `deliveryVersion` no sustituye esa autorización.

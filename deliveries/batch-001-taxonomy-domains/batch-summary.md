@@ -11,13 +11,13 @@
 | Rol responsable | ChatGPT Trabajo |
 | Alcance cubierto | Doce fichas `domain`, dieciocho registros `source` y reportes obligatorios reconciliados. |
 | Contratos aplicados | Documentos normativos 02–10; contratos `work/` 1.0.0; `inventories/domains.yaml` 1.0. |
-| Estado del reporte | `complete` para autoría; revisión independiente pendiente. |
-| Limitaciones | El lote permanece `in-production`; ninguna ficha está `approved` y el lote no está `accepted`. |
+| Estado del reporte | `complete`; revisión independiente de `d2` registrada. |
+| Limitaciones | La aceptación no implica integración, cierre ni publicación. |
 | Evidencia/archivos | `content/new/`; reportes del lote; validaciones registradas. |
 
 ## Resumen ejecutivo
 
-La entrega `d2` contiene exactamente los doce dominios y los dieciocho registros `source` autorizados. Cada ficha conserva el ID, nombre, aliases, prioridad, profundidad, estabilidad y semántica de `d1`; el único cambio en las fichas es la incorporación de `sources[]` respaldada por el mapa de afirmaciones. Los treinta registros permanecen `draft` y el lote `in-production` para no simular revisión independiente.
+La entrega `d2` contiene exactamente los doce dominios y los dieciocho registros `source` autorizados. Cada ficha conserva el ID, nombre, aliases, prioridad, profundidad, estabilidad y semántica de `d1`; el único cambio en las fichas es la incorporación de `sources[]` respaldada por el mapa de afirmaciones. Los treinta registros están `approved` y el lote `accepted` por decisión explícita del Responsable del proyecto.
 
 | Elemento | Registro |
 |---|---|
@@ -37,10 +37,10 @@ La entrega `d2` contiene exactamente los doce dominios y los dieciocho registros
 | Excepciones | `none`; `exceptions-report.md`. |
 | Hallazgos | 0 bloqueantes/mayores conocidos por autoría; la severidad final corresponde al revisor. |
 | Validaciones | `validation-001`–`validation-013` en `validation-report.md`; `validation-009` corregida por `d2`. |
-| Efecto sobre cobertura | 12 fichas y 18 fuentes producidas; 0 `in-review`, `approved`, aceptadas, integradas o publicables. |
+| Efecto sobre cobertura | 12 fichas y 18 fuentes `approved`; lote `accepted`; integración pendiente. |
 | Riesgos residuales | Revisión independiente pendiente; suficiencia editorial y asignación de autoridad de fuentes no automatizables. |
-| Recomendación de estado | Mantener `in-production` hasta que coordinación confirme recepción y asigne revisión independiente; después podrá considerar `in-review`. |
-| Siguiente acción autorizada | Revisión independiente de los 30 registros y reportes de `d2`; la autoría no decide aprobación ni aceptación. |
+| Recomendación de estado | Ejecutar handoff e integración de `d2`; no cerrar ni publicar por inferencia. |
+| Siguiente acción autorizada | Integrar fuentes canónicas, validar y reconciliar; después iniciar `batch-002` si las dependencias quedan disponibles. |
 
 ## Matriz de dominios
 

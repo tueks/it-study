@@ -15,6 +15,6 @@
 | Limitaciones | La revisión independiente puede abrir preguntas adicionales. |
 | Evidencia/archivos | Manifiesto, fichas y reportes. |
 
-Resultado: `validation-009` fue corregida en `v2`/`d2` mediante 18 registros `source` y referencias `sources[]` resueltas en las doce fichas. Permanece pendiente la revisión independiente completa de `d2`; hasta entonces todo contenido conserva `editorialStatus: draft` y el lote `in-production`.
+Resultado: `validation-009` fue corregida en `v2`/`d2`; la revisión independiente aprobó los 30 registros y aceptó el lote. No quedan preguntas bloqueantes para integración.
 
 Se preservaron sin resolver `decision-0013-symmetric-relations-storage` y `decision-0017-review-calendars`; ninguna causa este bloqueo.

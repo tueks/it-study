@@ -12,10 +12,11 @@ language: en
 authorityLevel: strong
 notes: Respalda Business Analysis; no cubre toda la experiencia humana.
 availabilityStatus: available
-editorialStatus: draft
+editorialStatus: approved
 owner: Responsable del proyecto
 batch: batch-001-taxonomy-domains
 createdAt: 2026-07-21
+reviewedAt: 2026-07-21
 verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"

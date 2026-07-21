@@ -54,11 +54,12 @@ sources:
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution
-editorialStatus: draft
+editorialStatus: approved
 owner: ChatGPT Trabajo
 decisionRefs: [decision-0003-taxonomy-structure, decision-0005-content-format-and-identifiers]
 batch: batch-001-taxonomy-domains
 createdAt: 2026-07-21
+reviewedAt: 2026-07-21
 verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"

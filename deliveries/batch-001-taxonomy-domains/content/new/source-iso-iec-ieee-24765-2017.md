@@ -13,10 +13,11 @@ language: en
 authorityLevel: authoritative
 notes: Uso limitado al carácter de vocabulario de sistemas y software; el texto normativo completo no fue consultado.
 availabilityStatus: partially-available
-editorialStatus: draft
+editorialStatus: approved
 owner: Responsable del proyecto
 batch: batch-001-taxonomy-domains
 createdAt: 2026-07-21
+reviewedAt: 2026-07-21
 verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"

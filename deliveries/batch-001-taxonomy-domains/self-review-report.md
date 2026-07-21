@@ -33,4 +33,4 @@
 | Alcance | 30 nuevas: 12 `domain` y 18 `source`; 0 modificadas; 0 extras. | conforme | `validation-010`–`validation-013` | none | `validation-009` corregida | Nueva revisión independiente pendiente. | Mantener `v2`/`d2`. |
 | Coherencia de reportes | IDs/versiones/conteos conciliados. | conforme | `validation-008` | none | none | `review-report.md` permanece pending correctamente. | Revisión independiente. |
 
-Recomendación de autoría: conservar el lote en `in-production` hasta recepción formal y asignación de revisor. No se declara ninguna ficha `approved` ni el lote `accepted`.
+La recomendación de autoría quedó superada por la decisión independiente del Responsable del proyecto: `d2` fue aprobado y el lote aceptado. Esta autoevaluación no sustituye ni amplía esa decisión.
