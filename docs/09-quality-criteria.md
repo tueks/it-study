@@ -6,7 +6,7 @@
 - **Documento:** Criterios de calidad.
 - **Nombre oficial:** IT Study — Criterios de calidad.
 - **Ruta oficial:** `docs/09-quality-criteria.md`.
-- **Estado:** propuesta normativa completa, pendiente de aprobación formal.
+- **Estado:** aprobado
 - **Versión del contrato de calidad:** `1.0`.
 - **Fecha:** 2026-07-20.
 - **Documentos de autoridad, en orden:**
