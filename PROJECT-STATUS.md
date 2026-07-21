@@ -45,7 +45,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Realizar la revisión independiente completa de `batch-003-taxonomy-subdomains-core-b`, actualmente `in-review` con entrega `d1` preservada en `a667cf8`. Contiene 18 fichas `draft`, reportes 12/12 y validaciones automatizables conformes. El resultado previsto tras una eventual aprobación e integración es 36 subdominios acumulados y exactamente tres por dominio; los borradores todavía no cuentan como cobertura publicable.
+Preservar y revisar independientemente `batch-003-taxonomy-subdomains-core-b`, actualmente `in-review` con entrega corregida `d2`. `d1` permanece en `a667cf8`, pero no debe revisarse porque usaba un enum de estabilidad inválido ya corregido. `d2` contiene 18 fichas `draft`, reportes 12/12 y validaciones automatizables conformes. Los borradores todavía no cuentan como cobertura publicable.
 
 Después de B003 sigue `batch-004-taxonomy-disciplines-core`. La salida mínima de F1 requiere 36 subdominios y 8 disciplinas; el objetivo recomendado de F1 es 48 subdominios y 12 disciplinas mediante B005.
 

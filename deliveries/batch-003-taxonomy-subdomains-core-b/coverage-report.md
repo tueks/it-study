@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | `batchId` | `batch-003-taxonomy-subdomains-core-b` |
-| Entrega | `v1` / `d1` / `r1` |
+| Entrega | `v1` / `d2` / `r2` |
 | Estado | Completo para autoría |
 
 | Dominio | Base integrada | Aporte B003 | Acumulado si se aprueba e integra |

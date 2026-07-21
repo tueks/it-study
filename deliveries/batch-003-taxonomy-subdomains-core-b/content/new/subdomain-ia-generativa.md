@@ -15,7 +15,7 @@ promotionCriteria: [Solo se reconsidera ante autonomía taxonómica aprobada y e
 sources: [source-it-study-taxonomy, source-it-study-domain-inventory, source-it-study-content-model, source-nist-ai-rmf]
 priority: essential
 knowledgeLevel: contextual-understanding
-stability: fast-evolution
+stability: changing-technology
 editorialStatus: draft
 owner: Codex
 decisionRefs: [decision-0003-taxonomy-structure, decision-0005-content-format-and-identifiers, decision-0020-batch-plan-authorization]

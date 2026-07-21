@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | `batchId` | `batch-003-taxonomy-subdomains-core-b` |
-| Entrega | `v1` / `d1` / `r1` |
+| Entrega | `v1` / `d2` / `r2` |
 | Estado | Completo para autoría; suficiencia final corresponde al revisor |
 
 Se reutilizaron 15 de las 18 fuentes canónicas integradas. No se crearon registros de fuente ni se usaron referencias inexistentes.

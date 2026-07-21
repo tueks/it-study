@@ -4,10 +4,10 @@
 |---|---|
 | `batchId` | `batch-003-taxonomy-subdomains-core-b` |
 | `manifestVersion` | `v1` |
-| `deliveryVersion` | `d1` |
-| `reportVersion` | `r1` |
+| `deliveryVersion` | `d2` |
+| `reportVersion` | `r2` |
 | Estado | `pending-independent-review` |
-| Referencia de entrega | `a667cf8` |
+| Referencia de entrega | Pendiente de preservar `d2`; no revisar `d1` de `a667cf8`. |
 | Alcance requerido | Revisión completa 18/18 |
 | Revisor | Pendiente; debe ser independiente de Codex como autor |
 | Decisión | `pending` |

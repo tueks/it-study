@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | `batchId` | `batch-003-taxonomy-subdomains-core-b` |
-| Entrega | `v1` / `d1` / `r1` |
+| Entrega | `v1` / `d2` / `r2` |
 | Autor | Codex |
 | Estado | Completo; no sustituye revisión independiente |
 
@@ -19,5 +19,6 @@
 | Duplicados | Conforme para autoría | 0 IDs o nombres duplicados; fronteras cercanas declaradas. |
 | Separación de diseño | Conforme | Sin HTML, componentes, colores, layout o instrucciones visuales. |
 | Estados | Conforme | 18 `draft`; lote `in-review`; ninguna autoaprobación. |
+| Vocabularios | Conforme tras corrección | `fast-evolution` de `d1` se sustituyó por el enum vigente `changing-technology` en `d2`. |
 
-Recomendación del autor: entregar `d1` a revisión independiente completa 18/18. Atención editorial sugerida: fronteras de DevOps/plataformas, arquitectura empresarial, IA generativa e investigación/UX.
+Recomendación del autor: entregar `d2` a revisión independiente completa 18/18. Atención editorial sugerida: fronteras de DevOps/plataformas, arquitectura empresarial, IA generativa e investigación/UX.
