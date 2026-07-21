@@ -45,7 +45,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Conservar el inventario exacto de 10 entidades recomendado para B006. Antes de iniciar producción se requiere inventario relacional exacto de 12–20 relaciones y reconciliar tres dependencias hacia Algoritmo, candidato actualmente asignado a B007. B005 queda diferido porque no existe inventario concreto y no se autoriza contenido de relleno.
+Conservar y validar el inventario maestro B001–B042. Los 164 candidatos existentes están asignados exactamente una vez a B006–B019; antes de producir hay que resolver rangos: B007–B009 y B013–B015 están bajo mínimo, B016–B019 exceden máximo. B005 y B020–B023 conservan reglas derivadas sin contenido de relleno; B024–B042 tienen puertas basadas en entradas aprobadas, cobertura o hallazgos.
 
 La salida mínima de F1 está satisfecha con 36 subdominios y 8 disciplinas cerrados. El objetivo recomendado de F1 es 48 subdominios y 12 disciplinas mediante B005, condicionado a vacíos demostrados y sin contenido de relleno.
 

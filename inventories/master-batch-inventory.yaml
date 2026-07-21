@@ -1,0 +1,61 @@
+# Inventario maestro de asignación por lotes.
+# Registra fuente, modo y puerta; no convierte planificación en aprobación editorial.
+schemaVersion: "1.0"
+project: IT Study
+version: v1
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+sourceCandidateInventory: inventories/initial-terms.csv
+canonicalIdRule: candidate-* maps to entity-* with the same semantic key
+candidateUniverse: 164
+assignment:
+  - { batchId: batch-001-taxonomy-domains, mode: completed, assigned: 12, gate: closed }
+  - { batchId: batch-002-taxonomy-subdomains-core-a, mode: completed, inventory: inventories/batch-002-taxonomy-subdomains-core-a.yaml, assigned: 18, gate: closed }
+  - { batchId: batch-003-taxonomy-subdomains-core-b, mode: completed, inventory: inventories/batch-003-taxonomy-subdomains-core-b.yaml, assigned: 18, gate: closed }
+  - { batchId: batch-004-taxonomy-disciplines-core, mode: completed, inventory: inventories/batch-004-taxonomy-disciplines-core.yaml, assigned: 8, gate: closed }
+  - { batchId: batch-005-taxonomy-target-extension, mode: evidence-derived, assigned: 0, gate: blocked-no-taxonomy-candidates }
+  - { batchId: batch-006-foundations-core, mode: exact-candidate-allocation, inventory: inventories/batch-006-foundations-core.yaml, assigned: 10, authorizedRange: "8-10", gate: relations-pending }
+  - { batchId: batch-007-foundations-bridges, mode: exact-candidate-allocation, inventory: inventories/batch-007-foundations-bridges.yaml, assigned: 3, authorizedRange: "8-10", gate: under-minimum }
+  - { batchId: batch-008-systems-networking-core, mode: exact-candidate-allocation, inventory: inventories/batch-008-systems-networking-core.yaml, assigned: 6, authorizedRange: "8-10", gate: under-minimum }
+  - { batchId: batch-009-software-construction-core, mode: exact-candidate-allocation, inventory: inventories/batch-009-software-construction-core.yaml, assigned: 4, authorizedRange: "7-9", gate: under-minimum }
+  - { batchId: batch-010-software-engineering-core, mode: exact-candidate-allocation, inventory: inventories/batch-010-software-engineering-core.yaml, assigned: 8, authorizedRange: "7-9", gate: within-range }
+  - { batchId: batch-011-infrastructure-security-core, mode: exact-candidate-allocation, inventory: inventories/batch-011-infrastructure-security-core.yaml, assigned: 9, authorizedRange: "8-10", gate: within-range }
+  - { batchId: batch-012-data-ai-core, mode: exact-candidate-allocation, inventory: inventories/batch-012-data-ai-core.yaml, assigned: 10, authorizedRange: "8-10", gate: within-range }
+  - { batchId: batch-013-integration-enterprise-core, mode: exact-candidate-allocation, inventory: inventories/batch-013-integration-enterprise-core.yaml, assigned: 6, authorizedRange: "7-9", gate: under-minimum }
+  - { batchId: batch-014-product-human-experience-core, mode: exact-candidate-allocation, inventory: inventories/batch-014-product-human-experience-core.yaml, assigned: 3, authorizedRange: "7-9", gate: under-minimum }
+  - { batchId: batch-015-strategy-governance-core, mode: exact-candidate-allocation, inventory: inventories/batch-015-strategy-governance-core.yaml, assigned: 5, authorizedRange: "7-9", gate: under-minimum }
+  - { batchId: batch-016-people-capabilities-core, mode: exact-candidate-allocation, inventory: inventories/batch-016-people-capabilities-core.yaml, assigned: 26, authorizedRange: "8-10", gate: over-maximum }
+  - { batchId: batch-017-ways-of-working-core, mode: exact-candidate-allocation, inventory: inventories/batch-017-ways-of-working-core.yaml, assigned: 24, authorizedRange: "8-10", gate: over-maximum }
+  - { batchId: batch-018-specifications-implementations-core, mode: exact-candidate-allocation, inventory: inventories/batch-018-specifications-implementations-core.yaml, assigned: 36, authorizedRange: "7-9", gate: over-maximum }
+  - { batchId: batch-019-artifacts-measurement-core, mode: exact-candidate-allocation, inventory: inventories/batch-019-artifacts-measurement-core.yaml, assigned: 14, authorizedRange: "6-8", gate: over-maximum }
+  - { batchId: batch-020-domain-balance-extension-a, mode: rebalance-derived, assigned: 0, gate: blocked-pending-base-batch-rebalance }
+  - { batchId: batch-021-domain-balance-extension-b, mode: rebalance-derived, assigned: 0, gate: blocked-pending-batch-020-result }
+  - { batchId: batch-022-transversal-depth-extension, mode: coverage-derived, assigned: 0, gate: blocked-pending-transversal-gap-evidence }
+  - { batchId: batch-023-selective-implementation-extension, mode: coverage-derived, assigned: 0, gate: blocked-pending-implementation-gap-evidence }
+  - { batchId: batch-024-comparisons-core-a, mode: approved-entry-derived, assigned: 0, gate: blocked-until-referenced-entries-approved }
+  - { batchId: batch-025-comparisons-core-b, mode: approved-entry-derived, assigned: 0, gate: blocked-until-batch-024-reviewed }
+  - { batchId: batch-026-comparisons-target, mode: approved-entry-derived, assigned: 0, gate: blocked-until-minimum-comparisons-validated }
+  - { batchId: batch-027-scenarios-core-a, mode: approved-entry-derived, assigned: 0, gate: blocked-until-participants-approved }
+  - { batchId: batch-028-scenarios-core-b, mode: approved-entry-derived, assigned: 0, gate: blocked-until-batch-027-reviewed }
+  - { batchId: batch-029-learning-paths-core-a, mode: approved-entry-derived, assigned: 0, gate: blocked-until-entries-approved }
+  - { batchId: batch-030-learning-paths-core-b, mode: approved-entry-derived, assigned: 0, gate: blocked-until-batch-029-reviewed }
+  - { batchId: batch-031-coverage-correction, mode: finding-triggered, assigned: 0, gate: dormant-until-findings }
+  - { batchId: batch-032-publication-readiness, mode: dossier-derived, assigned: 0, gate: blocked-until-minimum-closed }
+  - { batchId: batch-033-taxonomy-maximum-extension, mode: optional-gap-derived, assigned: 0, gate: dormant-until-objective-gap-authorized }
+  - { batchId: batch-034-domain-maximum-extension-a, mode: optional-gap-derived, assigned: 0, gate: dormant-until-objective-gap-authorized }
+  - { batchId: batch-035-domain-maximum-extension-b, mode: optional-gap-derived, assigned: 0, gate: dormant-until-batch-034-result }
+  - { batchId: batch-036-domain-maximum-extension-c, mode: optional-gap-derived, assigned: 0, gate: dormant-until-batch-035-result }
+  - { batchId: batch-037-domain-maximum-extension-d, mode: optional-gap-derived, assigned: 0, gate: dormant-until-batch-036-result }
+  - { batchId: batch-038-specialized-emerging-extension, mode: optional-gap-derived, assigned: 0, gate: dormant-until-specialized-gap-authorized }
+  - { batchId: batch-039-comparisons-maximum, mode: approved-entry-derived, assigned: 0, gate: dormant-until-target-comparisons-closed }
+  - { batchId: batch-040-scenarios-maximum, mode: approved-entry-derived, assigned: 0, gate: dormant-until-target-scenarios-closed }
+  - { batchId: batch-041-learning-paths-maximum, mode: approved-entry-derived, assigned: 0, gate: dormant-until-target-paths-closed }
+  - { batchId: batch-042-maximum-coverage-correction, mode: finding-triggered, assigned: 0, gate: dormant-until-findings }
+capacityFindings:
+  underMinimum: [batch-007-foundations-bridges, batch-008-systems-networking-core, batch-009-software-construction-core, batch-013-integration-enterprise-core, batch-014-product-human-experience-core, batch-015-strategy-governance-core]
+  overMaximum: [batch-016-people-capabilities-core, batch-017-ways-of-working-core, batch-018-specifications-implementations-core, batch-019-artifacts-measurement-core]
+  disposition: Preserve recommended_batch assignments; require authorized split or rebalance before production of affected batches.
+distributionDecision:
+  policy: Preserve every existing recommended_batch value as the initial assignment.
+  noSilentMoves: true
+  productionRule: A batch outside its authorized range must be split or rebalanced by an explicit versioned inventory before authoring.

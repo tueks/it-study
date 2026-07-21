@@ -1,0 +1,241 @@
+# Asignación recomendada exacta derivada de inventories/initial-terms.csv.
+# No equivale a contenido aprobado ni habilita producción si falla una puerta.
+schemaVersion: "1.0"
+batchId: batch-019-artifacts-measurement-core
+manifestVersion: v1
+status: assigned
+sourceInventory: inventories/initial-terms.csv
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules:
+  assignedCount: 14
+  authorizedMinimum: 6
+  authorizedMaximum: 8
+  capacityStatus: over-maximum
+  canonicalNamespace: entity
+  editorialStatus: planned
+entries:
+  - id: entity-source-code
+    sourceCandidate: candidate-source-code
+    name: "Source code"
+    englishName: "Source Code"
+    type: artifact
+    subtype: ""
+    primaryDomain: domain-desarrollo-software
+    plannedSubdomainLabel: "desarrollo móvil"
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+    candidateStatus: optional
+    duplicateRisk: "low"
+  - id: entity-architecture-decision-record
+    sourceCandidate: candidate-architecture-decision-record
+    name: "Architecture Decision Record"
+    englishName: "Architecture Decision Record"
+    type: artifact
+    subtype: ""
+    primaryDomain: domain-ingenieria-software
+    plannedSubdomainLabel: "diseño y arquitectura de software"
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: ["entity-software-architect"]
+    candidateStatus: optional
+    duplicateRisk: "low"
+  - id: entity-software-requirements-specification
+    sourceCandidate: candidate-software-requirements-specification
+    name: "Software Requirements Specification"
+    englishName: "Software Requirements Specification"
+    type: artifact
+    subtype: ""
+    primaryDomain: domain-ingenieria-software
+    plannedSubdomainLabel: "ciclo de vida y evolución"
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: ["entity-requirements-elicitation"]
+    candidateStatus: optional
+    duplicateRisk: "low"
+  - id: entity-latencia
+    sourceCandidate: candidate-latencia
+    name: "Latencia"
+    englishName: "Latency"
+    type: metric
+    subtype: ""
+    primaryDomain: domain-redes-telecomunicaciones
+    plannedSubdomainLabel: "Internet y servicios de red"
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+    candidateStatus: optional
+    duplicateRisk: "medium: distinguir propiedad de su medición"
+  - id: entity-runbook
+    sourceCandidate: candidate-runbook
+    name: "Runbook"
+    englishName: "Runbook"
+    type: artifact
+    subtype: ""
+    primaryDomain: domain-infraestructura-operacion
+    plannedSubdomainLabel: "entrega, automatización DevOps e ingeniería de plataformas"
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+    candidateStatus: optional
+    duplicateRisk: "low"
+  - id: entity-disponibilidad
+    sourceCandidate: candidate-disponibilidad
+    name: "Disponibilidad"
+    englishName: "Availability"
+    type: metric
+    subtype: ""
+    primaryDomain: domain-infraestructura-operacion
+    plannedSubdomainLabel: "confiabilidad, SRE y observabilidad"
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+    candidateStatus: optional
+    duplicateRisk: "medium: distinguir atributo, métrica e indicador"
+  - id: entity-indicador-de-riesgo-de-seguridad
+    sourceCandidate: candidate-indicador-de-riesgo-de-seguridad
+    name: "Indicador de riesgo de seguridad"
+    englishName: "Security Risk Indicator"
+    type: indicator
+    subtype: ""
+    primaryDomain: domain-ciberseguridad-riesgo
+    plannedSubdomainLabel: "operaciones de seguridad"
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+    candidateStatus: optional
+    duplicateRisk: "low"
+  - id: entity-data-dictionary
+    sourceCandidate: candidate-data-dictionary
+    name: "Data dictionary"
+    englishName: "Data Dictionary"
+    type: artifact
+    subtype: ""
+    primaryDomain: domain-datos-analitica
+    plannedSubdomainLabel: "arquitectura y gestión de datos"
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+    candidateStatus: recommended
+    duplicateRisk: "low"
+  - id: entity-completitud-de-datos
+    sourceCandidate: candidate-completitud-de-datos
+    name: "Completitud de datos"
+    englishName: "Data Completeness"
+    type: metric
+    subtype: ""
+    primaryDomain: domain-datos-analitica
+    plannedSubdomainLabel: "ingeniería de datos"
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+    candidateStatus: optional
+    duplicateRisk: "low"
+  - id: entity-api-contract
+    sourceCandidate: candidate-api-contract
+    name: "API contract"
+    englishName: "API Contract"
+    type: artifact
+    subtype: ""
+    primaryDomain: domain-integracion-sistemas-empresariales
+    plannedSubdomainLabel: "APIs e interoperabilidad"
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: ["entity-application-programming-interface"]
+    candidateStatus: optional
+    duplicateRisk: "low"
+  - id: entity-product-backlog
+    sourceCandidate: candidate-product-backlog
+    name: "Product backlog"
+    englishName: "Product Backlog"
+    type: artifact
+    subtype: ""
+    primaryDomain: domain-producto-experiencia
+    plannedSubdomainLabel: "investigación y UX"
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: ["entity-producto-digital"]
+    candidateStatus: recommended
+    duplicateRisk: "low"
+  - id: entity-user-story
+    sourceCandidate: candidate-user-story
+    name: "User story"
+    englishName: "User Story"
+    type: artifact
+    subtype: ""
+    primaryDomain: domain-producto-experiencia
+    plannedSubdomainLabel: "accesibilidad y diseño inclusivo"
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: ["entity-product-backlog"]
+    candidateStatus: recommended
+    duplicateRisk: "medium: artefacto, no requisito universal"
+  - id: entity-tasa-de-conversion
+    sourceCandidate: candidate-tasa-de-conversion
+    name: "Tasa de conversión"
+    englishName: "Conversion Rate"
+    type: metric
+    subtype: ""
+    primaryDomain: domain-producto-experiencia
+    plannedSubdomainLabel: "producto digital"
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+    candidateStatus: recommended
+    duplicateRisk: "medium: requiere evento, población y ventana"
+  - id: entity-key-performance-indicator
+    sourceCandidate: candidate-key-performance-indicator
+    name: "Key Performance Indicator"
+    englishName: "Key Performance Indicator"
+    type: indicator
+    subtype: ""
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    plannedSubdomainLabel: "arquitectura empresarial"
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+    candidateStatus: optional
+    duplicateRisk: "low"

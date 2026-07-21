@@ -1,0 +1,65 @@
+# Asignación recomendada exacta derivada de inventories/initial-terms.csv.
+# No equivale a contenido aprobado ni habilita producción si falla una puerta.
+schemaVersion: "1.0"
+batchId: batch-014-product-human-experience-core
+manifestVersion: v1
+status: assigned
+sourceInventory: inventories/initial-terms.csv
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules:
+  assignedCount: 3
+  authorizedMinimum: 7
+  authorizedMaximum: 9
+  capacityStatus: under-minimum
+  canonicalNamespace: entity
+  editorialStatus: planned
+entries:
+  - id: entity-producto-digital
+    sourceCandidate: candidate-producto-digital
+    name: "Producto digital"
+    englishName: "Digital Product"
+    type: concept
+    subtype: ""
+    primaryDomain: domain-producto-experiencia
+    plannedSubdomainLabel: "producto digital"
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: ["entity-software"]
+    candidateStatus: mandatory
+    duplicateRisk: "medium: distinguir producto, proyecto y servicio"
+  - id: entity-usabilidad
+    sourceCandidate: candidate-usabilidad
+    name: "Usabilidad"
+    englishName: "Usability"
+    type: concept
+    subtype: ""
+    primaryDomain: domain-producto-experiencia
+    plannedSubdomainLabel: "análisis de negocio"
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: ["entity-producto-digital"]
+    candidateStatus: mandatory
+    duplicateRisk: "low"
+  - id: entity-inclusive-design
+    sourceCandidate: candidate-inclusive-design
+    name: "Inclusive design"
+    englishName: "Inclusive Design"
+    type: principle
+    subtype: ""
+    primaryDomain: domain-producto-experiencia
+    plannedSubdomainLabel: "investigación y UX"
+    secondaryDomains: ["domain-desarrollo-software", "domain-ingenieria-software"]
+    disciplines: ["accessibility"]
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: ["entity-usabilidad"]
+    candidateStatus: mandatory
+    duplicateRisk: "low"
