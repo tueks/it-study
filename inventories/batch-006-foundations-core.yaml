@@ -1,0 +1,45 @@
+# Inventario autorizado para batch-006-foundations-core.
+# Derivado exactamente de inventories/initial-terms.csv por recommended_batch.
+# Planificación operativa: no equivale a contenido aprobado.
+schemaVersion: "1.0"
+batchId: batch-006-foundations-core
+manifestVersion: v1
+status: authorized
+authority:
+  - instruccion-responsable-proyecto-2026-07-21-inventario-recomendado
+  - decision-0020-batch-plan-authorization
+  - docs/03-content-model.md
+  - docs/08-production-batches.md
+  - inventories/initial-terms.csv
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules:
+  expectedCount: 10
+  minimumRelations: 12
+  maximumRelations: 20
+  primaryDomain: domain-fundamentos-computacion
+  editorialStatus: planned
+  canonicalNamespace: entity
+  relationInventoryStatus: pending
+entries:
+  - { id: entity-computacion, sourceCandidate: candidate-computacion, name: Computación, type: concept, priority: essential }
+  - { id: entity-informacion, sourceCandidate: candidate-informacion, name: Información, type: concept, priority: essential }
+  - { id: entity-estructura-de-datos, sourceCandidate: candidate-estructura-de-datos, name: Estructura de datos, type: concept, priority: essential, plannedDependency: candidate-algoritmo }
+  - { id: entity-complejidad-computacional, sourceCandidate: candidate-complejidad-computacional, name: Complejidad computacional, type: concept, priority: essential, plannedDependency: candidate-algoritmo }
+  - { id: entity-estado, sourceCandidate: candidate-estado, name: Estado, type: concept, priority: essential }
+  - { id: entity-funcion, sourceCandidate: candidate-funcion, name: Función, type: concept, priority: essential }
+  - { id: entity-programacion, sourceCandidate: candidate-programacion, name: Programación, type: concept, priority: essential, plannedDependency: candidate-algoritmo }
+  - { id: entity-logica-booleana, sourceCandidate: candidate-logica-booleana, name: Lógica booleana, type: model, priority: important }
+  - { id: entity-maquina-de-turing, sourceCandidate: candidate-maquina-de-turing, name: Máquina de Turing, type: model, priority: important }
+  - { id: entity-paradigma-de-programacion, sourceCandidate: candidate-paradigma-de-programacion, name: Paradigma de programación, type: paradigm, priority: important }
+blockingFindings:
+  - id: inventory-finding-001
+    scope: [entity-estructura-de-datos, entity-complejidad-computacional, entity-programacion]
+    evidence: inventories/initial-terms.csv
+    issue: La dependencia recomendada candidate-algoritmo pertenece a B007 y todavía no tiene ID canónico integrado.
+    disposition: No persistir ni inventar relaciones hacia esa dependencia hasta reconciliación autorizada.
+  - id: inventory-finding-002
+    scope: batch-006-foundations-core
+    evidence: docs/08-production-batches.md
+    issue: El lote requiere 12–20 relaciones y no existe inventario relacional exacto autorizado.
+    disposition: Bloquear producción relacional y redacción dependiente hasta recibir inventario exacto.

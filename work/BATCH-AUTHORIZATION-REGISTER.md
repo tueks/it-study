@@ -31,8 +31,9 @@ Este registro materializa la autorización expresa del Responsable del proyecto.
 | B001–B002 | Ejecutados y reconciliados | `closed` | No reabrir; cualquier cambio usa lote de corrección. |
 | B003 | Cerrado | Completado | 18 subdominios aceptados, integrados en `f079376` y cierre autorizado por el Responsable del proyecto. |
 | B004 | Cerrado | Completado | 8 disciplinas aceptadas, integradas en `f079376` y cierre autorizado por el Responsable del proyecto. |
-| B005 | Autorizado | Listo para evaluación de entrada | Piso taxonómico cerrado en B003/B004; falta identificar y autorizar inventario exacto a partir de evidencia de vacíos, hasta 12 subdominios y 4 disciplinas. |
-| B006–B023 | Autorizados | Dependientes | Cumplir en orden las dependencias F1–F4 y materializar el manifiesto exacto desde inventarios aprobados. |
+| B005 | Autorizado | Diferido dentro del plan recomendado | No existe inventario recomendado concreto en las fuentes de planificación; no producir relleno taxonómico. |
+| B006 | Inventario autorizado | Preflight bloqueado parcialmente | 10 candidatos recomendados materializados en `inventories/batch-006-foundations-core.yaml`; faltan inventario exacto de 12–20 relaciones y reconciliación de tres dependencias hacia Algoritmo en B007. |
+| B007–B023 | Autorizados | Dependientes | Cumplir en orden las dependencias F2–F4 y materializar el manifiesto exacto desde inventarios aprobados. |
 | B024–B030 | Autorizados | Dependientes de estructuras aprobadas | Comparaciones, escenarios y rutas solo sobre entradas `approved` y destinos existentes. |
 | B031 | Autorizado por activador | Bloqueado hasta hallazgos | Hallazgos acumulados concretos, alcance de corrección y rollback. |
 | B032 | Autorizado | Dependiente de cierre | Cobertura mínima/objetivo aplicable integrada, decisiones y deuda reconciliadas; no autoriza publicar. |

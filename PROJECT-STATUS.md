@@ -45,7 +45,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Preservar el cierre de B003/B004 en un commit y ejecutar la evaluación de entrada de B005. B005 requiere evidencia de vacíos e inventario exacto antes de producir; su máximo autorizado es 12 subdominios y 4 disciplinas.
+Conservar el inventario exacto de 10 entidades recomendado para B006. Antes de iniciar producción se requiere inventario relacional exacto de 12–20 relaciones y reconciliar tres dependencias hacia Algoritmo, candidato actualmente asignado a B007. B005 queda diferido porque no existe inventario concreto y no se autoriza contenido de relleno.
 
 La salida mínima de F1 está satisfecha con 36 subdominios y 8 disciplinas cerrados. El objetivo recomendado de F1 es 48 subdominios y 12 disciplinas mediante B005, condicionado a vacíos demostrados y sin contenido de relleno.
 
