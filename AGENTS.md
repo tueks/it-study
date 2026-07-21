@@ -136,6 +136,10 @@ Los fallos bloqueantes deben permanecer visibles. Una advertencia solo puede ace
 - Mantener cada cambio revisable y reversible.
 - No forzar actualizaciones de rama ni reescribir historia salvo autorización expresa.
 
+## Autoridad operativa
+
+Conforme a `decision-0016-operational-ownership`, el usuario propietario de IT Study y de `tueks/it-study` es el Responsable del proyecto y la autoridad final de aprobación. Codex actúa únicamente dentro de alcances autorizados, no aprueba contenido editorial y no presume delegaciones. Toda delegación debe estar registrada con alcance, permisos y vigencia.
+
 ## Decisiones pendientes que deben preservarse
 
 Codex no debe resolver ni anticipar:
@@ -144,7 +148,6 @@ Codex no debe resolver ni anticipar:
 - `decision-0013-symmetric-relations-storage`;
 - `decision-0014-certification-issuer-model`;
 - `decision-0015-dark-mode-delivery`;
-- `decision-0016-operational-ownership`;
 - `decision-0017-review-calendars`;
 - `decision-0018-final-technical-metrics`.
 
