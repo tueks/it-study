@@ -7,10 +7,11 @@
 | Proyecto | IT Study |
 | Nombre oficial | IT Study — Handoff operativo a Codex |
 | Ruta oficial | `work/HANDOFF-TO-CODEX.md` |
-| Estado | **Propuesta pendiente de aprobación** |
-| Versión | `0.1.0` |
+| Estado | **Aprobado** |
+| Versión | `1.0.0` |
 | Fecha | `2026-07-20` |
-| Autoridad de aprobación requerida | Responsable del proyecto, mediante instrucción explícita registrada |
+| Fecha de aprobación | `2026-07-21` |
+| Autoridad de aprobación | Responsable del proyecto, mediante instrucción explícita registrada |
 | Ámbito | Recepción técnica, validación, integración, devolución de defectos, rollback y generación de derivados a partir de lotes aceptados |
 
 ### 1.1 Documentos de autoridad
@@ -904,16 +905,12 @@ Estas decisiones no impiden aprobar y utilizar el handoff dentro de las reglas d
 
 No se detectaron contradicciones materiales entre las autoridades aprobadas. La topología editorial no define una ruta para evidencia técnica adicional; este documento evita alterarla y exige referencias estables hasta que arquitectura o una autoridad apruebe la ubicación física.
 
-### 41.4 Intervención requerida
+### 41.4 Aprobación registrada e intervención pendiente
 
-El responsable del proyecto debe:
-
-1. aprobar, rechazar o solicitar cambios a esta versión `0.1.0`;
-2. mantener pendientes o resolver por separado `decision-0016`, `decision-0017` y `decision-0018`;
-3. no tratar esta propuesta como autoridad vigente hasta registrar la aprobación.
+El responsable del proyecto aprobó explícitamente este handoff en versión `1.0.0` el `2026-07-21`. La aprobación no resuelve ni acepta por implicación `decision-0016-operational-ownership`, `decision-0017-review-calendars` ni `decision-0018-final-technical-metrics`; las tres permanecen `proposed` y deben mantenerse pendientes o resolverse por separado conforme a `docs/10-decision-log.md`.
 
 ## 42. Cierre
 
 Este handoff preserva la frontera entre contenido aceptado y ejecución técnica. Codex integra contratos y evidencia; no sustituye autoría, revisión independiente ni autoridad humana.
 
-Hasta aprobación explícita, este documento permanece como propuesta y no sustituye las reglas vigentes de sus autoridades.
+Desde su aprobación explícita, este documento es el handoff vigente dentro de su materia y debe aplicarse en coordinación con las autoridades que lo preceden.
