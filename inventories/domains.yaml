@@ -1,0 +1,360 @@
+# Inventario de dominios de IT Study
+#
+# Artefacto de planificación y definición. No contiene fichas editoriales completas,
+# no equivale a contenido aprobado y no autoriza lotes de producción.
+schemaVersion: "1.0"
+authority:
+  - docs/02-taxonomy.md
+  - docs/03-content-model.md
+  - docs/07-mvp-definition.md
+  - docs/08-production-batches.md
+decisionRefs:
+  - decision-0003-taxonomy-structure
+  - decision-0005-content-format-and-identifiers
+inventoryRules:
+  expectedDomainCount: 12
+  minimumSubdomainsPerDomain: 2
+  targetSubdomainsTotal: 48
+  documentaryCodesAreCanonicalIds: false
+  candidateStatusMeaning: "required indica pertenencia obligatoria al mapa de doce dominios; no significa contenido producido ni approved."
+domains:
+  - id: domain-fundamentos-computacion
+    documentaryCode: DOM-01
+    name: Fundamentos de computación
+    englishName: Computing Foundations
+    aliases:
+      - value: fundamentos de la computación
+        language: es
+        kind: variant
+      - value: computing fundamentals
+        language: en
+        kind: variant
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - teoría y modelos de computación
+      - algoritmos y estructuras de datos
+      - fundamentos de programación
+      - información y representación
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies: []
+    coverageNotes: "Debe sostener prerrequisitos y conceptos puente sin absorber la construcción profesional de software."
+
+  - id: domain-sistemas-computo-ciberfisicos
+    documentaryCode: DOM-02
+    name: Sistemas de cómputo y sistemas ciberfísicos
+    englishName: Computer Systems and Cyber-Physical Systems
+    aliases:
+      - value: computer systems
+        language: en
+        kind: short-name
+      - value: sistemas ciberfísicos
+        language: es
+        kind: partial-name
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - hardware y arquitectura de computadores
+      - sistemas operativos
+      - embebidos y firmware
+      - IoT y sistemas ciberfísicos
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies:
+      - domain-fundamentos-computacion
+    coverageNotes: "Debe conectar hardware, software de sistema y mundo físico sin sustituir redes ni operación de infraestructura."
+
+  - id: domain-desarrollo-software
+    documentaryCode: DOM-03
+    name: Desarrollo de software
+    englishName: Software Development
+    aliases:
+      - value: software development
+        language: en
+        kind: canonical-translation
+      - value: desarrollo de aplicaciones
+        language: es
+        kind: contextual
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - desarrollo web frontend
+      - backend y servicios
+      - desarrollo móvil
+      - prácticas de implementación
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies:
+      - domain-fundamentos-computacion
+    coverageNotes: "Debe cubrir superficies de implementación sin absorber ingeniería, arquitectura, producto u operación."
+
+  - id: domain-ingenieria-software
+    documentaryCode: DOM-04
+    name: Ingeniería, arquitectura y calidad de software
+    englishName: Software Engineering, Architecture and Quality
+    aliases:
+      - value: software engineering
+        language: en
+        kind: short-name
+      - value: ingeniería de software
+        language: es
+        kind: short-name
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - ingeniería de requisitos
+      - diseño y arquitectura de software
+      - ciclo de vida y evolución
+      - calidad y pruebas
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies:
+      - domain-fundamentos-computacion
+      - domain-desarrollo-software
+    coverageNotes: "Debe explicar ciclo de vida, decisiones y calidad más allá de escribir código."
+
+  - id: domain-redes-telecomunicaciones
+    documentaryCode: DOM-05
+    name: Redes y telecomunicaciones
+    englishName: Networking and Telecommunications
+    aliases:
+      - value: networking
+        language: en
+        kind: short-name
+      - value: redes
+        language: es
+        kind: short-name
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - fundamentos y protocolos
+      - redes empresariales
+      - Internet y servicios de red
+      - redes inalámbricas y móviles
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies:
+      - domain-fundamentos-computacion
+      - domain-sistemas-computo-ciberfisicos
+    coverageNotes: "Debe sostener conectividad y comunicación sin convertirse en inventario de equipos o proveedores."
+
+  - id: domain-infraestructura-operacion
+    documentaryCode: DOM-06
+    name: Infraestructura, cloud y operación de servicios
+    englishName: Infrastructure, Cloud and Service Operations
+    aliases:
+      - value: infrastructure and operations
+        language: en
+        kind: short-name
+      - value: I&O
+        language: en
+        kind: acronym
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - infraestructura, virtualización y cloud
+      - contenedores y orquestación
+      - DevOps e ingeniería de plataformas
+      - confiabilidad, observabilidad e ITSM
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies:
+      - domain-sistemas-computo-ciberfisicos
+      - domain-redes-telecomunicaciones
+    coverageNotes: "Debe representar las cuatro agrupaciones internas aprobadas y diferenciar DevOps, SRE, Platform Engineering e ITSM."
+
+  - id: domain-ciberseguridad-riesgo
+    documentaryCode: DOM-07
+    name: Ciberseguridad, privacidad y riesgo tecnológico
+    englishName: Cybersecurity, Privacy and Technology Risk
+    aliases:
+      - value: cybersecurity
+        language: en
+        kind: short-name
+      - value: seguridad de la información
+        language: es
+        kind: contextual
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - fundamentos y arquitectura de seguridad
+      - identidad y acceso
+      - operaciones de seguridad
+      - privacidad, riesgo y cumplimiento
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies:
+      - domain-fundamentos-computacion
+      - domain-redes-telecomunicaciones
+    coverageNotes: "Debe conservar seguridad, privacidad y riesgo como preocupaciones diferenciadas con aplicación transversal."
+
+  - id: domain-datos-analitica
+    documentaryCode: DOM-08
+    name: Datos y analítica
+    englishName: Data and Analytics
+    aliases:
+      - value: data and analytics
+        language: en
+        kind: canonical-translation
+      - value: data
+        language: en
+        kind: contextual
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - bases de datos
+      - arquitectura y gestión de datos
+      - ingeniería de datos
+      - BI y analítica
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies:
+      - domain-fundamentos-computacion
+    coverageNotes: "Debe cubrir el ciclo del dato y diferenciar analítica, gobierno e inteligencia artificial."
+
+  - id: domain-inteligencia-artificial
+    documentaryCode: DOM-09
+    name: Inteligencia artificial
+    englishName: Artificial Intelligence
+    aliases:
+      - value: AI
+        language: en
+        kind: acronym
+      - value: IA
+        language: es
+        kind: acronym
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - fundamentos y sistemas inteligentes
+      - machine learning
+      - IA generativa
+      - ingeniería, evaluación y gobierno de IA
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies:
+      - domain-fundamentos-computacion
+      - domain-datos-analitica
+    coverageNotes: "Debe priorizar fundamentos y ciclo de vida sin convertir modelos o proveedores en dominios."
+
+  - id: domain-integracion-sistemas-empresariales
+    documentaryCode: DOM-10
+    name: Integración y sistemas empresariales
+    englishName: Integration and Enterprise Systems
+    aliases:
+      - value: enterprise integration
+        language: en
+        kind: contextual
+      - value: integración empresarial
+        language: es
+        kind: short-name
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - APIs e interoperabilidad
+      - mensajería y eventos
+      - middleware e integración
+      - sistemas empresariales
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies:
+      - domain-desarrollo-software
+      - domain-redes-telecomunicaciones
+      - domain-datos-analitica
+    coverageNotes: "Debe enseñar cooperación entre sistemas y procesos sin concentrarse en marcas de ERP, CRM o middleware."
+
+  - id: domain-producto-experiencia
+    documentaryCode: DOM-11
+    name: Producto digital, análisis de negocio y experiencia humana
+    englishName: Digital Product, Business Analysis and Human Experience
+    aliases:
+      - value: digital product and UX
+        language: en
+        kind: contextual
+      - value: producto y experiencia
+        language: es
+        kind: short-name
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - producto digital
+      - análisis de negocio
+      - investigación y UX
+      - accesibilidad y diseño inclusivo
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies:
+      - domain-fundamentos-computacion
+    coverageNotes: "Debe conectar necesidades, valor y experiencia sin introducir decisiones visuales de IT Study."
+
+  - id: domain-estrategia-gobierno-liderazgo
+    documentaryCode: DOM-12
+    name: Estrategia, gobierno y liderazgo tecnológico
+    englishName: Technology Strategy, Governance and Leadership
+    aliases:
+      - value: technology governance
+        language: en
+        kind: contextual
+      - value: gobierno de IT
+        language: es
+        kind: short-name
+    candidateStatus: required
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    editorialStatus: planned
+    minimumSubdomainCount: 2
+    targetSubdomainCount: 4
+    targetSubdomains:
+      - estrategia y gobierno de IT
+      - arquitectura empresarial
+      - portafolios, programas y proyectos
+      - liderazgo y organización
+    recommendedBatch: batch-001-taxonomy-domains
+    dependencies: []
+    coverageNotes: "Debe representar decisiones organizacionales y conexiones transversales sin universalizar estructuras empresariales."
