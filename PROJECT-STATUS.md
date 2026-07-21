@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `2169eda` — integración de `batch-002` |
-| Estado del registro | B003 `d2` y B004 `d1` aceptados en `9d36271`, integrados en `f079376` y con cierre autorizado por el Responsable del proyecto. |
+| Estado del registro | B001–B004 `closed`; ejecución del plan maestro v2 recomendado autorizada mediante `decision-0021-recommended-master-plan-v2-execution`; propuesta B005–B023 en preparación para revisión. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0020-batch-plan-authorization` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -45,7 +45,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Conservar y validar el inventario maestro B001–B042. Los 164 candidatos existentes están asignados exactamente una vez a B006–B019; antes de producir hay que resolver rangos: B007–B009 y B013–B015 están bajo mínimo, B016–B019 exceden máximo. B005 y B020–B023 conservan reglas derivadas sin contenido de relleno; B024–B042 tienen puertas basadas en entradas aprobadas, cobertura o hallazgos.
+Revisar y aprobar la propuesta completa del plan maestro v2: B005 con 12 subdominios y 4 disciplinas; 164 entidades rebalanceadas dentro de los rangos B006–B023; mapa lógico sin dependencias activas hacia ondas posteriores y una dependencia candidata pendiente de decisión editorial.
 
 La salida mínima de F1 está satisfecha con 36 subdominios y 8 disciplinas cerrados. El objetivo recomendado de F1 es 48 subdominios y 12 disciplinas mediante B005, condicionado a vacíos demostrados y sin contenido de relleno.
 

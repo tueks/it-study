@@ -1,0 +1,2813 @@
+# Propuesta de inventario maestro v2 para revisión del Responsable del proyecto.
+schemaVersion: "2.0"
+status: proposed-for-review
+target: recommended
+candidateUniverse: 164
+executionOrder:
+  - { wave: 1, batchId: batch-006-foundations-core }
+  - { wave: 2, batchId: batch-007-foundations-bridges }
+  - { wave: 3, batchId: batch-008-systems-networking-core }
+  - { wave: 4, batchId: batch-009-software-construction-core }
+  - { wave: 5, batchId: batch-010-software-engineering-core }
+  - { wave: 6, batchId: batch-011-infrastructure-security-core }
+  - { wave: 7, batchId: batch-012-data-ai-core }
+  - { wave: 8, batchId: batch-013-integration-enterprise-core }
+  - { wave: 9, batchId: batch-014-product-human-experience-core }
+  - { wave: 10, batchId: batch-015-strategy-governance-core }
+  - { wave: 11, batchId: batch-022-transversal-depth-extension }
+  - { wave: 12, batchId: batch-016-people-capabilities-core }
+  - { wave: 13, batchId: batch-017-ways-of-working-core }
+  - { wave: 14, batchId: batch-018-specifications-implementations-core }
+  - { wave: 15, batchId: batch-019-artifacts-measurement-core }
+  - { wave: 16, batchId: batch-020-domain-balance-extension-a }
+  - { wave: 17, batchId: batch-021-domain-balance-extension-b }
+  - { wave: 18, batchId: batch-023-selective-implementation-extension }
+entries:
+  - id: entity-algoritmo
+    sourceCandidate: candidate-algoritmo
+    canonicalName: "Algoritmo"
+    englishName: "Algorithm"
+    type: concept
+    originalBatch: batch-007-foundations-bridges
+    assignedBatch: batch-006-foundations-core
+    executionWave: 1
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-informacion-representacion
+    secondaryDomains: ["domain-desarrollo-software", "domain-datos-analitica", "domain-inteligencia-artificial"]
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-computacion]
+  - id: entity-complejidad-computacional
+    sourceCandidate: candidate-complejidad-computacional
+    canonicalName: "Complejidad computacional"
+    englishName: "Computational Complexity"
+    type: concept
+    originalBatch: batch-006-foundations-core
+    assignedBatch: batch-006-foundations-core
+    executionWave: 1
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-algoritmos-estructuras-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-algoritmo]
+  - id: entity-computacion
+    sourceCandidate: candidate-computacion
+    canonicalName: "Computación"
+    englishName: "Computing"
+    type: concept
+    originalBatch: batch-006-foundations-core
+    assignedBatch: batch-006-foundations-core
+    executionWave: 1
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-teoria-modelos-computacion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-estado
+    sourceCandidate: candidate-estado
+    canonicalName: "Estado"
+    englishName: "State"
+    type: concept
+    originalBatch: batch-006-foundations-core
+    assignedBatch: batch-006-foundations-core
+    executionWave: 1
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-informacion-representacion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-estructura-de-datos
+    sourceCandidate: candidate-estructura-de-datos
+    canonicalName: "Estructura de datos"
+    englishName: "Data Structure"
+    type: concept
+    originalBatch: batch-006-foundations-core
+    assignedBatch: batch-006-foundations-core
+    executionWave: 1
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-teoria-modelos-computacion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-algoritmo]
+  - id: entity-funcion
+    sourceCandidate: candidate-funcion
+    canonicalName: "Función"
+    englishName: "Function"
+    type: concept
+    originalBatch: batch-006-foundations-core
+    assignedBatch: batch-006-foundations-core
+    executionWave: 1
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-teoria-modelos-computacion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-informacion
+    sourceCandidate: candidate-informacion
+    canonicalName: "Información"
+    englishName: "Information"
+    type: concept
+    originalBatch: batch-006-foundations-core
+    assignedBatch: batch-006-foundations-core
+    executionWave: 1
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-algoritmos-estructuras-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-logica-booleana
+    sourceCandidate: candidate-logica-booleana
+    canonicalName: "Lógica booleana"
+    englishName: "Boolean Logic"
+    type: model
+    originalBatch: batch-006-foundations-core
+    assignedBatch: batch-006-foundations-core
+    executionWave: 1
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-fundamentos-programacion
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-paradigma-de-programacion
+    sourceCandidate: candidate-paradigma-de-programacion
+    canonicalName: "Paradigma de programación"
+    englishName: "Programming Paradigm"
+    type: paradigm
+    originalBatch: batch-006-foundations-core
+    assignedBatch: batch-006-foundations-core
+    executionWave: 1
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-teoria-modelos-computacion
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-programacion
+    sourceCandidate: candidate-programacion
+    canonicalName: "Programación"
+    englishName: "Programming"
+    type: concept
+    originalBatch: batch-006-foundations-core
+    assignedBatch: batch-006-foundations-core
+    executionWave: 1
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-algoritmos-estructuras-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-algoritmo]
+  - id: entity-abstraccion
+    sourceCandidate: candidate-abstraccion
+    canonicalName: "Abstracción"
+    englishName: "Abstraction"
+    type: concept
+    originalBatch: batch-007-foundations-bridges
+    assignedBatch: batch-007-foundations-bridges
+    executionWave: 2
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-fundamentos-programacion
+    secondaryDomains: ["domain-desarrollo-software", "domain-ingenieria-software", "domain-integracion-sistemas-empresariales"]
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-application-programming-interface
+    sourceCandidate: candidate-application-programming-interface
+    canonicalName: "Application Programming Interface"
+    englishName: "Application Programming Interface"
+    type: concept
+    originalBatch: batch-013-integration-enterprise-core
+    assignedBatch: batch-007-foundations-bridges
+    executionWave: 2
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-apis-interoperabilidad
+    secondaryDomains: ["domain-desarrollo-software", "domain-redes-telecomunicaciones"]
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-software]
+  - id: entity-artificial-intelligence
+    sourceCandidate: candidate-artificial-intelligence
+    canonicalName: "Artificial Intelligence"
+    englishName: "Artificial Intelligence"
+    type: concept
+    originalBatch: batch-012-data-ai-core
+    assignedBatch: batch-007-foundations-bridges
+    executionWave: 2
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-inteligencia-artificial
+    subdomain: subdomain-fundamentos-sistemas-inteligentes
+    secondaryDomains: ["domain-datos-analitica", "domain-desarrollo-software", "domain-estrategia-gobierno-liderazgo"]
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-algoritmo]
+  - id: entity-maquina-de-turing
+    sourceCandidate: candidate-maquina-de-turing
+    canonicalName: "Máquina de Turing"
+    englishName: "Turing Machine"
+    type: model
+    originalBatch: batch-006-foundations-core
+    assignedBatch: batch-007-foundations-bridges
+    executionWave: 2
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-informacion-representacion
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-red-de-computadoras
+    sourceCandidate: candidate-red-de-computadoras
+    canonicalName: "Red de computadoras"
+    englishName: "Computer Network"
+    type: concept
+    originalBatch: batch-008-systems-networking-core
+    assignedBatch: batch-007-foundations-bridges
+    executionWave: 2
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-redes-telecomunicaciones
+    subdomain: subdomain-fundamentos-protocolos-red
+    secondaryDomains: ["domain-sistemas-computo-ciberfisicos", "domain-infraestructura-operacion", "domain-integracion-sistemas-empresariales"]
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-sistema-de-computo]
+  - id: entity-representacion-de-datos
+    sourceCandidate: candidate-representacion-de-datos
+    canonicalName: "Representación de datos"
+    englishName: "Data Representation"
+    type: concept
+    originalBatch: batch-007-foundations-bridges
+    assignedBatch: batch-007-foundations-bridges
+    executionWave: 2
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-fundamentos-programacion
+    secondaryDomains: ["domain-sistemas-computo-ciberfisicos", "domain-datos-analitica"]
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-informacion]
+  - id: entity-sistema-de-computo
+    sourceCandidate: candidate-sistema-de-computo
+    canonicalName: "Sistema de cómputo"
+    englishName: "Computer System"
+    type: concept
+    originalBatch: batch-008-systems-networking-core
+    assignedBatch: batch-007-foundations-bridges
+    executionWave: 2
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-sistemas-computo-ciberfisicos
+    subdomain: subdomain-hardware-arquitectura-computadores
+    secondaryDomains: ["domain-fundamentos-computacion", "domain-infraestructura-operacion"]
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-computacion]
+  - id: entity-software
+    sourceCandidate: candidate-software
+    canonicalName: "Software"
+    englishName: "Software"
+    type: concept
+    originalBatch: batch-009-software-construction-core
+    assignedBatch: batch-007-foundations-bridges
+    executionWave: 2
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-desarrollo-web-frontend
+    secondaryDomains: ["domain-ingenieria-software", "domain-integracion-sistemas-empresariales", "domain-producto-experiencia"]
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-programacion]
+  - id: entity-diagnostico-de-redes
+    sourceCandidate: candidate-diagnostico-de-redes
+    canonicalName: "Diagnóstico de redes"
+    englishName: "Network Troubleshooting"
+    type: competency
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-008-systems-networking-core
+    executionWave: 3
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-redes-telecomunicaciones
+    subdomain: subdomain-internet-servicios-red
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-instruction-set-architecture
+    sourceCandidate: candidate-instruction-set-architecture
+    canonicalName: "Instruction Set Architecture"
+    englishName: "Instruction Set Architecture"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-008-systems-networking-core
+    executionWave: 3
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-sistemas-computo-ciberfisicos
+    subdomain: subdomain-embebidos-firmware
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: changing-technology
+    plannedDependencies: []
+  - id: entity-internet-protocol
+    sourceCandidate: candidate-internet-protocol
+    canonicalName: "Internet Protocol"
+    englishName: "Internet Protocol"
+    type: protocol
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-008-systems-networking-core
+    executionWave: 3
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-redes-telecomunicaciones
+    subdomain: subdomain-fundamentos-protocolos-red
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: versioned-standard
+    plannedDependencies: []
+  - id: entity-jerarquia-de-memoria
+    sourceCandidate: candidate-jerarquia-de-memoria
+    canonicalName: "Jerarquía de memoria"
+    englishName: "Memory Hierarchy"
+    type: model
+    originalBatch: batch-008-systems-networking-core
+    assignedBatch: batch-008-systems-networking-core
+    executionWave: 3
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-sistemas-computo-ciberfisicos
+    subdomain: subdomain-sistemas-operativos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-sistema-de-computo]
+  - id: entity-network-engineer
+    sourceCandidate: candidate-network-engineer
+    canonicalName: "Network Engineer"
+    englishName: "Network Engineer"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-008-systems-networking-core
+    executionWave: 3
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-redes-telecomunicaciones
+    subdomain: subdomain-redes-empresariales
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-proceso-de-sistema-operativo
+    sourceCandidate: candidate-proceso-de-sistema-operativo
+    canonicalName: "Proceso de sistema operativo"
+    englishName: "Operating System Process"
+    type: concept
+    originalBatch: batch-008-systems-networking-core
+    assignedBatch: batch-008-systems-networking-core
+    executionWave: 3
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-sistemas-computo-ciberfisicos
+    subdomain: subdomain-embebidos-firmware
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-sistema-operativo]
+  - id: entity-routing
+    sourceCandidate: candidate-routing
+    canonicalName: "Routing"
+    englishName: "Routing"
+    type: process
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-008-systems-networking-core
+    executionWave: 3
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-redes-telecomunicaciones
+    subdomain: subdomain-operacion-redes
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-sistema-embebido
+    sourceCandidate: candidate-sistema-embebido
+    canonicalName: "Sistema embebido"
+    englishName: "Embedded System"
+    type: concept
+    originalBatch: batch-008-systems-networking-core
+    assignedBatch: batch-008-systems-networking-core
+    executionWave: 3
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-sistemas-computo-ciberfisicos
+    subdomain: subdomain-hardware-arquitectura-computadores
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-sistema-operativo
+    sourceCandidate: candidate-sistema-operativo
+    canonicalName: "Sistema operativo"
+    englishName: "Operating System"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-008-systems-networking-core
+    executionWave: 3
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-sistemas-computo-ciberfisicos
+    subdomain: subdomain-iot-sistemas-ciberfisicos
+    secondaryDomains: ["domain-desarrollo-software", "domain-infraestructura-operacion"]
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: changing-technology
+    plannedDependencies: [entity-sistema-de-computo]
+  - id: entity-thread
+    sourceCandidate: candidate-thread
+    canonicalName: "Thread"
+    englishName: "Thread"
+    type: concept
+    originalBatch: batch-008-systems-networking-core
+    assignedBatch: batch-008-systems-networking-core
+    executionWave: 3
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-sistemas-computo-ciberfisicos
+    subdomain: subdomain-iot-sistemas-ciberfisicos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-proceso-de-sistema-operativo]
+  - id: entity-backend-developer
+    sourceCandidate: candidate-backend-developer
+    canonicalName: "Backend Developer"
+    englishName: "Backend Developer"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-009-software-construction-core
+    executionWave: 4
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-practicas-implementacion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-programacion]
+  - id: entity-debugging
+    sourceCandidate: candidate-debugging
+    canonicalName: "Debugging"
+    englishName: "Debugging"
+    type: competency
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-009-software-construction-core
+    executionWave: 4
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-backend-servicios
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-dependency-injection
+    sourceCandidate: candidate-dependency-injection
+    canonicalName: "Dependency Injection"
+    englishName: "Dependency Injection"
+    type: pattern
+    originalBatch: batch-009-software-construction-core
+    assignedBatch: batch-009-software-construction-core
+    executionWave: 4
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-backend-servicios
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-frontend-developer
+    sourceCandidate: candidate-frontend-developer
+    canonicalName: "Frontend Developer"
+    englishName: "Frontend Developer"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-009-software-construction-core
+    executionWave: 4
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-desarrollo-web-frontend
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-programacion]
+  - id: entity-lenguaje-de-programacion
+    sourceCandidate: candidate-lenguaje-de-programacion
+    canonicalName: "Lenguaje de programación"
+    englishName: "Programming Language"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-009-software-construction-core
+    executionWave: 4
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-desarrollo-web-frontend
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: changing-technology
+    plannedDependencies: []
+  - id: entity-pair-programming
+    sourceCandidate: candidate-pair-programming
+    canonicalName: "Pair programming"
+    englishName: "Pair Programming"
+    type: practice
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-009-software-construction-core
+    executionWave: 4
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-practicas-implementacion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-programacion-funcional
+    sourceCandidate: candidate-programacion-funcional
+    canonicalName: "Programación funcional"
+    englishName: "Functional Programming"
+    type: paradigm
+    originalBatch: batch-009-software-construction-core
+    assignedBatch: batch-009-software-construction-core
+    executionWave: 4
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-desarrollo-movil
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-paradigma-de-programacion]
+  - id: entity-programacion-orientada-a-objetos
+    sourceCandidate: candidate-programacion-orientada-a-objetos
+    canonicalName: "Programación orientada a objetos"
+    englishName: "Object-Oriented Programming"
+    type: paradigm
+    originalBatch: batch-009-software-construction-core
+    assignedBatch: batch-009-software-construction-core
+    executionWave: 4
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-backend-servicios
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-paradigma-de-programacion]
+  - id: entity-version-control
+    sourceCandidate: candidate-version-control
+    canonicalName: "Version control"
+    englishName: "Version Control"
+    type: practice
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-009-software-construction-core
+    executionWave: 4
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-desarrollo-movil
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-analisis-de-requisitos
+    sourceCandidate: candidate-analisis-de-requisitos
+    canonicalName: "Análisis de requisitos"
+    englishName: "Requirements Analysis"
+    type: competency
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-010-software-engineering-core
+    executionWave: 5
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-calidad-pruebas
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-circuit-breaker
+    sourceCandidate: candidate-circuit-breaker
+    canonicalName: "Circuit Breaker"
+    englishName: "Circuit Breaker"
+    type: pattern
+    originalBatch: batch-010-software-engineering-core
+    assignedBatch: batch-010-software-engineering-core
+    executionWave: 5
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-ciclo-vida-evolucion
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-code-review
+    sourceCandidate: candidate-code-review
+    canonicalName: "Code review"
+    englishName: "Code Review"
+    type: practice
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-010-software-engineering-core
+    executionWave: 5
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-diseno-arquitectura-software
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-source-code]
+  - id: entity-hexagonal-architecture
+    sourceCandidate: candidate-hexagonal-architecture
+    canonicalName: "Hexagonal Architecture"
+    englishName: "Hexagonal Architecture"
+    type: architectural-style
+    originalBatch: batch-010-software-engineering-core
+    assignedBatch: batch-010-software-engineering-core
+    executionWave: 5
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-diseno-arquitectura-software
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-layered-architecture
+    sourceCandidate: candidate-layered-architecture
+    canonicalName: "Layered Architecture"
+    englishName: "Layered Architecture"
+    type: architectural-style
+    originalBatch: batch-010-software-engineering-core
+    assignedBatch: batch-010-software-engineering-core
+    executionWave: 5
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-calidad-pruebas
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-microservices-architecture
+    sourceCandidate: candidate-microservices-architecture
+    canonicalName: "Microservices Architecture"
+    englishName: "Microservices Architecture"
+    type: architectural-style
+    originalBatch: batch-010-software-engineering-core
+    assignedBatch: batch-010-software-engineering-core
+    executionWave: 5
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-ingenieria-requisitos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-repository-pattern
+    sourceCandidate: candidate-repository-pattern
+    canonicalName: "Repository Pattern"
+    englishName: "Repository Pattern"
+    type: pattern
+    originalBatch: batch-010-software-engineering-core
+    assignedBatch: batch-010-software-engineering-core
+    executionWave: 5
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-calidad-pruebas
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-source-code
+    sourceCandidate: candidate-source-code
+    canonicalName: "Source code"
+    englishName: "Source Code"
+    type: artifact
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-010-software-engineering-core
+    executionWave: 5
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-desarrollo-movil
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-technical-debt
+    sourceCandidate: candidate-technical-debt
+    canonicalName: "Technical debt"
+    englishName: "Technical Debt"
+    type: concept
+    originalBatch: batch-010-software-engineering-core
+    assignedBatch: batch-010-software-engineering-core
+    executionWave: 5
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-diseno-arquitectura-software
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-analisis-de-amenazas
+    sourceCandidate: candidate-analisis-de-amenazas
+    canonicalName: "Análisis de amenazas"
+    englishName: "Threat Analysis"
+    type: competency
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-011-infrastructure-security-core
+    executionWave: 6
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-fundamentos-arquitectura-seguridad
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-cia-triad
+    sourceCandidate: candidate-cia-triad
+    canonicalName: "CIA Triad"
+    englishName: "CIA Triad"
+    type: model
+    originalBatch: batch-011-infrastructure-security-core
+    assignedBatch: batch-011-infrastructure-security-core
+    executionWave: 6
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-fundamentos-arquitectura-seguridad
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-coordinacion-de-incidentes
+    sourceCandidate: candidate-coordinacion-de-incidentes
+    canonicalName: "Coordinación de incidentes"
+    englishName: "Incident Coordination"
+    type: competency
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-011-infrastructure-security-core
+    executionWave: 6
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-infraestructura-virtualizacion-cloud
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-devops
+    sourceCandidate: candidate-devops
+    canonicalName: "DevOps"
+    englishName: "DevOps"
+    type: conceptual-orientation
+    originalBatch: batch-011-infrastructure-security-core
+    assignedBatch: batch-011-infrastructure-security-core
+    executionWave: 6
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-contenedores-orquestacion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-incident-management
+    sourceCandidate: candidate-incident-management
+    canonicalName: "Incident management"
+    englishName: "Incident Management"
+    type: process
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-011-infrastructure-security-core
+    executionWave: 6
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-confiabilidad-sre-observabilidad
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-least-privilege
+    sourceCandidate: candidate-least-privilege
+    canonicalName: "Least Privilege"
+    englishName: "Least Privilege"
+    type: principle
+    originalBatch: batch-011-infrastructure-security-core
+    assignedBatch: batch-011-infrastructure-security-core
+    executionWave: 6
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-identidad-acceso
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-riesgo-tecnologico]
+  - id: entity-riesgo-tecnologico
+    sourceCandidate: candidate-riesgo-tecnologico
+    canonicalName: "Riesgo tecnológico"
+    englishName: "Technology Risk"
+    type: concept
+    originalBatch: batch-011-infrastructure-security-core
+    assignedBatch: batch-011-infrastructure-security-core
+    executionWave: 6
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-privacidad-riesgo-cumplimiento
+    secondaryDomains: ["domain-estrategia-gobierno-liderazgo", "domain-infraestructura-operacion", "domain-datos-analitica"]
+    disciplines: [discipline-riesgo]
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-threat, entity-vulnerability]
+  - id: entity-threat
+    sourceCandidate: candidate-threat
+    canonicalName: "Threat"
+    englishName: "Threat"
+    type: concept
+    originalBatch: batch-011-infrastructure-security-core
+    assignedBatch: batch-011-infrastructure-security-core
+    executionWave: 6
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-identidad-acceso
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-vulnerability
+    sourceCandidate: candidate-vulnerability
+    canonicalName: "Vulnerability"
+    englishName: "Vulnerability"
+    type: concept
+    originalBatch: batch-011-infrastructure-security-core
+    assignedBatch: batch-011-infrastructure-security-core
+    executionWave: 6
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-operaciones-seguridad
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-zero-trust
+    sourceCandidate: candidate-zero-trust
+    canonicalName: "Zero Trust"
+    englishName: "Zero Trust"
+    type: model
+    originalBatch: batch-011-infrastructure-security-core
+    assignedBatch: batch-011-infrastructure-security-core
+    executionWave: 6
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-operaciones-seguridad
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-ai-engineer
+    sourceCandidate: candidate-ai-engineer
+    canonicalName: "AI Engineer"
+    englishName: "AI Engineer"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-012-data-ai-core
+    executionWave: 7
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-inteligencia-artificial
+    subdomain: subdomain-machine-learning
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-machine-learning]
+  - id: entity-data-analyst
+    sourceCandidate: candidate-data-analyst
+    canonicalName: "Data Analyst"
+    englishName: "Data Analyst"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-012-data-ai-core
+    executionWave: 7
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-arquitectura-gestion-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-database]
+  - id: entity-data-pipeline
+    sourceCandidate: candidate-data-pipeline
+    canonicalName: "Data pipeline"
+    englishName: "Data Pipeline"
+    type: process
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-012-data-ai-core
+    executionWave: 7
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-bases-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-extract-transform-load]
+  - id: entity-data-warehouse
+    sourceCandidate: candidate-data-warehouse
+    canonicalName: "Data warehouse"
+    englishName: "Data Warehouse"
+    type: concept
+    originalBatch: batch-012-data-ai-core
+    assignedBatch: batch-012-data-ai-core
+    executionWave: 7
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-ingenieria-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-database]
+  - id: entity-database
+    sourceCandidate: candidate-database
+    canonicalName: "Database"
+    englishName: "Database"
+    type: concept
+    originalBatch: batch-012-data-ai-core
+    assignedBatch: batch-012-data-ai-core
+    executionWave: 7
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-bases-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-representacion-de-datos]
+  - id: entity-deep-learning
+    sourceCandidate: candidate-deep-learning
+    canonicalName: "Deep Learning"
+    englishName: "Deep Learning"
+    type: concept
+    originalBatch: batch-012-data-ai-core
+    assignedBatch: batch-012-data-ai-core
+    executionWave: 7
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-inteligencia-artificial
+    subdomain: subdomain-ia-generativa
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-machine-learning]
+  - id: entity-lambda-architecture
+    sourceCandidate: candidate-lambda-architecture
+    canonicalName: "Lambda Architecture"
+    englishName: "Lambda Architecture"
+    type: architectural-style
+    originalBatch: batch-012-data-ai-core
+    assignedBatch: batch-012-data-ai-core
+    executionWave: 7
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-ingenieria-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-machine-learning
+    sourceCandidate: candidate-machine-learning
+    canonicalName: "Machine Learning"
+    englishName: "Machine Learning"
+    type: concept
+    originalBatch: batch-012-data-ai-core
+    assignedBatch: batch-012-data-ai-core
+    executionWave: 7
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-inteligencia-artificial
+    subdomain: subdomain-machine-learning
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-artificial-intelligence, entity-data-pipeline]
+  - id: entity-neural-network
+    sourceCandidate: candidate-neural-network
+    canonicalName: "Neural network"
+    englishName: "Neural Network"
+    type: model
+    originalBatch: batch-012-data-ai-core
+    assignedBatch: batch-012-data-ai-core
+    executionWave: 7
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-inteligencia-artificial
+    subdomain: subdomain-ingenieria-evaluacion-gobierno-ia
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-machine-learning]
+  - id: entity-relational-model
+    sourceCandidate: candidate-relational-model
+    canonicalName: "Relational model"
+    englishName: "Relational Model"
+    type: model
+    originalBatch: batch-012-data-ai-core
+    assignedBatch: batch-012-data-ai-core
+    executionWave: 7
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-arquitectura-gestion-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-database]
+  - id: entity-api-contract
+    sourceCandidate: candidate-api-contract
+    canonicalName: "API contract"
+    englishName: "API Contract"
+    type: artifact
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-013-integration-enterprise-core
+    executionWave: 8
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-apis-interoperabilidad
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: [entity-application-programming-interface]
+  - id: entity-api-gateway-pattern
+    sourceCandidate: candidate-api-gateway-pattern
+    canonicalName: "API Gateway Pattern"
+    englishName: "API Gateway Pattern"
+    type: pattern
+    originalBatch: batch-013-integration-enterprise-core
+    assignedBatch: batch-013-integration-enterprise-core
+    executionWave: 8
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-middleware-integracion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-application-programming-interface]
+  - id: entity-api-lifecycle-management
+    sourceCandidate: candidate-api-lifecycle-management
+    canonicalName: "API lifecycle management"
+    englishName: "API Lifecycle Management"
+    type: process
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-013-integration-enterprise-core
+    executionWave: 8
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-middleware-integracion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-event-driven-architecture
+    sourceCandidate: candidate-event-driven-architecture
+    canonicalName: "Event-Driven Architecture"
+    englishName: "Event-Driven Architecture"
+    type: architectural-style
+    originalBatch: batch-013-integration-enterprise-core
+    assignedBatch: batch-013-integration-enterprise-core
+    executionWave: 8
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-apis-interoperabilidad
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-software]
+  - id: entity-hypertext-transfer-protocol
+    sourceCandidate: candidate-hypertext-transfer-protocol
+    canonicalName: "Hypertext Transfer Protocol"
+    englishName: "Hypertext Transfer Protocol"
+    type: protocol
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-013-integration-enterprise-core
+    executionWave: 8
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-sistemas-empresariales
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: versioned-standard
+    plannedDependencies: []
+  - id: entity-message-broker
+    sourceCandidate: candidate-message-broker
+    canonicalName: "Message broker"
+    englishName: "Message Broker"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-013-integration-enterprise-core
+    executionWave: 8
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-mensajeria-eventos
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: changing-technology
+    plannedDependencies: [entity-event-driven-architecture]
+  - id: entity-openapi-specification
+    sourceCandidate: candidate-openapi-specification
+    canonicalName: "OpenAPI Specification"
+    englishName: "OpenAPI Specification"
+    type: standard
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-013-integration-enterprise-core
+    executionWave: 8
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-apis-interoperabilidad
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: versioned-standard
+    plannedDependencies: [entity-application-programming-interface]
+  - id: entity-representational-state-transfer
+    sourceCandidate: candidate-representational-state-transfer
+    canonicalName: "Representational State Transfer"
+    englishName: "Representational State Transfer"
+    type: architectural-style
+    originalBatch: batch-013-integration-enterprise-core
+    assignedBatch: batch-013-integration-enterprise-core
+    executionWave: 8
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-sistemas-empresariales
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-hypertext-transfer-protocol]
+  - id: entity-saga-pattern
+    sourceCandidate: candidate-saga-pattern
+    canonicalName: "Saga Pattern"
+    englishName: "Saga Pattern"
+    type: pattern
+    originalBatch: batch-013-integration-enterprise-core
+    assignedBatch: batch-013-integration-enterprise-core
+    executionWave: 8
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-mensajeria-eventos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-event-driven-architecture]
+  - id: entity-a-b-testing
+    sourceCandidate: candidate-a-b-testing
+    canonicalName: "A/B testing"
+    englishName: "A/B Testing"
+    type: technique
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-014-product-human-experience-core
+    executionWave: 9
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-producto-digital
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-business-analyst
+    sourceCandidate: candidate-business-analyst
+    canonicalName: "Business Analyst"
+    englishName: "Business Analyst"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-014-product-human-experience-core
+    executionWave: 9
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-producto-digital
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-investigacion-de-usuarios
+    sourceCandidate: candidate-investigacion-de-usuarios
+    canonicalName: "Investigación de usuarios"
+    englishName: "User Research"
+    type: competency
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-014-product-human-experience-core
+    executionWave: 9
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-investigacion-ux
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-product-backlog
+    sourceCandidate: candidate-product-backlog
+    canonicalName: "Product backlog"
+    englishName: "Product Backlog"
+    type: artifact
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-014-product-human-experience-core
+    executionWave: 9
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-investigacion-ux
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-producto-digital]
+  - id: entity-product-manager
+    sourceCandidate: candidate-product-manager
+    canonicalName: "Product Manager"
+    englishName: "Product Manager"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-014-product-human-experience-core
+    executionWave: 9
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-accesibilidad-diseno-inclusivo
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-producto-digital]
+  - id: entity-producto-digital
+    sourceCandidate: candidate-producto-digital
+    canonicalName: "Producto digital"
+    englishName: "Digital Product"
+    type: concept
+    originalBatch: batch-014-product-human-experience-core
+    assignedBatch: batch-014-product-human-experience-core
+    executionWave: 9
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-producto-digital
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-software]
+  - id: entity-tasa-de-conversion
+    sourceCandidate: candidate-tasa-de-conversion
+    canonicalName: "Tasa de conversión"
+    englishName: "Conversion Rate"
+    type: metric
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-014-product-human-experience-core
+    executionWave: 9
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-producto-digital
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-usabilidad
+    sourceCandidate: candidate-usabilidad
+    canonicalName: "Usabilidad"
+    englishName: "Usability"
+    type: concept
+    originalBatch: batch-014-product-human-experience-core
+    assignedBatch: batch-014-product-human-experience-core
+    executionWave: 9
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-analisis-negocio
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-producto-digital]
+  - id: entity-ux-designer
+    sourceCandidate: candidate-ux-designer
+    canonicalName: "UX Designer"
+    englishName: "User Experience Designer"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-014-product-human-experience-core
+    executionWave: 9
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-analisis-negocio
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-usabilidad]
+  - id: entity-agile
+    sourceCandidate: candidate-agile
+    canonicalName: "Agile"
+    englishName: "Agile"
+    type: conceptual-orientation
+    originalBatch: batch-015-strategy-governance-core
+    assignedBatch: batch-015-strategy-governance-core
+    executionWave: 10
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-liderazgo-organizacion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-business-capability
+    sourceCandidate: candidate-business-capability
+    canonicalName: "Business capability"
+    englishName: "Business Capability"
+    type: concept
+    originalBatch: batch-015-strategy-governance-core
+    assignedBatch: batch-015-strategy-governance-core
+    executionWave: 10
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-portafolios-programas-proyectos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-estrategia-tecnologica]
+  - id: entity-chief-technology-officer
+    sourceCandidate: candidate-chief-technology-officer
+    canonicalName: "Chief Technology Officer"
+    englishName: "Chief Technology Officer"
+    type: position
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-015-strategy-governance-core
+    executionWave: 10
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-portafolios-programas-proyectos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-estrategia-tecnologica]
+  - id: entity-enterprise-architect
+    sourceCandidate: candidate-enterprise-architect
+    canonicalName: "Enterprise Architect"
+    englishName: "Enterprise Architect"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-015-strategy-governance-core
+    executionWave: 10
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-arquitectura-empresarial
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-business-capability]
+  - id: entity-estrategia-tecnologica
+    sourceCandidate: candidate-estrategia-tecnologica
+    canonicalName: "Estrategia tecnológica"
+    englishName: "Technology Strategy"
+    type: concept
+    originalBatch: batch-015-strategy-governance-core
+    assignedBatch: batch-015-strategy-governance-core
+    executionWave: 10
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-estrategia-gobierno-it
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-informacion]
+  - id: entity-kanban
+    sourceCandidate: candidate-kanban
+    canonicalName: "Kanban"
+    englishName: "Kanban"
+    type: work-framework
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-015-strategy-governance-core
+    executionWave: 10
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-portafolios-programas-proyectos
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-lean]
+  - id: entity-lean
+    sourceCandidate: candidate-lean
+    canonicalName: "Lean"
+    englishName: "Lean"
+    type: conceptual-orientation
+    originalBatch: batch-015-strategy-governance-core
+    assignedBatch: batch-015-strategy-governance-core
+    executionWave: 10
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-estrategia-gobierno-it
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-portfolio-management
+    sourceCandidate: candidate-portfolio-management
+    canonicalName: "Portfolio management"
+    englishName: "Portfolio Management"
+    type: process
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-015-strategy-governance-core
+    executionWave: 10
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-liderazgo-organizacion
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-risk-management
+    sourceCandidate: candidate-risk-management
+    canonicalName: "Risk management"
+    englishName: "Risk Management"
+    type: process
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-015-strategy-governance-core
+    executionWave: 10
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-estrategia-gobierno-it
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: [entity-riesgo-tecnologico]
+  - id: entity-atributo-de-calidad
+    sourceCandidate: candidate-atributo-de-calidad
+    canonicalName: "Atributo de calidad"
+    englishName: "Quality Attribute"
+    type: concept
+    originalBatch: batch-010-software-engineering-core
+    assignedBatch: batch-022-transversal-depth-extension
+    executionWave: 11
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-ingenieria-requisitos
+    secondaryDomains: ["domain-desarrollo-software", "domain-infraestructura-operacion", "domain-producto-experiencia"]
+    disciplines: [discipline-calidad]
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-cloud-computing
+    sourceCandidate: candidate-cloud-computing
+    canonicalName: "Cloud computing"
+    englishName: "Cloud Computing"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-022-transversal-depth-extension
+    executionWave: 11
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-infraestructura-virtualizacion-cloud
+    secondaryDomains: ["domain-redes-telecomunicaciones", "domain-ciberseguridad-riesgo", "domain-datos-analitica"]
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: changing-technology
+    plannedDependencies: [entity-sistema-de-computo, entity-red-de-computadoras]
+  - id: entity-data-lineage
+    sourceCandidate: candidate-data-lineage
+    canonicalName: "Data lineage"
+    englishName: "Data Lineage"
+    type: concept
+    originalBatch: batch-012-data-ai-core
+    assignedBatch: batch-022-transversal-depth-extension
+    executionWave: 11
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-bi-analitica
+    secondaryDomains: ["domain-estrategia-gobierno-liderazgo", "domain-ciberseguridad-riesgo", "domain-inteligencia-artificial"]
+    disciplines: [discipline-gobierno]
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-informacion]
+  - id: entity-gobierno-de-it
+    sourceCandidate: candidate-gobierno-de-it
+    canonicalName: "Gobierno de IT"
+    englishName: "IT Governance"
+    type: concept
+    originalBatch: batch-015-strategy-governance-core
+    assignedBatch: batch-022-transversal-depth-extension
+    executionWave: 11
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-arquitectura-empresarial
+    secondaryDomains: ["domain-ciberseguridad-riesgo", "domain-datos-analitica", "domain-inteligencia-artificial"]
+    disciplines: [discipline-gobierno]
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-estrategia-tecnologica]
+  - id: entity-inclusive-design
+    sourceCandidate: candidate-inclusive-design
+    canonicalName: "Inclusive design"
+    englishName: "Inclusive Design"
+    type: principle
+    originalBatch: batch-014-product-human-experience-core
+    assignedBatch: batch-022-transversal-depth-extension
+    executionWave: 11
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-investigacion-ux
+    secondaryDomains: ["domain-desarrollo-software", "domain-ingenieria-software"]
+    disciplines: [discipline-accesibilidad]
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-usabilidad]
+  - id: entity-interoperabilidad
+    sourceCandidate: candidate-interoperabilidad
+    canonicalName: "Interoperabilidad"
+    englishName: "Interoperability"
+    type: concept
+    originalBatch: batch-013-integration-enterprise-core
+    assignedBatch: batch-022-transversal-depth-extension
+    executionWave: 11
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-mensajeria-eventos
+    secondaryDomains: ["domain-redes-telecomunicaciones", "domain-datos-analitica", "domain-estrategia-gobierno-liderazgo"]
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-application-programming-interface]
+  - id: entity-privacidad
+    sourceCandidate: candidate-privacidad
+    canonicalName: "Privacidad"
+    englishName: "Privacy"
+    type: concept
+    originalBatch: batch-011-infrastructure-security-core
+    assignedBatch: batch-022-transversal-depth-extension
+    executionWave: 11
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-fundamentos-arquitectura-seguridad
+    secondaryDomains: ["domain-datos-analitica", "domain-producto-experiencia", "domain-inteligencia-artificial"]
+    disciplines: [discipline-privacidad]
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: [entity-informacion]
+  - id: entity-senal-de-telemetria
+    sourceCandidate: candidate-senal-de-telemetria
+    canonicalName: "Señal de telemetría"
+    englishName: "Telemetry Signal"
+    type: concept
+    originalBatch: batch-011-infrastructure-security-core
+    assignedBatch: batch-022-transversal-depth-extension
+    executionWave: 11
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-infraestructura-virtualizacion-cloud
+    secondaryDomains: ["domain-ingenieria-software", "domain-redes-telecomunicaciones", "domain-datos-analitica", "domain-inteligencia-artificial"]
+    disciplines: [discipline-observabilidad]
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: stable-foundation
+    plannedDependencies: []
+  - id: entity-data-engineer
+    sourceCandidate: candidate-data-engineer
+    canonicalName: "Data Engineer"
+    englishName: "Data Engineer"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-016-people-capabilities-core
+    executionWave: 12
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-bases-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-database]
+  - id: entity-evaluacion-de-modelos
+    sourceCandidate: candidate-evaluacion-de-modelos
+    canonicalName: "Evaluación de modelos"
+    englishName: "Model Evaluation"
+    type: competency
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-016-people-capabilities-core
+    executionWave: 12
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-inteligencia-artificial
+    subdomain: subdomain-ia-generativa
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-liderazgo-tecnico
+    sourceCandidate: candidate-liderazgo-tecnico
+    canonicalName: "Liderazgo técnico"
+    englishName: "Technical Leadership"
+    type: competency
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-016-people-capabilities-core
+    executionWave: 12
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-estrategia-gobierno-it
+    secondaryDomains: []
+    disciplines: [discipline-liderazgo]
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-modelado-de-datos
+    sourceCandidate: candidate-modelado-de-datos
+    canonicalName: "Modelado de datos"
+    englishName: "Data Modeling"
+    type: competency
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-016-people-capabilities-core
+    executionWave: 12
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-ingenieria-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-pensamiento-computacional
+    sourceCandidate: candidate-pensamiento-computacional
+    canonicalName: "Pensamiento computacional"
+    englishName: "Computational Thinking"
+    type: competency
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-016-people-capabilities-core
+    executionWave: 12
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-algoritmos-estructuras-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-platform-engineer
+    sourceCandidate: candidate-platform-engineer
+    canonicalName: "Platform Engineer"
+    englishName: "Platform Engineer"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-016-people-capabilities-core
+    executionWave: 12
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-confiabilidad-sre-observabilidad
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-security-analyst
+    sourceCandidate: candidate-security-analyst
+    canonicalName: "Security Analyst"
+    englishName: "Security Analyst"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-016-people-capabilities-core
+    executionWave: 12
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-privacidad-riesgo-cumplimiento
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-site-reliability-engineer
+    sourceCandidate: candidate-site-reliability-engineer
+    canonicalName: "Site Reliability Engineer"
+    englishName: "Site Reliability Engineer"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-016-people-capabilities-core
+    executionWave: 12
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-devops-ingenieria-plataformas
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-software-architect
+    sourceCandidate: candidate-software-architect
+    canonicalName: "Software Architect"
+    englishName: "Software Architect"
+    type: role
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-016-people-capabilities-core
+    executionWave: 12
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-ciclo-vida-evolucion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-technical-lead
+    sourceCandidate: candidate-technical-lead
+    canonicalName: "Technical Lead"
+    englishName: "Technical Lead"
+    type: position
+    originalBatch: batch-016-people-capabilities-core
+    assignedBatch: batch-016-people-capabilities-core
+    executionWave: 12
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-liderazgo-organizacion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-software]
+  - id: entity-continuous-integration
+    sourceCandidate: candidate-continuous-integration
+    canonicalName: "Continuous Integration"
+    englishName: "Continuous Integration"
+    type: practice
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-017-ways-of-working-core
+    executionWave: 13
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-ciclo-vida-evolucion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-version-control]
+  - id: entity-descomposicion-de-problemas
+    sourceCandidate: candidate-descomposicion-de-problemas
+    canonicalName: "Descomposición de problemas"
+    englishName: "Problem Decomposition"
+    type: technique
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-017-ways-of-working-core
+    executionWave: 13
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-fundamentos-computacion
+    subdomain: subdomain-fundamentos-programacion
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-extract-transform-load
+    sourceCandidate: candidate-extract-transform-load
+    canonicalName: "Extract Transform Load"
+    englishName: "Extract Transform Load"
+    type: process
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-017-ways-of-working-core
+    executionWave: 13
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-bi-analitica
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-database]
+  - id: entity-infrastructure-as-code
+    sourceCandidate: candidate-infrastructure-as-code
+    canonicalName: "Infrastructure as Code"
+    englishName: "Infrastructure as Code"
+    type: practice
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-017-ways-of-working-core
+    executionWave: 13
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-contenedores-orquestacion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-mlops
+    sourceCandidate: candidate-mlops
+    canonicalName: "MLOps"
+    englishName: "MLOps"
+    type: practice
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-017-ways-of-working-core
+    executionWave: 13
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-inteligencia-artificial
+    subdomain: subdomain-fundamentos-sistemas-inteligentes
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-model-training
+    sourceCandidate: candidate-model-training
+    canonicalName: "Model training"
+    englishName: "Model Training"
+    type: process
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-017-ways-of-working-core
+    executionWave: 13
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-inteligencia-artificial
+    subdomain: subdomain-ingenieria-evaluacion-gobierno-ia
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-machine-learning, entity-data-pipeline]
+  - id: entity-monitoring
+    sourceCandidate: candidate-monitoring
+    canonicalName: "Monitoring"
+    englishName: "Monitoring"
+    type: practice
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-017-ways-of-working-core
+    executionWave: 13
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-devops-ingenieria-plataformas
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-requirements-elicitation
+    sourceCandidate: candidate-requirements-elicitation
+    canonicalName: "Requirements elicitation"
+    englishName: "Requirements Elicitation"
+    type: process
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-017-ways-of-working-core
+    executionWave: 13
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-ingenieria-requisitos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-scrum
+    sourceCandidate: candidate-scrum
+    canonicalName: "Scrum"
+    englishName: "Scrum"
+    type: work-framework
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-017-ways-of-working-core
+    executionWave: 13
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-arquitectura-empresarial
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-agile]
+  - id: entity-user-research
+    sourceCandidate: candidate-user-research
+    canonicalName: "User research"
+    englishName: "User Research Practice"
+    type: practice
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-017-ways-of-working-core
+    executionWave: 13
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-accesibilidad-diseno-inclusivo
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-investigacion-de-usuarios]
+  - id: entity-cpu
+    sourceCandidate: candidate-cpu
+    canonicalName: "CPU"
+    englishName: "Central Processing Unit"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-018-specifications-implementations-core
+    executionWave: 14
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-sistemas-computo-ciberfisicos
+    subdomain: subdomain-sistemas-operativos
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: changing-technology
+    plannedDependencies: []
+  - id: entity-domain-name-system
+    sourceCandidate: candidate-domain-name-system
+    canonicalName: "Domain Name System"
+    englishName: "Domain Name System"
+    type: protocol
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-018-specifications-implementations-core
+    executionWave: 14
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-redes-telecomunicaciones
+    subdomain: subdomain-operacion-redes
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: versioned-standard
+    plannedDependencies: [entity-internet-protocol]
+  - id: entity-ethernet
+    sourceCandidate: candidate-ethernet
+    canonicalName: "Ethernet"
+    englishName: "Ethernet"
+    type: standard
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-018-specifications-implementations-core
+    executionWave: 14
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-redes-telecomunicaciones
+    subdomain: subdomain-redes-empresariales
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: versioned-standard
+    plannedDependencies: []
+  - id: entity-file-system
+    sourceCandidate: candidate-file-system
+    canonicalName: "File system"
+    englishName: "File System"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-018-specifications-implementations-core
+    executionWave: 14
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-sistemas-computo-ciberfisicos
+    subdomain: subdomain-hardware-arquitectura-computadores
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: changing-technology
+    plannedDependencies: []
+  - id: entity-firmware
+    sourceCandidate: candidate-firmware
+    canonicalName: "Firmware"
+    englishName: "Firmware"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-018-specifications-implementations-core
+    executionWave: 14
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-sistemas-computo-ciberfisicos
+    subdomain: subdomain-sistemas-operativos
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: changing-technology
+    plannedDependencies: [entity-sistema-de-computo]
+  - id: entity-internet-of-things
+    sourceCandidate: candidate-internet-of-things
+    canonicalName: "Internet of Things"
+    englishName: "Internet of Things"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-018-specifications-implementations-core
+    executionWave: 14
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-sistemas-computo-ciberfisicos
+    subdomain: subdomain-embebidos-firmware
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: changing-technology
+    plannedDependencies: [entity-sistema-embebido]
+  - id: entity-transmission-control-protocol
+    sourceCandidate: candidate-transmission-control-protocol
+    canonicalName: "Transmission Control Protocol"
+    englishName: "Transmission Control Protocol"
+    type: protocol
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-018-specifications-implementations-core
+    executionWave: 14
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-redes-telecomunicaciones
+    subdomain: subdomain-redes-empresariales
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: versioned-standard
+    plannedDependencies: [entity-internet-protocol]
+  - id: entity-user-datagram-protocol
+    sourceCandidate: candidate-user-datagram-protocol
+    canonicalName: "User Datagram Protocol"
+    englishName: "User Datagram Protocol"
+    type: protocol
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-018-specifications-implementations-core
+    executionWave: 14
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-redes-telecomunicaciones
+    subdomain: subdomain-internet-servicios-red
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: versioned-standard
+    plannedDependencies: [entity-internet-protocol]
+  - id: entity-wi-fi
+    sourceCandidate: candidate-wi-fi
+    canonicalName: "Wi-Fi"
+    englishName: "Wi-Fi"
+    type: standard
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-018-specifications-implementations-core
+    executionWave: 14
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-redes-telecomunicaciones
+    subdomain: subdomain-fundamentos-protocolos-red
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: versioned-standard
+    plannedDependencies: []
+  - id: entity-architecture-decision-record
+    sourceCandidate: candidate-architecture-decision-record
+    canonicalName: "Architecture Decision Record"
+    englishName: "Architecture Decision Record"
+    type: artifact
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-019-artifacts-measurement-core
+    executionWave: 15
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-diseno-arquitectura-software
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: [entity-software-architect]
+  - id: entity-data-dictionary
+    sourceCandidate: candidate-data-dictionary
+    canonicalName: "Data dictionary"
+    englishName: "Data Dictionary"
+    type: artifact
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-019-artifacts-measurement-core
+    executionWave: 15
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-arquitectura-gestion-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-disponibilidad
+    sourceCandidate: candidate-disponibilidad
+    canonicalName: "Disponibilidad"
+    englishName: "Availability"
+    type: metric
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-019-artifacts-measurement-core
+    executionWave: 15
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-confiabilidad-sre-observabilidad
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-key-performance-indicator
+    sourceCandidate: candidate-key-performance-indicator
+    canonicalName: "Key Performance Indicator"
+    englishName: "Key Performance Indicator"
+    type: indicator
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-019-artifacts-measurement-core
+    executionWave: 15
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-estrategia-gobierno-liderazgo
+    subdomain: subdomain-arquitectura-empresarial
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-latencia
+    sourceCandidate: candidate-latencia
+    canonicalName: "Latencia"
+    englishName: "Latency"
+    type: metric
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-019-artifacts-measurement-core
+    executionWave: 15
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-redes-telecomunicaciones
+    subdomain: subdomain-internet-servicios-red
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-runbook
+    sourceCandidate: candidate-runbook
+    canonicalName: "Runbook"
+    englishName: "Runbook"
+    type: artifact
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-019-artifacts-measurement-core
+    executionWave: 15
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-devops-ingenieria-plataformas
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-software-requirements-specification
+    sourceCandidate: candidate-software-requirements-specification
+    canonicalName: "Software Requirements Specification"
+    englishName: "Software Requirements Specification"
+    type: artifact
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-019-artifacts-measurement-core
+    executionWave: 15
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-ciclo-vida-evolucion
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: [entity-requirements-elicitation]
+  - id: entity-user-story
+    sourceCandidate: candidate-user-story
+    canonicalName: "User story"
+    englishName: "User Story"
+    type: artifact
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-019-artifacts-measurement-core
+    executionWave: 15
+    assignmentDisposition: preserved-recommendation
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-accesibilidad-diseno-inclusivo
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: [entity-product-backlog]
+  - id: entity-compiler
+    sourceCandidate: candidate-compiler
+    canonicalName: "Compiler"
+    englishName: "Compiler"
+    type: tool
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-020-domain-balance-extension-a
+    executionWave: 16
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-backend-servicios
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: changing-tool-product
+    plannedDependencies: [entity-lenguaje-de-programacion]
+  - id: entity-completitud-de-datos
+    sourceCandidate: candidate-completitud-de-datos
+    canonicalName: "Completitud de datos"
+    englishName: "Data Completeness"
+    type: metric
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-020-domain-balance-extension-a
+    executionWave: 16
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-ingenieria-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-incident-response
+    sourceCandidate: candidate-incident-response
+    canonicalName: "Incident response"
+    englishName: "Incident Response"
+    type: process
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-020-domain-balance-extension-a
+    executionWave: 16
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-operaciones-seguridad
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-internal-developer-platform
+    sourceCandidate: candidate-internal-developer-platform
+    canonicalName: "Internal Developer Platform"
+    englishName: "Internal Developer Platform"
+    type: platform
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-020-domain-balance-extension-a
+    executionWave: 16
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-infraestructura-virtualizacion-cloud
+    secondaryDomains: []
+    disciplines: []
+    priority: emerging
+    knowledgeLevel: contextual-understanding
+    stability: emerging
+    plannedDependencies: [entity-cloud-computing]
+  - id: entity-iso-iec-27001
+    sourceCandidate: candidate-iso-iec-27001
+    canonicalName: "ISO/IEC 27001"
+    englishName: "ISO/IEC 27001"
+    type: standard
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-020-domain-balance-extension-a
+    executionWave: 16
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-identidad-acceso
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: versioned-standard
+    plannedDependencies: []
+  - id: entity-iso-iec-42001
+    sourceCandidate: candidate-iso-iec-42001
+    canonicalName: "ISO/IEC 42001"
+    englishName: "ISO/IEC 42001"
+    type: standard
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-020-domain-balance-extension-a
+    executionWave: 16
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-inteligencia-artificial
+    subdomain: subdomain-machine-learning
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: versioned-standard
+    plannedDependencies: []
+  - id: entity-large-language-model
+    sourceCandidate: candidate-large-language-model
+    canonicalName: "Large Language Model"
+    englishName: "Large Language Model"
+    type: model
+    originalBatch: batch-012-data-ai-core
+    assignedBatch: batch-020-domain-balance-extension-a
+    executionWave: 16
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-inteligencia-artificial
+    subdomain: subdomain-fundamentos-sistemas-inteligentes
+    secondaryDomains: []
+    disciplines: []
+    priority: emerging
+    knowledgeLevel: contextual-understanding
+    stability: emerging
+    plannedDependencies: [entity-deep-learning]
+  - id: entity-relational-database
+    sourceCandidate: candidate-relational-database
+    canonicalName: "Relational database"
+    englishName: "Relational Database"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-020-domain-balance-extension-a
+    executionWave: 16
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-bases-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: changing-technology
+    plannedDependencies: [entity-relational-model]
+  - id: entity-runtime-environment
+    sourceCandidate: candidate-runtime-environment
+    canonicalName: "Runtime environment"
+    englishName: "Runtime Environment"
+    type: platform
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-020-domain-balance-extension-a
+    executionWave: 16
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-practicas-implementacion
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: changing-tool-product
+    plannedDependencies: [entity-lenguaje-de-programacion]
+  - id: entity-threat-modeling
+    sourceCandidate: candidate-threat-modeling
+    canonicalName: "Threat modeling"
+    englishName: "Threat Modeling"
+    type: technique
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-020-domain-balance-extension-a
+    executionWave: 16
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-identidad-acceso
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: [entity-threat, entity-vulnerability]
+  - id: entity-container
+    sourceCandidate: candidate-container
+    canonicalName: "Container"
+    englishName: "Container"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-021-domain-balance-extension-b
+    executionWave: 17
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-devops-ingenieria-plataformas
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: changing-technology
+    plannedDependencies: [entity-sistema-operativo]
+  - id: entity-data-profiling
+    sourceCandidate: candidate-data-profiling
+    canonicalName: "Data profiling"
+    englishName: "Data Profiling"
+    type: technique
+    originalBatch: batch-017-ways-of-working-core
+    assignedBatch: batch-021-domain-balance-extension-b
+    executionWave: 17
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-arquitectura-gestion-datos
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-indicador-de-riesgo-de-seguridad
+    sourceCandidate: candidate-indicador-de-riesgo-de-seguridad
+    canonicalName: "Indicador de riesgo de seguridad"
+    englishName: "Security Risk Indicator"
+    type: indicator
+    originalBatch: batch-019-artifacts-measurement-core
+    assignedBatch: batch-021-domain-balance-extension-b
+    executionWave: 17
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-operaciones-seguridad
+    secondaryDomains: []
+    disciplines: []
+    priority: specialized
+    knowledgeLevel: recognition
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-interpreter
+    sourceCandidate: candidate-interpreter
+    canonicalName: "Interpreter"
+    englishName: "Interpreter"
+    type: tool
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-021-domain-balance-extension-b
+    executionWave: 17
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-desarrollo-movil
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: changing-tool-product
+    plannedDependencies: [entity-lenguaje-de-programacion]
+  - id: entity-oauth-2-0
+    sourceCandidate: candidate-oauth-2-0
+    canonicalName: "OAuth 2.0"
+    englishName: "OAuth 2.0"
+    type: protocol
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-021-domain-balance-extension-b
+    executionWave: 17
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-privacidad-riesgo-cumplimiento
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: versioned-standard
+    plannedDependencies: [entity-hypertext-transfer-protocol]
+  - id: entity-sql
+    sourceCandidate: candidate-sql
+    canonicalName: "SQL"
+    englishName: "Structured Query Language"
+    type: standard
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-021-domain-balance-extension-b
+    executionWave: 17
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-datos-analitica
+    subdomain: subdomain-bi-analitica
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: versioned-standard
+    plannedDependencies: []
+  - id: entity-strangler-fig-pattern
+    sourceCandidate: candidate-strangler-fig-pattern
+    canonicalName: "Strangler Fig Pattern"
+    englishName: "Strangler Fig Pattern"
+    type: pattern
+    originalBatch: batch-010-software-engineering-core
+    assignedBatch: batch-021-domain-balance-extension-b
+    executionWave: 17
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ingenieria-software
+    subdomain: subdomain-ingenieria-requisitos
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: slow-evolution
+    plannedDependencies: []
+  - id: entity-transport-layer-security
+    sourceCandidate: candidate-transport-layer-security
+    canonicalName: "Transport Layer Security"
+    englishName: "Transport Layer Security"
+    type: protocol
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-021-domain-balance-extension-b
+    executionWave: 17
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-ciberseguridad-riesgo
+    subdomain: subdomain-fundamentos-arquitectura-seguridad
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: versioned-standard
+    plannedDependencies: [entity-transmission-control-protocol]
+  - id: entity-virtualizacion
+    sourceCandidate: candidate-virtualizacion
+    canonicalName: "Virtualización"
+    englishName: "Virtualization"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-021-domain-balance-extension-b
+    executionWave: 17
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-contenedores-orquestacion
+    secondaryDomains: []
+    disciplines: []
+    priority: essential
+    knowledgeLevel: contextual-understanding
+    stability: changing-technology
+    plannedDependencies: [entity-sistema-operativo]
+  - id: entity-web-content-accessibility-guidelines
+    sourceCandidate: candidate-web-content-accessibility-guidelines
+    canonicalName: "Web Content Accessibility Guidelines"
+    englishName: "Web Content Accessibility Guidelines"
+    type: standard
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-021-domain-balance-extension-b
+    executionWave: 17
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-producto-experiencia
+    subdomain: subdomain-analisis-negocio
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: versioned-standard
+    plannedDependencies: [entity-inclusive-design]
+  - id: entity-customer-relationship-management
+    sourceCandidate: candidate-customer-relationship-management
+    canonicalName: "Customer Relationship Management"
+    englishName: "Customer Relationship Management"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-023-selective-implementation-extension
+    executionWave: 18
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-sistemas-empresariales
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: changing-technology
+    plannedDependencies: [entity-interoperabilidad]
+  - id: entity-enterprise-resource-planning
+    sourceCandidate: candidate-enterprise-resource-planning
+    canonicalName: "Enterprise Resource Planning"
+    englishName: "Enterprise Resource Planning"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-023-selective-implementation-extension
+    executionWave: 18
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-integracion-sistemas-empresariales
+    subdomain: subdomain-middleware-integracion
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: changing-technology
+    plannedDependencies: [entity-interoperabilidad]
+  - id: entity-generative-ai
+    sourceCandidate: candidate-generative-ai
+    canonicalName: "Generative AI"
+    englishName: "Generative Artificial Intelligence"
+    type: technology
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-023-selective-implementation-extension
+    executionWave: 18
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-inteligencia-artificial
+    subdomain: subdomain-ia-generativa
+    secondaryDomains: []
+    disciplines: []
+    priority: emerging
+    knowledgeLevel: recognition
+    stability: emerging
+    plannedDependencies: [entity-deep-learning]
+  - id: entity-git
+    sourceCandidate: candidate-git
+    canonicalName: "Git"
+    englishName: "Git"
+    type: tool
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-023-selective-implementation-extension
+    executionWave: 18
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-desarrollo-software
+    subdomain: subdomain-desarrollo-web-frontend
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: changing-tool-product
+    plannedDependencies: [entity-version-control]
+  - id: entity-kubernetes
+    sourceCandidate: candidate-kubernetes
+    canonicalName: "Kubernetes"
+    englishName: "Kubernetes"
+    type: platform
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-023-selective-implementation-extension
+    executionWave: 18
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-confiabilidad-sre-observabilidad
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: contextual-understanding
+    stability: changing-tool-product
+    plannedDependencies: [entity-container]
+  - id: entity-terraform
+    sourceCandidate: candidate-terraform
+    canonicalName: "Terraform"
+    englishName: "Terraform"
+    type: tool
+    originalBatch: batch-018-specifications-implementations-core
+    assignedBatch: batch-023-selective-implementation-extension
+    executionWave: 18
+    assignmentDisposition: topological-rebalance-v2
+    primaryDomain: domain-infraestructura-operacion
+    subdomain: subdomain-contenedores-orquestacion
+    secondaryDomains: []
+    disciplines: []
+    priority: important
+    knowledgeLevel: recognition
+    stability: changing-tool-product
+    plannedDependencies: [entity-infrastructure-as-code]

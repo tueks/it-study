@@ -50,6 +50,10 @@ Los nombres anteriores son IDs de lote, no IDs de contenido. Las divisiones y co
 
 La asignación completa y la puerta individual de B001–B042 se conservan en `inventories/master-batch-inventory.yaml`. Un modo derivado o activado por hallazgos es un inventario de selección, no una lista ficticia de entradas.
 
+## Autorización del plan maestro v2
+
+El Responsable del proyecto autorizó el `2026-07-21` a Codex a preparar y ejecutar el objetivo recomendado mediante `decision-0021-recommended-master-plan-v2-execution`. La autorización permite rebalancear o dividir B005–B023 dentro de límites, preparar IDs y mapas para revisión, producir por ondas y realizar commits. La aceptación editorial permanece con el Responsable del proyecto; después de cada aceptación, Codex puede integrar y cerrar automáticamente si las validaciones son conformes. B033–B042 permanecen sin activar.
+
 ## Delegación operativa
 
 Se autoriza a Codex y a los chats de producción a preparar manifiestos, investigar, producir borradores y mantener reportes dentro de cada lote habilitado. Esta delegación no incluye aprobación editorial, aceptación, integración no validada, cierre, publicación, cambio de taxonomía, ampliación de cantidades ni resolución de decisiones pendientes. El Responsable del proyecto conserva la autoridad final.

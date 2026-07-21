@@ -1226,6 +1226,52 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 
 **Rollback.** Conservar esta decisión y el historial. Una revocación debe identificar los lotes afectados, detener nuevas transiciones, preservar trabajo ya producido y registrar una decisión sustituta; no se reutilizan IDs ni se borran cierres históricos.
 
+### decision-0021-recommended-master-plan-v2-execution — Ejecución del plan maestro v2 recomendado
+
+| Campo | Valor |
+|---|---|
+| `status` | `accepted` |
+| `decisionType` | `change` |
+| `decisionAreas` | `operational`, `taxonomy`, `quality` |
+| `dateProposed` | `2026-07-21` |
+| `dateDecided` | `2026-07-21` |
+| `effectiveFrom` | `2026-07-21` |
+| `decisionMaker` | Responsable del proyecto |
+| `owners` | Responsable del proyecto; coordinación; Codex; producción |
+| `implementationStatus` | `in-progress` |
+| `authorityRefs` | `docs/02-taxonomy.md`; `docs/05-relationship-rules.md`; `docs/07-mvp-definition.md`; `docs/08-production-batches.md`; `decision-0020-batch-plan-authorization` |
+| `evidenceRefs` | Instrucción explícita del Responsable del proyecto; `inventories/initial-terms.csv`; `inventories/master-batch-inventory.yaml` |
+| `relatedDecisions` | `decision-0003-taxonomy-structure`; `decision-0007-relationship-governance`; `decision-0009-mvp-scope`; `decision-0010-production-strategy`; `decision-0016-operational-ownership`; `decision-0020-batch-plan-authorization` |
+
+**Contexto.** La asignación inicial conserva 164 candidatos en B006–B019, pero varios lotes quedan bajo mínimo o sobre máximo, B005 y B020–B023 carecen de inventario concreto y algunas dependencias apuntan a lotes posteriores. Tratar cada dependencia normal como bloqueo genera pausas circulares y no ofrece al Responsable del proyecto una secuencia clara de intervención.
+
+**Decisión.**
+
+- Codex queda autorizado a preparar y ejecutar el plan maestro v2 para el objetivo recomendado.
+- Puede rebalancear y dividir B005–B023 dentro de los límites ya aprobados, sin superar 164 entidades ni alterar los objetivos semánticos de cada lote.
+- Puede preparar IDs, inventarios y mapas relacionales exactos para revisión; una propuesta no adquiere aprobación editorial por su generación.
+- Debe ordenar dependencias topológicamente: un destino obligatorio existe en el mismo batch o en una onda anterior; cualquier excepción permanece visible para decisión.
+- Puede producir y validar ondas autorizadas y realizar commits.
+- Después de que el Responsable del proyecto acepte una onda, Codex queda autorizado a integrarla y cerrarla automáticamente si todas las validaciones aplicables resultan conformes.
+- B033–B042 permanecen sin activar.
+- El Responsable del proyecto conserva la aceptación editorial de cada onda y la autorización final de publicación.
+
+**Justificación.** Una autorización de ejecución por ondas sustituye pausas repetitivas por puertas humanas explícitas: aprobación del plan exacto, aceptación editorial de entregas y publicación. Las dependencias técnicas se gestionan mediante orden, no como solicitudes circulares.
+
+**Consecuencias.**
+
+- El plan maestro v2 y sus mapas se presentan como propuesta completa antes de producción.
+- Las cantidades de B006–B023 deben quedar dentro de sus rangos.
+- B005 puede usar vacíos verificables del inventario objetivo, pero no contenido de relleno.
+- Las relaciones candidatas requieren fuentes y revisión durante su batch; el mapa lógico no las aprueba por anticipado.
+- La integración y el cierre posteriores a cada aceptación no requieren otra autorización si no aparece defecto, excepción o cambio material.
+
+**Riesgos y mitigaciones.** El rebalanceo puede mover candidatos fuera de su batch recomendado original. Cada movimiento conserva origen, destino y razón; se validan alcance, tipo, cobertura y dependencias, y el Responsable del proyecto aprueba el plan v2 antes de producir.
+
+**Artefactos afectados.** `inventories/proposals/`, inventarios B005–B023, mapas relacionales, manifiestos de onda, `PROJECT-STATUS.md`, `work/BATCH-AUTHORIZATION-REGISTER.md` y entregas posteriores.
+
+**Rollback.** Revocar la ejecución futura mediante decisión sustituta, conservar propuestas y commits, y volver a la asignación maestra v1 sin reescribir cierres B001–B004 ni reutilizar IDs.
+
 ## 24. Matriz acumulativa de decisiones
 
 | ID | Título | Tipo / áreas | Estado | Fecha | Fuente de autoridad | Artefactos afectados | Próxima acción | Responsable | Sustituye o asunto relacionado |
@@ -1250,6 +1296,7 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 | `decision-0018-final-technical-metrics` | Métricas técnicas finales | `pending-resolution` / architecture, ux, quality | `proposed` | 2026-07-20 | Docs `07`, `09` | Arquitectura, UX/UI, QA, CI | Definir después de arquitectura | Arquitectura/UX/QA | Relacionada con 0009 y 0011 |
 | `decision-0019-reference-artifacts-and-codex-contract` | Aceptación de ejemplos, inventarios y contrato operativo | `change` / operational, quality | `accepted` | 2026-07-21 | Docs `02`, `03`, `05`, `07`–`10` | `examples/`, `inventories/`, `AGENTS.md` | Usar como línea base sin promover estados internos | Responsable del proyecto; coordinación; Codex | Relacionada con 0003–0011 |
 | `decision-0020-batch-plan-authorization` | Autorización del plan de lotes y estado de continuidad | `change` / operational, quality | `accepted` | 2026-07-21 | Docs `08`–`10`; contratos `work/` | `PROJECT-STATUS.md`; registro B003–B042; B001/B002 | Iniciar preflight y producción autorizada de B003 | Responsable del proyecto; coordinación; Codex | Relacionada con 0009–0011, 0016 y 0019 |
+| `decision-0021-recommended-master-plan-v2-execution` | Ejecución del plan maestro v2 recomendado | `change` / operational, taxonomy, quality | `accepted` | 2026-07-21 | Docs `02`, `05`, `07`, `08`; decisión 0020 | Propuestas B005–B023; mapas relacionales; ondas | Presentar plan v2 completo para revisión | Responsable del proyecto; coordinación; Codex | Relacionada con 0003, 0007, 0009–0010, 0016 y 0020 |
 
 ## 25. Relación con excepciones de calidad
 
@@ -1314,7 +1361,7 @@ Este documento no autoriza ninguna excepción activa. Toda excepción futura deb
 - resolución de autoridad operativa mediante `decision-0016-operational-ownership`.
 - aceptación documental de ejemplos, inventarios y contrato operativo mediante `decision-0019-reference-artifacts-and-codex-contract`.
 
-La siguiente secuencia disponible es `decision-0021-*`.
+La siguiente secuencia disponible es `decision-0022-*`.
 
 ### 26.2 Reservado para documentos `work/`
 
