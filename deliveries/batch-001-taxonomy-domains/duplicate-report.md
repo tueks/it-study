@@ -6,14 +6,14 @@
 | `manifestVersion` | `v1` |
 | `deliveryVersion` | `d1` |
 | Nombre del reporte | Comprobación inicial de duplicados y aliases |
-| `reportVersion` | `r1` |
+| `reportVersion` | `r2` |
 | Fecha | `2026-07-21` |
 | Rol responsable | ChatGPT Trabajo |
-| Alcance cubierto | Los doce IDs, nombres, nombres ingleses y 24 aliases de `inventories/domains.yaml`, frente al inventario y archivos existentes. |
+| Alcance cubierto | Los doce IDs, títulos, nombres ingleses y 24 aliases del inventario frente a los doce archivos producidos y el repositorio. |
 | Contratos aplicados | `docs/02-taxonomy.md`; `docs/03-content-model.md` 1.0; `work/BATCH-TEMPLATE.md` 1.0.0. |
-| Estado del reporte | `complete` para la puerta inicial; requiere repetición sobre la entrega final. |
+| Estado del reporte | `complete` para la entrega de autoría. |
 | Limitaciones | No existen lotes concurrentes ni contenido productivo previo en el repositorio al iniciar. |
-| Evidencia/archivos | `inventories/domains.yaml`; búsqueda local de IDs, nombres, aliases, siglas y variantes; resultados siguientes. |
+| Evidencia/archivos | `inventories/domains.yaml`; `content/new/*.md`; búsqueda local repetida de IDs, nombres, aliases, siglas y variantes. |
 
 ## Búsquedas ejecutadas
 
@@ -44,3 +44,17 @@
 ## Conclusión inicial
 
 Resultado: `none` para duplicados materiales o colisiones bloqueantes. Los doce IDs son únicos; `DOM-01`–`DOM-12` quedan como códigos documentales no canónicos; los 24 aliases están autorizados por inventario y no justifican nuevas entradas, fusiones ni migraciones.
+
+## Repetición posterior a producción
+
+| Comprobación | Resultado | Evidencia |
+|---|---|---|
+| Cantidad de IDs producidos | 12 IDs distintos y exactamente iguales a los 12 autorizados. | Extracción de `id:` en `content/new/*.md`. |
+| Correspondencia ID/archivo | 12 de 12; cada nombre de archivo coincide con su `id`. | Validación local `validation-002`. |
+| Nombres y `englishName` | 12 de 12 coinciden con el inventario. | Comparación YAML contra `inventories/domains.yaml`. |
+| Aliases | 24 de 24 copiados con valor, idioma y clase; 0 añadidos. | Comparación YAML contra inventario. |
+| Colisiones internas | 0 por valor normalizado entre IDs; 0 aliases que designen otro dominio. | Validación local `validation-003`. |
+| Códigos documentales usados como ID | 0. | Búsqueda de `^id: DOM-`. |
+| Lotes concurrentes | `none`; no existen otras carpetas bajo `deliveries/` en la línea base. | Árbol del repositorio y búsqueda global. |
+
+Disposición final de autoría: `none` para duplicados o colisiones bloqueantes. La revisión independiente conserva autoridad sobre la severidad y la decisión final.

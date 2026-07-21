@@ -7,7 +7,7 @@
 | `batchId` | `batch-001-taxonomy-domains` |
 | Título | Materialización de los dominios aprobados |
 | Objetivo | Materializar, sin redefinir, los doce dominios aprobados de IT Study como fichas canónicas `domain`. |
-| Estado del lote | `authorized` |
+| Estado del lote | `in-production` |
 | Fase | `F1` — Taxonomía materializada |
 | Tipo o combinación autorizada | `taxonomía` |
 | Variante operativa | `taxonomía materializada` |
@@ -78,10 +78,10 @@ La autorización procede de la instrucción explícita del Responsable del proye
 
 | Magnitud | Previsto | Autorizado | Producido | Revisable | Aceptado | Integrado | Cerrado/cancelado | Evidencia |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Unidades nuevas | 12 | 12 | 0 | 0 | 0 | 0 | 0 | `inventories/domains.yaml` |
+| Unidades nuevas | 12 | 12 | 12 | 0 | 0 | 0 | 0 | `content/new/` y `coverage-report.md` |
 | Unidades modificadas | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Alcance autorizado |
-| Relaciones | No se fija cuota | Campos de autoridad únicamente | 0 | 0 | 0 | 0 | 0 | `docs/03-content-model.md`, sección 7 |
-| Fuentes | Sin mínimo uniforme | Según mapa de afirmaciones | 0 | 0 | 0 | 0 | 0 | `sources-report.md` |
+| Relaciones | No se fija cuota | Campos de autoridad únicamente | 0 relaciones `relations[]`; 70 referencias de vecindad y 31 declaraciones de solapamiento | 0 | 0 | 0 | 0 | `relationship-report.md` |
+| Fuentes | Sin mínimo uniforme | Según mapa de afirmaciones | 19 evaluadas en el reporte; 0 registros canónicos creados | 0 | 0 | 0 | 0 | `sources-report.md` |
 
 ## Historial del manifiesto
 
@@ -94,6 +94,7 @@ La autorización procede de la instrucción explícita del Responsable del proye
 | Estado anterior | Estado nuevo | Fecha | Rol | Autoridad/evidencia | Condiciones cumplidas | Hallazgos abiertos | Comentario |
 |---|---|---|---|---|---|---|---|
 | `proposed` | `authorized` | `2026-07-21` | Responsable del proyecto | Instrucción explícita transcrita en este manifiesto. | ID, alcance, dependencias, límites, fuentes iniciales, duplicados/aliases y revisión definidos. | `none`: comprobación inicial sin colisiones materiales. | La producción todavía no ha comenzado. |
+| `authorized` | `in-production` | `2026-07-21` | ChatGPT Trabajo | Commit de puerta inicial, `sources-report.md` r1 y `duplicate-report.md` r1. | Manifiesto autorizado; plan de fuentes y comprobación inicial de duplicados/aliases registrados. | `none` bloqueante. | Se inicia investigación y producción sin cambiar `manifestVersion`. |
 
 ## Decisiones terminales
 

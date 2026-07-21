@@ -1,69 +1,65 @@
-# Plan inicial de fuentes
+# Reporte de fuentes
 
 | Campo | Valor |
 |---|---|
 | `batchId` | `batch-001-taxonomy-domains` |
 | `manifestVersion` | `v1` |
 | `deliveryVersion` | `d1` |
-| Nombre del reporte | Plan inicial de fuentes |
-| `reportVersion` | `r1` |
+| Nombre del reporte | Reporte de fuentes y mapa de afirmaciones |
+| `reportVersion` | `r2` |
 | Fecha | `2026-07-21` |
 | Rol responsable | ChatGPT Trabajo |
-| Alcance cubierto | Estrategia previa a producción para las doce fichas de dominio. |
+| Alcance cubierto | Investigación de las doce fichas `domain`. |
 | Contratos aplicados | `work/RESEARCH-PROTOCOL.md` 1.0.0; `work/SOURCE-POLICY.md` 1.0.0; `work/BATCH-TEMPLATE.md` 1.0.0. |
-| Estado del reporte | `complete` para la puerta inicial; se actualizará durante producción. |
-| Limitaciones | Todavía no declara consultas externas ejecutadas ni suficiencia final. |
-| Evidencia/archivos | `docs/02-taxonomy.md`, sección 15; `inventories/domains.yaml`; este reporte. |
+| Estado del reporte | `complete` para la entrega de autoría. |
+| Limitaciones | El lote no autoriza crear registros canónicos `source`; por ello las fichas permanecen `draft` y la evidencia se conserva en este reporte. La página de TOGAF no pudo verificarse y no se usó para sostener contenido. |
+| Evidencia/archivos | `docs/02-taxonomy.md`, secciones 4 y 15; `inventories/domains.yaml`; consultas registradas el 2026-07-21; `content/new/`. |
 
-## Estrategia
+## Fuentes evaluadas
 
-1. Usar `docs/02-taxonomy.md` como autoridad de las decisiones IT Study y `inventories/domains.yaml` para IDs, nombres, aliases y atributos de planificación.
-2. Separar afirmaciones editoriales propias de IT Study de afirmaciones externas.
-3. Reutilizar y volver a comprobar las fuentes S4–S19 de la taxonomía solo donde respaldan directamente definición, frontera o solapamiento.
-4. Registrar disponibilidad, sección utilizada, concentración y limitaciones; no crear fuentes para aparentar una cuota.
-5. No producir registros `source` canónicos porque el manifiesto autoriza exclusivamente doce entradas `domain`; los IDs de este reporte son referencias locales normalizadas para la entrega y deberán reconciliarse antes de integración.
+| `sourceId` | Categoría | Nueva/reutilizada | Versión/vigencia | Secciones usadas | Consulta | Disponibilidad | Afirmaciones | Organización/proveedor | Revisión especializada | Limitación/disposición |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `source-it-study-taxonomy` | `used` | reutilizada | Aprobada 2026-07-20 | 2–5 y 15 | 2026-07-21 | available | `claim-001`–`claim-009` | IT Study | no; autoridad interna | Autoridad de decisión, no prueba de consenso externo. |
+| `source-it-study-domain-inventory` | `used` | reutilizada | schema 1.0 | Reglas y 12 registros | 2026-07-21 | available | `claim-002` | IT Study | no | Planificación autorizada; no equivale a contenido aprobado. |
+| `source-it-study-content-model` | `used` | reutilizada | contrato 1.0 | 5–7, 14, 19.1 | 2026-07-21 | available | `claim-002` | IT Study | no | Autoridad estructural. |
+| `source-acm-ieee-cc2020` | `used` | reutilizada | CC2020, 2020-12-31 | capítulos 1–3; panorama de disciplinas | 2026-07-21 | available | `claim-003` | ACM e IEEE-CS | no | Fuente curricular; no se presenta como taxonomía universal de IT Study. |
+| `source-nist-sp-800-145` | `used` | reutilizada | SP 800-145 final | registro y definición de cloud computing | 2026-07-21 | available | `claim-004` | NIST | no | Delimita cloud; no cubre todo DOM-06. |
+| `source-iso-iec-25010-2023` | `used` | reutilizada | 2023 | registro y abstract del modelo de calidad | 2026-07-21 | partially-available | `claim-003` | ISO/IEC | sí para interpretación normativa completa | Se usa solo para reconocer el objeto del estándar, no requisitos no accesibles. |
+| `source-nist-csf-2` | `used` | reutilizada | CSF 2.0 | overview y recursos oficiales | 2026-07-21 | available | `claim-005` | NIST | no | No sustituye fuentes jurídicas de privacidad o cumplimiento. |
+| `source-nist-ai-rmf` | `used` | reutilizada | AI RMF 1.0 y recursos vigentes | overview del marco | 2026-07-21 | available | `claim-007` | NIST | no | Respalda gestión de riesgo, no toda la definición de IA. |
+| `source-google-sre` | `used` | reutilizada | sitio vigente | definición y recursos introductorios | 2026-07-21 | available | `claim-004` | Google | no | Fuente de proveedor limitada a su enfoque publicado. |
+| `source-cncf-platforms-white-paper` | `used` | reutilizada | white paper vigente | definición, consumidores y capacidades | 2026-07-21 | available | `claim-004` | CNCF TAG App Delivery | no | Perspectiva de comunidad técnica; no demuestra adopción universal. |
+| `source-peoplecert-itil` | `used` | reutilizada | esquema ITIL vigente en la página | overview del framework | 2026-07-21 | available | `claim-004` | PeopleCert | no | Fuente del emisor; no se usa para superioridad ni universalidad. |
+| `source-isaca-cobit` | `used` | reutilizada | página vigente | overview de COBIT | 2026-07-21 | available | `claim-009` | ISACA | no | Respalda el alcance del marco, no una única estructura organizacional. |
+| `source-iiba-business-analysis-standard` | `used` | reutilizada | página vigente | propósito y alcance del estándar | 2026-07-21 | available | `claim-008` | IIBA | no | Respalda Business Analysis, no toda experiencia humana. |
+| `source-pmi-project-management` | `used` | reutilizada | página vigente | definición introductoria | 2026-07-21 | available | `claim-009` | PMI | no | No convierte Project Management en sinónimo de producto o gobierno. |
+| `source-w3c-wcag-overview` | `used` | reutilizada | WCAG 2 overview vigente | alcance y documentos WCAG | 2026-07-21 | available | `claim-008` | W3C WAI | no | Respalda accesibilidad web; no agota el diseño inclusivo. |
+| `source-iso-iec-25012-2008` | `used` | reutilizada | 2008, registro vigente | registro y abstract del modelo de calidad de datos | 2026-07-21 | partially-available | `claim-006` | ISO/IEC | sí para interpretación normativa completa | Se usa solo para reconocer calidad de datos como objeto específico. |
+| `source-agile-manifesto` | `used` | reutilizada | texto original | valores del manifiesto | 2026-07-21 | available | `claim-009` | Autores del Manifesto for Agile Software Development | no | Evidencia histórica primaria; no describe todas las prácticas Agile actuales. |
+| `source-open-group-togaf` | `unavailable` | reutilización descartada | desconocida para esta consulta | ninguna | 2026-07-21 | unavailable | ninguna | The Open Group | sí si fuera material | No se usó; la página devolvió error y la frontera procede de la taxonomía aprobada. |
+| `source-iso-iec-ieee-24765-2017` | `used` | reutilizada | 2017 | registro y abstract del vocabulario | 2026-07-21 | partially-available | `claim-003` | ISO/IEC/IEEE | sí para términos normativos completos | Uso limitado al carácter de vocabulario de sistemas y software. |
 
-## Fuentes previstas o reutilizables
+## Mapa de afirmaciones final
 
-| `sourceId` | Identidad | Uso previsto | Unidades principales | Estado inicial |
-|---|---|---|---|---|
-| `source-it-study-taxonomy` | `docs/02-taxonomy.md` | Decisión y formulación aprobada de los 12 dominios. | Todas | Reutilizable; disponible localmente. |
-| `source-it-study-domain-inventory` | `inventories/domains.yaml` | IDs canónicos, nombres, aliases, prioridad, profundidad y estabilidad. | Todas | Reutilizable; disponible localmente. |
-| `source-it-study-content-model` | `docs/03-content-model.md` | Contrato de campos, IDs y modelo `domain`. | Todas | Reutilizable; disponible localmente. |
-| `source-acm-ieee-cc2020` | ACM/IEEE-CS, Computing Curricula 2020 | Fundamentos compartidos, sistemas, software, IA e integración. | DOM-01, 02, 03, 04, 09, 10 | Pendiente de comprobación de disponibilidad. |
-| `source-nist-sp-800-145` | NIST SP 800-145 | Frontera de cloud computing. | DOM-06 | Pendiente de comprobación. |
-| `source-iso-iec-25010-2023` | ISO/IEC 25010:2023 | Calidad de producto. | DOM-04 | Pendiente de comprobación. |
-| `source-nist-csf-2` | NIST Cybersecurity Framework 2.0 | Ciberseguridad y gobierno de riesgo. | DOM-07 | Pendiente de comprobación. |
-| `source-nist-ai-rmf` | NIST AI Risk Management Framework | Riesgo y gobierno de IA. | DOM-09 | Pendiente de comprobación. |
-| `source-google-sre` | Google, Site Reliability Engineering | Frontera de SRE. | DOM-06 | Pendiente de comprobación; fuente de proveedor limitada a su definición publicada. |
-| `source-cncf-platforms-white-paper` | CNCF TAG App Delivery, Platforms White Paper | Platform Engineering y plataformas internas. | DOM-06 | Pendiente de comprobación. |
-| `source-peoplecert-itil` | PeopleCert, ITIL framework | Gestión de productos y servicios digitales. | DOM-06 | Pendiente de comprobación. |
-| `source-isaca-cobit` | ISACA, COBIT | Gobierno y gestión de información y tecnología. | DOM-12 | Pendiente de comprobación. |
-| `source-iiba-business-analysis-standard` | IIBA, The Business Analysis Standard | Alcance de Business Analysis. | DOM-11 | Pendiente de comprobación. |
-| `source-pmi-project-management` | PMI, What Is Project Management? | Frontera de Project Management. | DOM-12 | Pendiente de comprobación. |
-| `source-w3c-wcag-overview` | W3C WAI, WCAG Overview | Accesibilidad como disciplina respaldada por estándar. | DOM-11 | Pendiente de comprobación. |
-| `source-iso-iec-25012-2008` | ISO/IEC 25012:2008 | Calidad de datos. | DOM-08 | Pendiente de comprobación. |
-| `source-agile-manifesto` | Autores del Manifesto for Agile Software Development | Agile como orientación de valores, no método universal. | DOM-12 | Pendiente de comprobación. |
-| `source-open-group-togaf` | The Open Group, TOGAF Standard | Arquitectura empresarial. | DOM-12 | Pendiente de comprobación. |
-| `source-iso-iec-ieee-24765-2017` | ISO/IEC/IEEE 24765:2017 | Vocabulario de sistemas y software. | DOM-02, 03, 04 | Pendiente de comprobación. |
+| `claimId` | Unidad/campo | Afirmación | Tipo | Criticidad | Estabilidad | Evidencia requerida | `sourceIds`/secciones | Estado | Conflicto | Limitación | Decisión editorial |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| `claim-001` | Todas: definición, propósito y frontera | Los doce dominios materializan sin cambiar la taxonomía aprobada. | decisión editorial | central | estable | Autoridad interna. | `source-it-study-taxonomy`, sección 4 | `editorial-decision` | none | No se afirma universalidad. | Conservar formulaciones y fronteras aprobadas. |
+| `claim-002` | Todas: IDs, nombres, aliases y gobierno | Los metadatos coinciden con inventario y contrato 1.0. | taxonómica | central | estable | Inventario y modelo. | `source-it-study-domain-inventory`; `source-it-study-content-model` | `supported` | none | Los códigos DOM no son IDs. | Usar IDs `domain-*`. |
+| `claim-003` | DOM-01–04 y DOM-10 | Las disciplinas de computación comparten fundamentos y tienen solapamientos. | definicional | central | slow-evolution | Fuente curricular institucional. | `source-acm-ieee-cc2020`, capítulos 1–3 | `supported` | none | La división de IT Study sigue siendo decisión propia. | Mantener fronteras locales. |
+| `claim-004` | DOM-06 | Cloud, SRE, Platform Engineering e ITSM poseen alcances distintos. | definicional/relación | central | slow-evolution | Fuentes directas pertinentes. | NIST SP 800-145; Google SRE; CNCF white paper; PeopleCert ITIL | `supported` | none | Perspectivas distintas, no comparativa de superioridad. | No tratarlos como aliases. |
+| `claim-005` | DOM-07 | Ciberseguridad, privacidad y riesgo se conectan sin ser equivalentes. | definicional | central | slow-evolution | Institucional directa. | `source-nist-csf-2`; taxonomía sección DOM-07 | `supported` | none | Privacidad jurídica exhaustiva fuera de alcance. | Conservar separación. |
+| `claim-006` | DOM-08 | Calidad del dato es un objeto específico dentro del dominio de datos. | definicional | central | versioned-standard | Registro oficial. | `source-iso-iec-25012-2008` | `supported` | none | Texto completo no consultado. | No formular requisitos normativos. |
+| `claim-007` | DOM-09 | El riesgo de IA requiere gobierno y gestión específicos. | definicional | central | slow-evolution | Marco institucional. | `source-nist-ai-rmf` | `supported` | none | No define por sí solo toda IA. | Usarlo solo para frontera de gobierno/riesgo. |
+| `claim-008` | DOM-11 | Business Analysis y accesibilidad poseen alcances propios relacionados con producto y experiencia. | definicional | central | slow-evolution | Organismos directos. | IIBA Standard; W3C WCAG Overview | `supported` | none | WCAG no agota accesibilidad. | Conservar carácter transversal. |
+| `claim-009` | DOM-12 | Gobierno, proyectos, Agile y arquitectura empresarial no son una sola metodología. | definicional/comparativa | central | slow-evolution | Fuentes directas y taxonomía. | ISACA COBIT; PMI; Agile Manifesto; taxonomía DOM-12 | `supported` | none | TOGAF no se verificó y no se usa. | No universalizar estructuras. |
 
-## Mapa inicial de afirmaciones
+## Resumen investigativo
 
-| `claimId` | Unidad/campo | Afirmación prevista | Tipo | Criticidad | Evidencia requerida | Fuentes previstas | Estado |
-|---|---|---|---|---|---|---|---|
-| `claim-001` | Todas: identidad y alcance | Los doce dominios y sus fronteras son decisiones aprobadas de IT Study. | decisión editorial | central | Autoridad interna aprobada. | `source-it-study-taxonomy` | `editorial-decision` |
-| `claim-002` | Todas: ID y metadatos | Los IDs y atributos de planificación coinciden con el inventario. | taxonómica | central | Inventario y contrato de contenido. | `source-it-study-domain-inventory`; `source-it-study-content-model` | `editorial-decision` |
-| `claim-003` | DOM-01–04 y DOM-10 | Fundamentos, sistemas, desarrollo, ingeniería e integración conservan fronteras disciplinares comprensibles. | definicional | central | Fuente curricular institucional y taxonomía aprobada. | `source-acm-ieee-cc2020`; `source-it-study-taxonomy` | `unresearched` |
-| `claim-004` | DOM-06: solapamientos | Cloud, SRE, Platform Engineering e ITSM no son sinónimos y tienen alcances diferenciados. | definicional/relación | central | Fuentes primarias o institucionales directas. | NIST, Google SRE, CNCF, PeopleCert | `unresearched` |
-| `claim-005` | DOM-07 | Ciberseguridad, privacidad y riesgo están conectados sin ser equivalentes. | definicional | central | NIST CSF y páginas institucionales pertinentes. | `source-nist-csf-2` | `unresearched` |
-| `claim-006` | DOM-08 | Calidad y gobierno del dato constituyen preocupaciones diferenciables. | definicional | central | Registro oficial del modelo de calidad de datos. | `source-iso-iec-25012-2008` | `unresearched` |
-| `claim-007` | DOM-09 | El gobierno del riesgo de IA incluye gobernar, mapear, medir y gestionar. | definicional | central | Marco institucional directo. | `source-nist-ai-rmf` | `unresearched` |
-| `claim-008` | DOM-11 | Business Analysis y accesibilidad poseen alcances propios conectados con producto y experiencia. | definicional | central | IIBA y W3C. | `source-iiba-business-analysis-standard`; `source-w3c-wcag-overview` | `unresearched` |
-| `claim-009` | DOM-12 | Gobierno, gestión de proyectos, Agile y arquitectura empresarial no deben universalizarse como una sola metodología. | definicional/comparativa | central | Fuentes directas de cada marco u orientación. | ISACA, PMI, Agile Manifesto, The Open Group | `unresearched` |
-
-## Concentración y suficiencia inicial
-
-- La taxonomía aprobada concentra las decisiones IT Study legítimamente; no se presenta como consenso universal.
-- No existe mínimo numérico uniforme. La suficiencia se evaluará por afirmación.
-- Las fuentes de Google y PeopleCert se limitarán a describir los enfoques de los que son emisores; no respaldarán superioridad ni adopción general.
-- No se prevén afirmaciones cuantitativas, temporales, históricas disputadas ni comparaciones de productos.
+- Fuentes nuevas: `none`; se reutilizó el conjunto ya registrado por la taxonomía.
+- Fuentes descartadas: `source-open-group-togaf` por indisponibilidad en esta consulta.
+- Fuentes inciertas o archivadas: `none`.
+- Fuentes parcialmente disponibles: tres registros ISO; se limitó la redacción a lo visible en sus páginas oficiales.
+- Conflictos materiales: `none`.
+- Afirmaciones sin respaldo suficiente: `none` dentro del alcance redactado; las fichas no incluyen afirmaciones normativas detalladas.
+- Concentración: la decisión taxonómica depende legítimamente de IT Study. Las fronteras externas usan organizaciones pertinentes y no se formulan conclusiones de superioridad, adopción ni universalidad.
+- Relaciones respaldadas: las 31 declaraciones `overlaps` se derivan de fronteras aprobadas; no se asignaron `sourceIds` dentro de las fichas porque permanecen `draft` y el lote no autoriza registros canónicos `source`.
