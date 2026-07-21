@@ -3,10 +3,10 @@
 | Campo | Valor |
 |---|---|
 | `batchId` | `batch-001-taxonomy-domains` |
-| `manifestVersion` | `v1` |
-| `deliveryVersion` | `d1` |
+| `manifestVersion` | `v2` |
+| `deliveryVersion` | `d2` |
 | Nombre del reporte | Propuestas descubiertas fuera de alcance |
-| `reportVersion` | `r1` |
+| `reportVersion` | `r2` |
 | Fecha | `2026-07-21` |
 | Rol responsable | ChatGPT Trabajo |
 | Alcance cubierto | Hallazgos de investigación susceptibles de convertirse en términos. |

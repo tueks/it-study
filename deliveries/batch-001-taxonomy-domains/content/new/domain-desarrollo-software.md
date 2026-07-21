@@ -42,6 +42,12 @@ overlaps:
 membershipCriteria:
   - El propósito central del elemento es implementar software ejecutable para una superficie o contexto de uso.
   - La clasificación no se justifica solo porque otra disciplina utilice código.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-acm-ieee-cc2020
+  - source-iso-iec-ieee-24765-2017
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution

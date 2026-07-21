@@ -45,6 +45,12 @@ overlaps:
 membershipCriteria:
   - El propósito central del elemento es permitir cooperación entre aplicaciones, datos, procesos o capacidades organizacionales.
   - Una tecnología no pertenece aquí únicamente por exponerse a través de una red.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-acm-ieee-cc2020
+  - source-iso-iec-ieee-24765-2017
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution

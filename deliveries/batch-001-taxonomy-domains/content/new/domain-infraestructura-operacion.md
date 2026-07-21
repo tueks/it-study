@@ -44,6 +44,14 @@ overlaps:
 membershipCriteria:
   - El elemento contribuye principalmente a proveer, automatizar, operar, observar, soportar o recuperar servicios tecnológicos.
   - No pertenece aquí solo por ejecutarse en cloud o utilizar infraestructura.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-nist-sp-800-145
+  - source-google-sre
+  - source-cncf-platforms-white-paper
+  - source-peoplecert-itil
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution

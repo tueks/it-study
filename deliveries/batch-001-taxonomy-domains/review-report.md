@@ -3,17 +3,17 @@
 | Campo | Valor |
 |---|---|
 | `batchId` | `batch-001-taxonomy-domains` |
-| `manifestVersion` | `v1` |
-| `deliveryVersion` | `d1` |
+| `manifestVersion` | `v2` |
+| `deliveryVersion` | `d2` |
 | Nombre del reporte | Revisión independiente |
-| `reportVersion` | `r1` |
+| `reportVersion` | `r2` |
 | Fecha | `pending` |
 | Rol responsable | Revisor independiente pendiente de asignación |
-| Alcance cubierto | Pendiente: doce fichas y once reportes de producción. |
+| Alcance cubierto | Pendiente: doce fichas `domain`, dieciocho registros `source` y once reportes de producción de `d2`. |
 | Contratos aplicados | `work/REVIEW-CHECKLIST.md` 1.0.0; `docs/09-quality-criteria.md` 1.0. |
 | Estado del reporte | `pending` |
 | Limitaciones | La autoría no puede completar ni simular este reporte. |
-| Evidencia/archivos | Paquete `d1` pendiente de recepción por revisor independiente. |
+| Evidencia/archivos | Paquete `d2` pendiente de recepción por revisor independiente. |
 
 ## Identificación de revisión
 
@@ -23,8 +23,8 @@
 | Independencia respecto de autoría | `pending` |
 | Perspectivas aplicadas | Taxonómica, conceptual, editorial, fuentes, relaciones, duplicados, accesibilidad cognitiva y trazabilidad. |
 | Alcance revisado | `pending` |
-| Muestreo autorizado | Revisión completa 12/12 prevista por centralidad taxonómica; confirmación pendiente. |
-| Criterios/autoridades | `work/REVIEW-CHECKLIST.md`; `docs/09-quality-criteria.md`; manifiesto `v1`. |
+| Muestreo autorizado | Revisión completa 12/12 de dominios y 18/18 fuentes prevista; confirmación pendiente. |
+| Criterios/autoridades | `work/REVIEW-CHECKLIST.md`; `docs/09-quality-criteria.md`; manifiesto `v2`. |
 | Fecha | `pending` |
 
 ## Hallazgos y decisión

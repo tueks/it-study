@@ -44,6 +44,11 @@ overlaps:
 membershipCriteria:
   - El propósito central del elemento es gestionar, transformar, asegurar la calidad o extraer información analítica de datos.
   - Utilizar datos no basta para conceder pertenencia principal.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-iso-iec-25012-2008
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution

@@ -46,6 +46,13 @@ overlaps:
 membershipCriteria:
   - El elemento dirige, supervisa, prioriza o coordina tecnología a escala organizacional.
   - Una práctica local de equipo no pertenece aquí solo por influir en decisiones.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-isaca-cobit
+  - source-pmi-project-management
+  - source-agile-manifesto
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution

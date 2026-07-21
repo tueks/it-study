@@ -45,6 +45,11 @@ overlaps:
 membershipCriteria:
   - El propósito central del elemento es crear, evaluar, operar o gobernar capacidades asociadas con inteligencia artificial.
   - La presencia de automatización o analítica no basta para clasificar un elemento como IA.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-nist-ai-rmf
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution

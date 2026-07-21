@@ -44,6 +44,11 @@ overlaps:
 membershipCriteria:
   - El propósito central del elemento es proteger activos digitales o gestionar riesgo, privacidad, identidad o cumplimiento tecnológico.
   - La mera necesidad de seguridad en otro dominio no cambia el hogar de esa entrada.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-nist-csf-2
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution

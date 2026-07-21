@@ -41,6 +41,13 @@ overlaps:
 membershipCriteria:
   - El elemento aborda de forma sistemática especificación, diseño, calidad, entrega o evolución del software.
   - Su propósito supera la implementación puntual y no es principalmente operación o gobierno empresarial.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-acm-ieee-cc2020
+  - source-iso-iec-25010-2023
+  - source-iso-iec-ieee-24765-2017
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution

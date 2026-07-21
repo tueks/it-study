@@ -44,6 +44,12 @@ overlaps:
 membershipCriteria:
   - El propósito central del elemento es descubrir, definir, diseñar o evaluar valor y experiencia para personas u organizaciones.
   - Crear una interfaz visual no basta por sí solo; debe existir una relación sustantiva con necesidades o interacción.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-iiba-business-analysis-standard
+  - source-w3c-wcag-overview
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution

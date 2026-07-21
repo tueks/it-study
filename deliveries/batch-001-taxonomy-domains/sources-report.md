@@ -3,16 +3,16 @@
 | Campo | Valor |
 |---|---|
 | `batchId` | `batch-001-taxonomy-domains` |
-| `manifestVersion` | `v1` |
-| `deliveryVersion` | `d1` |
+| `manifestVersion` | `v2` |
+| `deliveryVersion` | `d2` |
 | Nombre del reporte | Reporte de fuentes y mapa de afirmaciones |
-| `reportVersion` | `r2` |
+| `reportVersion` | `r3` |
 | Fecha | `2026-07-21` |
 | Rol responsable | ChatGPT Trabajo |
 | Alcance cubierto | Investigación de las doce fichas `domain`. |
 | Contratos aplicados | `work/RESEARCH-PROTOCOL.md` 1.0.0; `work/SOURCE-POLICY.md` 1.0.0; `work/BATCH-TEMPLATE.md` 1.0.0. |
 | Estado del reporte | `complete` para la entrega de autoría. |
-| Limitaciones | El lote no autoriza crear registros canónicos `source`; por ello las fichas permanecen `draft` y la evidencia se conserva en este reporte. La página de TOGAF no pudo verificarse y no se usó para sostener contenido. |
+| Limitaciones | Los 18 registros `source` usados se materializaron en `content/new/` con `reference` identificable; permanecen `draft` y requieren revisión independiente junto con las fichas. TOGAF no pudo verificarse, no se materializó y no sostiene contenido. |
 | Evidencia/archivos | `docs/02-taxonomy.md`, secciones 4 y 15; `inventories/domains.yaml`; consultas registradas el 2026-07-21; `content/new/`. |
 
 ## Fuentes evaluadas
@@ -55,11 +55,22 @@
 
 ## Resumen investigativo
 
-- Fuentes nuevas: `none`; se reutilizó el conjunto ya registrado por la taxonomía.
+- Registros normalizados nuevos en `d2`: 18 fuentes marcadas `used`; permanecen `draft` hasta revisión independiente.
 - Fuentes descartadas: `source-open-group-togaf` por indisponibilidad en esta consulta.
 - Fuentes inciertas o archivadas: `none`.
 - Fuentes parcialmente disponibles: tres registros ISO; se limitó la redacción a lo visible en sus páginas oficiales.
 - Conflictos materiales: `none`.
 - Afirmaciones sin respaldo suficiente: `none` dentro del alcance redactado; las fichas no incluyen afirmaciones normativas detalladas.
 - Concentración: la decisión taxonómica depende legítimamente de IT Study. Las fronteras externas usan organizaciones pertinentes y no se formulan conclusiones de superioridad, adopción ni universalidad.
-- Relaciones respaldadas: las 31 declaraciones `overlaps` se derivan de fronteras aprobadas; no se asignaron `sourceIds` dentro de las fichas porque permanecen `draft` y el lote no autoriza registros canónicos `source`.
+- Referencias de fichas: 59 referencias `sources[]` distribuidas entre 12 fichas; todas resuelven a uno de los 18 registros `source` de `content/new/`.
+- Relaciones respaldadas: las 31 declaraciones `overlaps` se derivan de fronteras aprobadas y conservan `source-it-study-taxonomy` como evidencia de autoridad en `relationship-report.md`.
+
+## Reconciliación de materialización `d2`
+
+| Categoría | Evaluadas | Materializadas | Referenciadas | Excluidas | Estado |
+|---|---:|---:|---:|---:|---|
+| Fuentes `used` | 18 | 18 | 18 | 0 | `draft`; revisión independiente pendiente |
+| Fuente `unavailable` | 1 | 0 | 0 | 1 | `source-open-group-togaf`; descarte preservado |
+| Referencias `sources[]` | no aplica | no aplica | 59 en 12 fichas | 0 sin resolver | validación estructural conforme |
+
+Los registros externos reutilizan las URLs canónicas ya registradas en `docs/02-taxonomy.md`, sección 15, y conservan además una `reference` identificable. No se construyeron URLs por inferencia. Las fechas, versiones, secciones, organizaciones, disponibilidad y limitaciones proceden exclusivamente de este reporte y de las autoridades internas ya registradas.

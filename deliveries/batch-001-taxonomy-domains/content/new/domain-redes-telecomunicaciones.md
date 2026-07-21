@@ -42,6 +42,11 @@ overlaps:
 membershipCriteria:
   - El propósito central del elemento es transmitir, interconectar o controlar comunicaciones.
   - Usar una red como medio no basta para conceder pertenencia principal.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-acm-ieee-cc2020
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution

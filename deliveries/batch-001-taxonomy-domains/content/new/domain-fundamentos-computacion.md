@@ -36,6 +36,11 @@ overlaps:
 membershipCriteria:
   - El elemento explica principios generales de representación, cálculo, algoritmos o razonamiento computacional.
   - Su comprensión no depende de una plataforma, lenguaje o producto concreto.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-acm-ieee-cc2020
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: stable-foundation

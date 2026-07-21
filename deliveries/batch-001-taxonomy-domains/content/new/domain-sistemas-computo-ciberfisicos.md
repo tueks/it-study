@@ -40,6 +40,12 @@ overlaps:
 membershipCriteria:
   - El propósito central del elemento es explicar o diseñar la interacción entre hardware, software de sistema y entorno físico.
   - El elemento no se limita a operar recursos ni a implementar una aplicación de propósito general.
+sources:
+  - source-it-study-taxonomy
+  - source-it-study-domain-inventory
+  - source-it-study-content-model
+  - source-acm-ieee-cc2020
+  - source-iso-iec-ieee-24765-2017
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution
