@@ -8,8 +8,8 @@
 | Nombre oficial | Registro normativo de decisiones de IT Study |
 | Ruta | `docs/10-decision-log.md` |
 | Estado | `approved` — registro base vigente |
-| Versión del registro | `1.0.0` |
-| Fecha | `2026-07-20` |
+| Versión del registro | `1.1.0` |
+| Fecha | `2026-07-21` |
 | Autoridad de aprobación | Responsable del proyecto |
 | Documentos de autoridad | `00-bootstrap-brief.md`; `docs/00-project-charter.md`; `docs/01-scope-and-audience.md`; `docs/02-taxonomy.md`; `docs/03-content-model.md`; `docs/04-editorial-guidelines.md`; `docs/05-relationship-rules.md`; `docs/06-design-boundaries.md`; `docs/07-mvp-definition.md`; `docs/08-production-batches.md`; `docs/09-quality-criteria.md` |
 
@@ -1085,7 +1085,82 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 
 **Artefactos afectados.** Arquitectura, UX/UI, schemas de reportes, CI, pruebas, build y dossier de publicación.
 
-## 23. Matriz inicial de decisiones
+## 23. Decisiones aceptadas posteriores a la línea base
+
+### decision-0019-reference-artifacts-and-codex-contract — Aceptación de ejemplos, inventarios y contrato operativo
+
+| Campo | Valor |
+|---|---|
+| `status` | `accepted` |
+| `decisionType` | `change` |
+| `decisionAreas` | `operational`, `quality` |
+| `dateProposed` | `2026-07-21` |
+| `dateDecided` | `2026-07-21` |
+| `effectiveFrom` | `2026-07-21` |
+| `decisionMaker` | Responsable del proyecto |
+| `owners` | Responsable del proyecto; coordinación; Codex |
+| `implementationStatus` | `verified` |
+| `authorityRefs` | `docs/02-taxonomy.md`; `docs/03-content-model.md`; `docs/05-relationship-rules.md`; `docs/07-mvp-definition.md`; `docs/08-production-batches.md`; `docs/09-quality-criteria.md`; `docs/10-decision-log.md` |
+| `evidenceRefs` | Commits `6efe369`, `eab876f`, `7cb67d2`, `d35b01d`, `244d72a`, `0a4ab8e`, `1bffe26`, `2063a94`, `2e8df0c`, `ad8d4ba` |
+| `relatedDecisions` | `decision-0003-taxonomy-structure`; `decision-0004-knowledge-classifications`; `decision-0005-content-format-and-identifiers`; `decision-0007-relationship-governance`; `decision-0009-mvp-scope`; `decision-0010-production-strategy`; `decision-0011-quality-model` |
+
+**Contexto.** Se generaron y verificaron cinco ejemplos canónicos no productivos, tres inventarios de planificación y el contrato operativo principal de Codex a partir de los documentos normativos aprobados. El responsable del proyecto comunicó la aprobación integral de estos nueve artefactos el 2026-07-21.
+
+**Problema.** Era necesario registrar de forma estable el alcance exacto de la aprobación sin confundir la aceptación de los artefactos con los estados editoriales de las entradas demostrativas, los dominios planificados o los 164 candidatos.
+
+**Decisión.**
+
+- Se aprueban `examples/domain-example.md`, `examples/concept-example.md`, `examples/role-example.md`, `examples/comparison-example.md` y `examples/scenario-example.md` como ejemplos canónicos no productivos de los contratos vigentes.
+- Se aprueban `inventories/domains.yaml`, `inventories/classifications.yaml` e `inventories/initial-terms.csv` como inventarios de definición y planificación para las fases posteriores.
+- Se aprueba `AGENTS.md` como contrato operativo principal de Codex para todo el repositorio.
+- Esta aprobación opera al nivel de los nueve artefactos. No cambia `editorialStatus`, `candidateStatus`, `verificationStatus` ni otro estado interno.
+- Los ejemplos conservan `editorialStatus: draft` porque no son contenido productivo. Los dominios conservan `editorialStatus: planned` y los candidatos conservan `editorial_status: planned` y `verification_status: pending` hasta completar el flujo editorial aplicable.
+- Ninguno de los 164 candidatos queda aprobado, integrado, publicado ni contabilizable como entrada terminada del MVP por efecto de esta decisión.
+- `decision-0012` a `decision-0018` permanecen `proposed` y no se resuelven, anticipan ni implementan.
+- La generación de `README.md` continúa fuera del alcance de esta aprobación y requiere una ejecución separada.
+
+**Justificación.** La distinción entre aprobación documental, estado editorial y estado de lote preserva la semántica aprobada, evita que artefactos demostrativos o inventarios se traten como contenido publicable y permite usar una línea base revisada en trabajos posteriores.
+
+**Alternativas consideradas.**
+
+- Promover todas las filas y ejemplos a `approved`: rechazada porque omitiría producción, fuentes, revisión editorial y aceptación por lote.
+- Registrar la aprobación solo en comentarios o en la conversación: rechazada porque no aportaría autoridad estable ni trazabilidad dentro del repositorio.
+- Posponer la aceptación de los nueve artefactos: rechazada porque la revisión consolidada terminó sin contradicciones propias conocidas y el responsable del proyecto los aprobó expresamente.
+
+**Consecuencias.**
+
+- Los nueve artefactos pueden utilizarse como línea base aprobada dentro de su alcance declarado.
+- La producción editorial, revisión, aceptación de lotes, integración y publicación conservan sus puertas independientes.
+- Cualquier cambio material posterior deberá aplicar este registro y los contratos afectados.
+- La aprobación no amplía el MVP ni autoriza arquitectura, framework, UI, backend o capacidades excluidas.
+
+**Riesgos.**
+
+- Consumidores posteriores podrían interpretar “aprobado” como sinónimo de contenido editorial `approved`.
+- Los IDs demostrativos o provisionales podrían confundirse con IDs productivos.
+
+**Mitigaciones.**
+
+- Mantener las advertencias no productivas en `examples/` y las advertencias de planificación en `inventories/`.
+- Validar estados internos y namespace antes de cualquier producción, handoff o integración.
+- Citar esta decisión cuando se utilice la línea base.
+
+**Artefactos afectados.**
+
+- `examples/domain-example.md`;
+- `examples/concept-example.md`;
+- `examples/role-example.md`;
+- `examples/comparison-example.md`;
+- `examples/scenario-example.md`;
+- `inventories/domains.yaml`;
+- `inventories/classifications.yaml`;
+- `inventories/initial-terms.csv`;
+- `AGENTS.md`;
+- `docs/10-decision-log.md`.
+
+**Rollback.** Si se demuestra un defecto material, conservar esta entrada y el historial, revertir únicamente el cambio afectado mediante un commit explícito y registrar una decisión correctiva o sustituta con el alcance, la migración y la evidencia correspondientes.
+
+## 24. Matriz acumulativa de decisiones
 
 | ID | Título | Tipo / áreas | Estado | Fecha | Fuente de autoridad | Artefactos afectados | Próxima acción | Responsable | Sustituye o asunto relacionado |
 |---|---|---|---|---|---|---|---|---|---|
@@ -1107,8 +1182,9 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 | `decision-0016-operational-ownership` | Responsables nominales | `pending-resolution` / operational | `proposed` | 2026-07-20 | Docs `03`, `08`, `09` | Contratos `work/`, revisiones | Asignar nombres y delegaciones | Responsable del proyecto | Relacionada con 0010–0011 |
 | `decision-0017-review-calendars` | Calendarios por estabilidad | `pending-resolution` / operational, quality | `proposed` | 2026-07-20 | Docs `03`, `04`, `07`, `09` | Mantenimiento, `needs-update` | Definir frecuencias por riesgo | Calidad/fuentes | Relacionada con 0011 |
 | `decision-0018-final-technical-metrics` | Métricas técnicas finales | `pending-resolution` / architecture, ux, quality | `proposed` | 2026-07-20 | Docs `07`, `09` | Arquitectura, UX/UI, QA, CI | Definir después de arquitectura | Arquitectura/UX/QA | Relacionada con 0009 y 0011 |
+| `decision-0019-reference-artifacts-and-codex-contract` | Aceptación de ejemplos, inventarios y contrato operativo | `change` / operational, quality | `accepted` | 2026-07-21 | Docs `02`, `03`, `05`, `07`–`10` | `examples/`, `inventories/`, `AGENTS.md` | Usar como línea base sin promover estados internos | Responsable del proyecto; coordinación; Codex | Relacionada con 0003–0011 |
 
-## 24. Relación con excepciones de calidad
+## 25. Relación con excepciones de calidad
 
 Requieren decision log, entre otros:
 
@@ -1129,7 +1205,7 @@ Requieren decision log, entre otros:
 
 Este documento no autoriza ninguna excepción activa. Toda excepción futura debe cumplir las secciones 11 y 12 y figurar también en `exceptions-report.md`. Una excepción nunca permite contar contenido que no cumple la calidad base.
 
-## 25. Relación con documentos y artefactos posteriores
+## 26. Relación con documentos y artefactos posteriores
 
 | Documento o artefacto | Condicionamiento del decision log |
 |---|---|
@@ -1149,7 +1225,7 @@ Este documento no autoriza ninguna excepción activa. Toda excepción futura deb
 | CI | Debe detectar cambios materiales sin entrada y bloquear errores conforme a calidad. |
 | Publicación | Debe verificar decisiones, excepciones vigentes, expiraciones, rollback y riesgo residual. |
 
-## 26. Decisiones y pendientes del propio documento
+## 27. Decisiones y pendientes del propio documento
 
 ### 26.1 Decisiones adoptadas
 
@@ -1168,8 +1244,9 @@ Este documento no autoriza ninguna excepción activa. Toda excepción futura deb
 - revisión basada en estabilidad, riesgo, expiración y cambio material;
 - decisiones base `decision-0001` a `decision-0011`;
 - asuntos pendientes `decision-0012` a `decision-0018`.
+- aceptación documental de ejemplos, inventarios y contrato operativo mediante `decision-0019-reference-artifacts-and-codex-contract`.
 
-La siguiente secuencia disponible es `decision-0019-*`.
+La siguiente secuencia disponible es `decision-0020-*`.
 
 ### 26.2 Reservado para documentos `work/`
 
@@ -1224,7 +1301,7 @@ Se registran como tensiones o asuntos pendientes, no como contradicciones:
 
 La discrepancia histórica entre `extended-reference` y `future-expanded-reference` ya fue resuelta por la autoridad del modelo y los lineamientos: el único enum vigente es `future-expanded-reference`; no permanece como decisión pendiente.
 
-## 27. Cierre
+## 28. Cierre
 
 Este registro establece la línea base trazable para explicar, mantener y cambiar las decisiones de IT Study. Las decisiones aceptadas son autoridad únicamente dentro de su materia y en coordinación con los contratos especializados. Las propuestas y asuntos pendientes permanecen visibles sin convertirse en reglas vigentes.
 
