@@ -7,7 +7,7 @@
 | `batchId` | `batch-003-taxonomy-subdomains-core-b` |
 | Título | Subdominios mínimos, parte B |
 | Objetivo | Crear 18 subdominios para completar 36 acumulados y exactamente tres por dominio. |
-| Estado del lote | `integrated` |
+| Estado del lote | `closed` |
 | Fase | `F1` — Taxonomía materializada |
 | Tipo autorizado | Taxonomía materializada |
 | Nivel | Mínimo obligatorio |
@@ -63,3 +63,4 @@ La entrega vigente para revisión es `d2`, preservada en `f31cc84`. Sustituye `d
 
 | `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | Revisión independiente completa 18/18; aprobación explícita de `d2`; cero hallazgos abiertos. | Habilita handoff e integración; no implica cierre ni publicación. |
 | `accepted` | `integrated` | `2026-07-21` | Codex / responsable de integración | Baseline y entrega aceptada `9d36271`; 18/18 archivos canónicos idénticos; 36 subdominios acumulados. | Integración técnica conforme; cierre todavía pendiente. |
+| `integrated` | `closed` | `2026-07-21` | Responsable del proyecto | Autorización explícita de cierre posterior a la reconciliación e integración `f079376`. | Cobertura, decisiones y pendientes reconciliados; no implica publicación. |

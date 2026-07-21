@@ -29,9 +29,9 @@ Este registro materializa la autorización expresa del Responsable del proyecto.
 | Lotes | Autorización | Puerta actual | Condición para iniciar producción |
 |---|---|---|---|
 | B001–B002 | Ejecutados y reconciliados | `closed` | No reabrir; cualquier cambio usa lote de corrección. |
-| B003 | Autorizado | Listo para preflight de producción | Manifiesto v1 e inventario exacto de 18 subdominios disponibles; repetir comprobación de IDs, padres, fuentes y duplicados. |
-| B004 | Autorizado | Dependiente | B001 y dominios disponibles; inventario exacto de 8 disciplinas, hogar y aplicaciones sin duplicarlas como subdominios. |
-| B005 | Autorizado | Dependiente/opcional de objetivo | Piso taxonómico revisado; evidencia de vacíos; hasta 12 subdominios y 4 disciplinas. |
+| B003 | Cerrado | Completado | 18 subdominios aceptados, integrados en `f079376` y cierre autorizado por el Responsable del proyecto. |
+| B004 | Cerrado | Completado | 8 disciplinas aceptadas, integradas en `f079376` y cierre autorizado por el Responsable del proyecto. |
+| B005 | Autorizado | Listo para evaluación de entrada | Piso taxonómico cerrado en B003/B004; falta identificar y autorizar inventario exacto a partir de evidencia de vacíos, hasta 12 subdominios y 4 disciplinas. |
 | B006–B023 | Autorizados | Dependientes | Cumplir en orden las dependencias F1–F4 y materializar el manifiesto exacto desde inventarios aprobados. |
 | B024–B030 | Autorizados | Dependientes de estructuras aprobadas | Comparaciones, escenarios y rutas solo sobre entradas `approved` y destinos existentes. |
 | B031 | Autorizado por activador | Bloqueado hasta hallazgos | Hallazgos acumulados concretos, alcance de corrección y rollback. |

@@ -8,7 +8,7 @@
 | `reportVersion` | `r1` |
 | Fecha | `2026-07-21` |
 | Rol | Codex / producción |
-| Estado | `integrated`; 18 fichas `approved`; cierre pendiente |
+| Estado | `closed`; 18 fichas `approved` e integradas |
 | Referencia inmutable | `f31cc84`; `d1` permanece en `a667cf8` y queda sustituida para revisión por corrección de enum. |
 
 Se produjeron exactamente los 18 subdominios autorizados. Todos conservan `editorialStatus: draft`, un único padre canónico, fuentes resueltas y la jerarquía `domain > subdomain`; no se crearon relaciones ordinarias, disciplinas, tercer nivel ni contenido fuera de alcance.
@@ -24,4 +24,4 @@ Se produjeron exactamente los 18 subdominios autorizados. Todos conservan `edito
 | Tercer nivel | 0 |
 | Estado editorial | 18 `approved` |
 | Hallazgos bloqueantes conocidos por autoría | 0 |
-| Siguiente acción | Reconciliar cierre de B003 sin confundir integración con publicación. |
+| Siguiente acción | Ninguna dentro de B003; conservar evidencia y usar su cobertura como baseline de B005. |

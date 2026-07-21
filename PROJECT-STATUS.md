@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `2169eda` — integración de `batch-002` |
-| Estado del registro | B003 `d2` y B004 `d1` aceptados en `9d36271` e integrados desde ese baseline; commit de integración pendiente. |
+| Estado del registro | B003 `d2` y B004 `d1` aceptados en `9d36271`, integrados en `f079376` y con cierre autorizado por el Responsable del proyecto. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0020-batch-plan-authorization` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -45,9 +45,9 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Crear el commit de integración de B003 y B004, reconciliar su cierre con la autoridad del proyecto y después iniciar B005. Integración no equivale todavía a cierre ni publicación.
+Preservar el cierre de B003/B004 en un commit y ejecutar la evaluación de entrada de B005. B005 requiere evidencia de vacíos e inventario exacto antes de producir; su máximo autorizado es 12 subdominios y 4 disciplinas.
 
-Después de B003 sigue `batch-004-taxonomy-disciplines-core`. La salida mínima de F1 requiere 36 subdominios y 8 disciplinas; el objetivo recomendado de F1 es 48 subdominios y 12 disciplinas mediante B005.
+La salida mínima de F1 está satisfecha con 36 subdominios y 8 disciplinas cerrados. El objetivo recomendado de F1 es 48 subdominios y 12 disciplinas mediante B005, condicionado a vacíos demostrados y sin contenido de relleno.
 
 ## Puertas y bloqueos preservados
 

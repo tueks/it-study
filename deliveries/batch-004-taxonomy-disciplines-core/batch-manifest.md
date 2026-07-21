@@ -4,7 +4,7 @@
 |---|---|
 | `batchId` | `batch-004-taxonomy-disciplines-core` |
 | Título | Disciplinas transversales mínimas |
-| Estado del lote | `integrated` |
+| Estado del lote | `closed` |
 | Fase / nivel | F1 / mínimo obligatorio |
 | Tipo | `discipline`; taxonomía transversal |
 | `manifestVersion` / contrato | `v1` / `1.0` |
@@ -27,3 +27,4 @@
 | `in-production` | `in-review` | `2026-07-21` | Codex | Entrega `d1` preservada en `04f774e`: 8 borradores, 12 reportes y validaciones automatizables conformes. |
 | `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | Revisión independiente completa 8/8; aprobación explícita de `d1`; cero hallazgos abiertos. |
 | `accepted` | `integrated` | `2026-07-21` | Codex / responsable de integración | Baseline y entrega aceptada `9d36271`; 8/8 archivos canónicos idénticos. Cierre todavía pendiente. |
+| `integrated` | `closed` | `2026-07-21` | Responsable del proyecto | Autorización explícita de cierre posterior a la reconciliación e integración `f079376`; no implica publicación. |

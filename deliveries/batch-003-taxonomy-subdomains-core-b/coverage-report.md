@@ -22,4 +22,4 @@
 | Estrategia y gobierno | 1 | 2 | 3 |
 | **Total** | **18** | **18** | **36** |
 
-B003 tiene 18 fichas `approved` y el lote `accepted`; completará el piso de 36 cuando se integre. Aceptación todavía no equivale a cobertura integrada o publicable.
+B003 tiene 18 fichas `approved`, integradas y reconciliadas; el lote está `closed` y completa el piso canónico de 36 subdominios. Cierre no equivale a publicación.
