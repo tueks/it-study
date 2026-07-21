@@ -6,7 +6,10 @@
 - **Documento:** Acta y visión del proyecto
 - **Ruta oficial:** `docs/00-project-charter.md`
 - **Fuente principal:** `00-bootstrap-brief.md`
-- **Estado:** Documento inicial de definición; su aprobación formal y las decisiones expresamente señaladas como pendientes deberán registrarse conforme al proceso de gobierno del proyecto.
+- **Estado:** Aprobado
+- **Fecha de aprobación:** 2026-07-20
+- **Autoridad de aprobación:** Responsable del proyecto, mediante instrucción explícita registrada.
+- **Alcance de la aprobación:** Se aprueba el documento; las decisiones expresamente señaladas como pendientes no se aceptan por esta transición y conservan su tratamiento en los documentos especializados o en `docs/10-decision-log.md`.
 
 ## 2. Resumen del proyecto
 

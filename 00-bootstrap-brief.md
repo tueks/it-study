@@ -1,5 +1,13 @@
 # IT Study — Documento semilla
 
+- **Proyecto:** IT Study
+- **Documento:** Documento semilla
+- **Ruta oficial:** `00-bootstrap-brief.md`
+- **Estado:** Aprobado
+- **Fecha de aprobación:** 2026-07-20
+- **Autoridad de aprobación:** Responsable del proyecto, mediante instrucción explícita registrada
+- **Alcance de la aprobación:** Se aprueba como antecedente fundacional. Los asuntos identificados como pendientes conservan el estado que les otorguen los documentos especializados y `docs/10-decision-log.md`.
+
 ## 1. Resumen ejecutivo
 
 **IT Study** será una plataforma web estática orientada a la alfabetización integral en Tecnologías de la Información. Su propósito no es enseñar todas las disciplinas de IT a nivel práctico o especializado, sino proporcionar una visión amplia, organizada y contextual que permita reconocer términos técnicos, comprender su significado y ubicarlos correctamente dentro del ecosistema tecnológico.

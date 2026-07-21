@@ -8,7 +8,10 @@
 - **Fuentes principales, en orden de autoridad:**
   1. `00-bootstrap-brief.md`
   2. `docs/00-project-charter.md`
-- **Estado:** Documento inicial de definición. Las decisiones marcadas como pendientes deberán resolverse en los documentos especializados o registrarse en `docs/10-decision-log.md`.
+- **Estado:** Aprobado
+- **Fecha de aprobación:** 2026-07-20
+- **Autoridad de aprobación:** Responsable del proyecto, mediante instrucción explícita registrada.
+- **Alcance de la aprobación:** Se aprueba el documento; las decisiones marcadas como pendientes no se aceptan por esta transición y deberán resolverse en los documentos especializados o registrarse en `docs/10-decision-log.md`.
 
 ## 2. Propósito del documento
 
