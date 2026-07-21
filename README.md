@@ -14,7 +14,8 @@ La fase documental de definición está completa y aprobada. El repositorio disp
 | Contratos operativos | Aprobados |
 | Ejemplos e inventarios | Aprobados como referencias y planificación |
 | Inventario inicial | 164 candidatos en estado preliminar |
-| Producción editorial del MVP | Pendiente de iniciar por lotes |
+| Producción editorial del MVP | En curso por lotes; B001 y B002 cerrados |
+| Estado operativo verificable | [`PROJECT-STATUS.md`](PROJECT-STATUS.md) |
 | Aplicación web | No implementada |
 | Autoridad final | Responsable del proyecto, conforme a `decision-0016-operational-ownership` |
 
@@ -110,4 +111,4 @@ Permanecen abiertas las decisiones `decision-0012` a `decision-0015`, `decision-
 
 ## Siguiente paso
 
-Autorizar `batch-001`, seleccionar sus candidatos desde [`inventories/initial-terms.csv`](inventories/initial-terms.csv), reservar IDs canónicos y ejecutar el flujo completo de producción y revisión.
+Iniciar el preflight y la producción autorizada de `batch-003-taxonomy-subdomains-core-b`; su manifiesto e inventario exactos ya están preparados. El plan B003–B042 está autorizado con las dependencias y puertas registradas en [`work/BATCH-AUTHORIZATION-REGISTER.md`](work/BATCH-AUTHORIZATION-REGISTER.md). El estado de reanudación vigente se mantiene en [`PROJECT-STATUS.md`](PROJECT-STATUS.md).

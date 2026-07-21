@@ -7,7 +7,7 @@
 | `batchId` | `batch-001-taxonomy-domains` |
 | Título | Materialización de los dominios aprobados |
 | Objetivo | Materializar, sin redefinir, los doce dominios aprobados de IT Study como fichas canónicas `domain`. |
-| Estado del lote | `integrated` |
+| Estado del lote | `closed` |
 | Fase | `F1` — Taxonomía materializada |
 | Tipo o combinación autorizada | `taxonomía` |
 | Variante operativa | `taxonomía materializada` |
@@ -17,7 +17,7 @@
 | Fecha de autorización | `2026-07-21` |
 | Autoridad autorizadora | Responsable del proyecto |
 | Responsable de producción | ChatGPT Trabajo |
-| Responsable de revisión | Revisor independiente pendiente de asignación |
+| Responsable de revisión | Responsable del proyecto, independiente de la autoría |
 
 La autorización inicial procede de la instrucción explícita del Responsable del proyecto del 2026-07-21. El mismo Responsable autorizó posteriormente el alcance correctivo `v2`: materializar los registros `source` usados, añadir `sources[]` a las doce fichas y generar la entrega `d2`, sin aprobar ni aceptar el resultado.
 
@@ -51,7 +51,7 @@ La autorización inicial procede de la instrucción explícita del Responsable d
 | Fuentes previstas o reutilizables | `source-it-study-taxonomy`; `source-it-study-domain-inventory`; `source-acm-ieee-cc2020`; fuentes especializadas S5–S19 de `docs/02-taxonomy.md` según dominio. |
 | Dependencias obligatorias | F0 documental completo; `docs/02-taxonomy.md`; `docs/03-content-model.md`; `inventories/domains.yaml`. |
 | Dependencias recomendadas | `examples/domain-example.md`. |
-| Dependencias de integración | Revisión independiente de `d2`, aprobación de las 12 fichas y los registros de evidencia aplicables, y aceptación posterior del lote. |
+| Dependencias de integración | Satisfechas: revisión independiente de `d2`, 30 registros `approved`, aceptación e integración verificadas. |
 | Dependencias de decisión | `decision-0003-taxonomy-structure`; `decision-0005-content-format-and-identifiers`; `decision-0016-operational-ownership`. |
 | Dependencias de vigencia | Fuentes externas registradas en `sources-report.md`; no se fija calendario uniforme por permanecer pendiente `decision-0017-review-calendars`. |
 | Documentos de autoridad | `docs/02-taxonomy.md`; `docs/03-content-model.md`; `docs/04-editorial-guidelines.md`; `docs/05-relationship-rules.md`; `docs/06-design-boundaries.md`; `docs/07-mvp-definition.md`; `docs/08-production-batches.md`; `docs/09-quality-criteria.md`; `docs/10-decision-log.md`; contratos de `work/`. |
@@ -68,10 +68,10 @@ La autorización inicial procede de la instrucción explícita del Responsable d
 | Perspectivas de revisión | Taxonómica, conceptual, editorial, fuentes, relaciones, duplicados/aliases, accesibilidad cognitiva, trazabilidad y separación contenido-diseño. |
 | Validaciones disponibles | Comprobaciones locales de topología, cantidad, IDs, YAML, enlaces internos del lote, campos obligatorios y ausencia de placeholders; revisión semántica independiente no disponible durante autoría. |
 | Criterios de aceptación | Doce registros completos; cero ampliaciones; IDs y campos conformes; vecinos y solapamientos revisados; fuentes suficientes; cero duplicados materiales abiertos; revisión independiente y decisión autorizada posteriores. |
-| Efecto previsto sobre cobertura | 12 fichas `domain` y 18 registros `source` producidos en `d2`; 0 aprobados, aceptados o integrados durante autoría. |
+| Efecto sobre cobertura | 12 fichas `domain` y 18 registros `source` `approved`, aceptados, integrados y reconciliados al cierre. |
 | Riesgos conocidos | Reabrir taxonomía, tratar subdominios candidatos como entradas existentes, inventar relaciones, confundir autoevaluación con aprobación y crear fuentes fuera del alcance. |
 | Preguntas abiertas no bloqueantes | `none`: el alcance está enumerado y las decisiones pendientes preservadas no bloquean la materialización. |
-| Bloqueos | El defecto técnico `validation-009` está corregido en `d2`; la revisión independiente de `d2` permanece pendiente y bloquea aprobación, aceptación, integración y el inicio dependiente de `batch-002`. |
+| Bloqueos | `none`; `validation-009` fue corregido en `d2` y las puertas posteriores quedaron satisfechas. |
 | Condiciones de detención | Cualquier necesidad de cambiar uno de los doce dominios, añadir una unidad, crear un ID ajeno, usar una relación no autorizada o resolver una decisión pendiente. |
 | Condiciones para solicitar cambio de alcance | Hallazgo material que impida representar fielmente un dominio con el contrato `1.0` o necesidad demostrada de modificar cantidad, tipo, dependencia o criterio. |
 
@@ -79,7 +79,7 @@ La autorización inicial procede de la instrucción explícita del Responsable d
 
 | Magnitud | Previsto | Autorizado | Producido | Revisable | Aceptado | Integrado | Cerrado/cancelado | Evidencia |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Unidades nuevas | 30 | 30 | 30 | 0 | 0 | 0 | 0 | 12 `domain` y 18 `source` en `content/new/`; `coverage-report.md` |
+| Unidades nuevas | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 12 `domain` y 18 `source`; entrega y fuentes canónicas idénticas por hash. |
 | Unidades modificadas | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Alcance autorizado |
 | Relaciones | No se fija cuota | Campos de autoridad únicamente | 0 relaciones `relations[]`; 70 referencias de vecindad y 31 declaraciones de solapamiento | 0 | 0 | 0 | 0 | `relationship-report.md` |
 | Fuentes | 18 usadas; 1 descartada | 18 registros usados | 18 registros `source` producidos; TOGAF permanece descartada | 0 | 0 | 0 | 0 | `sources-report.md`; `content/new/source-*.md` |
@@ -100,6 +100,7 @@ La autorización inicial procede de la instrucción explícita del Responsable d
 | `in-production` | `in-review` | `2026-07-21` | Responsable del proyecto | Paquete `d2` preservado en `4d62f2e`; revisión completa confirmada. | 30 registros y reportes disponibles. | `none`. | Transición registrada a partir de la aprobación explícita de `d2`. |
 | `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | `review-report.md` r2; aprobación explícita de `d2`. | 30 registros `approved`; cero hallazgos abiertos. | `none`. | Habilita integración; no implica cierre ni publicación. |
 | `accepted` | `integrated` | `2026-07-21` | Codex / responsable de integración | Entrega `d2` en `3712f27`; validaciones de integración 014–016. | 12 dominios y 18 fuentes aplicados con hashes idénticos; referencias resueltas. | `none`. | No implica cierre ni publicación. |
+| `integrated` | `closed` | `2026-07-21` | Responsable del proyecto | Instrucción explícita de reconciliación; `PROJECT-STATUS.md`. | 30/30 archivos idénticos, referencias resueltas, cobertura y siguientes acciones registradas. | `none`. | Cierre de lote; no implica publicación. |
 
 ## Decisiones terminales
 
@@ -107,6 +108,6 @@ La autorización inicial procede de la instrucción explícita del Responsable d
 |---|---|---|---|---|---|
 | Aceptación | `accepted` | `2026-07-21` | Responsable del proyecto | `review-report.md` r2; `4d62f2e` | Habilita handoff de `d2`. |
 | Integración | `integrated` | `2026-07-21` | Codex / responsable de integración | `3712f27`; `validation-report.md` r3 | Fuentes canónicas reconciliadas; habilita dependencias posteriores. |
-| Cierre o cancelación | `pending` | `pending` | Coordinación | Dossier futuro | Fuera del alcance actual. |
+| Cierre o cancelación | `closed` | `2026-07-21` | Responsable del proyecto | Reconciliación registrada en `PROJECT-STATUS.md`; comprobación 30/30 por hash | B001 queda cerrado; cualquier cambio posterior requiere lote de corrección. |
 
 Modificar alcance, tamaño, tipos, profundidad, dependencias, entregables o criterios exige una nueva `manifestVersion` autorizada. Una nueva `deliveryVersion` no sustituye esa autorización.

@@ -1,0 +1,25 @@
+# Reporte de cobertura
+
+| Campo | Valor |
+|---|---|
+| `batchId` | `batch-003-taxonomy-subdomains-core-b` |
+| Entrega | `v1` / `d1` / `r1` |
+| Estado | Completo para autoría |
+
+| Dominio | Base integrada | Aporte B003 | Acumulado si se aprueba e integra |
+|---|---:|---:|---:|
+| Fundamentos de computación | 2 | 1 | 3 |
+| Sistemas de cómputo y ciberfísicos | 2 | 1 | 3 |
+| Desarrollo de software | 2 | 1 | 3 |
+| Ingeniería de software | 2 | 1 | 3 |
+| Redes y telecomunicaciones | 1 | 2 | 3 |
+| Infraestructura y operación | 2 | 1 | 3 |
+| Ciberseguridad y riesgo | 2 | 1 | 3 |
+| Datos y analítica | 1 | 2 | 3 |
+| Inteligencia artificial | 1 | 2 | 3 |
+| Integración y sistemas empresariales | 1 | 2 | 3 |
+| Producto y experiencia | 1 | 2 | 3 |
+| Estrategia y gobierno | 1 | 2 | 3 |
+| **Total** | **18** | **18** | **36** |
+
+B003 completa el piso de 36 solo después de aprobación e integración. Durante revisión, sus 18 borradores no cuentan como cobertura publicable.

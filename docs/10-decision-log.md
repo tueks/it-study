@@ -1180,6 +1180,52 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 
 **Rollback.** Si se demuestra un defecto material, conservar esta entrada y el historial, revertir únicamente el cambio afectado mediante un commit explícito y registrar una decisión correctiva o sustituta con el alcance, la migración y la evidencia correspondientes.
 
+### decision-0020-batch-plan-authorization — Autorización del plan de lotes y estado de continuidad
+
+| Campo | Valor |
+|---|---|
+| `status` | `accepted` |
+| `decisionType` | `change` |
+| `decisionAreas` | `operational`, `quality` |
+| `dateProposed` | `2026-07-21` |
+| `dateDecided` | `2026-07-21` |
+| `effectiveFrom` | `2026-07-21` |
+| `decisionMaker` | Responsable del proyecto |
+| `owners` | Responsable del proyecto; coordinación; Codex; producción |
+| `implementationStatus` | `verified` |
+| `authorityRefs` | `docs/08-production-batches.md`; `docs/09-quality-criteria.md`; contratos `work/`; `decision-0016-operational-ownership` |
+| `evidenceRefs` | `PROJECT-STATUS.md`; `work/BATCH-AUTHORIZATION-REGISTER.md`; manifiestos y reportes de B001/B002 |
+| `relatedDecisions` | `decision-0009-mvp-scope`; `decision-0010-production-strategy`; `decision-0011-quality-model`; `decision-0016-operational-ownership`; `decision-0019-reference-artifacts-and-codex-contract` |
+
+**Contexto.** B001 y B002 fueron aceptados e integrados, pero el README y algunos campos de sus artefactos conservaban estados anteriores. El plan normativo B003–B042 existía sin una autorización operativa acumulativa, lo que obligaba a reconstruir el punto de continuidad desde varios documentos.
+
+**Decisión.**
+
+- Se reconcilian y cierran `batch-001-taxonomy-domains` y `batch-002-taxonomy-subdomains-core-a` con evidencia de 48/48 archivos idénticos entre entregas y fuentes canónicas, cero referencias de fuentes rotas y cero padres inexistentes.
+- Se aprueba `PROJECT-STATUS.md` como punto de reanudación operativo, subordinado a las autoridades de `AGENTS.md` y actualizable después de cada transición material.
+- Se aprueba `work/BATCH-AUTHORIZATION-REGISTER.md` y se autorizan los IDs planificados B003–B042 dentro del alcance, cantidades, dependencias, criterios de entrada y salida, riesgos y niveles definidos en `docs/08-production-batches.md`.
+- B003–B032 quedan autorizados como plan base/objetivo. B033–B042 quedan expresamente autorizados como extensiones o correcciones opcionales, pero bloqueados hasta cumplir sus activadores, demostrar necesidad y cerrar las dependencias previas.
+- La autorización reserva IDs de lote y permite preparar manifiestos. La producción de cada lote solo comienza cuando su manifiesto o instrucción equivalente contiene el alcance exacto, los candidatos o criterio autorizado, límites, dependencias, entregables y revisión, y la puerta de entrada está satisfecha.
+- La selección concreta de entradas, IDs de contenido, fuentes y relaciones no se infiere del plan y debe registrarse antes de redactar.
+- La autorización no cambia estados editoriales, no aprueba contenido futuro y no delega aceptación, integración, cierre o publicación.
+- Las decisiones 0012–0015, 0017 y 0018 conservan `proposed`; cualquier dependencia material de ellas bloquea el alcance correspondiente.
+
+**Justificación.** Una autorización acumulativa reduce ambigüedad entre sesiones sin eliminar las puertas que protegen identidad, dependencias, revisión y cobertura. El estado separado evita que el README, las conversaciones o un inventario de planificación se conviertan en autoridad paralela.
+
+**Consecuencias.**
+
+- B003 es la próxima preparación ejecutable; debe materializar un alcance exacto de 18 subdominios antes de redactar.
+- Los lotes posteriores no requieren una nueva autorización general, pero sí su manifiesto exacto y el cumplimiento demostrable de dependencias.
+- Un lote autorizado puede permanecer bloqueado; `authorized` no equivale a `in-production`.
+- B001 y B002 no se reabren; cambios posteriores requieren un lote de corrección.
+- Cierre no equivale a publicación y la aplicación web continúa fuera de alcance.
+
+**Riesgos y mitigaciones.** El principal riesgo es interpretar la autorización general como permiso para producir listas abiertas o saltar dependencias. Se mitiga mediante el registro de puertas, el manifiesto exacto obligatorio, la comprobación inicial de cada sesión y la prohibición de inventar alcance.
+
+**Artefactos afectados.** `PROJECT-STATUS.md`, `README.md`, `work/BATCH-AUTHORIZATION-REGISTER.md`, `docs/10-decision-log.md` y los manifiestos/resúmenes reconciliados de B001/B002.
+
+**Rollback.** Conservar esta decisión y el historial. Una revocación debe identificar los lotes afectados, detener nuevas transiciones, preservar trabajo ya producido y registrar una decisión sustituta; no se reutilizan IDs ni se borran cierres históricos.
+
 ## 24. Matriz acumulativa de decisiones
 
 | ID | Título | Tipo / áreas | Estado | Fecha | Fuente de autoridad | Artefactos afectados | Próxima acción | Responsable | Sustituye o asunto relacionado |
@@ -1203,6 +1249,7 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 | `decision-0017-review-calendars` | Calendarios por estabilidad | `pending-resolution` / operational, quality | `proposed` | 2026-07-20 | Docs `03`, `04`, `07`, `09` | Mantenimiento, `needs-update` | Definir frecuencias por riesgo | Calidad/fuentes | Relacionada con 0011 |
 | `decision-0018-final-technical-metrics` | Métricas técnicas finales | `pending-resolution` / architecture, ux, quality | `proposed` | 2026-07-20 | Docs `07`, `09` | Arquitectura, UX/UI, QA, CI | Definir después de arquitectura | Arquitectura/UX/QA | Relacionada con 0009 y 0011 |
 | `decision-0019-reference-artifacts-and-codex-contract` | Aceptación de ejemplos, inventarios y contrato operativo | `change` / operational, quality | `accepted` | 2026-07-21 | Docs `02`, `03`, `05`, `07`–`10` | `examples/`, `inventories/`, `AGENTS.md` | Usar como línea base sin promover estados internos | Responsable del proyecto; coordinación; Codex | Relacionada con 0003–0011 |
+| `decision-0020-batch-plan-authorization` | Autorización del plan de lotes y estado de continuidad | `change` / operational, quality | `accepted` | 2026-07-21 | Docs `08`–`10`; contratos `work/` | `PROJECT-STATUS.md`; registro B003–B042; B001/B002 | Iniciar preflight y producción autorizada de B003 | Responsable del proyecto; coordinación; Codex | Relacionada con 0009–0011, 0016 y 0019 |
 
 ## 25. Relación con excepciones de calidad
 
@@ -1267,7 +1314,7 @@ Este documento no autoriza ninguna excepción activa. Toda excepción futura deb
 - resolución de autoridad operativa mediante `decision-0016-operational-ownership`.
 - aceptación documental de ejemplos, inventarios y contrato operativo mediante `decision-0019-reference-artifacts-and-codex-contract`.
 
-La siguiente secuencia disponible es `decision-0020-*`.
+La siguiente secuencia disponible es `decision-0021-*`.
 
 ### 26.2 Reservado para documentos `work/`
 

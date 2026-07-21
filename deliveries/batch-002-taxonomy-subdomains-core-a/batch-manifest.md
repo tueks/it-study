@@ -6,7 +6,7 @@
 |---|---|
 | `batchId` | `batch-002-taxonomy-subdomains-core-a` |
 | Título | Subdominios mínimos, parte A |
-| Estado del lote | `integrated` |
+| Estado del lote | `closed` |
 | Fase | `F1` — Taxonomía materializada |
 | Nivel | mínimo obligatorio |
 | `manifestVersion` | `v1` |
@@ -14,7 +14,7 @@
 | Fecha de autorización | `2026-07-21` |
 | Autoridad | Responsable del proyecto |
 | Responsable de producción | Codex |
-| Revisión | Independiente pendiente |
+| Revisión | Independiente completa; decisión `accepted` registrada |
 
 ## Alcance autorizado
 
@@ -22,7 +22,7 @@ Crear exactamente los 18 subdominios enumerados en `inventories/batch-002-taxono
 
 | Magnitud | Autorizado | Máximo | Producido | Aprobado | Integrado |
 |---|---:|---:|---:|---:|---:|
-| Subdominios nuevos | 18 | 18 | 18 | 0 | 0 |
+| Subdominios nuevos | 18 | 18 | 18 | 18 | 18 |
 | Padres únicos | 18 | 18 | 18 | 0 | 0 |
 | Relaciones ordinarias | 0 | 0 | 0 | 0 | 0 |
 
@@ -47,5 +47,6 @@ Crear exactamente los 18 subdominios enumerados en `inventories/batch-002-taxono
 | `in-production` | `in-review` | `2026-07-21` | Responsable del proyecto | Entrega `d1` preservada en `e09d446`; revisión completa 18/18. |
 | `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | Aprobación explícita; `review-report.md` r1; cero hallazgos abiertos. |
 | `accepted` | `integrated` | `2026-07-21` | Codex / responsable de integración | Entrega aceptada `15b2dbc`; 18 archivos canónicos con bytes idénticos y referencias resueltas. |
+| `integrated` | `closed` | `2026-07-21` | Responsable del proyecto | Instrucción explícita de reconciliación; 18/18 archivos idénticos; `PROJECT-STATUS.md`. |
 
-Integración completada. Cierre y publicación permanecen `pending` y requieren puertas independientes.
+Lote cerrado tras reconciliación de integración, cobertura y siguientes acciones. La publicación permanece `pending` y requiere puertas independientes.
