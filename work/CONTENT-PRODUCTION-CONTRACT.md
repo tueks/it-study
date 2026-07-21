@@ -62,7 +62,7 @@ Revisa estructura, semántica y evidencia; asigna severidad final; acepta, devue
 
 En una fase posterior valida estructura, integra contenido aceptado, genera derivados y produce hallazgos técnicos. No corrige semántica silenciosamente, no convierte derivados en autoridad y no decide aprobación editorial.
 
-Se preserva `decision-0016-operational-ownership`: se usan roles, no responsables nominales ni permisos supuestos.
+Conforme a `decision-0016-operational-ownership`, el Responsable del proyecto es la autoridad final; las asignaciones operativas se registran por lote y ninguna persona o agente presume delegaciones o permisos.
 
 ## 5. Condiciones de activación
 
@@ -173,7 +173,7 @@ Rige `docs/03-content-model.md`. En la tabla, **Trabajo** propone y registra den
 | `knowledgeLevel` | Manifiesto/Trabajo; revisor valida suficiencia | Obligatorio | Profundidad autorizada y campos/preguntas cubiertos | Usar `depth`, medir longitud/dificultad o declarar nivel no alcanzado. |
 | `stability` | Trabajo; revisor de vigencia | Obligatorio | Ritmo de cambio, gobernanza, versión y riesgo | Popularidad, estado editorial, calendario inventado o `deprecated` sin disposición. |
 | `editorialStatus` | Trabajo puede asignar `draft` y recomendar/asignar `in-review` conforme al flujo; autoridad valida estados reservados | Obligatorio | Estado previo, puerta cumplida, revisión y autoridad | Autoaprobar, saltar estados, contar borrador o asignar `deprecated`/`rejected` sin autoridad. |
-| `owner` | Coordinación autoriza rol o responsable identificable; Trabajo registra; revisor valida | Condicional, obligatorio desde `draft`; no se omite si el estado lo activa | Asignación operativa vigente | Inventar persona, delegación o permiso; se preserva `decision-0016`. |
+| `owner` | Coordinación autoriza rol o responsable identificable; Trabajo registra; revisor valida | Condicional, obligatorio desde `draft`; no se omite si el estado lo activa | Asignación operativa vigente | Inventar una persona, delegación o permiso no registrado; se aplica `decision-0016`. |
 | `decisionRefs` | Trabajo propone referencias; revisor valida | Opcional; incluir solo decisiones existentes y relevantes | ID de decisión y relación material | Inventar decisión, enlazar propuesta como autoridad o copiar su contenido. |
 | `batch` | Manifiesto/Trabajo; coordinación y Codex validan | Condicional, obligatorio para contenido producido por lote | `batchId` del manifiesto autorizado | Usar `batchId` como clave de ficha, lote inexistente o perder historial. |
 | `createdAt` | Trabajo registra; revisor/Codex validan | Obligatorio | Fecha real de creación y commit, no futura | Sustituir fecha de migración/revisión, adivinar o cambiar en modificación. |
@@ -528,7 +528,7 @@ Quedan definidos naturaleza contractual, precedencia, activación, participantes
 
 ### 56.3 Decisiones pendientes preservadas
 
-Permanecen sin resolver `decision-0012-related-relations-migration`, `decision-0013-symmetric-relations-storage`, `decision-0014-certification-issuer-model`, `decision-0015-dark-mode-delivery`, `decision-0016-operational-ownership`, `decision-0017-review-calendars` y `decision-0018-final-technical-metrics`. Este contrato aplica sus reglas de contención y no adopta alternativas.
+`decision-0016-operational-ownership` está aceptada y se aplica sin crear delegaciones implícitas. Permanecen sin resolver `decision-0012-related-relations-migration`, `decision-0013-symmetric-relations-storage`, `decision-0014-certification-issuer-model`, `decision-0015-dark-mode-delivery`, `decision-0017-review-calendars` y `decision-0018-final-technical-metrics`. Este contrato aplica sus reglas de contención y no adopta alternativas.
 
 ### 56.4 Contradicciones encontradas
 
