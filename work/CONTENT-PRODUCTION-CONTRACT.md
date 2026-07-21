@@ -8,7 +8,7 @@
 | Nombre oficial | Contrato operativo de producción de contenido |
 | Ruta | `work/CONTENT-PRODUCTION-CONTRACT.md` |
 | Estado | Propuesta operativa sujeta a revisión y aprobación |
-| Versión | `0.1.0` |
+| Versión | `0.2.0` |
 | Fecha | 2026-07-20 |
 
 Son documentos de autoridad, en orden: `00-bootstrap-brief.md`; `docs/00-project-charter.md`; `docs/01-scope-and-audience.md`; `docs/02-taxonomy.md`; `docs/03-content-model.md`; `docs/04-editorial-guidelines.md`; `docs/05-relationship-rules.md`; `docs/06-design-boundaries.md`; `docs/07-mvp-definition.md`; `docs/08-production-batches.md`; `docs/09-quality-criteria.md`; `docs/10-decision-log.md`; `work/WORK-INSTRUCTIONS.md`; y `work/RESEARCH-PROTOCOL.md`.
@@ -84,16 +84,18 @@ Una relación es normalmente parte de una unidad o reporte; solo tendrá archivo
 
 ## 7. Modalidades de trabajo
 
-| Modalidad | Autoridad y destino | Evidencia y estado | Restricciones y reportes |
-|---|---|---|---|
-| Creación | Manifiesto autorizado; `content/new/` | Investigación, duplicados, fuentes y clasificación; `planned` a `draft`, con recomendación de `in-review` | No reserva identidad definitiva fuera del lote; aparece en todos los reportes aplicables. |
-| Modificación | Alcance explícito sobre ID existente; `content/modified/` | Motivo, estado previo, diff, fuentes e impacto; vuelve ordinariamente a `draft` o permanece según autoridad | Conserva ID; solo cambia lo autorizado. |
-| Corrección | Mismo lote abierto, reenvío o lote de corrección | Hallazgo y diff; estado esperado determinado por revisión | No altera identidad, contrato ni alcance. |
-| Ampliación de profundidad | Manifiesto que autorice nuevo `knowledgeLevel` | Deuda o razón educativa, investigación adicional y diff | No se justifica por longitud, popularidad ni cuota. |
-| Actualización | Lote autorizado por vigencia, versión o evidencia | Verificación, fechas, fuentes retiradas/nuevas y U1/U2/U3 si aplica | Trabajo propone; la disposición final es externa. |
-| Deprecación | Autoridad expresa | Motivo, fecha, referencias, cobertura y sustituto si existe; estado final `deprecated` | Conserva identidad e historia; no cuenta para mínimos. |
-| Sustitución | Autoridad expresa y destinos aprobados | `replacedBy`, verificación de referencias, ciclos e impacto | No elimina el sustituido ni inventa sucesor. |
-| Migración | Decisión `accepted` y plan de migración | Mapa anterior→vigente, compatibilidad, validación, rollback y diff atómico | No se ejecuta para resolver un asunto `pending-resolution`. |
+Cada modalidad debe figurar expresamente en el manifiesto o en una autoridad compatible que este referencie. “Estado esperado” significa recomendación o resultado sujeto a la autoridad indicada, no transición automática.
+
+| Modalidad | Autoridad requerida | Archivo de destino | Evidencia mínima | Estado inicial | Estado esperado | Reportes afectados | Restricciones |
+|---|---|---|---|---|---|---|---|
+| Creación | Candidato e ID autorizados en manifiesto `authorized` | `content/new/<id>.md` | Investigación cerrada o suficiente; búsqueda de duplicados; clasificación; mapa de afirmaciones; fuentes y relaciones | `planned` | `draft`; recomendación de `in-review` solo al cumplir la sección 36 | Resumen, cobertura, fuentes, relaciones, duplicados, autoevaluación y validación; propuestas/preguntas/excepciones si existen | No crear identidad fuera del lote, reservar ID sin autoridad ni contar el borrador como aprobado. |
+| Modificación | Manifiesto que nombre el ID, motivo, alcance y archivos modificables | `content/modified/<id>.md` | Estado e historial previos; diff previsto; fuentes vigentes; dependencias, consumidores y relaciones afectadas | Estado real registrado; si es `approved`, solo mediante modalidad autorizada de la sección 44 | Ordinariamente `draft` o `in-review` tras corrección; cualquier conservación/transición adicional requiere autoridad | Todos los anteriores, más resumen del diff e impacto de cobertura | Conservar ID; cambiar solo lo autorizado; no mezclar defectos incidentales. |
+| Corrección | Lote abierto, reenvío por hallazgo o lote de corrección autorizado | `content/new/` si la unidad aún pertenece a creación del mismo lote; en otro caso `content/modified/` | Hallazgo, criterio infringido, evidencia, diff y validaciones repetidas | Estado de la entrega devuelta o del contenido objeto del lote | `draft` corregido y eventual nueva recomendación de `in-review` | Reportes afectados por el defecto, respuesta a hallazgos, autoevaluación y validación | No cambia identidad, contrato, clasificación material ni alcance; si los cambia, deja de ser corrección. |
+| Ampliación de profundidad | Manifiesto que autorice el paso de `knowledgeLevel` y sus límites | `content/modified/<id>.md`, salvo creación aún no entregada | Justificación educativa; deuda previa; investigación adicional; campos/secciones activados y diff | `recognition` u otro nivel aprobado inferior | `draft` con el nuevo nivel completo; posible recomendación de `in-review` | Resumen, cobertura por profundidad, fuentes, relaciones, autoevaluación y validación | No ampliar por popularidad, longitud, disponibilidad de texto o ajuste de porcentajes. `future-expanded-reference` no se produce ordinariamente. |
+| Actualización | Lote autorizado por vigencia, versión o evidencia nueva | `content/modified/<id>.md` | Señal de cambio; versión anterior/nueva; fechas; verificación; fuentes añadidas/retiradas; U1/U2/U3 si aplica | `approved`, `needs-update` u otro estado real autorizado | `draft` o `in-review`; retorno a `approved` solo por revisión y autoridad | Fuentes, cobertura, relaciones, resumen, autoevaluación, validación y preguntas | Trabajo identifica riesgo y propone disposición; no asigna estado final ni mantiene como vigente información materialmente falsa. |
+| Deprecación | Decisión o instrucción expresa del responsable autorizado y lote correspondiente | `content/modified/<id>.md` | Motivo, fecha, estado anterior, fuentes, referencias, dependencias, cobertura, visibilidad propuesta y sustituto si existe | Ordinariamente `approved` o `needs-update` | Propuesta preparada; `deprecated` solo tras autoridad final | Resumen, cobertura, relaciones, fuentes, validación, excepciones/preguntas y revisión | Conservar ID e historia; no eliminar; no contar para mínimos; Trabajo no autoriza la disposición. |
+| Sustitución | Autoridad expresa sobre unidad sustituida y sustituto aprobado | `content/modified/<id>.md` para cada unidad autorizada afectada | Justificación, `replacedBy`, diff, referencias entrantes, ciclos, dependencias, cobertura y plan de actualización | Estado real de cada unidad | Propuesta revisable; estados finales según decisión de sustitución/deprecación | Resumen, relaciones, cobertura, duplicados, fuentes, validación y revisión | No inventar sucesor, crear ciclos, borrar identidad histórica ni actualizar consumidores fuera del alcance. |
+| Migración | Decisión `accepted`, plan de migración y manifiesto que autorice su ejecución | `content/modified/` y demás destinos expresamente incluidos en el plan | Mapa anterior→vigente; inventario; compatibilidad; consumidores; diff atómico; validaciones; rollback; impacto en fuentes, relaciones y cobertura | Estados e identidades registrados antes de migrar | Estados definidos por el plan; nunca se presume `approved` | Todos los reportes afectados, tabla de migración/evidencia autorizada, validación y revisión | No resolver mediante ejecución un `pending-resolution`; no migrar parcialmente si rompe referencias o atomicidad. |
 
 ## 8. Contrato de entrada de trabajo
 
@@ -131,39 +133,62 @@ No se reserva definitivamente un ID sin autoridad del lote o planificación.
 
 ## 12. Frontmatter común
 
-Rige `docs/03-content-model.md`. Trabajo propone valores; coordinación valida autorización e identidad; revisión valida semántica, estado y evidencia; Codex valida posteriormente estructura. Las obligaciones particulares son:
+Rige `docs/03-content-model.md`. En la tabla, **Trabajo** propone y registra dentro del alcance; **coordinación** valida autorización, identidad, lote y cualquier valor reservado; el **revisor independiente** valida semántica, suficiencia, vigencia y transición; y **Codex**, posteriormente, valida forma, tipos y referencias sin decidir semántica. Cuando la propuesta dependa de una autoridad material, Trabajo solo la prepara.
 
-| Campo aprobado | Presencia y tratamiento operativo | Evidencia y errores frecuentes |
-|---|---|---|
-| `id` | Obligatorio siempre; asignado/autorizado antes de autoría | Registro global y duplicados; no cambiar por título ni usar slug. |
-| `title` | Obligatorio; título editorial español | Uso profesional y lineamientos; evitar marketing o desambiguación oculta. |
-| `canonicalName` | Obligatorio en taxonomía y entidades | Identidad normalizada; no confundir con ID. |
-| `englishName` | Omitir si no difiere ni aporta búsqueda; conservar término profesional predominante | Evidencia terminológica; no duplicar alias sin razón. |
-| `aliases` | Solo variantes reales, tipadas, con idioma y sin colisión | Investigación de nombres; no crear otra identidad ni esconder polisemia. |
-| `legacyIds` | Solo migración autorizada | Plan y tabla de migración; no usar para simples renombres. |
-| `type` | Obligatorio para entidades y estructuras; vocabulario aprobado | Prueba de naturaleza; no usar marca, disciplina o palabra comercial como tipo. |
-| `subtype` | Obligatorio solo cuando el tipo lo exige; si no, omitir | Compatibilidad; no inventar refinamientos. |
-| `primaryDomain` | Obligatorio para entidades salvo excepción justificada | Propósito principal; no asignar por mención. |
-| `subdomains` | Solo ubicación específica dentro del principal | Padre válido; no crear tercer nivel. |
-| `secondaryDomains` | Solo aplicaciones sustantivas justificadas | Evidencia de aplicación; no duplicar principal. |
-| `disciplines` | Solo disciplinas transversales existentes | Alcance real; no convertir disciplina en jerarquía. |
-| `priority` | Obligatorio; `essential`, `important`, `specialized` o `emerging` | Valor educativo, dependencia, cobertura y audiencia; no popularidad o cuota. |
-| `knowledgeLevel` | Obligatorio; nombre aprobado de profundidad | Manifiesto y suficiencia; no usar `depth` en la ficha. |
-| `stability` | Obligatorio; enum aprobado | Ritmo de cambio, versión y riesgo; no inventar calendario. |
-| `editorialStatus` | Obligatorio; Trabajo asigna ordinariamente `draft` | Flujo y revisión; no autoasignar aprobación final. |
-| `verificationStatus` | Obligatorio: `verified`, `pending` o `uncertain` | Comprobación de vigencia; `pending` es predeterminado antes de aprobación. |
-| `createdAt` | Obligatorio, fecha real no futura respecto al commit | Historial; no reconstruir sin evidencia. |
-| `reviewedAt` | Obligatorio para `approved`; omitir antes si no hubo revisión | Evidencia de revisión; no usar fecha de autoría. |
-| `reviewDueAt` | Solo si vigencia/estabilidad lo justifican | Riesgo y versión; no calendario uniforme. |
-| `sources` | Obligatorio desde `in-review`; solo fuentes usadas y disponibles | Mapa de afirmaciones; no usar `sourceIds` como sustituto de este campo común. |
-| `batch` | Obligatorio para contenido producido por lote | Manifiesto; no confundir con `batchId` del reporte. |
-| `contractVersion` | Obligatorio; versión contractual aplicable | Esta versión o vigente aprobada; no inventar compatibilidad. |
-| `replacedBy` | Solo si existe sustituto; entonces debe ser válido | Autoridad de sustitución y ausencia de ciclos. |
-| `relations` | Solo relaciones persistibles válidas | Catálogo, dirección, cardinalidad, fuentes y destinos; no relleno. |
+| Campo aprobado | Quién propone / quién valida | Obligatorio u omisión | Evidencia requerida | Errores frecuentes prohibidos |
+|---|---|---|---|---|
+| `id` | Coordinación o planificación lo autoriza; Trabajo lo registra; revisor y Codex validan | Obligatorio en toda unidad; nunca se omite | Manifiesto, registro global, búsqueda de duplicados y namespace | Inventarlo, reutilizarlo, cambiarlo por título, derivar identidad de slug/ruta/URL. |
+| `title` | Trabajo; revisor editorial | Obligatorio | Identidad, idioma y uso profesional | Marketing, ambigüedad no calificada, copiar el ID o forzar traducción artificial. |
+| `canonicalName` | Trabajo; revisor taxonómico/editorial | Obligatorio en taxonomía y entidades; omitir solo en estructuras donde el modelo no lo exija | Investigación terminológica e identidad | Confundirlo con título, alias o ID; plural/variante arbitraria. |
+| `englishName` | Trabajo; revisor editorial | Opcional; omitir si no difiere ni aporta búsqueda | Uso profesional verificable | Traducir artificialmente, duplicar sin propósito un alias o desplazar el nombre canónico. |
+| `aliases` | Trabajo; revisor y control de duplicados | Opcional; omitir sin variantes reales | Búsqueda por nombres, siglas, traducciones, historia e idioma | Lista vacía, alias ambiguo, colisión oculta, polisemia encubierta o duplicación de identidad. |
+| `legacyIds` | Plan de migración; Trabajo ejecuta; autoridad y Codex validan | Solo migración autorizada; en otro caso se omite | Decisión `accepted`, mapa anterior→vigente y verificación global | Usarlo para renombre simple, inventar IDs históricos o reutilizarlos. |
+| `type` | Trabajo dentro de tipos permitidos; revisor taxonómico | Obligatorio en entidades y estructuras | Prueba de naturaleza, taxonomía y manifiesto | Inventar tipo, usar marca, palabra comercial o conveniencia visual. |
+| `subtype` | Trabajo; revisor taxonómico | Condicional cuando el tipo lo requiera; si no aplica, se omite | Contrato específico del tipo | Inventar refinamiento, usar subtipo incompatible o rellenarlo por simetría. |
+| `summary` | Trabajo; revisor editorial/técnico | Obligatorio para contenido publicable; no se omite al recomendar revisión | Afirmaciones centrales respaldadas y profundidad | Repetir título/definición, usar listas, promoción, vaguedad o detalle de implementación. |
+| `definition` | Trabajo; revisor técnico/editorial | Obligatorio para entidades y taxonomía | Fuente definicional y fronteras del concepto | Circularidad, confundir propósito, historia o ejemplo con definición. |
+| `problemSolved` | Trabajo; revisor técnico/editorial | Condicional para soluciones e implementaciones; opcional en otros; omitir si no aplica | Evidencia del problema y vínculo causal prudente | Inventar causalidad, duplicar `purpose`, prometer resultado absoluto. |
+| `purpose` | Trabajo; revisor técnico/editorial | Obligatorio salvo fuente | Razón de existir o uso respaldado | Repetir definición, antropomorfismo, intención inventada o lenguaje promocional. |
+| `primaryDomain` | Trabajo dentro del manifiesto; revisor taxonómico | Obligatorio para entidades salvo excepción justificada; no aplica del mismo modo a dominios/estructuras con contrato propio | Prueba de propósito principal y dominio existente | Elegir por mención, carpeta, autor o necesidad de balance. |
+| `subdomains` | Trabajo; revisor taxonómico y Codex | Opcional; omitir si no hay ubicación específica | IDs existentes y `parentDomain` coincidente con `primaryDomain` | Subdominio de otro padre, tercer nivel implícito, duplicados o listas vacías. |
+| `secondaryDomains` | Trabajo; revisor taxonómico | Opcional; solo aplicaciones sustantivas | Afirmación/relación de aplicación y dominio existente | Añadir por coocurrencia, simple mención, cuota o duplicar el principal. |
+| `disciplines` | Trabajo; revisor taxonómico | Opcional | IDs de disciplinas existentes y aplicación transversal real | Inventar disciplina, duplicarla por dominio o convertirla en tercer nivel. |
+| `prerequisites` | Trabajo; revisor educativo/relacional | Opcional; esperado solo cuando existe dependencia educativa real | IDs aprobados y justificación de aprendizaje | Autorreferencia, confundir orden de ruta con requisito o apuntar a borrador no aprobado como válido. |
+| `related` | Trabajo solo bajo regla transitoria; revisor relacional | Opcional y transitorio; omitir si no aporta | ID existente y contención de `decision-0012` | Eliminarlo, deprecarlo, duplicarlo automáticamente en `relations[]` o usarlo como relleno. |
+| `confusedWith` | Trabajo; revisor editorial/relacional | Opcional; esperado ante confusión material | IDs existentes y explicación de diferencia | Autorreferencia, asociación vaga, omitir explicación o persistir inversa incompatible. |
+| `usedByRoles` | Trabajo; revisor taxonómico/relacional | Opcional | Destinos existentes de tipo `role` y evidencia de uso | Apuntar a `position`, inferir por popularidad o completar por cuota. |
+| `responsibilities` | Trabajo; revisor de familia | Opcional/esperado en personas según tipo | Enunciado de obligación, alcance y referencias opcionales | Universalizar organización, confundir actividad con resultado o crear ficha sin autonomía. |
+| `competencies` | Trabajo; revisor de familia | Opcional/esperado en roles y puestos | IDs existentes de tipo `competency` | Usar temas, herramientas o responsabilidades como competencia. |
+| `examples` | Trabajo; revisor editorial/técnico | Opcional; incluir solo si aclara | Afirmaciones respaldadas, contexto y referencias aplicables | Tutorial, caso inseguro, hecho no respaldado, ejemplo circular o relleno. |
+| `advantages` | Trabajo; revisor técnico/editorial | Opcional/esperado en soluciones e implementaciones cuando aplique | Evidencia contextual del beneficio | Marketing, absolutos, simetría forzada o duplicar `purpose`. |
+| `limitations` | Trabajo; revisor técnico/editorial | Opcional/esperado en soluciones e implementaciones cuando aplique | Evidencia de frontera, compromiso o riesgo | Omitir para favorecer una marca, inventar desventaja o duplicar confusiones. |
+| `contextNotes` | Trabajo; revisor editorial/técnico | Opcional; omitir sin variación real | Contexto, comunidad, región o acepción identificable | Cajón de sastre, duplicar definición, nota sin etiqueta o esconder polisemia. |
+| `contextualTypes` | Trabajo; revisor taxonómico | Opcional para implementaciones con sentidos secundarios compatibles | Tipo válido distinto al principal, contexto y ciclo compatible | Crear varias fichas para filtros, introducir tipo inválido o esconder identidades incompatibles. |
+| `brand` | Trabajo; revisor técnico/editorial | Opcional en herramienta, plataforma, servicio o producto; omitir en capacidad general | Nombre verificable y propietario cuando aplique | Usar marca como `type`, promoción o atribución no verificada. |
+| `sources` | Trabajo; revisor de fuentes | Obligatorio para `in-review` o superior; antes puede ser condicional, nunca ficticio | Fuentes normalizadas realmente usadas, mapa de afirmaciones y disponibilidad | URL como ID, fuente no usada, inventada, central no verificable o lista vacía. |
+| `relations` | Trabajo; revisor relacional y Codex | Opcional; solo relaciones persistibles válidas | Catálogo, IDs, compatibilidad, dirección, cardinalidad, ciclos y fuentes cuando correspondan | Clave provisional, inversa derivada, simétrica duplicada, navegación, relleno o destino pendiente contado. |
+| `priority` | Trabajo dentro del manifiesto; coordinación y revisor validan | Obligatorio | Valor educativo, dependencia, transversalidad y audiencia | Popularidad, prominencia visual, marketing o reclasificación para porcentajes. |
+| `knowledgeLevel` | Manifiesto/Trabajo; revisor valida suficiencia | Obligatorio | Profundidad autorizada y campos/preguntas cubiertos | Usar `depth`, medir longitud/dificultad o declarar nivel no alcanzado. |
+| `stability` | Trabajo; revisor de vigencia | Obligatorio | Ritmo de cambio, gobernanza, versión y riesgo | Popularidad, estado editorial, calendario inventado o `deprecated` sin disposición. |
+| `editorialStatus` | Trabajo puede asignar `draft` y recomendar/asignar `in-review` conforme al flujo; autoridad valida estados reservados | Obligatorio | Estado previo, puerta cumplida, revisión y autoridad | Autoaprobar, saltar estados, contar borrador o asignar `deprecated`/`rejected` sin autoridad. |
+| `owner` | Coordinación autoriza rol o responsable identificable; Trabajo registra; revisor valida | Condicional, obligatorio desde `draft`; no se omite si el estado lo activa | Asignación operativa vigente | Inventar persona, delegación o permiso; se preserva `decision-0016`. |
+| `decisionRefs` | Trabajo propone referencias; revisor valida | Opcional; incluir solo decisiones existentes y relevantes | ID de decisión y relación material | Inventar decisión, enlazar propuesta como autoridad o copiar su contenido. |
+| `batch` | Manifiesto/Trabajo; coordinación y Codex validan | Condicional, obligatorio para contenido producido por lote | `batchId` del manifiesto autorizado | Usar `batchId` como clave de ficha, lote inexistente o perder historial. |
+| `createdAt` | Trabajo registra; revisor/Codex validan | Obligatorio | Fecha real de creación y commit, no futura | Sustituir fecha de migración/revisión, adivinar o cambiar en modificación. |
+| `reviewedAt` | Revisor autorizado registra/valida | Condicional, obligatorio para `approved`; omitir si no hubo revisión | Revisión independiente completada | Autor lo rellena, fecha anterior a `createdAt` o usar autoevaluación. |
+| `reviewDueAt` | Trabajo puede proponer; revisor/autoridad valida | Condicional cuando vigencia o estabilidad lo justifiquen; si no, omitir | Riesgo, versión, disponibilidad y dependencia | Calendario uniforme inventado, fecha sin fundamento o no posterior a revisión. |
+| `validFrom` / `validUntil` | Trabajo; revisor de vigencia | Opcionales solo para hechos versionados/temporales | Fuente de vigencia y orden cronológico | Usarlos como fechas editoriales, inventarlos o crear intervalo inválido. |
+| `verificationStatus` | Trabajo propone; revisor valida y puede confirmar | Obligatorio; `pending` antes de verificación, `uncertain` cuando corresponda | Verificación de afirmaciones, versión, fecha y disponibilidad | Marcar `verified` por confianza, ocultar conflicto o confundirlo con aprobación. |
+| `reviewNotes` | Trabajo o revisor según origen; revisión valida permanencia | Opcional; omitir sin observación interna útil | Hallazgo, limitación o instrucción trazable | Sustituir historial/reporte, incluir presentación o esconder deuda sin estado. |
+| `deprecated` | Trabajo solo prepara; autoridad valida | Obligatorio, predeterminado `false`; `true` solo con deprecación autorizada | Decisión, motivo, fecha e impacto | Activarlo para ocultar error, retirarlo silenciosamente o confundir estabilidad. |
+| `deprecatedAt` | Trabajo prepara; autoridad/revisor valida | Condicional, obligatorio si `deprecated: true`; si no, omitir | Fecha efectiva de retiro | Fecha sin autoridad, anterior incoherente o usar fecha de hallazgo. |
+| `deprecationReason` | Trabajo prepara; autoridad/revisor valida | Condicional, obligatorio si está deprecado | Decisión, evidencia y alcance del retiro | Motivo vago, visual, promocional o sin trazabilidad. |
+| `replacedBy` | Trabajo propone; autoridad y revisor relacional validan | Condicional: obligatorio si existe sustituto; omitir si retiro sin reemplazo justificado | ID vigente, decisión, referencias y ausencia de ciclos | Autorreferencia, ciclo, destino inexistente o sustitución automática. |
+| `contractVersion` | Trabajo registra; coordinación/Codex validan | Obligatorio | Versión aprobada aplicable al contenido | Usar versión propuesta como aprobada, omitirla o inventar compatibilidad. |
 
-Además se conservan, cuando apliquen, los campos aprobados `summary`, `definition`, `problemSolved`, `purpose`, `prerequisites`, `related`, `confusedWith`, `usedByRoles`, `responsibilities`, `competencies`, `examples`, `advantages`, `limitations`, `contextNotes`, `contextualTypes`, `brand`, `owner`, `decisionRefs`, `validFrom`, `validUntil`, `reviewNotes`, `deprecated`, `deprecatedAt` y `deprecationReason`, más los especializados por tipo.
+Los campos especializados de dominios, subdominios, disciplinas, familias, comparaciones, escenarios, rutas y fuentes conservan sus nombres, presencia y autoridad en `docs/03-content-model.md`; este contrato no los renombra ni convierte esta tabla en schema.
 
-`updatedAt`, `sourceIds`, `batchId` y `depth` aparecen en el encargo como conceptos, pero no son nombres comunes aprobados por el modelo. No se incorporan como claves de ficha: actualización se prueba mediante historial/diff y fechas aprobadas; fuentes comunes mediante `sources`; lote mediante `batch`; profundidad mediante `knowledgeLevel`. `sourceIds` solo se utiliza dentro de una relación si el contrato relacional aprobado lo admite.
+`updatedAt`, `sourceIds`, `batchId` y `depth` aparecen en el encargo como conceptos, pero no son nombres comunes aprobados por el modelo. No se incorporan como claves comunes de ficha: la actualización se prueba con historial, diff y fechas aprobadas; las fuentes de la unidad mediante `sources`; el lote mediante `batch`; y la profundidad mediante `knowledgeLevel`. `sourceIds` sí pertenece al mapa de afirmaciones y puede aparecer en una relación cuando el contrato relacional lo requiera. Si un futuro contrato aprobado adopta alguno como campo, su incorporación requerirá la autoridad y migración correspondientes.
 
 ## 13. Ausencia significativa
 
