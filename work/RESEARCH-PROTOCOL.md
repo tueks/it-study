@@ -2091,11 +2091,10 @@ Se preservan sin resolver:
 - `decision-0013-symmetric-relations-storage`;
 - `decision-0014-certification-issuer-model`;
 - `decision-0015-dark-mode-delivery`;
-- `decision-0016-operational-ownership`;
 - `decision-0017-review-calendars`;
 - `decision-0018-final-technical-metrics`.
 
-Este protocolo aplica sus reglas de contención. No convierte ninguna propuesta en autoridad.
+`decision-0016-operational-ownership` está aceptada: el Responsable del proyecto conserva la autoridad final y toda delegación debe registrarse. Este protocolo aplica las reglas de contención de las decisiones enumeradas y no convierte ninguna propuesta en autoridad.
 
 ### 50.20 Contradicciones encontradas
 
