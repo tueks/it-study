@@ -24,4 +24,4 @@
 |---|---|---|---|---|
 | `proposed` | `authorized` | `2026-07-21` | Responsable del proyecto | Decisión 0020 e inventario v1. |
 | `authorized` | `in-production` | `2026-07-21` | Codex | Preflight conforme; dominios aprobados y fuentes disponibles. |
-| `in-production` | `in-review` | `2026-07-21` | Codex | Entrega `d1`: 8 borradores, 12 reportes y validaciones automatizables conformes. |
+| `in-production` | `in-review` | `2026-07-21` | Codex | Entrega `d1` preservada en `04f774e`: 8 borradores, 12 reportes y validaciones automatizables conformes. |

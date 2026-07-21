@@ -5,6 +5,7 @@
 | `batchId` | `batch-004-taxonomy-disciplines-core` |
 | Entrega | `v1` / `d1` / `r1` |
 | Estado | `pending-independent-review` |
+| Referencia de entrega | `04f774e` |
 | Alcance requerido | Revisión completa 8/8 |
 | Revisor | Pendiente; independiente de Codex |
 | Decisión | `pending` |
