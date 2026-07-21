@@ -11,7 +11,7 @@
 | Rol responsable | ChatGPT Trabajo |
 | Alcance cubierto | Doce fichas, dieciocho fuentes, topología, reportes, IDs, aliases, referencias y separación contenido-diseño. |
 | Contratos aplicados | `docs/03-content-model.md` 1.0; `docs/05-relationship-rules.md`; `docs/09-quality-criteria.md` 1.0; `work/BATCH-TEMPLATE.md` 1.0.0. |
-| Estado del reporte | `complete` para preintegración de `d2`; revisión independiente aprobada. |
+| Estado del reporte | `complete`; preintegración y postintegración de `d2` conformes. |
 | Limitaciones | No existe schema/CI autorizado; la precisión conceptual, suficiencia editorial y aprobación requieren revisor independiente. |
 | Evidencia/archivos | Salida consolidada de `d2`: `files=30 domains=12 sources=18 sourceRefs=59 ids=30 errors=0`; `git diff --check` sin salida. |
 
@@ -57,6 +57,16 @@ La copia provisional a `content/taxonomy/domains/` se revirtió íntegramente: 1
 | `validation-012` | Duplicados y fuente descartada | IDs, títulos y referencias distintos; TOGAF no materializada | `duplicateSourceIds=0 duplicateReferences=0 togafFiles=0 errors=0` | Conforme | La equivalencia de obras requiere revisión humana. |
 | `validation-013` | Resolución de `sources[]` | 12/12 fichas con referencias no vacías; cada destino existe y es `type: source` | `domainFiles=12 domainsWithSources=12 sourceRefs=59 unresolved=0 errors=0` | `validation-009` corregida | Suficiencia y selección final corresponden al revisor. |
 
-Resultado: paquete `v2`/`d2` aprobado y aceptado; listo para handoff e integración. `integrated`, `closed` y publicación permanecen pendientes.
+Resultado de preintegración: paquete `v2`/`d2` aprobado y aceptado; handoff habilitado. El resultado postintegración se registra a continuación; `closed` y publicación permanecen pendientes.
 
 Huella reproducible de `content/new/`: 30 pares `nombre:SHA-256`, ordenados por nombre y unidos con LF, producen `956264c176901e9470f074a9a59c105b51c8a21b8d12dc988d60f0bcf0239049`.
+
+## Integración canónica
+
+| ID local | Validación | Resultado | Disposición |
+|---|---|---|---|
+| `validation-014` | Aplicación por tipo y ruta | 12 `domain` en `content/taxonomy/domains/`; 18 `source` en `content/sources/`; 0 extras | Conforme |
+| `validation-015` | Igualdad de entrega y fuente canónica | 30/30 archivos con bytes idénticos a `d2` aceptado | Conforme |
+| `validation-016` | IDs, estados y referencias postintegración | 30 IDs únicos; 30 `approved`; 59 `sources[]` resueltas; `errors=0` | Conforme |
+
+Resultado de integración: `integrated`. Baseline técnico anterior: `83a5000b32bcd299725ed576b47591e9c7c7bb93`; entrega revisada: `4d62f2e`; decisión aceptada: `3712f27`. Rollback: retirar únicamente los 30 archivos nuevos de `content/taxonomy/domains/` y `content/sources/` y restaurar el baseline anterior; las entregas permanecen preservadas. `closed` y publicación siguen pendientes.

@@ -17,8 +17,8 @@
 
 | Dimensión | Línea base anterior | Previsto | Producido | `in-review` | `approved` | Aceptado por lote | Integrado | Publicable | Deuda/pendiente | Evidencia |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| Dominio | 0 | 12 | 12 | 0 | 12 | 12 | 0 | 0 | 0 editorial; integración pendiente | `content/new/`; `review-report.md` |
-| Fuente | 0 | 18 | 18 | 0 | 18 | 18 | 0 | 0 | 0 editorial; integración pendiente | `content/new/source-*.md`; `review-report.md` |
+| Dominio | 0 | 12 | 12 | 0 | 12 | 12 | 12 | 12 | 0 | `content/taxonomy/domains/`; `review-report.md` |
+| Fuente | 0 | 18 | 18 | 0 | 18 | 18 | 18 | 18 | 0 | `content/sources/`; `review-report.md` |
 | Subdominio | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 dentro del lote | Exclusión del manifiesto |
 | Disciplina | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 dentro del lote | Exclusión del manifiesto |
 | Tipo de contenido distinto | 0 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 2 pendientes de revisión | `type: domain`; `type: source` |
@@ -33,7 +33,7 @@
 
 | Indicador | Mínimo vigente | Objetivo recomendado | Máximo | Actual contable | Variación del lote | Balance/concentración | Disposición |
 |---|---:|---:|---:|---:|---:|---|---|
-| Dominios aprobados representados | 12 | 12 | 12 | 12 | +12 aprobados | Un dominio por cada ID; sin concentración. | Aceptados; integración pendiente. |
+| Dominios aprobados representados | 12 | 12 | 12 | 12 | +12 integrados | Un dominio por cada ID; sin concentración. | Mínimo taxonómico de dominios disponible; cierre separado. |
 | Fichas `domain` producidas | 12 | 12 | 12 | 12 | +12 | Cobertura exacta de los doce IDs. | Producción completa dentro de `v2`; revisión de `d2` pendiente. |
 | Registros `source` producidos | No es cuota educativa | 18 usados | 18 | 18 | +18 | Tres autoridades internas y quince externas; una fuente evaluada se mantiene descartada. | Revisar junto con las fichas; no cuentan como entidades educativas del MVP. |
 

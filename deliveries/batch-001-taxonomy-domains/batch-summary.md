@@ -12,7 +12,7 @@
 | Alcance cubierto | Doce fichas `domain`, dieciocho registros `source` y reportes obligatorios reconciliados. |
 | Contratos aplicados | Documentos normativos 02–10; contratos `work/` 1.0.0; `inventories/domains.yaml` 1.0. |
 | Estado del reporte | `complete`; revisión independiente de `d2` registrada. |
-| Limitaciones | La aceptación no implica integración, cierre ni publicación. |
+| Limitaciones | La integración no implica cierre ni publicación. |
 | Evidencia/archivos | `content/new/`; reportes del lote; validaciones registradas. |
 
 ## Resumen ejecutivo
@@ -37,10 +37,10 @@ La entrega `d2` contiene exactamente los doce dominios y los dieciocho registros
 | Excepciones | `none`; `exceptions-report.md`. |
 | Hallazgos | 0 bloqueantes/mayores conocidos por autoría; la severidad final corresponde al revisor. |
 | Validaciones | `validation-001`–`validation-013` en `validation-report.md`; `validation-009` corregida por `d2`. |
-| Efecto sobre cobertura | 12 fichas y 18 fuentes `approved`; lote `accepted`; integración pendiente. |
+| Efecto sobre cobertura | 12 fichas y 18 fuentes `approved`, aceptadas e integradas en fuentes canónicas. |
 | Riesgos residuales | Revisión independiente pendiente; suficiencia editorial y asignación de autoridad de fuentes no automatizables. |
-| Recomendación de estado | Ejecutar handoff e integración de `d2`; no cerrar ni publicar por inferencia. |
-| Siguiente acción autorizada | Integrar fuentes canónicas, validar y reconciliar; después iniciar `batch-002` si las dependencias quedan disponibles. |
+| Recomendación de estado | Mantener `integrated` hasta reconciliación de cierre autorizada; no publicar por inferencia. |
+| Siguiente acción autorizada | Iniciar `batch-002-taxonomy-subdomains-core-a` con los dominios canónicos disponibles. |
 
 ## Matriz de dominios
 

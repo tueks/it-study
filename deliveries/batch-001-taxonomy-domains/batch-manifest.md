@@ -7,7 +7,7 @@
 | `batchId` | `batch-001-taxonomy-domains` |
 | Título | Materialización de los dominios aprobados |
 | Objetivo | Materializar, sin redefinir, los doce dominios aprobados de IT Study como fichas canónicas `domain`. |
-| Estado del lote | `accepted` |
+| Estado del lote | `integrated` |
 | Fase | `F1` — Taxonomía materializada |
 | Tipo o combinación autorizada | `taxonomía` |
 | Variante operativa | `taxonomía materializada` |
@@ -99,13 +99,14 @@ La autorización inicial procede de la instrucción explícita del Responsable d
 | `authorized` | `in-production` | `2026-07-21` | ChatGPT Trabajo | Commit de puerta inicial, `sources-report.md` r1 y `duplicate-report.md` r1. | Manifiesto autorizado; plan de fuentes y comprobación inicial de duplicados/aliases registrados. | `none` bloqueante. | Se inicia investigación y producción sin cambiar `manifestVersion`. |
 | `in-production` | `in-review` | `2026-07-21` | Responsable del proyecto | Paquete `d2` preservado en `4d62f2e`; revisión completa confirmada. | 30 registros y reportes disponibles. | `none`. | Transición registrada a partir de la aprobación explícita de `d2`. |
 | `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | `review-report.md` r2; aprobación explícita de `d2`. | 30 registros `approved`; cero hallazgos abiertos. | `none`. | Habilita integración; no implica cierre ni publicación. |
+| `accepted` | `integrated` | `2026-07-21` | Codex / responsable de integración | Entrega `d2` en `3712f27`; validaciones de integración 014–016. | 12 dominios y 18 fuentes aplicados con hashes idénticos; referencias resueltas. | `none`. | No implica cierre ni publicación. |
 
 ## Decisiones terminales
 
 | Decisión | Resultado | Fecha | Rol responsable | Evidencia | Impacto/acciones |
 |---|---|---|---|---|---|
 | Aceptación | `accepted` | `2026-07-21` | Responsable del proyecto | `review-report.md` r2; `4d62f2e` | Habilita handoff de `d2`. |
-| Integración | `pending` | `pending` | Responsable de integración | Handoff en ejecución | Se decidirá tras validaciones postintegración. |
+| Integración | `integrated` | `2026-07-21` | Codex / responsable de integración | `3712f27`; `validation-report.md` r3 | Fuentes canónicas reconciliadas; habilita dependencias posteriores. |
 | Cierre o cancelación | `pending` | `pending` | Coordinación | Dossier futuro | Fuera del alcance actual. |
 
 Modificar alcance, tamaño, tipos, profundidad, dependencias, entregables o criterios exige una nueva `manifestVersion` autorizada. Una nueva `deliveryVersion` no sustituye esa autorización.
