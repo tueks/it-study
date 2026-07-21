@@ -7,10 +7,11 @@
 | Proyecto | IT Study |
 | Nombre oficial | IT Study — Checklist operativo de revisión independiente |
 | Ruta oficial | `work/REVIEW-CHECKLIST.md` |
-| Estado | **Propuesta pendiente de aprobación** |
-| Versión | `0.1.0` |
+| Estado | **Aprobado** |
+| Versión | `1.0.0` |
 | Fecha | `2026-07-20` |
-| Autoridad de aprobación requerida | Responsable del proyecto, mediante instrucción explícita registrada |
+| Fecha de aprobación | `2026-07-20` |
+| Autoridad de aprobación | Responsable del proyecto, mediante instrucción explícita registrada |
 | Ámbito | Revisión independiente de contenido, relaciones, fuentes, lotes, cobertura, estructuras editoriales, fases y evidencia asociada |
 
 ### 1.1 Documentos de autoridad
@@ -867,16 +868,12 @@ Estas decisiones no impiden aprobar y utilizar el checklist dentro de las reglas
 
 No se detectaron contradicciones materiales entre autoridades aprobadas. La tensión entre permitir muestreo estructural de confirmación en `docs/08-production-batches.md` y exigir revisión al 100 % de elementos estructurales en `docs/09-quality-criteria.md` se resuelve por precedencia: los checks estructurales enumerados en calidad se ejecutan al 100 %; el muestreo solo puede confirmar aspectos secundarios expresamente permitidos.
 
-### 37.4 Intervención requerida
+### 37.4 Aprobación registrada e intervención pendiente
 
-El responsable del proyecto debe:
-
-1. aprobar, rechazar o solicitar cambios a esta versión `0.1.0`;
-2. mantener pendientes o resolver por separado `decision-0016` y `decision-0017`;
-3. no tratar esta propuesta como autoridad vigente hasta registrar la aprobación.
+El responsable del proyecto aprobó explícitamente este checklist en versión `1.0.0` el `2026-07-20`. La aprobación no resuelve ni acepta por implicación `decision-0016-operational-ownership` ni `decision-0017-review-calendars`; ambas permanecen `proposed` y deben mantenerse pendientes o resolverse por separado conforme a `docs/10-decision-log.md`.
 
 ## 38. Cierre
 
 Este checklist convierte la calidad aprobada en una revisión independiente, trazable y repetible. Su resultado depende de evidencia y autoridad, no de promedios, volumen de checks ni confianza del autor.
 
-Hasta aprobación explícita, este documento permanece como propuesta y no sustituye las reglas vigentes de sus autoridades.
+Desde su aprobación explícita, este documento es el checklist vigente dentro de su materia y debe aplicarse en coordinación con las autoridades que lo preceden.
