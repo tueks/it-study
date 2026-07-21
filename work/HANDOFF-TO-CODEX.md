@@ -37,7 +37,7 @@ Este handoff se interpreta conforme a los siguientes documentos, en este orden:
 17. `work/SOURCE-POLICY.md`;
 18. `work/REVIEW-CHECKLIST.md`.
 
-Todos están aprobados en la fecha de elaboración. Sus asuntos expresamente pendientes conservan ese estado. En particular, `decision-0016-operational-ownership`, `decision-0017-review-calendars` y `decision-0018-final-technical-metrics` permanecen `proposed`. Este documento usa roles, no inventa calendarios ni métricas y no presume arquitectura o permisos.
+Todos están aprobados en la fecha de elaboración. Sus asuntos expresamente pendientes conservan ese estado. En particular, `decision-0016-operational-ownership` está `accepted`; `decision-0017-review-calendars` y `decision-0018-final-technical-metrics` permanecen `proposed`. Este documento aplica la autoridad final del Responsable del proyecto, no presume delegaciones y no inventa calendarios, métricas o arquitectura.
 
 ### 1.2 Propósito
 
@@ -130,7 +130,7 @@ Cuando exista contradicción, ambigüedad material o cambio no autorizado, la in
 | QA o revisor técnico | Verifica resultado técnico y pruebas disponibles, sin sustituir decisión editorial. |
 | Responsable de cierre | Actualiza cobertura, decisiones, acciones e historial después de integración. |
 
-Mientras `decision-0016-operational-ownership` siga `proposed`, se usan roles y referencias de autoridad. Ninguna persona o agente presume permiso para integrar, cambiar estados, aprobar excepciones, cerrar o publicar.
+Conforme a `decision-0016-operational-ownership`, el Responsable del proyecto conserva la autoridad final y se usan roles o delegaciones registradas. Ninguna persona o agente presume permiso para integrar, cambiar estados, aprobar excepciones, cerrar o publicar.
 
 ## 7. Condiciones obligatorias de entrada
 
@@ -866,7 +866,7 @@ El handoff es completo cuando permite comprobar que:
 
 Permanecen reservados:
 
-- responsables nominales, delegaciones y permisos para `decision-0016-operational-ownership`;
+- asignaciones y delegaciones concretas conforme a `decision-0016-operational-ownership`;
 - calendarios de mantenimiento para `decision-0017-review-calendars`;
 - métricas técnicas finales para `decision-0018-final-technical-metrics`;
 - arquitectura, framework, almacenamiento, ramas, entornos y despliegue;
@@ -893,7 +893,7 @@ Este documento materializa sin cambiar su semántica:
 
 ### 41.2 Dependencias pendientes preservadas
 
-`decision-0016-operational-ownership` permanece `proposed`; se usan roles y no se presumen permisos.
+`decision-0016-operational-ownership` está `accepted`; el Responsable del proyecto conserva la autoridad final y no se presumen delegaciones.
 
 `decision-0017-review-calendars` permanece `proposed`; el handoff no fija periodicidades.
 
@@ -907,7 +907,7 @@ No se detectaron contradicciones materiales entre las autoridades aprobadas. La 
 
 ### 41.4 Aprobación registrada e intervención pendiente
 
-El responsable del proyecto aprobó explícitamente este handoff en versión `1.0.0` el `2026-07-21`. La aprobación no resuelve ni acepta por implicación `decision-0016-operational-ownership`, `decision-0017-review-calendars` ni `decision-0018-final-technical-metrics`; las tres permanecen `proposed` y deben mantenerse pendientes o resolverse por separado conforme a `docs/10-decision-log.md`.
+El responsable del proyecto aprobó explícitamente este handoff en versión `1.0.0` el `2026-07-21`. La aprobación original no resolvía `decision-0016-operational-ownership`; esa decisión fue aceptada posteriormente el `2026-07-21` y ahora se aplica. `decision-0017-review-calendars` y `decision-0018-final-technical-metrics` permanecen `proposed` y deben conservarse pendientes conforme a `docs/10-decision-log.md`.
 
 ## 42. Cierre
 
