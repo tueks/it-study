@@ -7,9 +7,11 @@
 | Proyecto | IT Study |
 | Nombre oficial | Contrato operativo de producción de contenido |
 | Ruta | `work/CONTENT-PRODUCTION-CONTRACT.md` |
-| Estado | Propuesta operativa sujeta a revisión y aprobación |
-| Versión | `0.2.0` |
+| Estado | Aprobado |
+| Versión | `1.0.0` |
 | Fecha | 2026-07-20 |
+| Fecha de aprobación | 2026-07-20 |
+| Autoridad de aprobación | Responsable del proyecto, mediante instrucción explícita registrada |
 
 Son documentos de autoridad, en orden: `00-bootstrap-brief.md`; `docs/00-project-charter.md`; `docs/01-scope-and-audience.md`; `docs/02-taxonomy.md`; `docs/03-content-model.md`; `docs/04-editorial-guidelines.md`; `docs/05-relationship-rules.md`; `docs/06-design-boundaries.md`; `docs/07-mvp-definition.md`; `docs/08-production-batches.md`; `docs/09-quality-criteria.md`; `docs/10-decision-log.md`; `work/WORK-INSTRUCTIONS.md`; y `work/RESEARCH-PROTOCOL.md`.
 
