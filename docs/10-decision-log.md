@@ -8,7 +8,7 @@
 | Nombre oficial | Registro normativo de decisiones de IT Study |
 | Ruta | `docs/10-decision-log.md` |
 | Estado | `approved` — registro base vigente |
-| Versión del registro | `1.1.0` |
+| Versión del registro | `1.2.0` |
 | Fecha | `2026-07-21` |
 | Autoridad de aprobación | Responsable del proyecto |
 | Documentos de autoridad | `00-bootstrap-brief.md`; `docs/00-project-charter.md`; `docs/01-scope-and-audience.md`; `docs/02-taxonomy.md`; `docs/03-content-model.md`; `docs/04-editorial-guidelines.md`; `docs/05-relationship-rules.md`; `docs/06-design-boundaries.md`; `docs/07-mvp-definition.md`; `docs/08-production-batches.md`; `docs/09-quality-criteria.md` |
@@ -1022,26 +1022,46 @@ Las entradas siguientes no son autoridad para adoptar una solución. Su `decisio
 
 El asunto inicialmente descrito como responsables, calendarios y métricas se divide en tres decisiones porque posee autoridades, evidencia, condiciones de resolución y consecuencias independientes. Agruparlo impediría cerrar una parte sin aceptar las demás.
 
-### decision-0016-operational-ownership — Responsables nominales y permisos
+### decision-0016-operational-ownership — Responsabilidad y autoridad operativa
 
 | Campo | Valor |
 |---|---|
-| `status` | `proposed` |
+| `status` | `accepted` |
 | `decisionType` | `pending-resolution` |
 | `decisionAreas` | `operational` |
 | `dateProposed` | `2026-07-20` |
-| `owners` | Responsable del proyecto; coordinación |
-| `implementationStatus` | `not-started` |
-| `authorityRefs` | `docs/03-content-model.md`; `docs/08-production-batches.md`; `docs/09-quality-criteria.md` |
+| `dateDecided` | `2026-07-21` |
+| `effectiveFrom` | `2026-07-21` |
+| `decisionMaker` | Responsable del proyecto |
+| `owners` | Responsable del proyecto |
+| `implementationStatus` | `verified` |
+| `authorityRefs` | `docs/03-content-model.md`; `docs/08-production-batches.md`; `docs/09-quality-criteria.md`; contratos de `work/` |
 | `relatedDecisions` | `decision-0010-production-strategy`; `decision-0011-quality-model` |
 
-**Problema.** Los documentos definen funciones y perspectivas, pero reservan nombres, delegaciones y permisos concretos.
+**Contexto.** Los contratos ya separan coordinación, producción, revisión, validación técnica, integración, cierre y publicación, pero la autoridad final y las reglas de delegación permanecían sin asignación estable.
 
-**Regla de contención vigente.** Se utilizan roles de autoridad; ninguna persona o agente presume facultad no asignada. ChatGPT Trabajo y Codex no se autoaprueban.
+**Decisión.**
 
-**Condición para resolver.** Definir responsables nominales o grupos, sustitución, delegación, conflictos de interés, permisos de transición y escalamiento en contratos `work/`.
+- El usuario propietario de IT Study y del repositorio `tueks/it-study` es el **Responsable del proyecto** y la autoridad final de aprobación.
+- El Responsable del proyecto conserva la decisión final sobre alcance, contratos normativos u operativos, decisiones materiales, excepciones, autorización y aceptación de lotes, cierre de fases y publicación.
+- El chat coordinador puede preparar alcance, coordinar el flujo, consolidar evidencia y registrar decisiones expresamente aprobadas; no sustituye la aprobación del Responsable del proyecto.
+- ChatGPT Trabajo y otros agentes de autoría pueden investigar, proponer, redactar, autoevaluar y corregir borradores; no pueden aprobar su propio contenido, aceptar su propio lote ni publicar.
+- La revisión independiente evalúa las perspectivas asignadas, clasifica hallazgos y emite una recomendación. La autoría y la revisión independiente de una misma unidad no pueden recaer en el mismo participante.
+- Codex puede validar, integrar técnicamente y mantener el repositorio dentro de un alcance autorizado; no concede aprobación editorial, no resuelve semántica y no amplía permisos por capacidad técnica.
+- No existe sustitución ni delegación permanente implícita. Toda delegación debe ser explícita, registrarse en un artefacto estable del repositorio e indicar autoridad delegante, persona o rol delegado, alcance, transiciones permitidas, vigencia y condición de revocación.
+- Cuando no exista una delegación aplicable, las transiciones que requieran autoridad final permanecen pendientes hasta la decisión del Responsable del proyecto.
+- Los conflictos de interés, de autoridad o de interpretación se escalan al Responsable del proyecto. Ningún participante puede resolverlos ampliando silenciosamente su propio permiso.
 
-**Artefactos afectados.** `work/CONTENT-PRODUCTION-CONTRACT.md`, `work/REVIEW-CHECKLIST.md`, `work/HANDOFF-TO-CODEX.md`, fases y publicación.
+**Justificación.** Una autoridad final inequívoca permite ejecutar lotes y cambios sin convertir agentes, revisores o capacidad técnica en fuentes de aprobación. La delegación explícita conserva trazabilidad y permite ampliar el equipo posteriormente sin reabrir el modelo de gobierno.
+
+**Consecuencias.**
+
+- Los contratos operativos pueden identificar al Responsable del proyecto como autoridad final.
+- Las asignaciones concretas de autoría, revisión, integración o QA se registrarán por lote o entrega.
+- La falta de una persona asignada a revisión independiente bloquea la aprobación de la unidad afectada, no autoriza autoaprobación.
+- Las decisiones `decision-0012` a `decision-0015`, `decision-0017` y `decision-0018` conservan su estado `proposed`.
+
+**Artefactos afectados.** `AGENTS.md`, contratos de `work/`, manifiestos, reportes de revisión, handoffs, fases, cierre y publicación.
 
 ### decision-0017-review-calendars — Calendarios de revisión por estabilidad
 
@@ -1179,7 +1199,7 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 | `decision-0013-symmetric-relations-storage` | Relaciones simétricas | `pending-resolution` / architecture | `proposed` | 2026-07-20 | Docs `05`, `08`, `09` | Schema, integración, índices | Evaluar representación física | Arquitectura/Codex | Relacionada con 0007 |
 | `decision-0014-certification-issuer-model` | Emisor de certificación | `pending-resolution` / taxonomy, architecture | `proposed` | 2026-07-20 | Docs `03`, `05` | Certificaciones, relaciones, schema | Resolver con necesidad demostrada | Taxonomía/modelo | Relacionada con 0004 y 0007 |
 | `decision-0015-dark-mode-delivery` | Entrega de modo oscuro | `pending-resolution` / product, ux, quality | `proposed` | 2026-07-20 | Docs `06`, `07`, `09` | Alcance técnico, UX/UI, build | Decidir antes del cierre técnico | Producto/UX/accesibilidad | Relacionada con 0008 y 0009 |
-| `decision-0016-operational-ownership` | Responsables nominales | `pending-resolution` / operational | `proposed` | 2026-07-20 | Docs `03`, `08`, `09` | Contratos `work/`, revisiones | Asignar nombres y delegaciones | Responsable del proyecto | Relacionada con 0010–0011 |
+| `decision-0016-operational-ownership` | Responsabilidad y autoridad operativa | `pending-resolution` / operational | `accepted` | 2026-07-21 | Docs `03`, `08`, `09`; contratos `work/` | `AGENTS.md`, contratos `work/`, revisiones y publicación | Aplicar autoridad y registrar delegaciones por alcance | Responsable del proyecto | Relacionada con 0010–0011 |
 | `decision-0017-review-calendars` | Calendarios por estabilidad | `pending-resolution` / operational, quality | `proposed` | 2026-07-20 | Docs `03`, `04`, `07`, `09` | Mantenimiento, `needs-update` | Definir frecuencias por riesgo | Calidad/fuentes | Relacionada con 0011 |
 | `decision-0018-final-technical-metrics` | Métricas técnicas finales | `pending-resolution` / architecture, ux, quality | `proposed` | 2026-07-20 | Docs `07`, `09` | Arquitectura, UX/UI, QA, CI | Definir después de arquitectura | Arquitectura/UX/QA | Relacionada con 0009 y 0011 |
 | `decision-0019-reference-artifacts-and-codex-contract` | Aceptación de ejemplos, inventarios y contrato operativo | `change` / operational, quality | `accepted` | 2026-07-21 | Docs `02`, `03`, `05`, `07`–`10` | `examples/`, `inventories/`, `AGENTS.md` | Usar como línea base sin promover estados internos | Responsable del proyecto; coordinación; Codex | Relacionada con 0003–0011 |
@@ -1243,7 +1263,8 @@ Este documento no autoriza ninguna excepción activa. Toda excepción futura deb
 - validaciones conceptuales;
 - revisión basada en estabilidad, riesgo, expiración y cambio material;
 - decisiones base `decision-0001` a `decision-0011`;
-- asuntos pendientes `decision-0012` a `decision-0018`.
+- asuntos pendientes `decision-0012` a `decision-0015`, `decision-0017` y `decision-0018`;
+- resolución de autoridad operativa mediante `decision-0016-operational-ownership`.
 - aceptación documental de ejemplos, inventarios y contrato operativo mediante `decision-0019-reference-artifacts-and-codex-contract`.
 
 La siguiente secuencia disponible es `decision-0020-*`.
@@ -1251,7 +1272,7 @@ La siguiente secuencia disponible es `decision-0020-*`.
 ### 26.2 Reservado para documentos `work/`
 
 - formato operativo de propuestas y firmas;
-- responsables nominales;
+- aplicación de responsables y delegaciones conforme a `decision-0016-operational-ownership`;
 - evidencia mínima por revisión;
 - flujo de escalamiento y reenvío;
 - ejecución de excepciones en lotes;
@@ -1297,7 +1318,7 @@ Se registran como tensiones o asuntos pendientes, no como contradicciones:
 - `certification.issuer` sin tipo `organization` ni relación `certified-by`;
 - IDs documentales `DOM-01` a `DOM-12` distintos de IDs canónicos;
 - modo claro/oscuro como `Should have`, aplazable solo con tema base accesible y decisión;
-- responsables nominales, calendarios detallados por estabilidad y métricas técnicas finales reservados.
+- delegaciones concretas por alcance, calendarios detallados por estabilidad y métricas técnicas finales reservados.
 
 La discrepancia histórica entre `extended-reference` y `future-expanded-reference` ya fue resuelta por la autoridad del modelo y los lineamientos: el único enum vigente es `future-expanded-reference`; no permanece como decisión pendiente.
 
