@@ -7,10 +7,11 @@
 | Proyecto | IT Study |
 | Nombre oficial | IT Study — Política operativa de fuentes |
 | Ruta oficial | `work/SOURCE-POLICY.md` |
-| Estado | **Propuesta pendiente de aprobación** |
-| Versión | `0.1.0` |
+| Estado | **Aprobado** |
+| Versión | `1.0.0` |
 | Fecha | `2026-07-20` |
-| Autoridad de aprobación requerida | Responsable del proyecto, mediante instrucción explícita registrada |
+| Fecha de aprobación | `2026-07-20` |
+| Autoridad de aprobación | Responsable del proyecto, mediante instrucción explícita registrada |
 | Ámbito | Selección, evaluación, suficiencia, diversidad, registro, cita, vigencia, disponibilidad, reutilización y revisión de fuentes editoriales |
 
 ### 1.1 Documentos de autoridad
@@ -267,7 +268,7 @@ Debe conservar contexto temporal, autoría, fecha, edición y procedencia. Una f
 El contenido `emerging`, `changing-technology` o `changing-tool-product` requiere:
 
 - fuentes actuales y fechas de consulta;
-- distinción entre capacidad disponible, anuncio, preview, prop…483 tokens truncated…pero la obra y evidencia son las mismas, se actualiza la localización conforme a un lote autorizado sin cambiar el ID. Si cambia el contenido material, se registra versión, nueva fuente o relación histórica según corresponda; no se sobrescribe evidencia silenciosamente.
+- distinción entre capacidad disponible, anuncio, preview, …508 tokens truncated…do sin cambiar el ID. Si cambia el contenido material, se registra versión, nueva fuente o relación histórica según corresponda; no se sobrescribe evidencia silenciosamente.
 
 Los IDs se referencian en `sources` o `sourceIds` según el contrato de cada ficha o relación. `batchId` pertenece a manifiestos y reportes; no debe inventarse como campo de fuente o ficha.
 
@@ -595,17 +596,13 @@ Esta política materializa sin cambiar su semántica:
 
 No se detectaron contradicciones materiales entre las autoridades aprobadas para la materia de fuentes. La tensión entre exigir revisión de contenido cambiante y no disponer todavía de calendarios uniformes queda contenida mediante señales de revisión y fechas justificadas por caso, sin aceptar la decisión pendiente.
 
-### 30.4 Intervención requerida
+### 30.4 Aprobación registrada e intervención pendiente
 
-El responsable del proyecto debe:
-
-1. aprobar, rechazar o solicitar cambios a esta versión `0.1.0`;
-2. mantener pendiente o resolver por separado `decision-0017-review-calendars`;
-3. no tratar esta propuesta como autoridad vigente hasta que la aprobación quede registrada.
+El responsable del proyecto aprobó explícitamente esta política en versión `1.0.0` el `2026-07-20`. La aprobación no resuelve ni acepta por implicación `decision-0017-review-calendars`, que permanece `proposed` y debe mantenerse pendiente o resolverse por separado conforme a `docs/10-decision-log.md`.
 
 ## 31. Cierre
 
 Esta política ofrece un criterio operativo común para que cada afirmación de IT Study sea verificable, proporcionada y mantenible. La evidencia debe poder reconstruirse desde el repositorio, conservar sus límites y continuar separada de decisiones propias, presentación visual y automatización técnica.
 
-Hasta aprobación explícita, este documento permanece como propuesta y no sustituye las reglas vigentes de sus autoridades.
+Desde su aprobación explícita, este documento es la política vigente dentro de su materia y debe aplicarse en coordinación con las autoridades que lo preceden.
 
