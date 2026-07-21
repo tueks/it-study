@@ -7,10 +7,10 @@
 | Estado del documento | Vigente |
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
-| Baseline técnico verificado | `2169eda` — integración de `batch-002` |
-| Estado del registro | B001–B004 `closed`; ejecución del plan maestro v2 recomendado autorizada mediante `decision-0021-recommended-master-plan-v2-execution`; propuesta B005–B023 en preparación para revisión. |
+| Baseline técnico verificado | `70800d7` — preparación versionada del plan maestro v2 aprobado |
+| Estado del registro | B001–B004 `closed`; plan maestro v2, IDs, asignaciones, inventario B005 y sustitución relacional ETL/Data pipeline aprobados; B005 `in-review`; B006–B023 autorizados para ejecución por ondas; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
-| Decisión aplicable | `decision-0020-batch-plan-authorization` |
+| Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
 
 Este documento registra el estado operativo comprobado del repositorio. En caso de diferencia, prevalecen las autoridades indicadas en `AGENTS.md`. Cada sesión debe volver a comprobar rama, commit y árbol de trabajo; el commit de corte identifica la evidencia revisada, no congela avances posteriores.
@@ -22,10 +22,14 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | Documentación normativa y contratos `work/` | Aprobados y vigentes. |
 | `batch-001-taxonomy-domains` | `closed`; 12 dominios y 18 fuentes `approved`, aceptados e integrados. |
 | `batch-002-taxonomy-subdomains-core-a` | `closed`; 18 subdominios `approved`, aceptados e integrados. |
+| `batch-003-taxonomy-subdomains-core-b` | `closed`; 18 subdominios `approved`, aceptados e integrados. |
+| `batch-004-taxonomy-disciplines-core` | `closed`; 8 disciplinas `approved`, aceptadas e integradas. |
+| `batch-005-taxonomy-target-extension` | `in-review`; entrega `d1` con 12 subdominios y 4 disciplinas `draft`; pendiente exclusivamente de aceptación editorial. |
 | Fuentes canónicas | 18 archivos bajo `content/sources/`. |
 | Dominios canónicos | 12 archivos bajo `content/taxonomy/domains/`. |
-| Subdominios canónicos | 18 archivos bajo `content/taxonomy/subdomains/`. |
-| Integridad de B001/B002 | 48/48 archivos de entrega coinciden por hash con sus fuentes canónicas; 0 referencias de fuente o padre rotas. |
+| Subdominios canónicos | 36 archivos bajo `content/taxonomy/subdomains/`. |
+| Disciplinas canónicas | 8 archivos bajo `content/taxonomy/disciplines/`. |
+| Integridad de B001–B004 | Lotes `closed`; fuentes, dominios, subdominios y disciplinas integrados con evidencia de reconciliación en sus entregas. |
 | Aplicación web | No implementada ni autorizada por implicación. |
 | Publicación | No iniciada; ningún cierre de lote equivale a publicación. |
 
@@ -45,9 +49,9 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Revisar y aprobar la propuesta completa del plan maestro v2: B005 con 12 subdominios y 4 disciplinas; 164 entidades rebalanceadas dentro de los rangos B006–B023; mapa lógico sin dependencias activas hacia ondas posteriores y una dependencia candidata pendiente de decisión editorial.
+Revisión y aceptación editorial de la entrega `d1` de B005: 12 subdominios y 4 disciplinas en estado `draft`, con inventario exacto, fuentes y relaciones de clasificación validadas. Codex no promueve estas entradas a `approved` ni acepta el lote sin decisión expresa del Responsable.
 
-La salida mínima de F1 está satisfecha con 36 subdominios y 8 disciplinas cerrados. El objetivo recomendado de F1 es 48 subdominios y 12 disciplinas mediante B005, condicionado a vacíos demostrados y sin contenido de relleno.
+Después de la aceptación, Codex promoverá, integrará, reconciliará y cerrará B005 automáticamente si todas las validaciones permanecen conformes; después iniciará la primera onda ejecutable de B006–B023 conforme al orden topológico aprobado. La salida mínima de F1 ya está satisfecha con 36 subdominios y 8 disciplinas cerrados; B005 completa el objetivo recomendado de 48 y 12.
 
 ## Puertas y bloqueos preservados
 
@@ -61,7 +65,7 @@ La salida mínima de F1 está satisfecha con 36 subdominios y 8 disciplinas cerr
 
 1. Leer `AGENTS.md` y este documento completos.
 2. Ejecutar `git status --short --branch` y comprobar el commit actual.
-3. Consultar `docs/10-decision-log.md`, en especial `decision-0020-batch-plan-authorization`.
+3. Consultar `docs/10-decision-log.md`, en especial `decision-0020-batch-plan-authorization` y `decision-0021-recommended-master-plan-v2-execution`.
 4. Abrir `work/BATCH-AUTHORIZATION-REGISTER.md` y localizar el lote siguiente cuya puerta esté satisfecha.
 5. Leer completos el manifiesto vigente, inventario, contratos y decisiones aplicables.
 6. No iniciar redacción si faltan el alcance exacto, las dependencias, los IDs reservados o la revisión independiente prevista.
