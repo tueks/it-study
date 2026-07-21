@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `2169eda` — integración de `batch-002` |
-| Estado del registro | Reconciliación y entrega B003 preservadas en `a667cf8`. |
+| Estado del registro | Reconciliación preservada en `a667cf8`; entrega B003 `d2` preservada en `f31cc84`. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0020-batch-plan-authorization` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -45,7 +45,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Preservar y revisar independientemente `batch-003-taxonomy-subdomains-core-b`, actualmente `in-review` con entrega corregida `d2`. `d1` permanece en `a667cf8`, pero no debe revisarse porque usaba un enum de estabilidad inválido ya corregido. `d2` contiene 18 fichas `draft`, reportes 12/12 y validaciones automatizables conformes. Los borradores todavía no cuentan como cobertura publicable.
+Revisar independientemente `batch-003-taxonomy-subdomains-core-b`, actualmente `in-review` con entrega corregida `d2` preservada en `f31cc84`. `d1` permanece en `a667cf8`, pero no debe revisarse porque usaba un enum de estabilidad inválido ya corregido. `d2` contiene 18 fichas `draft`, reportes 12/12 y validaciones automatizables conformes. Los borradores todavía no cuentan como cobertura publicable.
 
 Después de B003 sigue `batch-004-taxonomy-disciplines-core`. La salida mínima de F1 requiere 36 subdominios y 8 disciplinas; el objetivo recomendado de F1 es 48 subdominios y 12 disciplinas mediante B005.
 

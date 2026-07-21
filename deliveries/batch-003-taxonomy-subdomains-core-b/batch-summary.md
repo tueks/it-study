@@ -9,7 +9,7 @@
 | Fecha | `2026-07-21` |
 | Rol | Codex / producción |
 | Estado | `in-review`; entrega completa, sin decisión editorial |
-| Referencia inmutable | Pendiente de preservar `d2`; `d1` permanece en `a667cf8` y queda sustituida para revisión por corrección de enum. |
+| Referencia inmutable | `f31cc84`; `d1` permanece en `a667cf8` y queda sustituida para revisión por corrección de enum. |
 
 Se produjeron exactamente los 18 subdominios autorizados. Todos conservan `editorialStatus: draft`, un único padre canónico, fuentes resueltas y la jerarquía `domain > subdomain`; no se crearon relaciones ordinarias, disciplinas, tercer nivel ni contenido fuera de alcance.
 
