@@ -1,0 +1,19 @@
+# Inventario autorizado para batch-004-taxonomy-disciplines-core.
+# Planificación operativa: no equivale a contenido aprobado.
+schemaVersion: "1.0"
+batchId: batch-004-taxonomy-disciplines-core
+manifestVersion: v1
+status: authorized
+authority: [decision-0020-batch-plan-authorization, docs/02-taxonomy.md, docs/03-content-model.md, docs/08-production-batches.md, inventories/classifications.yaml]
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules: { expectedCount: 8, singleCanonicalEntry: true, subdomainDuplicationForbidden: true, editorialStatus: planned }
+entries:
+  - { id: discipline-seguridad, name: seguridad, homeDomain: domain-ciberseguridad-riesgo }
+  - { id: discipline-arquitectura, name: arquitectura, homeDomain: domain-ingenieria-software }
+  - { id: discipline-observabilidad, name: observabilidad, homeDomain: domain-infraestructura-operacion }
+  - { id: discipline-automatizacion, name: automatización, homeDomain: domain-infraestructura-operacion }
+  - { id: discipline-accesibilidad, name: accesibilidad, homeDomain: domain-producto-experiencia }
+  - { id: discipline-calidad, name: calidad, homeDomain: domain-ingenieria-software }
+  - { id: discipline-gobierno, name: gobierno, homeDomain: domain-estrategia-gobierno-liderazgo }
+  - { id: discipline-integracion, name: integración, homeDomain: domain-integracion-sistemas-empresariales }

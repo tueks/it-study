@@ -45,7 +45,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Revisar independientemente `batch-003-taxonomy-subdomains-core-b`, actualmente `in-review` con entrega corregida `d2` preservada en `f31cc84`. `d1` permanece en `a667cf8`, pero no debe revisarse porque usaba un enum de estabilidad inválido ya corregido. `d2` contiene 18 fichas `draft`, reportes 12/12 y validaciones automatizables conformes. Los borradores todavía no cuentan como cobertura publicable.
+Completar las revisiones independientes de B003 `d2` y B004 `d1`, ambos `in-review`. B003 `d2` está preservada en `f31cc84`; B004 contiene 8 disciplinas `draft`, reportes 12/12 y validaciones automatizables conformes, pendiente de referencia inmutable. B005 y F2 permanecen bloqueados hasta revisar y aceptar el piso taxonómico. Ningún borrador cuenta todavía como cobertura publicable.
 
 Después de B003 sigue `batch-004-taxonomy-disciplines-core`. La salida mínima de F1 requiere 36 subdominios y 8 disciplinas; el objetivo recomendado de F1 es 48 subdominios y 12 disciplinas mediante B005.
 
