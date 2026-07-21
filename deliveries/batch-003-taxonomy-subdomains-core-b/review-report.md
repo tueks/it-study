@@ -7,6 +7,7 @@
 | `deliveryVersion` | `d1` |
 | `reportVersion` | `r1` |
 | Estado | `pending-independent-review` |
+| Referencia de entrega | `a667cf8` |
 | Alcance requerido | Revisión completa 18/18 |
 | Revisor | Pendiente; debe ser independiente de Codex como autor |
 | Decisión | `pending` |

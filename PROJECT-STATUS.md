@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `2169eda` — integración de `batch-002` |
-| Estado del registro | Reconciliación y autorizaciones presentes en el working tree; commit pendiente. |
+| Estado del registro | Reconciliación y entrega B003 preservadas en `a667cf8`. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0020-batch-plan-authorization` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -45,7 +45,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Realizar la revisión independiente completa de `batch-003-taxonomy-subdomains-core-b`, actualmente `in-review` con entrega `d1`. Contiene 18 fichas `draft`, reportes 12/12 y validaciones automatizables conformes. El resultado previsto tras una eventual aprobación e integración es 36 subdominios acumulados y exactamente tres por dominio; los borradores todavía no cuentan como cobertura publicable.
+Realizar la revisión independiente completa de `batch-003-taxonomy-subdomains-core-b`, actualmente `in-review` con entrega `d1` preservada en `a667cf8`. Contiene 18 fichas `draft`, reportes 12/12 y validaciones automatizables conformes. El resultado previsto tras una eventual aprobación e integración es 36 subdominios acumulados y exactamente tres por dominio; los borradores todavía no cuentan como cobertura publicable.
 
 Después de B003 sigue `batch-004-taxonomy-disciplines-core`. La salida mínima de F1 requiere 36 subdominios y 8 disciplinas; el objetivo recomendado de F1 es 48 subdominios y 12 disciplinas mediante B005.
 

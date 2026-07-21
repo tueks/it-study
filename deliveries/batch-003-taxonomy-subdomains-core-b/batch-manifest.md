@@ -57,4 +57,4 @@ Se exigen los doce reportes y la topología de `work/BATCH-TEMPLATE.md`. Los arc
 |---|---|---|---|---|---|
 | `proposed` | `authorized` | `2026-07-21` | Responsable del proyecto | `decision-0020-batch-plan-authorization`; inventario exacto v1 | Habilita el inicio de producción tras repetir preflight; no aprueba contenido. |
 | `authorized` | `in-production` | `2026-07-21` | Codex | Preflight B003: 18 IDs únicos, 0 colisiones, 18 padres válidos y paquete completo. | Comienza investigación y redacción; no cambia estados editoriales finales. |
-| `in-production` | `in-review` | `2026-07-21` | Codex | Entrega `d1`: 18 borradores, reportes 12/12 y validaciones 001–010 conformes. | Habilita revisión independiente; no aprueba ni acepta contenido. |
+| `in-production` | `in-review` | `2026-07-21` | Codex | Entrega `d1` preservada en `a667cf8`: 18 borradores, reportes 12/12 y validaciones 001–010 conformes. | Habilita revisión independiente; no aprueba ni acepta contenido. |
