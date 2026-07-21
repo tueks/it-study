@@ -23,4 +23,4 @@
 | Producto y experiencia | 1 | `approved` |
 | Estrategia y gobierno | 1 | `approved` |
 
-Producción y aprobación: 18/18. Integración pendiente. `batch-003` deberá completar el mínimo acumulado de 36 y conservar al menos dos subdominios por dominio.
+Producción, aprobación e integración: 18/18. `batch-003` deberá completar el mínimo acumulado de 36 y conservar al menos dos subdominios por dominio.

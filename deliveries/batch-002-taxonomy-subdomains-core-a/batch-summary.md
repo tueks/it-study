@@ -8,7 +8,7 @@
 | `reportVersion` | `r1` |
 | Fecha | `2026-07-21` |
 | Rol | Codex |
-| Estado | Revisión completa; lote `accepted`; integración pendiente. |
+| Estado | Lote `integrated`; cierre y publicación pendientes. |
 
 Se produjeron exactamente 18 subdominios `draft`: los 12 dominios integrados están representados, seis con dos unidades y seis con una. Cada registro tiene un único padre, se limita a la jerarquía `domain > subdomain`, referencia fuentes canónicas existentes y no crea relaciones ordinarias.
 
@@ -20,6 +20,6 @@ Se produjeron exactamente 18 subdominios `draft`: los 12 dominios integrados est
 | Tercer nivel | 0 |
 | Relaciones ordinarias | 0 |
 | Estado editorial | 18 `approved` |
-| Estado de lote | `accepted` |
+| Estado de lote | `integrated` |
 | Hallazgos bloqueantes conocidos | 0 |
-| Siguiente acción | Integración canónica y reconciliación. |
+| Siguiente acción | Preparar `batch-003`; cierre se decide por separado. |

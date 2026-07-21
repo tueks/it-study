@@ -16,10 +16,20 @@
 | `validation-004` | Jerarquía | 0 padres múltiples; 0 tercer nivel |
 | `validation-005` | Cobertura | 12/12 dominios; distribución 2×6 + 1×6 |
 | `validation-006` | Fuentes | 81 referencias; 14 IDs canónicos; 0 sin resolver |
-| `validation-007` | Estados | 18 `approved`; lote `accepted`; integración pendiente |
+| `validation-007` | Estados | 18 `approved`; lote `integrated` |
 | `validation-008` | Topología | 12 archivos raíz; `content/new/`; `content/modified/.gitkeep` |
 | `validation-009` | Formato y diseño | Frontmatter delimitado; sin HTML de presentación; `git diff --check` conforme |
 
-Limitaciones: no existe schema/CI autorizado; la revisión independiente quedó registrada y la integración permanece pendiente.
+Limitaciones: no existe schema/CI autorizado; cierre y publicación permanecen pendientes.
 
 Huella de `content/new/`: 18 pares `nombre:SHA-256`, ordenados por nombre y unidos con LF, producen `8a2fd9e1f4a8890e77513a8d68f513451b9b393271ff1e00e728bed8aaa0e20b`.
+
+## Integración canónica
+
+| ID | Validación | Resultado |
+|---|---|---|
+| `validation-010` | Ruta y cantidad | 18 archivos en `content/taxonomy/subdomains/` |
+| `validation-011` | Igualdad con entrega aceptada | 18/18 con bytes idénticos a `15b2dbc` |
+| `validation-012` | Padres, fuentes y estados | 18 padres y 81 fuentes resueltas; 18 `approved`; errores 0 |
+
+Resultado: `integrated`. Rollback: retirar únicamente los 18 archivos nuevos de `content/taxonomy/subdomains/`; los dominios, fuentes y entregas previas permanecen intactos. `closed` y publicación no se deducen.
