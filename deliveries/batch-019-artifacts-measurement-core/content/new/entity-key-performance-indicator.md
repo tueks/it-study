@@ -20,12 +20,13 @@ sources: [source-isaca-cobit, source-pmi-project-management, source-it-study-con
 priority: specialized
 knowledgeLevel: recognition
 stability: slow-evolution
-editorialStatus: draft
+editorialStatus: approved
 owner: Codex
 decisionRefs: [decision-0005-content-format-and-identifiers, decision-0021-recommended-master-plan-v2-execution, decision-0022-canonical-entity-family-path]
 batch: batch-019-artifacts-measurement-core
 createdAt: 2026-07-21
-verificationStatus: pending
+reviewedAt: 2026-07-21
+verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"
 ---
