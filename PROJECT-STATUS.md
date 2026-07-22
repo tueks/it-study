@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B022 `closed`; B023 autorizado según orden v2; B033–B042 inactivos. |
+| Estado del registro | B001–B023 `closed`; B024 es la siguiente puerta según orden v2; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -30,7 +30,7 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | Dominios canónicos | 12 archivos bajo `content/taxonomy/domains/`. |
 | Subdominios canónicos | 48 archivos bajo `content/taxonomy/subdomains/`. |
 | Disciplinas canónicas | 12 archivos bajo `content/taxonomy/disciplines/`. |
-| Entidades canónicas | 158 archivos: 52 `ideas-orientations`, 26 `people-capabilities`, 24 `ways-of-working`, 30 `specifications-implementations`, 14 `results-measurement` y 12 `solutions-structures`. |
+| Entidades canónicas | 164 archivos: 52 `ideas-orientations`, 26 `people-capabilities`, 24 `ways-of-working`, 36 `specifications-implementations`, 14 `results-measurement` y 12 `solutions-structures`. |
 | Integridad de B001–B005 | Lotes `closed`; fuentes y taxonomía integradas con evidencia de reconciliación en sus entregas. |
 | Aplicación web | No implementada ni autorizada por implicación. |
 | Publicación | No iniciada; ningún cierre de lote equivale a publicación. |
@@ -51,7 +51,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Preparar B023 conforme a su inventario autorizado; después, solicitar la aceptación editorial de su entrega d1.
+Preparar B024 si sus entradas `approved` y su contrato de comparaciones permiten una entrega d1; después, solicitar la aceptación editorial correspondiente.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
