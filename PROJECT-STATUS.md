@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B012 `closed`; B013 `in-review`; B014–B023 autorizados para ejecución topológica; B033–B042 inactivos. |
+| Estado del registro | B001–B013 `closed`; B014–B023 autorizados para ejecución topológica; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -30,7 +30,7 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | Dominios canónicos | 12 archivos bajo `content/taxonomy/domains/`. |
 | Subdominios canónicos | 48 archivos bajo `content/taxonomy/subdomains/`. |
 | Disciplinas canónicas | 12 archivos bajo `content/taxonomy/disciplines/`. |
-| Entidades canónicas | 66 archivos: 38 `ideas-orientations`, 10 `people-capabilities`, 7 `solutions-structures`, 6 `ways-of-working`, 4 `specifications-implementations` y 1 `results-measurement`. |
+| Entidades canónicas | 75 archivos: 38 `ideas-orientations`, 11 `solutions-structures`, 10 `people-capabilities`, 7 `ways-of-working`, 7 `specifications-implementations` y 2 `results-measurement`. |
 | Integridad de B001–B005 | Lotes `closed`; fuentes y taxonomía integradas con evidencia de reconciliación en sus entregas. |
 | Aplicación web | No implementada ni autorizada por implicación. |
 | Publicación | No iniciada; ningún cierre de lote equivale a publicación. |
@@ -51,7 +51,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Obtener la aceptación editorial de B013 d1; después, promover sus nueve fichas, integrarlas por familia canónica, validar, reconciliar y cerrar el lote automáticamente.
+Producir B014 conforme a la onda 9 aprobada y detenerse únicamente en su aceptación editorial.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
