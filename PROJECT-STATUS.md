@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B008 `closed`; B009–B023 autorizados para ejecución topológica; B033–B042 inactivos. |
+| Estado del registro | B001–B008 `closed`; B009 `in-review`; B010–B023 autorizados para ejecución topológica; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -51,7 +51,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Producir B009 conforme a la onda 4 aprobada y detenerse únicamente en su aceptación editorial.
+Revisar y aceptar B009 d1: 9 entidades `draft` en cinco familias, con 27 referencias de fuente y 4 dependencias validadas.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
