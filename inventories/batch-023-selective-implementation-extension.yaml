@@ -1,0 +1,14 @@
+# Inventario autorizado de la onda 18 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-023-selective-implementation-extension
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+rules: { expectedCount: 6, authorizedMinimum: 4, authorizedMaximum: 6, editorialStatus: planned }
+entries:
+  - { id: entity-customer-relationship-management, type: technology, primaryDomain: domain-integracion-sistemas-empresariales, subdomain: subdomain-sistemas-empresariales, plannedDependencies: [entity-interoperabilidad] }
+  - { id: entity-enterprise-resource-planning, type: technology, primaryDomain: domain-integracion-sistemas-empresariales, subdomain: subdomain-middleware-integracion, plannedDependencies: [entity-interoperabilidad] }
+  - { id: entity-generative-ai, type: technology, primaryDomain: domain-inteligencia-artificial, subdomain: subdomain-ia-generativa, plannedDependencies: [entity-deep-learning] }
+  - { id: entity-git, type: tool, primaryDomain: domain-desarrollo-software, subdomain: subdomain-desarrollo-web-frontend, plannedDependencies: [entity-version-control] }
+  - { id: entity-kubernetes, type: platform, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-confiabilidad-sre-observabilidad, plannedDependencies: [entity-container] }
+  - { id: entity-terraform, type: tool, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-contenedores-orquestacion, plannedDependencies: [entity-infrastructure-as-code] }
