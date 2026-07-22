@@ -1,6 +1,6 @@
 # Reporte de cobertura
 
-| Métrica | Base cerrada | Aporte B005 | Resultado si se acepta e integra |
+| Métrica | Base cerrada | Aporte B005 aprobado | Resultado al integrar |
 |---|---:|---:|---:|
 | Dominios | 12 | 0 | 12 |
 | Subdominios | 36 | 12 | 48 |

@@ -4,7 +4,7 @@
 |---|---|
 | `batchId` | `batch-005-taxonomy-target-extension` |
 | Título | Extensión taxonómica al objetivo recomendado |
-| Estado del lote | `in-review` |
+| Estado del lote | `accepted` |
 | Fase / nivel | F1 / objetivo |
 | Tipo | Taxonomía materializada |
 | `manifestVersion` / contrato | `v2` / `1.0` |
@@ -26,3 +26,4 @@
 | `proposed` | `authorized` | `2026-07-21` | Responsable del proyecto | Aprobación explícita del plan maestro v2 y del inventario B005; decisión 0021. |
 | `authorized` | `in-production` | `2026-07-21` | Codex | Preflight: 16 IDs únicos, dependencias cerradas y 0 colisiones iniciales. |
 | `in-production` | `in-review` | `2026-07-21` | Codex | Entrega `d1`: 16 borradores y doce reportes completos; validaciones automatizables conformes. |
+| `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | Revisión completa y aceptación explícita de B005 d1; cero hallazgos abiertos. |
