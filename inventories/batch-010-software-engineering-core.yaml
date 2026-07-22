@@ -1,145 +1,19 @@
-# Asignación recomendada exacta derivada de inventories/initial-terms.csv.
-# No equivale a contenido aprobado ni habilita producción si falla una puerta.
-schemaVersion: "1.0"
+# Inventario autorizado de la onda 5 del plan maestro v2.
+schemaVersion: "2.0"
 batchId: batch-010-software-engineering-core
-manifestVersion: v1
-status: assigned
-sourceInventory: inventories/initial-terms.csv
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
 authorizationDate: 2026-07-21
 authorizationRole: Responsable del proyecto
-rules:
-  assignedCount: 8
-  authorizedMinimum: 7
-  authorizedMaximum: 9
-  capacityStatus: within-range
-  canonicalNamespace: entity
-  editorialStatus: planned
+rules: { expectedCount: 9, authorizedMinimum: 9, authorizedMaximum: 13, editorialStatus: planned }
 entries:
-  - id: entity-atributo-de-calidad
-    sourceCandidate: candidate-atributo-de-calidad
-    name: "Atributo de calidad"
-    englishName: "Quality Attribute"
-    type: concept
-    subtype: ""
-    primaryDomain: domain-ingenieria-software
-    plannedSubdomainLabel: "ingeniería de requisitos"
-    secondaryDomains: ["domain-desarrollo-software", "domain-infraestructura-operacion", "domain-producto-experiencia"]
-    disciplines: ["quality"]
-    priority: essential
-    knowledgeLevel: contextual-understanding
-    stability: stable-foundation
-    plannedDependencies: []
-    candidateStatus: mandatory
-    duplicateRisk: "low"
-  - id: entity-technical-debt
-    sourceCandidate: candidate-technical-debt
-    name: "Technical debt"
-    englishName: "Technical Debt"
-    type: concept
-    subtype: ""
-    primaryDomain: domain-ingenieria-software
-    plannedSubdomainLabel: "diseño y arquitectura de software"
-    secondaryDomains: []
-    disciplines: []
-    priority: essential
-    knowledgeLevel: contextual-understanding
-    stability: stable-foundation
-    plannedDependencies: []
-    candidateStatus: mandatory
-    duplicateRisk: "low"
-  - id: entity-layered-architecture
-    sourceCandidate: candidate-layered-architecture
-    name: "Layered Architecture"
-    englishName: "Layered Architecture"
-    type: architectural-style
-    subtype: ""
-    primaryDomain: domain-ingenieria-software
-    plannedSubdomainLabel: "calidad y pruebas"
-    secondaryDomains: []
-    disciplines: []
-    priority: essential
-    knowledgeLevel: contextual-understanding
-    stability: slow-evolution
-    plannedDependencies: []
-    candidateStatus: mandatory
-    duplicateRisk: "low"
-  - id: entity-microservices-architecture
-    sourceCandidate: candidate-microservices-architecture
-    name: "Microservices Architecture"
-    englishName: "Microservices Architecture"
-    type: architectural-style
-    subtype: ""
-    primaryDomain: domain-ingenieria-software
-    plannedSubdomainLabel: "ingeniería de requisitos"
-    secondaryDomains: []
-    disciplines: []
-    priority: essential
-    knowledgeLevel: contextual-understanding
-    stability: slow-evolution
-    plannedDependencies: []
-    candidateStatus: mandatory
-    duplicateRisk: "medium: no equivale a servicios pequeños"
-  - id: entity-hexagonal-architecture
-    sourceCandidate: candidate-hexagonal-architecture
-    name: "Hexagonal Architecture"
-    englishName: "Hexagonal Architecture"
-    type: architectural-style
-    subtype: ""
-    primaryDomain: domain-ingenieria-software
-    plannedSubdomainLabel: "diseño y arquitectura de software"
-    secondaryDomains: []
-    disciplines: []
-    priority: important
-    knowledgeLevel: contextual-understanding
-    stability: slow-evolution
-    plannedDependencies: []
-    candidateStatus: recommended
-    duplicateRisk: "low"
-  - id: entity-circuit-breaker
-    sourceCandidate: candidate-circuit-breaker
-    name: "Circuit Breaker"
-    englishName: "Circuit Breaker"
-    type: pattern
-    subtype: ""
-    primaryDomain: domain-ingenieria-software
-    plannedSubdomainLabel: "ciclo de vida y evolución"
-    secondaryDomains: []
-    disciplines: []
-    priority: important
-    knowledgeLevel: contextual-understanding
-    stability: slow-evolution
-    plannedDependencies: []
-    candidateStatus: recommended
-    duplicateRisk: "low"
-  - id: entity-repository-pattern
-    sourceCandidate: candidate-repository-pattern
-    name: "Repository Pattern"
-    englishName: "Repository Pattern"
-    type: pattern
-    subtype: ""
-    primaryDomain: domain-ingenieria-software
-    plannedSubdomainLabel: "calidad y pruebas"
-    secondaryDomains: []
-    disciplines: []
-    priority: important
-    knowledgeLevel: contextual-understanding
-    stability: slow-evolution
-    plannedDependencies: []
-    candidateStatus: recommended
-    duplicateRisk: "medium: no confundir con repositorio de código"
-  - id: entity-strangler-fig-pattern
-    sourceCandidate: candidate-strangler-fig-pattern
-    name: "Strangler Fig Pattern"
-    englishName: "Strangler Fig Pattern"
-    type: pattern
-    subtype: ""
-    primaryDomain: domain-ingenieria-software
-    plannedSubdomainLabel: "ingeniería de requisitos"
-    secondaryDomains: []
-    disciplines: []
-    priority: important
-    knowledgeLevel: contextual-understanding
-    stability: slow-evolution
-    plannedDependencies: []
-    candidateStatus: recommended
-    duplicateRisk: "low"
+  - { id: entity-source-code, type: artifact, primaryDomain: domain-desarrollo-software, subdomain: subdomain-desarrollo-movil, plannedDependencies: [] }
+  - { id: entity-analisis-de-requisitos, type: competency, primaryDomain: domain-ingenieria-software, subdomain: subdomain-calidad-pruebas, plannedDependencies: [] }
+  - { id: entity-circuit-breaker, type: pattern, primaryDomain: domain-ingenieria-software, subdomain: subdomain-ciclo-vida-evolucion, plannedDependencies: [] }
+  - { id: entity-code-review, type: practice, primaryDomain: domain-ingenieria-software, subdomain: subdomain-diseno-arquitectura-software, plannedDependencies: [entity-source-code] }
+  - { id: entity-hexagonal-architecture, type: architectural-style, primaryDomain: domain-ingenieria-software, subdomain: subdomain-diseno-arquitectura-software, plannedDependencies: [] }
+  - { id: entity-layered-architecture, type: architectural-style, primaryDomain: domain-ingenieria-software, subdomain: subdomain-calidad-pruebas, plannedDependencies: [] }
+  - { id: entity-microservices-architecture, type: architectural-style, primaryDomain: domain-ingenieria-software, subdomain: subdomain-ingenieria-requisitos, plannedDependencies: [] }
+  - { id: entity-repository-pattern, type: pattern, primaryDomain: domain-ingenieria-software, subdomain: subdomain-calidad-pruebas, plannedDependencies: [] }
+  - { id: entity-technical-debt, type: concept, primaryDomain: domain-ingenieria-software, subdomain: subdomain-diseno-arquitectura-software, plannedDependencies: [] }
