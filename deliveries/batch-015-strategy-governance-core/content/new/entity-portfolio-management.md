@@ -20,12 +20,13 @@ sources: [source-pmi-project-management, source-iiba-business-analysis-standard,
 priority: important
 knowledgeLevel: contextual-understanding
 stability: slow-evolution
-editorialStatus: draft
+editorialStatus: approved
 owner: Codex
 decisionRefs: [decision-0005-content-format-and-identifiers, decision-0021-recommended-master-plan-v2-execution, decision-0022-canonical-entity-family-path]
 batch: batch-015-strategy-governance-core
 createdAt: 2026-07-21
-verificationStatus: pending
+reviewedAt: 2026-07-21
+verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"
 ---
