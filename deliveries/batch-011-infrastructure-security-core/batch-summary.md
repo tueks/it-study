@@ -1,3 +1,3 @@
 # Resumen B011
 
-Estado `accepted`. Producidas y aprobadas 10/10 fichas en tres familias. Siguiente acción: integración y cierre automáticos.
+Estado `closed`. Producidas, aprobadas e integradas 10/10 fichas. Siguiente acción: iniciar B012.

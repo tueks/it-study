@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B010 `closed`; B011 `accepted` y en integración; B012–B023 autorizados para ejecución topológica; B033–B042 inactivos. |
+| Estado del registro | B001–B011 `closed`; B012–B023 autorizados para ejecución topológica; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -30,7 +30,7 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | Dominios canónicos | 12 archivos bajo `content/taxonomy/domains/`. |
 | Subdominios canónicos | 48 archivos bajo `content/taxonomy/subdomains/`. |
 | Disciplinas canónicas | 12 archivos bajo `content/taxonomy/disciplines/`. |
-| Entidades canónicas | 46 archivos: 25 `ideas-orientations`, 6 `solutions-structures`, 6 `people-capabilities`, 4 `specifications-implementations`, 4 `ways-of-working` y 1 `results-measurement`. |
+| Entidades canónicas | 56 archivos: 32 `ideas-orientations`, 8 `people-capabilities`, 6 `solutions-structures`, 5 `ways-of-working`, 4 `specifications-implementations` y 1 `results-measurement`. |
 | Integridad de B001–B005 | Lotes `closed`; fuentes y taxonomía integradas con evidencia de reconciliación en sus entregas. |
 | Aplicación web | No implementada ni autorizada por implicación. |
 | Publicación | No iniciada; ningún cierre de lote equivale a publicación. |
@@ -51,7 +51,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Revisar y aceptar B011 d1: 10 entidades `draft`, 30 referencias de fuente y 3 dependencias validadas.
+Producir B012 conforme a la onda 7 aprobada y detenerse únicamente en su aceptación editorial.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
