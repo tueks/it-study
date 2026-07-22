@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B023 `closed`; B024 es la siguiente puerta según orden v2; B033–B042 inactivos. |
+| Estado del registro | B001–B023 `closed`; B024 autorizado pero bloqueado en preflight por falta de inventario y selección aprobada de comparaciones; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -51,7 +51,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Preparar B024 si sus entradas `approved` y su contrato de comparaciones permiten una entrega d1; después, solicitar la aceptación editorial correspondiente.
+Solicitar o aprobar un inventario B024 exacto de cuatro comparaciones: IDs `comparison-*`, entradas comparadas, motivo, dimensiones y fuentes. Las entradas canónicas requeridas ya están `approved`; al registrar ese alcance, Codex puede preparar B024 d1.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
@@ -62,6 +62,7 @@ La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 
 - Las relaciones ordinarias no se inventan ni se persisten mediante una representación física todavía no decidida.
 - Arquitectura, framework, UI, build, despliegue y métricas técnicas finales siguen fuera del alcance actual.
 - B024–B030 requieren entradas aprobadas suficientes; B032 requiere todas las puertas acumuladas; B033–B042 requieren además sus activadores opcionales.
+- B024 tiene sus entradas de base `approved`, pero carece del inventario exacto que autorice sus cuatro comparaciones; no se seleccionan pares ni IDs por inferencia.
 
 ## Protocolo de reanudación rápida
 
