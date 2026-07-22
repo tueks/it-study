@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `70800d7` — preparación versionada del plan maestro v2 aprobado |
-| Estado del registro | B001–B004 `closed`; plan maestro v2, IDs, asignaciones, inventario B005 y sustitución relacional ETL/Data pipeline aprobados; B005 `accepted` y en integración; B006–B023 autorizados para ejecución por ondas; B033–B042 inactivos. |
+| Estado del registro | B001–B004 `closed`; plan maestro v2, IDs, asignaciones, inventario B005 y sustitución relacional ETL/Data pipeline aprobados; B005 `integrated` y en reconciliación final; B006–B023 autorizados para ejecución por ondas; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -24,11 +24,11 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | `batch-002-taxonomy-subdomains-core-a` | `closed`; 18 subdominios `approved`, aceptados e integrados. |
 | `batch-003-taxonomy-subdomains-core-b` | `closed`; 18 subdominios `approved`, aceptados e integrados. |
 | `batch-004-taxonomy-disciplines-core` | `closed`; 8 disciplinas `approved`, aceptadas e integradas. |
-| `batch-005-taxonomy-target-extension` | `accepted`; entrega `d1` con 12 subdominios y 4 disciplinas `approved`; integración automática en curso. |
+| `batch-005-taxonomy-target-extension` | `integrated`; 12 subdominios y 4 disciplinas `approved`, incorporados 16/16 a fuentes canónicas. |
 | Fuentes canónicas | 18 archivos bajo `content/sources/`. |
 | Dominios canónicos | 12 archivos bajo `content/taxonomy/domains/`. |
-| Subdominios canónicos | 36 archivos bajo `content/taxonomy/subdomains/`. |
-| Disciplinas canónicas | 8 archivos bajo `content/taxonomy/disciplines/`. |
+| Subdominios canónicos | 48 archivos bajo `content/taxonomy/subdomains/`. |
+| Disciplinas canónicas | 12 archivos bajo `content/taxonomy/disciplines/`. |
 | Integridad de B001–B004 | Lotes `closed`; fuentes, dominios, subdominios y disciplinas integrados con evidencia de reconciliación en sus entregas. |
 | Aplicación web | No implementada ni autorizada por implicación. |
 | Publicación | No iniciada; ningún cierre de lote equivale a publicación. |

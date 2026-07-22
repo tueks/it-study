@@ -16,3 +16,5 @@
 Huella reproducible de la entrega aceptada `content/new/`: `361c3cddca20443c5342286062bb23fb2b1279f82229b69d8069524b95899ff1`.
 
 Limitación: no existe schema ejecutable autorizado. Las validaciones semánticas, pedagógicas y de suficiencia final pertenecen a revisión independiente.
+
+Postintegración: baseline `80096b4`, entrega aceptada `9afb421`; 16/16 archivos coinciden por SHA-256 con `content/taxonomy/`; 48 subdominios, 12 disciplinas y 0 referencias de dominio rotas.
