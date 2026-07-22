@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B007 `closed`; B008 `accepted` y en integración; B009–B023 autorizados para ejecución topológica; B033–B042 inactivos. |
+| Estado del registro | B001–B008 `closed`; B009–B023 autorizados para ejecución topológica; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -30,7 +30,7 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | Dominios canónicos | 12 archivos bajo `content/taxonomy/domains/`. |
 | Subdominios canónicos | 48 archivos bajo `content/taxonomy/subdomains/`. |
 | Disciplinas canónicas | 12 archivos bajo `content/taxonomy/disciplines/`. |
-| Entidades canónicas | 18 archivos bajo `content/entities/ideas-orientations/`. |
+| Entidades canónicas | 28 archivos: 22 `ideas-orientations`, 3 `specifications-implementations`, 2 `people-capabilities` y 1 `ways-of-working`. |
 | Integridad de B001–B005 | Lotes `closed`; fuentes y taxonomía integradas con evidencia de reconciliación en sus entregas. |
 | Aplicación web | No implementada ni autorizada por implicación. |
 | Publicación | No iniciada; ningún cierre de lote equivale a publicación. |
@@ -51,7 +51,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Revisar y aceptar B008 d1: 10 entidades `draft`, con clasificación por cuatro familias, 31 referencias de fuente y 4 dependencias validadas.
+Producir B009 conforme a la onda 4 aprobada y detenerse únicamente en su aceptación editorial.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 

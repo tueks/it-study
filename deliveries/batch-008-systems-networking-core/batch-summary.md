@@ -1,3 +1,3 @@
 # Resumen B008
 
-Estado `accepted`. Producidas y aprobadas 10/10 fichas. Siguiente acción: integración por familia y cierre automáticos.
+Estado `closed`. Producidas, aprobadas e integradas 10/10 fichas en cuatro familias. Siguiente acción: iniciar B009.
