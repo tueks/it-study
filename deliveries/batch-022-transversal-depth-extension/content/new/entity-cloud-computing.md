@@ -21,12 +21,13 @@ sources: [source-nist-sp-800-145, source-acm-ieee-cc2020, source-it-study-conten
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: changing-technology
-editorialStatus: draft
+editorialStatus: approved
 owner: Codex
 decisionRefs: [decision-0005-content-format-and-identifiers, decision-0021-recommended-master-plan-v2-execution, decision-0022-canonical-entity-family-path]
 batch: batch-022-transversal-depth-extension
 createdAt: 2026-07-21
-verificationStatus: pending
+reviewedAt: 2026-07-21
+verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"
 ---
