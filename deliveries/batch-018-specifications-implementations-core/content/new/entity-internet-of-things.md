@@ -19,12 +19,13 @@ sources: [source-acm-ieee-cc2020, source-nist-csf-2, source-it-study-content-mod
 priority: specialized
 knowledgeLevel: recognition
 stability: changing-technology
-editorialStatus: draft
+editorialStatus: approved
 owner: Codex
 decisionRefs: [decision-0005-content-format-and-identifiers, decision-0021-recommended-master-plan-v2-execution, decision-0022-canonical-entity-family-path]
 batch: batch-018-specifications-implementations-core
 createdAt: 2026-07-21
-verificationStatus: pending
+reviewedAt: 2026-07-21
+verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"
 ---
