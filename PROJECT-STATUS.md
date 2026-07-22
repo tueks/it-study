@@ -7,8 +7,8 @@
 | Estado del documento | Vigente |
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
-| Baseline técnico verificado | `70800d7` — preparación versionada del plan maestro v2 aprobado |
-| Estado del registro | B001–B004 `closed`; plan maestro v2, IDs, asignaciones, inventario B005 y sustitución relacional ETL/Data pipeline aprobados; B005 `integrated` y en reconciliación final; B006–B023 autorizados para ejecución por ondas; B033–B042 inactivos. |
+| Baseline técnico verificado | `e84cd66` — integración validada de `batch-005` |
+| Estado del registro | B001–B005 `closed`; plan maestro v2, IDs, asignaciones y sustitución relacional ETL/Data pipeline aprobados; B006–B023 autorizados para ejecución por ondas; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -24,7 +24,7 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | `batch-002-taxonomy-subdomains-core-a` | `closed`; 18 subdominios `approved`, aceptados e integrados. |
 | `batch-003-taxonomy-subdomains-core-b` | `closed`; 18 subdominios `approved`, aceptados e integrados. |
 | `batch-004-taxonomy-disciplines-core` | `closed`; 8 disciplinas `approved`, aceptadas e integradas. |
-| `batch-005-taxonomy-target-extension` | `integrated`; 12 subdominios y 4 disciplinas `approved`, incorporados 16/16 a fuentes canónicas. |
+| `batch-005-taxonomy-target-extension` | `closed`; 12 subdominios y 4 disciplinas `approved`, incorporados 16/16 y reconciliados. |
 | Fuentes canónicas | 18 archivos bajo `content/sources/`. |
 | Dominios canónicos | 12 archivos bajo `content/taxonomy/domains/`. |
 | Subdominios canónicos | 48 archivos bajo `content/taxonomy/subdomains/`. |
@@ -49,9 +49,9 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Revisión y aceptación editorial de la entrega `d1` de B005: 12 subdominios y 4 disciplinas en estado `draft`, con inventario exacto, fuentes y relaciones de clasificación validadas. Codex no promueve estas entradas a `approved` ni acepta el lote sin decisión expresa del Responsable.
+Producir B006 conforme al inventario y orden topológico aprobados: 10 entidades fundamentales, sus fuentes, relaciones autorizadas y los doce reportes de entrega. Al terminar, detenerse únicamente en la aceptación editorial de B006 d1.
 
-Después de la aceptación, Codex promoverá, integrará, reconciliará y cerrará B005 automáticamente si todas las validaciones permanecen conformes; después iniciará la primera onda ejecutable de B006–B023 conforme al orden topológico aprobado. La salida mínima de F1 ya está satisfecha con 36 subdominios y 8 disciplinas cerrados; B005 completa el objetivo recomendado de 48 y 12.
+La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
 ## Puertas y bloqueos preservados
 

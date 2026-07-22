@@ -4,7 +4,7 @@
 |---|---|
 | `batchId` | `batch-005-taxonomy-target-extension` |
 | Título | Extensión taxonómica al objetivo recomendado |
-| Estado del lote | `integrated` |
+| Estado del lote | `closed` |
 | Fase / nivel | F1 / objetivo |
 | Tipo | Taxonomía materializada |
 | `manifestVersion` / contrato | `v2` / `1.0` |
@@ -28,3 +28,4 @@
 | `in-production` | `in-review` | `2026-07-21` | Codex | Entrega `d1`: 16 borradores y doce reportes completos; validaciones automatizables conformes. |
 | `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | Revisión completa y aceptación explícita de B005 d1; cero hallazgos abiertos. |
 | `accepted` | `integrated` | `2026-07-21` | Codex / responsable de integración | Baseline `80096b4` y entrega aceptada `9afb421`; 16/16 archivos canónicos idénticos por SHA-256. |
+| `integrated` | `closed` | `2026-07-21` | Responsable del proyecto / Codex | Cierre automático autorizado por `decision-0021`; reconciliación conforme sobre integración `e84cd66`, cero pendientes y rollback verificable. |
