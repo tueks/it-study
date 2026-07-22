@@ -1,0 +1,16 @@
+# Inventario autorizado de la onda 11 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-022-transversal-depth-extension
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+rules: { expectedCount: 8, authorizedMinimum: 6, authorizedMaximum: 8, editorialStatus: planned }
+entries:
+  - { id: entity-atributo-de-calidad, type: concept, primaryDomain: domain-ingenieria-software, subdomain: subdomain-ingenieria-requisitos, plannedDependencies: [] }
+  - { id: entity-cloud-computing, type: technology, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-infraestructura-virtualizacion-cloud, plannedDependencies: [entity-sistema-de-computo, entity-red-de-computadoras] }
+  - { id: entity-data-lineage, type: concept, primaryDomain: domain-datos-analitica, subdomain: subdomain-bi-analitica, plannedDependencies: [entity-informacion] }
+  - { id: entity-gobierno-de-it, type: concept, primaryDomain: domain-estrategia-gobierno-liderazgo, subdomain: subdomain-arquitectura-empresarial, plannedDependencies: [entity-estrategia-tecnologica] }
+  - { id: entity-inclusive-design, type: principle, primaryDomain: domain-producto-experiencia, subdomain: subdomain-investigacion-ux, plannedDependencies: [entity-usabilidad] }
+  - { id: entity-interoperabilidad, type: concept, primaryDomain: domain-integracion-sistemas-empresariales, subdomain: subdomain-mensajeria-eventos, plannedDependencies: [entity-application-programming-interface] }
+  - { id: entity-privacidad, type: concept, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-fundamentos-arquitectura-seguridad, plannedDependencies: [entity-informacion] }
+  - { id: entity-senal-de-telemetria, type: concept, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-infraestructura-virtualizacion-cloud, plannedDependencies: [] }

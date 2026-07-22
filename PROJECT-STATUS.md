@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B015 `closed`; B022 es la siguiente onda topológica; B016–B023 restantes autorizados según orden v2; B033–B042 inactivos. |
+| Estado del registro | B001–B015 `closed`; B022 `in-review`; B016–B023 restantes autorizados según orden v2; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -51,7 +51,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Producir B022 conforme a la onda 11 aprobada y detenerse únicamente en su aceptación editorial.
+Obtener la aceptación editorial de B022 d1; después, promover sus ocho fichas, integrarlas por familia canónica, validar, reconciliar y cerrar el lote automáticamente. La onda siguiente será B016.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
