@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B023 `closed`; B024 autorizado pero bloqueado en preflight por falta de inventario y selección aprobada de comparaciones; B033–B042 inactivos. |
+| Estado del registro | B001–B023 `closed`; B024 `in-review` con inventario autorizado; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -51,7 +51,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Solicitar o aprobar un inventario B024 exacto de cuatro comparaciones: IDs `comparison-*`, entradas comparadas, motivo, dimensiones y fuentes. Las entradas canónicas requeridas ya están `approved`; al registrar ese alcance, Codex puede preparar B024 d1.
+Obtener la aceptación editorial de B024 d1; después, promover, integrar, validar, reconciliar y cerrar sus cuatro comparaciones automáticamente.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
@@ -62,7 +62,7 @@ La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 
 - Las relaciones ordinarias no se inventan ni se persisten mediante una representación física todavía no decidida.
 - Arquitectura, framework, UI, build, despliegue y métricas técnicas finales siguen fuera del alcance actual.
 - B024–B030 requieren entradas aprobadas suficientes; B032 requiere todas las puertas acumuladas; B033–B042 requieren además sus activadores opcionales.
-- B024 tiene sus entradas de base `approved`, pero carece del inventario exacto que autorice sus cuatro comparaciones; no se seleccionan pares ni IDs por inferencia.
+- B024 tiene inventario autorizado y sus ocho entradas comparadas existen como fuentes canónicas `approved`; no persiste relaciones globales nuevas.
 
 ## Protocolo de reanudación rápida
 
