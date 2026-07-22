@@ -7,8 +7,8 @@
 | Estado del documento | Vigente |
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
-| Baseline técnico verificado | `e84cd66` — integración validada de `batch-005` |
-| Estado del registro | B001–B005 `closed`; plan maestro v2, IDs, asignaciones y sustitución relacional ETL/Data pipeline aprobados; B006–B023 autorizados para ejecución por ondas; B033–B042 inactivos. |
+| Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
+| Estado del registro | B001–B005 `closed`; B006 `in-review`; B007–B023 autorizados para ejecución por ondas; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -25,11 +25,12 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | `batch-003-taxonomy-subdomains-core-b` | `closed`; 18 subdominios `approved`, aceptados e integrados. |
 | `batch-004-taxonomy-disciplines-core` | `closed`; 8 disciplinas `approved`, aceptadas e integradas. |
 | `batch-005-taxonomy-target-extension` | `closed`; 12 subdominios y 4 disciplinas `approved`, incorporados 16/16 y reconciliados. |
+| `batch-006-foundations-core` | `in-review`; entrega `d1` con 10 entidades `draft`, 23 enlaces taxonómicos y 4 dependencias validados. |
 | Fuentes canónicas | 18 archivos bajo `content/sources/`. |
 | Dominios canónicos | 12 archivos bajo `content/taxonomy/domains/`. |
 | Subdominios canónicos | 48 archivos bajo `content/taxonomy/subdomains/`. |
 | Disciplinas canónicas | 12 archivos bajo `content/taxonomy/disciplines/`. |
-| Integridad de B001–B004 | Lotes `closed`; fuentes, dominios, subdominios y disciplinas integrados con evidencia de reconciliación en sus entregas. |
+| Integridad de B001–B005 | Lotes `closed`; fuentes y taxonomía integradas con evidencia de reconciliación en sus entregas. |
 | Aplicación web | No implementada ni autorizada por implicación. |
 | Publicación | No iniciada; ningún cierre de lote equivale a publicación. |
 
@@ -44,12 +45,12 @@ La autorización:
 - no selecciona silenciosamente términos, relaciones, fuentes o IDs de contenido;
 - exige que el manifiesto o una instrucción equivalente enumere el alcance exacto antes de redactar;
 - no convierte inventarios en contenido `approved`;
-- no permite autoaceptación, integración, cierre o publicación;
+- no permite autoaceptación ni publicación; `decision-0021` permite a Codex integrar y cerrar automáticamente cada onda solo después de su aceptación expresa y de validaciones conformes;
 - mantiene B033–B042 condicionados al cierre del objetivo recomendado, evidencia de necesidad y máximos vigentes.
 
 ## Próxima acción ejecutable
 
-Producir B006 conforme al inventario y orden topológico aprobados: 10 entidades fundamentales, sus fuentes, relaciones autorizadas y los doce reportes de entrega. Al terminar, detenerse únicamente en la aceptación editorial de B006 d1.
+Revisar y aceptar editorialmente B006 d1: 10 entidades fundamentales `draft`, con fuentes, clasificación y cuatro dependencias internas validadas. Codex no las promueve a `approved` ni acepta el lote sin decisión expresa del Responsable.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
