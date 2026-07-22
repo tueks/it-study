@@ -1,3 +1,3 @@
 # Resumen B019
 
-Estado `in-review`. Producidas 8/8 fichas de artefactos, métricas e indicador. Espera aceptación del Responsable del proyecto.
+Estado `closed`. Producidas, aprobadas e integradas 8/8 fichas. Siguiente acción: iniciar B020.
