@@ -5,7 +5,7 @@
 | `batchId` | `batch-006-foundations-core` |
 | Entrega | `v2` / `d1` / `r1` |
 | Estado | `pending-independent-review` |
-| Referencia de entrega | Pendiente del commit de entrega |
+| Referencia de entrega | `358cb47` (`Prepare batch 006 foundations delivery`) |
 | Alcance requerido | Revisión completa 10/10 |
 | Revisor | Responsable del proyecto, independiente de Codex |
 | Decisión | `pending` |
