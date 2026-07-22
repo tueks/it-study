@@ -1,3 +1,3 @@
 # Resumen B025
 
-Estado `in-review`; 4/4 comparaciones nuevas sobre entradas `approved`.
+Estado `closed`; 4/4 comparaciones aceptadas, integradas y reconciliadas sobre entradas `approved`.

@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B024 `closed`; B025 `in-review` con inventario autorizado; B033–B042 inactivos. |
+| Estado del registro | B001–B025 `closed`; B026 autorizado pero requiere inventario exacto; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -31,7 +31,7 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | Subdominios canónicos | 48 archivos bajo `content/taxonomy/subdomains/`. |
 | Disciplinas canónicas | 12 archivos bajo `content/taxonomy/disciplines/`. |
 | Entidades canónicas | 164 archivos: 52 `ideas-orientations`, 26 `people-capabilities`, 24 `ways-of-working`, 36 `specifications-implementations`, 14 `results-measurement` y 12 `solutions-structures`. |
-| Comparaciones canónicas | 4 archivos `approved` bajo `content/editorial/comparisons/`. |
+| Comparaciones canónicas | 8 archivos `approved` bajo `content/editorial/comparisons/`. |
 | Integridad de B001–B005 | Lotes `closed`; fuentes y taxonomía integradas con evidencia de reconciliación en sus entregas. |
 | Aplicación web | No implementada ni autorizada por implicación. |
 | Publicación | No iniciada; ningún cierre de lote equivale a publicación. |
@@ -52,7 +52,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Obtener la aceptación editorial de B025 d1; después, promover, integrar, validar, reconciliar y cerrar sus cuatro comparaciones automáticamente.
+Autorizar un inventario B026 exacto de cuatro comparaciones nuevas, con IDs, entradas comparadas, razones, dimensiones y fuentes; después, Codex podrá preparar B026 d1.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
@@ -63,7 +63,7 @@ La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 
 - Las relaciones ordinarias no se inventan ni se persisten mediante una representación física todavía no decidida.
 - Arquitectura, framework, UI, build, despliegue y métricas técnicas finales siguen fuera del alcance actual.
 - B024–B030 requieren entradas aprobadas suficientes; B032 requiere todas las puertas acumuladas; B033–B042 requieren además sus activadores opcionales.
-- B025 tiene inventario autorizado y sus ocho entradas comparadas existen como fuentes canónicas `approved`; no persiste relaciones globales nuevas.
+- B026 requiere un inventario exacto de cuatro comparaciones nuevas; no se seleccionan pares ni IDs por inferencia.
 
 ## Protocolo de reanudación rápida
 
