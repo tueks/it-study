@@ -20,12 +20,13 @@ sources: [source-nist-csf-2, source-iso-iec-ieee-24765-2017, source-it-study-con
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: slow-evolution
-editorialStatus: draft
+editorialStatus: approved
 owner: Codex
 decisionRefs: [decision-0005-content-format-and-identifiers, decision-0021-recommended-master-plan-v2-execution, decision-0022-canonical-entity-family-path]
 batch: batch-016-people-capabilities-core
 createdAt: 2026-07-21
-verificationStatus: pending
+reviewedAt: 2026-07-21
+verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"
 ---
