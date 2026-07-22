@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B006 `closed`; B007 `in-review`; B008–B023 autorizados para ejecución topológica; B033–B042 inactivos. |
+| Estado del registro | B001–B006 `closed`; B007 `accepted` y en integración; B008–B023 autorizados para ejecución topológica; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
