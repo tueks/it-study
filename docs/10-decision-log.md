@@ -1272,6 +1272,28 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 
 **Rollback.** Revocar la ejecución futura mediante decisión sustituta, conservar propuestas y commits, y volver a la asignación maestra v1 sin reescribir cierres B001–B004 ni reutilizar IDs.
 
+### decision-0022-canonical-entity-family-path — Ruta canónica de entidades por familia
+
+| Campo | Valor |
+|---|---|
+| `status` | `accepted` |
+| `decisionType` | `change` |
+| `decisionAreas` | `architecture`, `operational` |
+| `dateProposed` | `2026-07-21` |
+| `dateDecided` | `2026-07-21` |
+| `effectiveFrom` | `2026-07-21` |
+| `decisionMaker` | Responsable del proyecto |
+| `owners` | Responsable del proyecto; Codex; integración |
+| `implementationStatus` | `implemented` |
+| `authorityRefs` | `docs/03-content-model.md`; `work/CONTENT-PRODUCTION-CONTRACT.md`; `decision-0005-content-format-and-identifiers`; `decision-0021-recommended-master-plan-v2-execution` |
+| `evidenceRefs` | Autorización explícita del Responsable del proyecto: `content/entities/<family>/` como estructura canónica para entidades ordinarias |
+
+**Decisión.** Las entidades ordinarias se integran como Markdown canónico en `content/entities/<family>/`, donde `<family>` es la familia controlada correspondiente a su tipo en `inventories/classifications.yaml`. La carpeta es organización física y no modifica identidad, taxonomía ni relaciones.
+
+**Aplicación inicial.** Las diez entidades de B006 pertenecen a `ideas-orientations` y se integran en `content/entities/ideas-orientations/`.
+
+**Rollback.** Revertir el commit de integración preservando la entrega aceptada; cualquier cambio posterior de estructura exige migración autorizada y no modifica IDs.
+
 ## 24. Matriz acumulativa de decisiones
 
 | ID | Título | Tipo / áreas | Estado | Fecha | Fuente de autoridad | Artefactos afectados | Próxima acción | Responsable | Sustituye o asunto relacionado |
@@ -1297,6 +1319,7 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 | `decision-0019-reference-artifacts-and-codex-contract` | Aceptación de ejemplos, inventarios y contrato operativo | `change` / operational, quality | `accepted` | 2026-07-21 | Docs `02`, `03`, `05`, `07`–`10` | `examples/`, `inventories/`, `AGENTS.md` | Usar como línea base sin promover estados internos | Responsable del proyecto; coordinación; Codex | Relacionada con 0003–0011 |
 | `decision-0020-batch-plan-authorization` | Autorización del plan de lotes y estado de continuidad | `change` / operational, quality | `accepted` | 2026-07-21 | Docs `08`–`10`; contratos `work/` | `PROJECT-STATUS.md`; registro B003–B042; B001/B002 | Iniciar preflight y producción autorizada de B003 | Responsable del proyecto; coordinación; Codex | Relacionada con 0009–0011, 0016 y 0019 |
 | `decision-0021-recommended-master-plan-v2-execution` | Ejecución del plan maestro v2 recomendado | `change` / operational, taxonomy, quality | `accepted` | 2026-07-21 | Docs `02`, `05`, `07`, `08`; decisión 0020 | Propuestas B005–B023; mapas relacionales; ondas | Presentar plan v2 completo para revisión | Responsable del proyecto; coordinación; Codex | Relacionada con 0003, 0007, 0009–0010, 0016 y 0020 |
+| `decision-0022-canonical-entity-family-path` | Ruta canónica de entidades por familia | `change` / architecture, operational | `accepted` | 2026-07-21 | Doc `03`; contrato de producción; decisiones 0005 y 0021 | `content/entities/<family>/`; entregas B006–B023 | Integrar B006 y aplicar por tipo/familia | Responsable del proyecto; Codex | Relacionada con 0004–0005 y 0021 |
 
 ## 25. Relación con excepciones de calidad
 

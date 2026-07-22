@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B005 `closed`; B006 `accepted`, con integración detenida por destino canónico no autorizado; B007–B023 autorizados pero B007 depende de B006 integrado; B033–B042 inactivos. |
+| Estado del registro | B001–B006 `closed`; B007–B023 autorizados para ejecución topológica; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -25,11 +25,12 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | `batch-003-taxonomy-subdomains-core-b` | `closed`; 18 subdominios `approved`, aceptados e integrados. |
 | `batch-004-taxonomy-disciplines-core` | `closed`; 8 disciplinas `approved`, aceptadas e integradas. |
 | `batch-005-taxonomy-target-extension` | `closed`; 12 subdominios y 4 disciplinas `approved`, incorporados 16/16 y reconciliados. |
-| `batch-006-foundations-core` | `accepted`; 10 entidades `approved`; integración pendiente de autorización explícita para crear `content/entities/<family>/`. |
+| `batch-006-foundations-core` | `closed`; 10 entidades `approved`, integradas 10/10 en `content/entities/ideas-orientations/` y reconciliadas. |
 | Fuentes canónicas | 18 archivos bajo `content/sources/`. |
 | Dominios canónicos | 12 archivos bajo `content/taxonomy/domains/`. |
 | Subdominios canónicos | 48 archivos bajo `content/taxonomy/subdomains/`. |
 | Disciplinas canónicas | 12 archivos bajo `content/taxonomy/disciplines/`. |
+| Entidades canónicas | 10 archivos bajo `content/entities/ideas-orientations/`. |
 | Integridad de B001–B005 | Lotes `closed`; fuentes y taxonomía integradas con evidencia de reconciliación en sus entregas. |
 | Aplicación web | No implementada ni autorizada por implicación. |
 | Publicación | No iniciada; ningún cierre de lote equivale a publicación. |
@@ -50,7 +51,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Autorizar la creación y uso de `content/entities/<family>/` como destino canónico de entidades ordinarias. Recomendación: aprobarlo; B006 se integrará en `content/entities/ideas-orientations/`, se cerrará automáticamente y B007 podrá iniciar.
+Producir B007 conforme a la onda 2 aprobada y detenerse únicamente en su aceptación editorial.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 

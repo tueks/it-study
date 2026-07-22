@@ -4,7 +4,7 @@
 |---|---|
 | `batchId` | `batch-006-foundations-core` |
 | Título | Fundamentos de computación — núcleo |
-| Estado del lote | `accepted` |
+| Estado del lote | `closed` |
 | Fase / onda | F2 / onda 1 |
 | Tipo | Entidades ordinarias; conceptos, modelos y paradigma |
 | `manifestVersion` / contrato | `v2` / `1.0` |
@@ -17,7 +17,7 @@
 | Exclusión | Máquina de Turing, tutoriales, código, identidades no inventariadas, relaciones simétricas y decisiones pendientes. |
 | Criterio de salida | 10 borradores, 12 reportes, 23 enlaces taxonómicos y 4 dependencias reconciliados. |
 | Criterio de aceptación | Revisión completa 10/10, cero bloqueantes o mayores abiertos y decisión explícita del Responsable. |
-| Bloqueos | Integración detenida: falta autoridad explícita para crear la ruta canónica de entidades ordinarias; recomendado `content/entities/<family>/`. |
+| Bloqueos | `none`; ruta canónica autorizada por `decision-0022`. |
 
 ## Historial
 
@@ -27,3 +27,5 @@
 | `authorized` | `in-production` | `2026-07-21` | Codex | Preflight conforme: B005 cerrado, 10 IDs únicos y mapa relacional exacto. |
 | `in-production` | `in-review` | `2026-07-21` | Codex | Entrega `d1`: 10 borradores y 12 reportes completos; validaciones automatizables conformes. |
 | `in-review` | `accepted` | `2026-07-21` | Responsable del proyecto | Aceptación explícita de B006 d1; 10/10 fichas aprobadas; cero hallazgos editoriales abiertos. |
+| `accepted` | `integrated` | `2026-07-21` | Codex | Entrega aceptada `bb1f0a0`; 10/10 archivos idénticos en `content/entities/ideas-orientations/`; decisión 0022. |
+| `integrated` | `closed` | `2026-07-21` | Responsable del proyecto / Codex | Cierre automático autorizado; reconciliación conforme, cero pendientes y rollback verificable. |

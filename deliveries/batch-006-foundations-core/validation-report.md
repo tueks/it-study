@@ -15,6 +15,6 @@
 
 Huella reproducible de la entrega revisada original `content/new/`: `73b31b6e5199b0ef53e11dc90a2e98d92105880dac3b08a502f6d2970322fa28`. Huella de la promoción aceptada: `6e01412c67f1261e0cff38af0922900df0b213c94158eae8481def0e62044766`.
 
-Preflight de integración: contenido, referencias y estados conformes; detenido antes de escribir porque `docs/03-content-model.md` presenta `content/entities/<family>/` como estructura general propuesta y `work/CONTENT-PRODUCTION-CONTRACT.md` reserva la estructura canónica posterior. Se requiere autoridad explícita para crear el destino.
+Postintegración: `decision-0022` autoriza el destino; 10/10 archivos coinciden por SHA-256 con `content/entities/ideas-orientations/`; 0 diferencias y 0 referencias rotas.
 
 Limitación: no existe schema ejecutable autorizado. Las validaciones semánticas, pedagógicas y de suficiencia final pertenecen a revisión independiente.
