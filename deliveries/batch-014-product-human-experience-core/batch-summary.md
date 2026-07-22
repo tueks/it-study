@@ -1,3 +1,3 @@
 # Resumen B014
 
-Estado `in-review`. Producidos 9/9 borradores sobre producto digital, análisis, investigación, experiencia y medición. La entrega espera aceptación del Responsable del proyecto.
+Estado `closed`. Producidas, aprobadas e integradas 9/9 fichas sobre producto digital, análisis, investigación, experiencia y medición. Siguiente acción: iniciar B015.
