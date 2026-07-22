@@ -1,3 +1,3 @@
 # Resumen B015
 
-Estado `in-review`. Producidos 9/9 borradores sobre estrategia, capacidades, liderazgo, flujo, portafolio y riesgo. La entrega espera aceptación del Responsable del proyecto.
+Estado `closed`. Producidas, aprobadas e integradas 9/9 fichas sobre estrategia, capacidades, liderazgo, flujo, portafolio y riesgo. Siguiente acción: iniciar B022, onda 11.
