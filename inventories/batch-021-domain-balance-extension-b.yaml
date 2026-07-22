@@ -1,0 +1,18 @@
+# Inventario autorizado de la onda 17 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-021-domain-balance-extension-b
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+rules: { expectedCount: 10, authorizedMinimum: 8, authorizedMaximum: 10, editorialStatus: planned }
+entries:
+  - { id: entity-container, type: technology, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-devops-ingenieria-plataformas, plannedDependencies: [entity-sistema-operativo] }
+  - { id: entity-data-profiling, type: technique, primaryDomain: domain-datos-analitica, subdomain: subdomain-arquitectura-gestion-datos, plannedDependencies: [] }
+  - { id: entity-indicador-de-riesgo-de-seguridad, type: indicator, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-operaciones-seguridad, plannedDependencies: [] }
+  - { id: entity-interpreter, type: tool, primaryDomain: domain-desarrollo-software, subdomain: subdomain-desarrollo-movil, plannedDependencies: [entity-lenguaje-de-programacion] }
+  - { id: entity-oauth-2-0, type: protocol, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-privacidad-riesgo-cumplimiento, plannedDependencies: [entity-hypertext-transfer-protocol] }
+  - { id: entity-sql, type: standard, primaryDomain: domain-datos-analitica, subdomain: subdomain-bi-analitica, plannedDependencies: [] }
+  - { id: entity-strangler-fig-pattern, type: pattern, primaryDomain: domain-ingenieria-software, subdomain: subdomain-ingenieria-requisitos, plannedDependencies: [] }
+  - { id: entity-transport-layer-security, type: protocol, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-fundamentos-arquitectura-seguridad, plannedDependencies: [entity-transmission-control-protocol] }
+  - { id: entity-virtualizacion, type: technology, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-contenedores-orquestacion, plannedDependencies: [entity-sistema-operativo] }
+  - { id: entity-web-content-accessibility-guidelines, type: standard, primaryDomain: domain-producto-experiencia, subdomain: subdomain-analisis-negocio, plannedDependencies: [entity-inclusive-design] }
