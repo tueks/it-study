@@ -1,3 +1,3 @@
 # Resumen B021
 
-Estado `in-review`; 10/10 fichas producidas.
+Estado `closed`; 10/10 fichas aceptadas, integradas y reconciliadas.
