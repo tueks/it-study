@@ -19,12 +19,13 @@ sources: [source-nist-csf-2, source-acm-ieee-cc2020, source-it-study-content-mod
 priority: important
 knowledgeLevel: contextual-understanding
 stability: slow-evolution
-editorialStatus: draft
+editorialStatus: approved
 owner: Codex
 decisionRefs: [decision-0005-content-format-and-identifiers, decision-0021-recommended-master-plan-v2-execution, decision-0022-canonical-entity-family-path]
 batch: batch-020-domain-balance-extension-a
 createdAt: 2026-07-21
-verificationStatus: pending
+reviewedAt: 2026-07-21
+verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"
 ---

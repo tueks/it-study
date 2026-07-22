@@ -22,12 +22,13 @@ sources: [source-nist-ai-rmf, source-iso-iec-ieee-24765-2017, source-it-study-co
 priority: important
 knowledgeLevel: recognition
 stability: versioned-standard
-editorialStatus: draft
+editorialStatus: approved
 owner: Codex
 decisionRefs: [decision-0005-content-format-and-identifiers, decision-0021-recommended-master-plan-v2-execution, decision-0022-canonical-entity-family-path]
 batch: batch-020-domain-balance-extension-a
 createdAt: 2026-07-21
-verificationStatus: pending
+reviewedAt: 2026-07-21
+verificationStatus: verified
 deprecated: false
 contractVersion: "1.0"
 ---
