@@ -1,3 +1,3 @@
 # Revisión independiente
 
-Entrega `v1` / `d1` / `r1`; estado `ready-for-review`; referencia `29d207d`; alcance 2/2; revisor previsto: Responsable del proyecto; cero hallazgos automatizables abiertos.
+Entrega `v1` / `d1` / `r2`; estado `complete`; referencia `87c657b`; alcance 2/2; revisor Responsable del proyecto; decisión `accepted`. Cero hallazgos abiertos; dos rutas promovidas a `approved`.

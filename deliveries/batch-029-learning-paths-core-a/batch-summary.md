@@ -1,3 +1,3 @@
 # Resumen B029
 
-Estado `in-review`; 2/2 rutas introductorias para audiencias distintas.
+Estado `closed`; 2/2 rutas aceptadas, integradas y reconciliadas.
