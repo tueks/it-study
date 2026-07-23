@@ -1,0 +1,18 @@
+# Inventario autorizado de la onda 13 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-017-ways-of-working-core
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+rules: { expectedCount: 10, authorizedMinimum: 8, authorizedMaximum: 10, editorialStatus: planned }
+entries:
+  - { id: entity-continuous-integration, type: practice, primaryDomain: domain-ingenieria-software, subdomain: subdomain-ciclo-vida-evolucion, plannedDependencies: [entity-version-control] }
+  - { id: entity-descomposicion-de-problemas, type: technique, primaryDomain: domain-fundamentos-computacion, subdomain: subdomain-fundamentos-programacion, plannedDependencies: [] }
+  - { id: entity-extract-transform-load, type: process, primaryDomain: domain-datos-analitica, subdomain: subdomain-bi-analitica, plannedDependencies: [entity-database] }
+  - { id: entity-infrastructure-as-code, type: practice, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-contenedores-orquestacion, plannedDependencies: [] }
+  - { id: entity-mlops, type: practice, primaryDomain: domain-inteligencia-artificial, subdomain: subdomain-fundamentos-sistemas-inteligentes, plannedDependencies: [] }
+  - { id: entity-model-training, type: process, primaryDomain: domain-inteligencia-artificial, subdomain: subdomain-ingenieria-evaluacion-gobierno-ia, plannedDependencies: [entity-machine-learning, entity-data-pipeline] }
+  - { id: entity-monitoring, type: practice, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-devops-ingenieria-plataformas, plannedDependencies: [] }
+  - { id: entity-requirements-elicitation, type: process, primaryDomain: domain-ingenieria-software, subdomain: subdomain-ingenieria-requisitos, plannedDependencies: [] }
+  - { id: entity-scrum, type: work-framework, primaryDomain: domain-estrategia-gobierno-liderazgo, subdomain: subdomain-arquitectura-empresarial, plannedDependencies: [entity-agile] }
+  - { id: entity-user-research, type: practice, primaryDomain: domain-producto-experiencia, subdomain: subdomain-accesibilidad-diseno-inclusivo, plannedDependencies: [entity-investigacion-de-usuarios] }

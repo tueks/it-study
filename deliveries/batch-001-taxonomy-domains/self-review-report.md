@@ -3,10 +3,10 @@
 | Campo | Valor |
 |---|---|
 | `batchId` | `batch-001-taxonomy-domains` |
-| `manifestVersion` | `v1` |
-| `deliveryVersion` | `d1` |
+| `manifestVersion` | `v2` |
+| `deliveryVersion` | `d2` |
 | Nombre del reporte | Autoevaluación de autoría |
-| `reportVersion` | `r1` |
+| `reportVersion` | `r2` |
 | Fecha | `2026-07-21` |
 | Rol responsable | ChatGPT Trabajo |
 | Alcance cubierto | Doce fichas y doce reportes obligatorios. |
@@ -30,7 +30,7 @@
 | Seguridad | Sin secretos, instrucciones dañinas ni material operativo sensible. | conforme | Diff del lote | none | none | none | Mantener. |
 | Separación contenido-diseño | Sin HTML, CSS, layout, color ni componente. | conforme | `validation-007` | none | none | none | Mantener. |
 | Trazabilidad | Batch, decisiones, fechas, fuentes y reportes reconciliados. | conforme | paquete | none | none | Evidencia remota pendiente hasta publicar commits. | Verificar commits. |
-| Alcance | 12 nuevas; 0 modificadas; 0 extras. | conforme | `validation-001` | none | none | none | Mantener `v1`. |
+| Alcance | 30 nuevas: 12 `domain` y 18 `source`; 0 modificadas; 0 extras. | conforme | `validation-010`–`validation-013` | none | `validation-009` corregida | Nueva revisión independiente pendiente. | Mantener `v2`/`d2`. |
 | Coherencia de reportes | IDs/versiones/conteos conciliados. | conforme | `validation-008` | none | none | `review-report.md` permanece pending correctamente. | Revisión independiente. |
 
-Recomendación de autoría: conservar el lote en `in-production` hasta recepción formal y asignación de revisor. No se declara ninguna ficha `approved` ni el lote `accepted`.
+La recomendación de autoría quedó superada por la decisión independiente del Responsable del proyecto: `d2` fue aprobado y el lote aceptado. Esta autoevaluación no sustituye ni amplía esa decisión.

@@ -1,0 +1,18 @@
+# Inventario autorizado de la onda 12 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-016-people-capabilities-core
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+rules: { expectedCount: 10, authorizedMinimum: 8, authorizedMaximum: 10, editorialStatus: planned }
+entries:
+  - { id: entity-data-engineer, type: role, primaryDomain: domain-datos-analitica, subdomain: subdomain-bases-datos, plannedDependencies: [entity-database] }
+  - { id: entity-evaluacion-de-modelos, type: competency, primaryDomain: domain-inteligencia-artificial, subdomain: subdomain-ia-generativa, plannedDependencies: [] }
+  - { id: entity-liderazgo-tecnico, type: competency, primaryDomain: domain-estrategia-gobierno-liderazgo, subdomain: subdomain-estrategia-gobierno-it, plannedDependencies: [] }
+  - { id: entity-modelado-de-datos, type: competency, primaryDomain: domain-datos-analitica, subdomain: subdomain-ingenieria-datos, plannedDependencies: [] }
+  - { id: entity-pensamiento-computacional, type: competency, primaryDomain: domain-fundamentos-computacion, subdomain: subdomain-algoritmos-estructuras-datos, plannedDependencies: [] }
+  - { id: entity-platform-engineer, type: role, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-confiabilidad-sre-observabilidad, plannedDependencies: [] }
+  - { id: entity-security-analyst, type: role, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-privacidad-riesgo-cumplimiento, plannedDependencies: [] }
+  - { id: entity-site-reliability-engineer, type: role, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-devops-ingenieria-plataformas, plannedDependencies: [] }
+  - { id: entity-software-architect, type: role, primaryDomain: domain-ingenieria-software, subdomain: subdomain-ciclo-vida-evolucion, plannedDependencies: [] }
+  - { id: entity-technical-lead, type: position, primaryDomain: domain-estrategia-gobierno-liderazgo, subdomain: subdomain-liderazgo-organizacion, plannedDependencies: [entity-software] }

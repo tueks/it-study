@@ -922,10 +922,12 @@ Las entradas siguientes no son autoridad para adoptar una solución. Su `decisio
 
 | Campo | Valor |
 |---|---|
-| `status` | `proposed` |
-| `decisionType` | `pending-resolution` |
+| `status` | `accepted` |
+| `decisionType` | `change` |
 | `decisionAreas` | `architecture`, `operational` |
 | `dateProposed` | `2026-07-20` |
+| `dateDecided` | `2026-07-22` |
+| `effectiveFrom` | `2026-07-22` |
 | `owners` | Modelo; relaciones; arquitectura; Codex |
 | `implementationStatus` | `blocked` |
 | `authorityRefs` | `docs/03-content-model.md`; `docs/05-relationship-rules.md`; `docs/08-production-batches.md` |
@@ -954,7 +956,7 @@ Las entradas siguientes no son autoridad para adoptar una solución. Su `decisio
 | `decisionAreas` | `architecture` |
 | `dateProposed` | `2026-07-20` |
 | `owners` | Arquitectura; Codex; relaciones |
-| `implementationStatus` | `not-started` |
+| `implementationStatus` | `planned` |
 | `authorityRefs` | `docs/05-relationship-rules.md`; `docs/08-production-batches.md`; `docs/09-quality-criteria.md` |
 | `relatedDecisions` | `decision-0007-relationship-governance` |
 
@@ -1012,9 +1014,9 @@ Las entradas siguientes no son autoridad para adoptar una solución. Su `decisio
 
 **Problema.** Debe decidirse si ambos temas entran en la primera publicación o si el modo oscuro se aplaza sin afectar valor, accesibilidad ni significado.
 
-**Regla de contención vigente.** El modo oscuro no se presume incluido ni excluido. Puede aplazarse solo mediante decisión justificada y con un tema base accesible. El contenido no depende del tema.
+**Decisión.** La primera publicación incluye modo claro y modo oscuro accesibles, con preferencia inicial del sistema y control manual persistente. El contenido sigue siendo independiente del tema.
 
-**Condición para resolver.** Antes de cerrar el alcance técnico del MVP deben existir estimación de esfuerzo, sistema base accesible, riesgos, impacto en build y pruebas, y decisión de producto.
+**Aplicación.** La arquitectura frontend, el sistema visual, las pruebas de accesibilidad y el build candidato deben verificar ambos temas; cualquier excepción requiere decisión explícita.
 
 **Artefactos afectados.** Arquitectura frontend, sistema visual, pruebas de accesibilidad, build candidato y alcance de publicación.
 
@@ -1067,10 +1069,12 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 
 | Campo | Valor |
 |---|---|
-| `status` | `proposed` |
-| `decisionType` | `pending-resolution` |
+| `status` | `accepted` |
+| `decisionType` | `change` |
 | `decisionAreas` | `operational`, `quality` |
 | `dateProposed` | `2026-07-20` |
+| `dateDecided` | `2026-07-22` |
+| `effectiveFrom` | `2026-07-22` |
 | `owners` | Calidad; fuentes; mantenimiento |
 | `implementationStatus` | `not-started` |
 | `authorityRefs` | `docs/03-content-model.md`; `docs/04-editorial-guidelines.md`; `docs/07-mvp-definition.md`; `docs/09-quality-criteria.md` |
@@ -1093,15 +1097,15 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 | `decisionAreas` | `architecture`, `ux`, `quality` |
 | `dateProposed` | `2026-07-20` |
 | `owners` | Arquitectura; UX/UI; QA; calidad |
-| `implementationStatus` | `blocked` |
+| `implementationStatus` | `planned` |
 | `authorityRefs` | `docs/07-mvp-definition.md`; `docs/09-quality-criteria.md` |
 | `relatedDecisions` | `decision-0009-mvp-scope`; `decision-0011-quality-model` |
 
 **Problema.** Las puertas funcionales están aprobadas, pero métricas finales de rendimiento, búsqueda, accesibilidad técnica, disponibilidad y operación dependen de arquitectura y flujos concretos.
 
-**Regla de contención vigente.** No se inventan umbrales ni se seleccionan herramientas. Cero referencias internas rotas, accesibilidad mínima, build reproducible y flujos correctos siguen siendo puertas.
+**Decisión.** Las puertas de B032 y publicación son: build reproducible desde árbol limpio; cero referencias internas rotas y derivados reproducibles; accesibilidad WCAG AA con teclado, foco, nombres accesibles y orden de lectura; flujos responsive sin pérdida crítica; LCP ≤ 2.5 s, INP ≤ 200 ms y CLS ≤ 0.1 en inicio y páginas representativas bajo perfil móvil de referencia; búsqueda, navegación y filtros semánticamente correctos; rollback documentado y probado. Toda excepción requiere registro explícito.
 
-**Condición para resolver.** Arquitectura candidata, diseño de flujos, entornos representativos, método de medición, presupuesto técnico, evidencia y responsables.
+**Aplicación.** La arquitectura candidata definirá herramienta, entorno representativo, método de medición y responsables sin relajar los umbrales aprobados.
 
 **Artefactos afectados.** Arquitectura, UX/UI, schemas de reportes, CI, pruebas, build y dossier de publicación.
 
@@ -1180,6 +1184,141 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 
 **Rollback.** Si se demuestra un defecto material, conservar esta entrada y el historial, revertir únicamente el cambio afectado mediante un commit explícito y registrar una decisión correctiva o sustituta con el alcance, la migración y la evidencia correspondientes.
 
+### decision-0020-batch-plan-authorization — Autorización del plan de lotes y estado de continuidad
+
+| Campo | Valor |
+|---|---|
+| `status` | `accepted` |
+| `decisionType` | `change` |
+| `decisionAreas` | `operational`, `quality` |
+| `dateProposed` | `2026-07-21` |
+| `dateDecided` | `2026-07-21` |
+| `effectiveFrom` | `2026-07-21` |
+| `decisionMaker` | Responsable del proyecto |
+| `owners` | Responsable del proyecto; coordinación; Codex; producción |
+| `implementationStatus` | `verified` |
+| `authorityRefs` | `docs/08-production-batches.md`; `docs/09-quality-criteria.md`; contratos `work/`; `decision-0016-operational-ownership` |
+| `evidenceRefs` | `PROJECT-STATUS.md`; `work/BATCH-AUTHORIZATION-REGISTER.md`; manifiestos y reportes de B001/B002 |
+| `relatedDecisions` | `decision-0009-mvp-scope`; `decision-0010-production-strategy`; `decision-0011-quality-model`; `decision-0016-operational-ownership`; `decision-0019-reference-artifacts-and-codex-contract` |
+
+**Contexto.** B001 y B002 fueron aceptados e integrados, pero el README y algunos campos de sus artefactos conservaban estados anteriores. El plan normativo B003–B042 existía sin una autorización operativa acumulativa, lo que obligaba a reconstruir el punto de continuidad desde varios documentos.
+
+**Decisión.**
+
+- Se reconcilian y cierran `batch-001-taxonomy-domains` y `batch-002-taxonomy-subdomains-core-a` con evidencia de 48/48 archivos idénticos entre entregas y fuentes canónicas, cero referencias de fuentes rotas y cero padres inexistentes.
+- Se aprueba `PROJECT-STATUS.md` como punto de reanudación operativo, subordinado a las autoridades de `AGENTS.md` y actualizable después de cada transición material.
+- Se aprueba `work/BATCH-AUTHORIZATION-REGISTER.md` y se autorizan los IDs planificados B003–B042 dentro del alcance, cantidades, dependencias, criterios de entrada y salida, riesgos y niveles definidos en `docs/08-production-batches.md`.
+- B003–B032 quedan autorizados como plan base/objetivo. B033–B042 quedan expresamente autorizados como extensiones o correcciones opcionales, pero bloqueados hasta cumplir sus activadores, demostrar necesidad y cerrar las dependencias previas.
+- La autorización reserva IDs de lote y permite preparar manifiestos. La producción de cada lote solo comienza cuando su manifiesto o instrucción equivalente contiene el alcance exacto, los candidatos o criterio autorizado, límites, dependencias, entregables y revisión, y la puerta de entrada está satisfecha.
+- La selección concreta de entradas, IDs de contenido, fuentes y relaciones no se infiere del plan y debe registrarse antes de redactar.
+- La autorización no cambia estados editoriales, no aprueba contenido futuro y no delega aceptación, integración, cierre o publicación.
+- Las decisiones 0012–0015, 0017 y 0018 conservan `proposed`; cualquier dependencia material de ellas bloquea el alcance correspondiente.
+
+**Justificación.** Una autorización acumulativa reduce ambigüedad entre sesiones sin eliminar las puertas que protegen identidad, dependencias, revisión y cobertura. El estado separado evita que el README, las conversaciones o un inventario de planificación se conviertan en autoridad paralela.
+
+**Consecuencias.**
+
+- B003 es la próxima preparación ejecutable; debe materializar un alcance exacto de 18 subdominios antes de redactar.
+- Los lotes posteriores no requieren una nueva autorización general, pero sí su manifiesto exacto y el cumplimiento demostrable de dependencias.
+- Un lote autorizado puede permanecer bloqueado; `authorized` no equivale a `in-production`.
+- B001 y B002 no se reabren; cambios posteriores requieren un lote de corrección.
+- Cierre no equivale a publicación y la aplicación web continúa fuera de alcance.
+
+**Riesgos y mitigaciones.** El principal riesgo es interpretar la autorización general como permiso para producir listas abiertas o saltar dependencias. Se mitiga mediante el registro de puertas, el manifiesto exacto obligatorio, la comprobación inicial de cada sesión y la prohibición de inventar alcance.
+
+**Artefactos afectados.** `PROJECT-STATUS.md`, `README.md`, `work/BATCH-AUTHORIZATION-REGISTER.md`, `docs/10-decision-log.md` y los manifiestos/resúmenes reconciliados de B001/B002.
+
+**Rollback.** Conservar esta decisión y el historial. Una revocación debe identificar los lotes afectados, detener nuevas transiciones, preservar trabajo ya producido y registrar una decisión sustituta; no se reutilizan IDs ni se borran cierres históricos.
+
+### decision-0021-recommended-master-plan-v2-execution — Ejecución del plan maestro v2 recomendado
+
+| Campo | Valor |
+|---|---|
+| `status` | `accepted` |
+| `decisionType` | `change` |
+| `decisionAreas` | `operational`, `taxonomy`, `quality` |
+| `dateProposed` | `2026-07-21` |
+| `dateDecided` | `2026-07-21` |
+| `effectiveFrom` | `2026-07-21` |
+| `decisionMaker` | Responsable del proyecto |
+| `owners` | Responsable del proyecto; coordinación; Codex; producción |
+| `implementationStatus` | `in-progress` |
+| `authorityRefs` | `docs/02-taxonomy.md`; `docs/05-relationship-rules.md`; `docs/07-mvp-definition.md`; `docs/08-production-batches.md`; `decision-0020-batch-plan-authorization` |
+| `evidenceRefs` | Instrucción explícita del Responsable del proyecto; `inventories/initial-terms.csv`; `inventories/master-batch-inventory.yaml` |
+| `relatedDecisions` | `decision-0003-taxonomy-structure`; `decision-0007-relationship-governance`; `decision-0009-mvp-scope`; `decision-0010-production-strategy`; `decision-0016-operational-ownership`; `decision-0020-batch-plan-authorization` |
+
+**Contexto.** La asignación inicial conserva 164 candidatos en B006–B019, pero varios lotes quedan bajo mínimo o sobre máximo, B005 y B020–B023 carecen de inventario concreto y algunas dependencias apuntan a lotes posteriores. Tratar cada dependencia normal como bloqueo genera pausas circulares y no ofrece al Responsable del proyecto una secuencia clara de intervención.
+
+**Decisión.**
+
+- Codex queda autorizado a preparar y ejecutar el plan maestro v2 para el objetivo recomendado.
+- Puede rebalancear y dividir B005–B023 dentro de los límites ya aprobados, sin superar 164 entidades ni alterar los objetivos semánticos de cada lote.
+- Puede preparar IDs, inventarios y mapas relacionales exactos para revisión; una propuesta no adquiere aprobación editorial por su generación.
+- Debe ordenar dependencias topológicamente: un destino obligatorio existe en el mismo batch o en una onda anterior; cualquier excepción permanece visible para decisión.
+- Puede producir y validar ondas autorizadas y realizar commits.
+- Después de que el Responsable del proyecto acepte una onda, Codex queda autorizado a integrarla y cerrarla automáticamente si todas las validaciones aplicables resultan conformes.
+- B033–B042 permanecen sin activar.
+- El Responsable del proyecto conserva la aceptación editorial de cada onda y la autorización final de publicación.
+
+**Justificación.** Una autorización de ejecución por ondas sustituye pausas repetitivas por puertas humanas explícitas: aprobación del plan exacto, aceptación editorial de entregas y publicación. Las dependencias técnicas se gestionan mediante orden, no como solicitudes circulares.
+
+**Consecuencias.**
+
+- El plan maestro v2 y sus mapas se presentan como propuesta completa antes de producción.
+- Las cantidades de B006–B023 deben quedar dentro de sus rangos.
+- B005 puede usar vacíos verificables del inventario objetivo, pero no contenido de relleno.
+- Las relaciones candidatas requieren fuentes y revisión durante su batch; el mapa lógico no las aprueba por anticipado.
+- La integración y el cierre posteriores a cada aceptación no requieren otra autorización si no aparece defecto, excepción o cambio material.
+
+**Riesgos y mitigaciones.** El rebalanceo puede mover candidatos fuera de su batch recomendado original. Cada movimiento conserva origen, destino y razón; se validan alcance, tipo, cobertura y dependencias, y el Responsable del proyecto aprueba el plan v2 antes de producir.
+
+**Artefactos afectados.** `inventories/proposals/`, inventarios B005–B023, mapas relacionales, manifiestos de onda, `PROJECT-STATUS.md`, `work/BATCH-AUTHORIZATION-REGISTER.md` y entregas posteriores.
+
+**Rollback.** Revocar la ejecución futura mediante decisión sustituta, conservar propuestas y commits, y volver a la asignación maestra v1 sin reescribir cierres B001–B004 ni reutilizar IDs.
+
+### decision-0022-canonical-entity-family-path — Ruta canónica de entidades por familia
+
+| Campo | Valor |
+|---|---|
+| `status` | `accepted` |
+| `decisionType` | `change` |
+| `decisionAreas` | `architecture`, `operational` |
+| `dateProposed` | `2026-07-21` |
+| `dateDecided` | `2026-07-21` |
+| `effectiveFrom` | `2026-07-21` |
+| `decisionMaker` | Responsable del proyecto |
+| `owners` | Responsable del proyecto; Codex; integración |
+| `implementationStatus` | `implemented` |
+| `authorityRefs` | `docs/03-content-model.md`; `work/CONTENT-PRODUCTION-CONTRACT.md`; `decision-0005-content-format-and-identifiers`; `decision-0021-recommended-master-plan-v2-execution` |
+| `evidenceRefs` | Autorización explícita del Responsable del proyecto: `content/entities/<family>/` como estructura canónica para entidades ordinarias |
+
+**Decisión.** Las entidades ordinarias se integran como Markdown canónico en `content/entities/<family>/`, donde `<family>` es la familia controlada correspondiente a su tipo en `inventories/classifications.yaml`. La carpeta es organización física y no modifica identidad, taxonomía ni relaciones.
+
+**Aplicación inicial.** Las diez entidades de B006 pertenecen a `ideas-orientations` y se integran en `content/entities/ideas-orientations/`.
+
+**Rollback.** Revertir el commit de integración preservando la entrega aceptada; cualquier cambio posterior de estructura exige migración autorizada y no modifica IDs.
+
+### decision-0023-local-static-application-architecture — Arquitectura local estática de la aplicación
+
+| Campo | Valor |
+|---|---|
+| `status` | `accepted` |
+| `decisionType` | `change` |
+| `decisionAreas` | `architecture`, `ux`, `quality`, `operational` |
+| `dateDecided` | `2026-07-22` |
+| `effectiveFrom` | `2026-07-22` |
+| `decisionMaker` | Responsable del proyecto |
+| `implementationStatus` | `planned` |
+| `authorityRefs` | `decision-0015-dark-mode-delivery`; `decision-0018-final-technical-metrics`; `decision-0022-canonical-entity-family-path` |
+
+**Decisión.** IT Study se implementa inicialmente como aplicación local estática con React, TypeScript y Vite. No incorpora backend, autenticación, cuentas, base de datos ni publicación externa. Un generador reproducible transforma exclusivamente fuentes canónicas `approved` en derivados locales consumidos por la interfaz; los derivados no son autoridad editorial.
+
+**UX aceptada.** La portada breve incluye búsqueda y acceso a «Explorar el mapa». La exploración inicia con mapa/diagrama de los dominios, con lista jerárquica y búsqueda equivalentes; la interfaz presenta fichas, comparaciones, escenarios y rutas. El tema claro/oscuro usa preferencia del sistema y control manual persistente.
+
+**Build y rollback.** `generate`, pruebas, `build` y `preview` se ejecutan localmente. El rollback consiste en revertir al commit y build local verificados; el build debe cumplir las puertas de `decision-0018`.
+
+**Límites.** No se altera contenido canónico desde componentes ni se adoptan relaciones persistidas fuera de las decisiones vigentes.
+
 ## 24. Matriz acumulativa de decisiones
 
 | ID | Título | Tipo / áreas | Estado | Fecha | Fuente de autoridad | Artefactos afectados | Próxima acción | Responsable | Sustituye o asunto relacionado |
@@ -1203,6 +1342,9 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 | `decision-0017-review-calendars` | Calendarios por estabilidad | `pending-resolution` / operational, quality | `proposed` | 2026-07-20 | Docs `03`, `04`, `07`, `09` | Mantenimiento, `needs-update` | Definir frecuencias por riesgo | Calidad/fuentes | Relacionada con 0011 |
 | `decision-0018-final-technical-metrics` | Métricas técnicas finales | `pending-resolution` / architecture, ux, quality | `proposed` | 2026-07-20 | Docs `07`, `09` | Arquitectura, UX/UI, QA, CI | Definir después de arquitectura | Arquitectura/UX/QA | Relacionada con 0009 y 0011 |
 | `decision-0019-reference-artifacts-and-codex-contract` | Aceptación de ejemplos, inventarios y contrato operativo | `change` / operational, quality | `accepted` | 2026-07-21 | Docs `02`, `03`, `05`, `07`–`10` | `examples/`, `inventories/`, `AGENTS.md` | Usar como línea base sin promover estados internos | Responsable del proyecto; coordinación; Codex | Relacionada con 0003–0011 |
+| `decision-0020-batch-plan-authorization` | Autorización del plan de lotes y estado de continuidad | `change` / operational, quality | `accepted` | 2026-07-21 | Docs `08`–`10`; contratos `work/` | `PROJECT-STATUS.md`; registro B003–B042; B001/B002 | Iniciar preflight y producción autorizada de B003 | Responsable del proyecto; coordinación; Codex | Relacionada con 0009–0011, 0016 y 0019 |
+| `decision-0021-recommended-master-plan-v2-execution` | Ejecución del plan maestro v2 recomendado | `change` / operational, taxonomy, quality | `accepted` | 2026-07-21 | Docs `02`, `05`, `07`, `08`; decisión 0020 | Propuestas B005–B023; mapas relacionales; ondas | Presentar plan v2 completo para revisión | Responsable del proyecto; coordinación; Codex | Relacionada con 0003, 0007, 0009–0010, 0016 y 0020 |
+| `decision-0022-canonical-entity-family-path` | Ruta canónica de entidades por familia | `change` / architecture, operational | `accepted` | 2026-07-21 | Doc `03`; contrato de producción; decisiones 0005 y 0021 | `content/entities/<family>/`; entregas B006–B023 | Integrar B006 y aplicar por tipo/familia | Responsable del proyecto; Codex | Relacionada con 0004–0005 y 0021 |
 
 ## 25. Relación con excepciones de calidad
 
@@ -1267,7 +1409,7 @@ Este documento no autoriza ninguna excepción activa. Toda excepción futura deb
 - resolución de autoridad operativa mediante `decision-0016-operational-ownership`.
 - aceptación documental de ejemplos, inventarios y contrato operativo mediante `decision-0019-reference-artifacts-and-codex-contract`.
 
-La siguiente secuencia disponible es `decision-0020-*`.
+La siguiente secuencia disponible es `decision-0022-*`.
 
 ### 26.2 Reservado para documentos `work/`
 

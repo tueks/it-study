@@ -1,0 +1,19 @@
+# Inventario autorizado de la onda 7; aplica la sustitución ETL applies-to Data pipeline.
+schemaVersion: "2.0"
+batchId: batch-012-data-ai-core
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-relational-map-v2.yaml, instruccion-responsable-proyecto-aprueba-sustitucion-etl-data-pipeline]
+rules: { expectedCount: 10, authorizedMinimum: 10, authorizedMaximum: 14, editorialStatus: planned }
+entries:
+  - { id: entity-database, type: concept, primaryDomain: domain-datos-analitica, subdomain: subdomain-bases-datos, plannedDependencies: [entity-representacion-de-datos] }
+  - { id: entity-data-pipeline, type: process, primaryDomain: domain-datos-analitica, subdomain: subdomain-bases-datos, plannedDependencies: [] }
+  - { id: entity-data-warehouse, type: concept, primaryDomain: domain-datos-analitica, subdomain: subdomain-ingenieria-datos, plannedDependencies: [entity-database] }
+  - { id: entity-lambda-architecture, type: architectural-style, primaryDomain: domain-datos-analitica, subdomain: subdomain-ingenieria-datos, plannedDependencies: [] }
+  - { id: entity-machine-learning, type: concept, primaryDomain: domain-inteligencia-artificial, subdomain: subdomain-machine-learning, plannedDependencies: [entity-artificial-intelligence, entity-data-pipeline] }
+  - { id: entity-ai-engineer, type: role, primaryDomain: domain-inteligencia-artificial, subdomain: subdomain-machine-learning, plannedDependencies: [entity-machine-learning] }
+  - { id: entity-data-analyst, type: role, primaryDomain: domain-datos-analitica, subdomain: subdomain-arquitectura-gestion-datos, plannedDependencies: [entity-database] }
+  - { id: entity-deep-learning, type: concept, primaryDomain: domain-inteligencia-artificial, subdomain: subdomain-ia-generativa, plannedDependencies: [entity-machine-learning] }
+  - { id: entity-neural-network, type: model, primaryDomain: domain-inteligencia-artificial, subdomain: subdomain-ingenieria-evaluacion-gobierno-ia, plannedDependencies: [entity-machine-learning] }
+  - { id: entity-relational-model, type: model, primaryDomain: domain-datos-analitica, subdomain: subdomain-arquitectura-gestion-datos, plannedDependencies: [entity-database] }
+resolvedRelationalSubstitution: entity-extract-transform-load applies-to entity-data-pipeline

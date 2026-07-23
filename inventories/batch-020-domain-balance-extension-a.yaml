@@ -1,0 +1,18 @@
+# Inventario autorizado de la onda 16 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-020-domain-balance-extension-a
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+rules: { expectedCount: 10, authorizedMinimum: 8, authorizedMaximum: 10, editorialStatus: planned }
+entries:
+  - { id: entity-compiler, type: tool, primaryDomain: domain-desarrollo-software, subdomain: subdomain-backend-servicios, plannedDependencies: [entity-lenguaje-de-programacion] }
+  - { id: entity-completitud-de-datos, type: metric, primaryDomain: domain-datos-analitica, subdomain: subdomain-ingenieria-datos, plannedDependencies: [] }
+  - { id: entity-incident-response, type: process, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-operaciones-seguridad, plannedDependencies: [] }
+  - { id: entity-internal-developer-platform, type: platform, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-infraestructura-virtualizacion-cloud, plannedDependencies: [entity-cloud-computing] }
+  - { id: entity-iso-iec-27001, type: standard, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-identidad-acceso, plannedDependencies: [] }
+  - { id: entity-iso-iec-42001, type: standard, primaryDomain: domain-inteligencia-artificial, subdomain: subdomain-machine-learning, plannedDependencies: [] }
+  - { id: entity-large-language-model, type: model, primaryDomain: domain-inteligencia-artificial, subdomain: subdomain-fundamentos-sistemas-inteligentes, plannedDependencies: [entity-deep-learning] }
+  - { id: entity-relational-database, type: technology, primaryDomain: domain-datos-analitica, subdomain: subdomain-bases-datos, plannedDependencies: [entity-relational-model] }
+  - { id: entity-runtime-environment, type: platform, primaryDomain: domain-desarrollo-software, subdomain: subdomain-practicas-implementacion, plannedDependencies: [entity-lenguaje-de-programacion] }
+  - { id: entity-threat-modeling, type: technique, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-identidad-acceso, plannedDependencies: [entity-threat, entity-vulnerability] }

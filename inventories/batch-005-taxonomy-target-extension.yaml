@@ -1,0 +1,38 @@
+# Inventario autorizado para batch-005-taxonomy-target-extension.
+# Materializa el plan maestro v2 aprobado; no equivale a contenido aprobado.
+schemaVersion: "2.0"
+batchId: batch-005-taxonomy-target-extension
+manifestVersion: v2
+status: authorized
+authority:
+  - decision-0021-recommended-master-plan-v2-execution
+  - docs/02-taxonomy.md
+  - docs/07-mvp-definition.md
+  - docs/08-production-batches.md
+  - inventories/proposals/batch-005-taxonomy-target-extension-v2.yaml
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules:
+  expectedSubdomains: 12
+  expectedDisciplines: 4
+  accumulatedSubdomains: 48
+  accumulatedDisciplines: 12
+  editorialStatus: planned
+subdomains:
+  - { id: subdomain-informacion-representacion, name: "información y representación", parentDomain: domain-fundamentos-computacion }
+  - { id: subdomain-iot-sistemas-ciberfisicos, name: "iot y sistemas ciberfísicos", parentDomain: domain-sistemas-computo-ciberfisicos }
+  - { id: subdomain-practicas-implementacion, name: "prácticas de implementación", parentDomain: domain-desarrollo-software }
+  - { id: subdomain-calidad-pruebas, name: "calidad y pruebas", parentDomain: domain-ingenieria-software }
+  - { id: subdomain-operacion-redes, name: "operación de redes", parentDomain: domain-redes-telecomunicaciones }
+  - { id: subdomain-confiabilidad-sre-observabilidad, name: "confiabilidad, sre y observabilidad", parentDomain: domain-infraestructura-operacion }
+  - { id: subdomain-privacidad-riesgo-cumplimiento, name: "privacidad, riesgo y cumplimiento", parentDomain: domain-ciberseguridad-riesgo }
+  - { id: subdomain-bi-analitica, name: "bi y analítica", parentDomain: domain-datos-analitica }
+  - { id: subdomain-ingenieria-evaluacion-gobierno-ia, name: "ingeniería, evaluación y gobierno de ia", parentDomain: domain-inteligencia-artificial }
+  - { id: subdomain-sistemas-empresariales, name: "sistemas empresariales", parentDomain: domain-integracion-sistemas-empresariales }
+  - { id: subdomain-accesibilidad-diseno-inclusivo, name: "accesibilidad y diseño inclusivo", parentDomain: domain-producto-experiencia }
+  - { id: subdomain-liderazgo-organizacion, name: "liderazgo y organización", parentDomain: domain-estrategia-gobierno-liderazgo }
+disciplines:
+  - { id: discipline-confiabilidad, name: confiabilidad, homeDomain: domain-infraestructura-operacion }
+  - { id: discipline-privacidad, name: privacidad, homeDomain: domain-ciberseguridad-riesgo }
+  - { id: discipline-riesgo, name: riesgo, homeDomain: domain-ciberseguridad-riesgo }
+  - { id: discipline-liderazgo, name: liderazgo, homeDomain: domain-estrategia-gobierno-liderazgo }

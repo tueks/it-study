@@ -1,0 +1,40 @@
+# Inventario autorizado para batch-003-taxonomy-subdomains-core-b.
+# Planificación operativa: no equivale a contenido aprobado.
+schemaVersion: "1.0"
+batchId: batch-003-taxonomy-subdomains-core-b
+manifestVersion: v1
+status: authorized
+authority:
+  - decision-0020-batch-plan-authorization
+  - docs/02-taxonomy.md
+  - docs/03-content-model.md
+  - docs/08-production-batches.md
+  - inventories/domains.yaml
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules:
+  expectedCount: 18
+  accumulatedSubdomainCount: 36
+  accumulatedPerDomain: 3
+  uniqueParentRequired: true
+  thirdLevelForbidden: true
+  editorialStatus: planned
+entries:
+  - { id: subdomain-fundamentos-programacion, name: fundamentos de programación, parentDomain: domain-fundamentos-computacion }
+  - { id: subdomain-embebidos-firmware, name: embebidos y firmware, parentDomain: domain-sistemas-computo-ciberfisicos }
+  - { id: subdomain-desarrollo-movil, name: desarrollo móvil, parentDomain: domain-desarrollo-software }
+  - { id: subdomain-ciclo-vida-evolucion, name: ciclo de vida y evolución, parentDomain: domain-ingenieria-software }
+  - { id: subdomain-redes-empresariales, name: redes empresariales, parentDomain: domain-redes-telecomunicaciones }
+  - { id: subdomain-internet-servicios-red, name: Internet y servicios de red, parentDomain: domain-redes-telecomunicaciones }
+  - { id: subdomain-devops-ingenieria-plataformas, name: DevOps e ingeniería de plataformas, parentDomain: domain-infraestructura-operacion }
+  - { id: subdomain-operaciones-seguridad, name: operaciones de seguridad, parentDomain: domain-ciberseguridad-riesgo }
+  - { id: subdomain-arquitectura-gestion-datos, name: arquitectura y gestión de datos, parentDomain: domain-datos-analitica }
+  - { id: subdomain-ingenieria-datos, name: ingeniería de datos, parentDomain: domain-datos-analitica }
+  - { id: subdomain-machine-learning, name: machine learning, parentDomain: domain-inteligencia-artificial }
+  - { id: subdomain-ia-generativa, name: IA generativa, parentDomain: domain-inteligencia-artificial }
+  - { id: subdomain-mensajeria-eventos, name: mensajería y eventos, parentDomain: domain-integracion-sistemas-empresariales }
+  - { id: subdomain-middleware-integracion, name: middleware e integración, parentDomain: domain-integracion-sistemas-empresariales }
+  - { id: subdomain-analisis-negocio, name: análisis de negocio, parentDomain: domain-producto-experiencia }
+  - { id: subdomain-investigacion-ux, name: investigación y UX, parentDomain: domain-producto-experiencia }
+  - { id: subdomain-arquitectura-empresarial, name: arquitectura empresarial, parentDomain: domain-estrategia-gobierno-liderazgo }
+  - { id: subdomain-portafolios-programas-proyectos, name: "portafolios, programas y proyectos", parentDomain: domain-estrategia-gobierno-liderazgo }

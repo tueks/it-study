@@ -1,0 +1,12 @@
+# Inventario autorizado de B024
+schemaVersion: "2.0"
+batchId: batch-024-comparisons-core-a
+manifestVersion: v1
+status: authorized
+authority: [decision-0020-batch-plan-authorization, user-authorization-2026-07-22, docs/03-content-model.md, docs/08-production-batches.md]
+rules: { expectedCount: 4, authorizedMinimum: 4, authorizedMaximum: 4, editorialStatus: planned, ordinaryRelations: prohibited }
+entries:
+  - { id: comparison-tcp-udp, type: comparison, comparedEntries: [entity-transmission-control-protocol, entity-user-datagram-protocol], reason: "Se confunden como alternativas universales de transporte pese a sus compromisos distintos.", dimensions: [delivery-semantics, connection-model, typical-use], sources: [source-acm-ieee-cc2020, source-iso-iec-ieee-24765-2017] }
+  - { id: comparison-container-virtualizacion, type: comparison, comparedEntries: [entity-container, entity-virtualizacion], reason: "Se usa contenedor como sinónimo de virtualización aunque opera a un nivel y con alcance distintos.", dimensions: [scope, isolation-level, operational-use], sources: [source-acm-ieee-cc2020, source-google-sre] }
+  - { id: comparison-http-tls, type: comparison, comparedEntries: [entity-hypertext-transfer-protocol, entity-transport-layer-security], reason: "Ambos participan en comunicaciones web, pero no resuelven la misma capa ni el mismo objetivo.", dimensions: [primary-purpose, layer-of-concern, security-properties], sources: [source-iso-iec-ieee-24765-2017, source-nist-csf-2] }
+  - { id: comparison-git-version-control, type: comparison, comparedEntries: [entity-git, entity-version-control], reason: "Git suele tratarse como sinónimo de control de versiones pese a que es una implementación de una práctica más amplia.", dimensions: [nature, scope, decision-context], sources: [source-acm-ieee-cc2020, source-iso-iec-ieee-24765-2017] }

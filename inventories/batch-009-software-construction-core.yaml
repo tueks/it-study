@@ -1,0 +1,19 @@
+# Inventario autorizado de la onda 4 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-009-software-construction-core
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules: { expectedCount: 9, authorizedMinimum: 9, authorizedMaximum: 13, editorialStatus: planned }
+entries:
+  - { id: entity-backend-developer, type: role, primaryDomain: domain-desarrollo-software, subdomain: subdomain-practicas-implementacion, plannedDependencies: [entity-programacion] }
+  - { id: entity-debugging, type: competency, primaryDomain: domain-desarrollo-software, subdomain: subdomain-backend-servicios, plannedDependencies: [] }
+  - { id: entity-dependency-injection, type: pattern, primaryDomain: domain-desarrollo-software, subdomain: subdomain-backend-servicios, plannedDependencies: [] }
+  - { id: entity-frontend-developer, type: role, primaryDomain: domain-desarrollo-software, subdomain: subdomain-desarrollo-web-frontend, plannedDependencies: [entity-programacion] }
+  - { id: entity-lenguaje-de-programacion, type: technology, primaryDomain: domain-desarrollo-software, subdomain: subdomain-desarrollo-web-frontend, plannedDependencies: [] }
+  - { id: entity-pair-programming, type: practice, primaryDomain: domain-desarrollo-software, subdomain: subdomain-practicas-implementacion, plannedDependencies: [] }
+  - { id: entity-programacion-funcional, type: paradigm, primaryDomain: domain-desarrollo-software, subdomain: subdomain-desarrollo-movil, plannedDependencies: [entity-paradigma-de-programacion] }
+  - { id: entity-programacion-orientada-a-objetos, type: paradigm, primaryDomain: domain-desarrollo-software, subdomain: subdomain-backend-servicios, plannedDependencies: [entity-paradigma-de-programacion] }
+  - { id: entity-version-control, type: practice, primaryDomain: domain-desarrollo-software, subdomain: subdomain-desarrollo-movil, plannedDependencies: [] }

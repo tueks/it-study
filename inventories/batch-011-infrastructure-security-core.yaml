@@ -1,0 +1,20 @@
+# Inventario autorizado de la onda 6 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-011-infrastructure-security-core
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules: { expectedCount: 10, authorizedMinimum: 10, authorizedMaximum: 14, editorialStatus: planned }
+entries:
+  - { id: entity-analisis-de-amenazas, type: competency, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-fundamentos-arquitectura-seguridad, plannedDependencies: [] }
+  - { id: entity-cia-triad, type: model, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-fundamentos-arquitectura-seguridad, plannedDependencies: [] }
+  - { id: entity-coordinacion-de-incidentes, type: competency, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-infraestructura-virtualizacion-cloud, plannedDependencies: [] }
+  - { id: entity-devops, type: conceptual-orientation, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-contenedores-orquestacion, plannedDependencies: [] }
+  - { id: entity-incident-management, type: process, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-confiabilidad-sre-observabilidad, plannedDependencies: [] }
+  - { id: entity-threat, type: concept, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-identidad-acceso, plannedDependencies: [] }
+  - { id: entity-vulnerability, type: concept, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-operaciones-seguridad, plannedDependencies: [] }
+  - { id: entity-riesgo-tecnologico, type: concept, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-privacidad-riesgo-cumplimiento, secondaryDomains: [domain-estrategia-gobierno-liderazgo, domain-infraestructura-operacion, domain-datos-analitica], disciplines: [discipline-riesgo], plannedDependencies: [entity-threat, entity-vulnerability] }
+  - { id: entity-least-privilege, type: principle, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-identidad-acceso, plannedDependencies: [entity-riesgo-tecnologico] }
+  - { id: entity-zero-trust, type: model, primaryDomain: domain-ciberseguridad-riesgo, subdomain: subdomain-operaciones-seguridad, plannedDependencies: [] }

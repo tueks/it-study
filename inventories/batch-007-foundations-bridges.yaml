@@ -1,0 +1,18 @@
+# Inventario autorizado de la onda 2 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-007-foundations-bridges
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules: { expectedCount: 8, authorizedMinimum: 8, authorizedMaximum: 10, editorialStatus: planned }
+entries:
+  - { id: entity-abstraccion, type: concept, primaryDomain: domain-fundamentos-computacion, subdomain: subdomain-fundamentos-programacion, secondaryDomains: [domain-desarrollo-software, domain-ingenieria-software, domain-integracion-sistemas-empresariales], plannedDependencies: [] }
+  - { id: entity-software, type: concept, primaryDomain: domain-desarrollo-software, subdomain: subdomain-desarrollo-web-frontend, secondaryDomains: [domain-ingenieria-software, domain-integracion-sistemas-empresariales, domain-producto-experiencia], plannedDependencies: [entity-programacion] }
+  - { id: entity-application-programming-interface, type: concept, primaryDomain: domain-integracion-sistemas-empresariales, subdomain: subdomain-apis-interoperabilidad, secondaryDomains: [domain-desarrollo-software, domain-redes-telecomunicaciones], plannedDependencies: [entity-software] }
+  - { id: entity-artificial-intelligence, type: concept, primaryDomain: domain-inteligencia-artificial, subdomain: subdomain-fundamentos-sistemas-inteligentes, secondaryDomains: [domain-datos-analitica, domain-desarrollo-software, domain-estrategia-gobierno-liderazgo], plannedDependencies: [entity-algoritmo] }
+  - { id: entity-maquina-de-turing, type: model, primaryDomain: domain-fundamentos-computacion, subdomain: subdomain-informacion-representacion, secondaryDomains: [], plannedDependencies: [] }
+  - { id: entity-sistema-de-computo, type: concept, primaryDomain: domain-sistemas-computo-ciberfisicos, subdomain: subdomain-hardware-arquitectura-computadores, secondaryDomains: [domain-fundamentos-computacion, domain-infraestructura-operacion], plannedDependencies: [entity-computacion] }
+  - { id: entity-red-de-computadoras, type: concept, primaryDomain: domain-redes-telecomunicaciones, subdomain: subdomain-fundamentos-protocolos-red, secondaryDomains: [domain-sistemas-computo-ciberfisicos, domain-infraestructura-operacion, domain-integracion-sistemas-empresariales], plannedDependencies: [entity-sistema-de-computo] }
+  - { id: entity-representacion-de-datos, type: concept, primaryDomain: domain-fundamentos-computacion, subdomain: subdomain-fundamentos-programacion, secondaryDomains: [domain-sistemas-computo-ciberfisicos, domain-datos-analitica], plannedDependencies: [entity-informacion] }

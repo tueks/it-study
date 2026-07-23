@@ -1,0 +1,12 @@
+# Inventario autorizado de B025
+schemaVersion: "2.0"
+batchId: batch-025-comparisons-core-b
+manifestVersion: v1
+status: authorized
+authority: [decision-0020-batch-plan-authorization, user-authorization-2026-07-22, docs/03-content-model.md, docs/08-production-batches.md]
+rules: { expectedCount: 4, authorizedMinimum: 4, authorizedMaximum: 4, editorialStatus: planned, ordinaryRelations: prohibited }
+entries:
+  - { id: comparison-cloud-computing-virtualizacion, type: comparison, comparedEntries: [entity-cloud-computing, entity-virtualizacion], reason: "Se confunden como modelos equivalentes de infraestructura.", dimensions: [primary-model, resource-scope, decision-context], sources: [source-nist-sp-800-145, source-acm-ieee-cc2020] }
+  - { id: comparison-kubernetes-container, type: comparison, comparedEntries: [entity-kubernetes, entity-container], reason: "Se confunde la plataforma de orquestación con la unidad de ejecución que coordina.", dimensions: [nature, operational-scope, decision-context], sources: [source-cncf-platforms-white-paper, source-google-sre] }
+  - { id: comparison-crm-erp, type: comparison, comparedEntries: [entity-customer-relationship-management, entity-enterprise-resource-planning], reason: "Ambas se presentan como sistemas empresariales integrados aunque atienden procesos distintos.", dimensions: [primary-focus, information-scope, decision-context], sources: [source-iiba-business-analysis-standard, source-acm-ieee-cc2020] }
+  - { id: comparison-oauth-2-tls, type: comparison, comparedEntries: [entity-oauth-2-0, entity-transport-layer-security], reason: "Ambos se asocian con seguridad pero resuelven problemas diferentes.", dimensions: [primary-purpose, security-scope, decision-context], sources: [source-nist-csf-2, source-iso-iec-ieee-24765-2017] }

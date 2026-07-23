@@ -1,0 +1,39 @@
+# Inventario autorizado para batch-006-foundations-core.
+# Materializa exactamente la onda 1 del plan maestro v2 aprobado.
+# Planificación operativa: no equivale a contenido aprobado.
+schemaVersion: "2.0"
+batchId: batch-006-foundations-core
+manifestVersion: v2
+status: authorized
+authority:
+  - decision-0021-recommended-master-plan-v2-execution
+  - docs/03-content-model.md
+  - docs/08-production-batches.md
+  - inventories/proposals/master-batch-inventory-v2.yaml
+  - inventories/proposals/master-relational-map-v2.yaml
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules:
+  expectedCount: 10
+  taxonomyFieldLinks: 23
+  dependencyLinks: 4
+  primaryDomain: domain-fundamentos-computacion
+  editorialStatus: planned
+  canonicalNamespace: entity
+  relationInventoryStatus: approved-v2
+entries:
+  - { id: entity-algoritmo, sourceCandidate: candidate-algoritmo, name: Algoritmo, type: concept, priority: essential, subdomain: subdomain-informacion-representacion, secondaryDomains: [domain-desarrollo-software, domain-datos-analitica, domain-inteligencia-artificial], plannedDependencies: [entity-computacion] }
+  - { id: entity-computacion, sourceCandidate: candidate-computacion, name: Computación, type: concept, priority: essential, subdomain: subdomain-teoria-modelos-computacion, plannedDependencies: [] }
+  - { id: entity-informacion, sourceCandidate: candidate-informacion, name: Información, type: concept, priority: essential, subdomain: subdomain-algoritmos-estructuras-datos, plannedDependencies: [] }
+  - { id: entity-estructura-de-datos, sourceCandidate: candidate-estructura-de-datos, name: Estructura de datos, type: concept, priority: essential, subdomain: subdomain-teoria-modelos-computacion, plannedDependencies: [entity-algoritmo] }
+  - { id: entity-complejidad-computacional, sourceCandidate: candidate-complejidad-computacional, name: Complejidad computacional, type: concept, priority: essential, subdomain: subdomain-algoritmos-estructuras-datos, plannedDependencies: [entity-algoritmo] }
+  - { id: entity-estado, sourceCandidate: candidate-estado, name: Estado, type: concept, priority: essential, subdomain: subdomain-informacion-representacion, plannedDependencies: [] }
+  - { id: entity-funcion, sourceCandidate: candidate-funcion, name: Función, type: concept, priority: essential, subdomain: subdomain-teoria-modelos-computacion, plannedDependencies: [] }
+  - { id: entity-programacion, sourceCandidate: candidate-programacion, name: Programación, type: concept, priority: essential, subdomain: subdomain-algoritmos-estructuras-datos, plannedDependencies: [entity-algoritmo] }
+  - { id: entity-logica-booleana, sourceCandidate: candidate-logica-booleana, name: Lógica booleana, type: model, priority: important, subdomain: subdomain-fundamentos-programacion, plannedDependencies: [] }
+  - { id: entity-paradigma-de-programacion, sourceCandidate: candidate-paradigma-de-programacion, name: Paradigma de programación, type: paradigm, priority: important, subdomain: subdomain-teoria-modelos-computacion, plannedDependencies: [] }
+resolvedFindings:
+  - id: inventory-finding-001
+    resolution: `entity-algoritmo` fue rebalanceado a B006 y precede a sus tres consumidores.
+  - id: inventory-finding-002
+    resolution: El mapa relacional v2 aprobado fija 23 enlaces taxonómicos y 4 dependencias; los campos de autoridad evitan duplicación en `relations[]`.

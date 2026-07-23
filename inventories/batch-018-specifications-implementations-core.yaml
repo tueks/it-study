@@ -1,0 +1,17 @@
+# Inventario autorizado de la onda 14 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-018-specifications-implementations-core
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+rules: { expectedCount: 9, authorizedMinimum: 8, authorizedMaximum: 10, editorialStatus: planned }
+entries:
+  - { id: entity-cpu, type: technology, primaryDomain: domain-sistemas-computo-ciberfisicos, subdomain: subdomain-sistemas-operativos, plannedDependencies: [] }
+  - { id: entity-domain-name-system, type: protocol, primaryDomain: domain-redes-telecomunicaciones, subdomain: subdomain-operacion-redes, plannedDependencies: [entity-internet-protocol] }
+  - { id: entity-ethernet, type: standard, primaryDomain: domain-redes-telecomunicaciones, subdomain: subdomain-redes-empresariales, plannedDependencies: [] }
+  - { id: entity-file-system, type: technology, primaryDomain: domain-sistemas-computo-ciberfisicos, subdomain: subdomain-hardware-arquitectura-computadores, plannedDependencies: [] }
+  - { id: entity-firmware, type: technology, primaryDomain: domain-sistemas-computo-ciberfisicos, subdomain: subdomain-sistemas-operativos, plannedDependencies: [entity-sistema-de-computo] }
+  - { id: entity-internet-of-things, type: technology, primaryDomain: domain-sistemas-computo-ciberfisicos, subdomain: subdomain-embebidos-firmware, plannedDependencies: [entity-sistema-embebido] }
+  - { id: entity-transmission-control-protocol, type: protocol, primaryDomain: domain-redes-telecomunicaciones, subdomain: subdomain-redes-empresariales, plannedDependencies: [entity-internet-protocol] }
+  - { id: entity-user-datagram-protocol, type: protocol, primaryDomain: domain-redes-telecomunicaciones, subdomain: subdomain-internet-servicios-red, plannedDependencies: [entity-internet-protocol] }
+  - { id: entity-wi-fi, type: standard, primaryDomain: domain-redes-telecomunicaciones, subdomain: subdomain-fundamentos-protocolos-red, plannedDependencies: [] }

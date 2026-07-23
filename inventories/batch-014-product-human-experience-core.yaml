@@ -1,0 +1,17 @@
+# Inventario autorizado de la onda 9 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-014-product-human-experience-core
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+rules: { expectedCount: 9, authorizedMinimum: 9, authorizedMaximum: 9, editorialStatus: planned }
+entries:
+  - { id: entity-a-b-testing, type: technique, primaryDomain: domain-producto-experiencia, subdomain: subdomain-producto-digital, plannedDependencies: [] }
+  - { id: entity-business-analyst, type: role, primaryDomain: domain-producto-experiencia, subdomain: subdomain-producto-digital, plannedDependencies: [] }
+  - { id: entity-investigacion-de-usuarios, type: competency, primaryDomain: domain-producto-experiencia, subdomain: subdomain-investigacion-ux, plannedDependencies: [] }
+  - { id: entity-product-backlog, type: artifact, primaryDomain: domain-producto-experiencia, subdomain: subdomain-investigacion-ux, plannedDependencies: [entity-producto-digital] }
+  - { id: entity-product-manager, type: role, primaryDomain: domain-producto-experiencia, subdomain: subdomain-accesibilidad-diseno-inclusivo, plannedDependencies: [entity-producto-digital] }
+  - { id: entity-producto-digital, type: concept, primaryDomain: domain-producto-experiencia, subdomain: subdomain-producto-digital, plannedDependencies: [entity-software] }
+  - { id: entity-tasa-de-conversion, type: metric, primaryDomain: domain-producto-experiencia, subdomain: subdomain-producto-digital, plannedDependencies: [] }
+  - { id: entity-usabilidad, type: concept, primaryDomain: domain-producto-experiencia, subdomain: subdomain-analisis-negocio, plannedDependencies: [entity-producto-digital] }
+  - { id: entity-ux-designer, type: role, primaryDomain: domain-producto-experiencia, subdomain: subdomain-analisis-negocio, plannedDependencies: [entity-usabilidad] }

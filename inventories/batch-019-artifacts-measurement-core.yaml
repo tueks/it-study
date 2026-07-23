@@ -1,0 +1,16 @@
+# Inventario autorizado de la onda 15 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-019-artifacts-measurement-core
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+rules: { expectedCount: 8, authorizedMinimum: 8, authorizedMaximum: 10, editorialStatus: planned }
+entries:
+  - { id: entity-architecture-decision-record, type: artifact, primaryDomain: domain-ingenieria-software, subdomain: subdomain-diseno-arquitectura-software, plannedDependencies: [entity-software-architect] }
+  - { id: entity-data-dictionary, type: artifact, primaryDomain: domain-datos-analitica, subdomain: subdomain-arquitectura-gestion-datos, plannedDependencies: [] }
+  - { id: entity-disponibilidad, type: metric, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-confiabilidad-sre-observabilidad, plannedDependencies: [] }
+  - { id: entity-key-performance-indicator, type: indicator, primaryDomain: domain-estrategia-gobierno-liderazgo, subdomain: subdomain-arquitectura-empresarial, plannedDependencies: [] }
+  - { id: entity-latencia, type: metric, primaryDomain: domain-redes-telecomunicaciones, subdomain: subdomain-internet-servicios-red, plannedDependencies: [] }
+  - { id: entity-runbook, type: artifact, primaryDomain: domain-infraestructura-operacion, subdomain: subdomain-devops-ingenieria-plataformas, plannedDependencies: [] }
+  - { id: entity-software-requirements-specification, type: artifact, primaryDomain: domain-ingenieria-software, subdomain: subdomain-ciclo-vida-evolucion, plannedDependencies: [entity-requirements-elicitation] }
+  - { id: entity-user-story, type: artifact, primaryDomain: domain-producto-experiencia, subdomain: subdomain-accesibilidad-diseno-inclusivo, plannedDependencies: [entity-product-backlog] }

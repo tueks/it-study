@@ -3,17 +3,17 @@
 | Campo | Valor |
 |---|---|
 | `batchId` | `batch-001-taxonomy-domains` |
-| `manifestVersion` | `v1` |
-| `deliveryVersion` | `d1` |
+| `manifestVersion` | `v2` |
+| `deliveryVersion` | `d2` |
 | Nombre del reporte | Comprobación inicial de duplicados y aliases |
-| `reportVersion` | `r2` |
+| `reportVersion` | `r3` |
 | Fecha | `2026-07-21` |
 | Rol responsable | ChatGPT Trabajo |
-| Alcance cubierto | Los doce IDs, títulos, nombres ingleses y 24 aliases del inventario frente a los doce archivos producidos y el repositorio. |
+| Alcance cubierto | Los doce IDs de dominio, títulos, nombres ingleses, 24 aliases y 18 IDs/títulos/referencias de fuente frente al repositorio. |
 | Contratos aplicados | `docs/02-taxonomy.md`; `docs/03-content-model.md` 1.0; `work/BATCH-TEMPLATE.md` 1.0.0. |
 | Estado del reporte | `complete` para la entrega de autoría. |
 | Limitaciones | No existen lotes concurrentes ni contenido productivo previo en el repositorio al iniciar. |
-| Evidencia/archivos | `inventories/domains.yaml`; `content/new/*.md`; búsqueda local repetida de IDs, nombres, aliases, siglas y variantes. |
+| Evidencia/archivos | `inventories/domains.yaml`; `sources-report.md`; `content/new/*.md`; búsqueda local repetida de IDs, nombres, aliases, títulos, designaciones y referencias. |
 
 ## Búsquedas ejecutadas
 
@@ -56,5 +56,7 @@ Resultado: `none` para duplicados materiales o colisiones bloqueantes. Los doce 
 | Colisiones internas | 0 por valor normalizado entre IDs; 0 aliases que designen otro dominio. | Validación local `validation-003`. |
 | Códigos documentales usados como ID | 0. | Búsqueda de `^id: DOM-`. |
 | Lotes concurrentes | `none`; no existen otras carpetas bajo `deliveries/` en la línea base. | Árbol del repositorio y búsqueda global. |
+| IDs de fuente | 18 de 18 distintos, con nombre de archivo igual al ID y sin colisiones globales. | `validation-010`; búsqueda global de `^id: source-`. |
+| Identidad de fuente | 18 obras/autoridades usadas reconciliadas por organización, título, designación y `reference`; 0 duplicados por URL o edición. | `sources-report.md`; `validation-012`. |
 
 Disposición final de autoría: `none` para duplicados o colisiones bloqueantes. La revisión independiente conserva autoridad sobre la severidad y la decisión final.

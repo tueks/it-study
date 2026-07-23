@@ -1,0 +1,26 @@
+# Propuesta exacta B005 derivada de vacíos entre initial-terms.csv y la taxonomía canónica.
+schemaVersion: "2.0"
+batchId: batch-005-taxonomy-target-extension
+status: proposed-for-review
+targetCounts: { subdomains: 12, disciplines: 4 }
+subdomains:
+  - { id: subdomain-informacion-representacion, name: "información y representación", parentDomain: domain-fundamentos-computacion }
+  - { id: subdomain-iot-sistemas-ciberfisicos, name: "IoT y sistemas ciberfísicos", parentDomain: domain-sistemas-computo-ciberfisicos }
+  - { id: subdomain-practicas-implementacion, name: "prácticas de implementación", parentDomain: domain-desarrollo-software }
+  - { id: subdomain-calidad-pruebas, name: "calidad y pruebas", parentDomain: domain-ingenieria-software }
+  - { id: subdomain-operacion-redes, name: "operación de redes", parentDomain: domain-redes-telecomunicaciones }
+  - { id: subdomain-confiabilidad-sre-observabilidad, name: "confiabilidad, SRE y observabilidad", parentDomain: domain-infraestructura-operacion }
+  - { id: subdomain-privacidad-riesgo-cumplimiento, name: "privacidad, riesgo y cumplimiento", parentDomain: domain-ciberseguridad-riesgo }
+  - { id: subdomain-bi-analitica, name: "BI y analítica", parentDomain: domain-datos-analitica }
+  - { id: subdomain-ingenieria-evaluacion-gobierno-ia, name: "ingeniería, evaluación y gobierno de IA", parentDomain: domain-inteligencia-artificial }
+  - { id: subdomain-sistemas-empresariales, name: "sistemas empresariales", parentDomain: domain-integracion-sistemas-empresariales }
+  - { id: subdomain-accesibilidad-diseno-inclusivo, name: "accesibilidad y diseño inclusivo", parentDomain: domain-producto-experiencia }
+  - { id: subdomain-liderazgo-organizacion, name: "liderazgo y organización", parentDomain: domain-estrategia-gobierno-liderazgo }
+disciplines:
+  - { id: discipline-confiabilidad, name: confiabilidad, homeDomain: domain-infraestructura-operacion }
+  - { id: discipline-privacidad, name: privacidad, homeDomain: domain-ciberseguridad-riesgo }
+  - { id: discipline-riesgo, name: riesgo, homeDomain: domain-ciberseguridad-riesgo }
+  - { id: discipline-liderazgo, name: liderazgo, homeDomain: domain-estrategia-gobierno-liderazgo }
+evidence:
+  subdomains: 48 planned labels minus 36 canonical labels, after four normalized label matches, yields 12 real gaps.
+  disciplines: docs/02-taxonomy.md identifies reliability, privacy, risk and leadership as transversal and absent from the eight canonical disciplines.

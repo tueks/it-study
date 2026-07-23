@@ -1,0 +1,20 @@
+# Inventario autorizado de la onda 3 del plan maestro v2.
+schemaVersion: "2.0"
+batchId: batch-008-systems-networking-core
+manifestVersion: v2
+status: authorized
+authority: [decision-0021-recommended-master-plan-v2-execution, inventories/proposals/master-batch-inventory-v2.yaml, inventories/proposals/master-relational-map-v2.yaml]
+authorizationDate: 2026-07-21
+authorizationRole: Responsable del proyecto
+rules: { expectedCount: 10, authorizedMinimum: 10, authorizedMaximum: 14, editorialStatus: planned }
+entries:
+  - { id: entity-diagnostico-de-redes, type: competency, primaryDomain: domain-redes-telecomunicaciones, subdomain: subdomain-internet-servicios-red, plannedDependencies: [] }
+  - { id: entity-instruction-set-architecture, type: technology, primaryDomain: domain-sistemas-computo-ciberfisicos, subdomain: subdomain-embebidos-firmware, plannedDependencies: [] }
+  - { id: entity-internet-protocol, type: protocol, primaryDomain: domain-redes-telecomunicaciones, subdomain: subdomain-fundamentos-protocolos-red, plannedDependencies: [] }
+  - { id: entity-jerarquia-de-memoria, type: model, primaryDomain: domain-sistemas-computo-ciberfisicos, subdomain: subdomain-sistemas-operativos, plannedDependencies: [entity-sistema-de-computo] }
+  - { id: entity-network-engineer, type: role, primaryDomain: domain-redes-telecomunicaciones, subdomain: subdomain-redes-empresariales, plannedDependencies: [] }
+  - { id: entity-sistema-operativo, type: technology, primaryDomain: domain-sistemas-computo-ciberfisicos, subdomain: subdomain-iot-sistemas-ciberfisicos, secondaryDomains: [domain-desarrollo-software, domain-infraestructura-operacion], plannedDependencies: [entity-sistema-de-computo] }
+  - { id: entity-proceso-de-sistema-operativo, type: concept, primaryDomain: domain-sistemas-computo-ciberfisicos, subdomain: subdomain-embebidos-firmware, plannedDependencies: [entity-sistema-operativo] }
+  - { id: entity-routing, type: process, primaryDomain: domain-redes-telecomunicaciones, subdomain: subdomain-operacion-redes, plannedDependencies: [] }
+  - { id: entity-sistema-embebido, type: concept, primaryDomain: domain-sistemas-computo-ciberfisicos, subdomain: subdomain-hardware-arquitectura-computadores, plannedDependencies: [] }
+  - { id: entity-thread, type: concept, primaryDomain: domain-sistemas-computo-ciberfisicos, subdomain: subdomain-iot-sistemas-ciberfisicos, plannedDependencies: [entity-proceso-de-sistema-operativo] }
