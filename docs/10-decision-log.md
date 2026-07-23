@@ -922,10 +922,12 @@ Las entradas siguientes no son autoridad para adoptar una solución. Su `decisio
 
 | Campo | Valor |
 |---|---|
-| `status` | `proposed` |
-| `decisionType` | `pending-resolution` |
+| `status` | `accepted` |
+| `decisionType` | `change` |
 | `decisionAreas` | `architecture`, `operational` |
 | `dateProposed` | `2026-07-20` |
+| `dateDecided` | `2026-07-22` |
+| `effectiveFrom` | `2026-07-22` |
 | `owners` | Modelo; relaciones; arquitectura; Codex |
 | `implementationStatus` | `blocked` |
 | `authorityRefs` | `docs/03-content-model.md`; `docs/05-relationship-rules.md`; `docs/08-production-batches.md` |
@@ -954,7 +956,7 @@ Las entradas siguientes no son autoridad para adoptar una solución. Su `decisio
 | `decisionAreas` | `architecture` |
 | `dateProposed` | `2026-07-20` |
 | `owners` | Arquitectura; Codex; relaciones |
-| `implementationStatus` | `not-started` |
+| `implementationStatus` | `planned` |
 | `authorityRefs` | `docs/05-relationship-rules.md`; `docs/08-production-batches.md`; `docs/09-quality-criteria.md` |
 | `relatedDecisions` | `decision-0007-relationship-governance` |
 
@@ -1012,9 +1014,9 @@ Las entradas siguientes no son autoridad para adoptar una solución. Su `decisio
 
 **Problema.** Debe decidirse si ambos temas entran en la primera publicación o si el modo oscuro se aplaza sin afectar valor, accesibilidad ni significado.
 
-**Regla de contención vigente.** El modo oscuro no se presume incluido ni excluido. Puede aplazarse solo mediante decisión justificada y con un tema base accesible. El contenido no depende del tema.
+**Decisión.** La primera publicación incluye modo claro y modo oscuro accesibles, con preferencia inicial del sistema y control manual persistente. El contenido sigue siendo independiente del tema.
 
-**Condición para resolver.** Antes de cerrar el alcance técnico del MVP deben existir estimación de esfuerzo, sistema base accesible, riesgos, impacto en build y pruebas, y decisión de producto.
+**Aplicación.** La arquitectura frontend, el sistema visual, las pruebas de accesibilidad y el build candidato deben verificar ambos temas; cualquier excepción requiere decisión explícita.
 
 **Artefactos afectados.** Arquitectura frontend, sistema visual, pruebas de accesibilidad, build candidato y alcance de publicación.
 
@@ -1067,10 +1069,12 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 
 | Campo | Valor |
 |---|---|
-| `status` | `proposed` |
-| `decisionType` | `pending-resolution` |
+| `status` | `accepted` |
+| `decisionType` | `change` |
 | `decisionAreas` | `operational`, `quality` |
 | `dateProposed` | `2026-07-20` |
+| `dateDecided` | `2026-07-22` |
+| `effectiveFrom` | `2026-07-22` |
 | `owners` | Calidad; fuentes; mantenimiento |
 | `implementationStatus` | `not-started` |
 | `authorityRefs` | `docs/03-content-model.md`; `docs/04-editorial-guidelines.md`; `docs/07-mvp-definition.md`; `docs/09-quality-criteria.md` |
@@ -1093,15 +1097,15 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 | `decisionAreas` | `architecture`, `ux`, `quality` |
 | `dateProposed` | `2026-07-20` |
 | `owners` | Arquitectura; UX/UI; QA; calidad |
-| `implementationStatus` | `blocked` |
+| `implementationStatus` | `planned` |
 | `authorityRefs` | `docs/07-mvp-definition.md`; `docs/09-quality-criteria.md` |
 | `relatedDecisions` | `decision-0009-mvp-scope`; `decision-0011-quality-model` |
 
 **Problema.** Las puertas funcionales están aprobadas, pero métricas finales de rendimiento, búsqueda, accesibilidad técnica, disponibilidad y operación dependen de arquitectura y flujos concretos.
 
-**Regla de contención vigente.** No se inventan umbrales ni se seleccionan herramientas. Cero referencias internas rotas, accesibilidad mínima, build reproducible y flujos correctos siguen siendo puertas.
+**Decisión.** Las puertas de B032 y publicación son: build reproducible desde árbol limpio; cero referencias internas rotas y derivados reproducibles; accesibilidad WCAG AA con teclado, foco, nombres accesibles y orden de lectura; flujos responsive sin pérdida crítica; LCP ≤ 2.5 s, INP ≤ 200 ms y CLS ≤ 0.1 en inicio y páginas representativas bajo perfil móvil de referencia; búsqueda, navegación y filtros semánticamente correctos; rollback documentado y probado. Toda excepción requiere registro explícito.
 
-**Condición para resolver.** Arquitectura candidata, diseño de flujos, entornos representativos, método de medición, presupuesto técnico, evidencia y responsables.
+**Aplicación.** La arquitectura candidata definirá herramienta, entorno representativo, método de medición y responsables sin relajar los umbrales aprobados.
 
 **Artefactos afectados.** Arquitectura, UX/UI, schemas de reportes, CI, pruebas, build y dossier de publicación.
 

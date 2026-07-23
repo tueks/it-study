@@ -10,7 +10,7 @@
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
 | Estado del registro | B001–B030 `closed`; B031 bloqueado sin hallazgos correctivos; B032 pendiente de sus puertas acumuladas; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
-| Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
+| Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution`; `decision-0015` y `decision-0018` aceptadas el `2026-07-22`. |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
 
 Este documento registra el estado operativo comprobado del repositorio. En caso de diferencia, prevalecen las autoridades indicadas en `AGENTS.md`. Cada sesión debe volver a comprobar rama, commit y árbol de trabajo; el commit de corte identifica la evidencia revisada, no congela avances posteriores.
@@ -54,13 +54,13 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-B031 no inicia: su preflight no encontró hallazgos concretos. Para reactivarlo se requiere un defecto trazable con archivo, regla, evidencia, alcance y rollback; B032 permanece pendiente de sus puertas acumuladas y decisiones aplicables.
+B031 no inicia: su preflight no encontró hallazgos concretos. Para reactivarlo se requiere un defecto trazable con archivo, regla, evidencia, alcance y rollback. B032 ya tiene modo oscuro y métricas aprobados, pero requiere la arquitectura, flujos, build y despliegue candidatos.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
 ## Puertas y bloqueos preservados
 
-- `decision-0012`, `decision-0013`, `decision-0014`, `decision-0015`, `decision-0017` y `decision-0018` permanecen `proposed`.
+- `decision-0012`, `decision-0013`, `decision-0014` y `decision-0017` permanecen `proposed`; `decision-0015` y `decision-0018` son `accepted`.
 - Un lote que dependa materialmente de cualquiera de ellas detiene solo ese alcance.
 - Las relaciones ordinarias no se inventan ni se persisten mediante una representación física todavía no decidida.
 - Arquitectura, framework, UI, build, despliegue y métricas técnicas finales siguen fuera del alcance actual.
