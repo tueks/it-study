@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B030 `closed`; B031 en preflight de corrección; B033–B042 inactivos. |
+| Estado del registro | B001–B030 `closed`; B031 bloqueado sin hallazgos correctivos; B032 pendiente de sus puertas acumuladas; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -54,7 +54,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Ejecutar preflight de B031 sobre hallazgos acumulados y preparar únicamente correcciones con alcance exacto y rollback.
+B031 no inicia: su preflight no encontró hallazgos concretos. Para reactivarlo se requiere un defecto trazable con archivo, regla, evidencia, alcance y rollback; B032 permanece pendiente de sus puertas acumuladas y decisiones aplicables.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
@@ -65,7 +65,7 @@ La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 
 - Las relaciones ordinarias no se inventan ni se persisten mediante una representación física todavía no decidida.
 - Arquitectura, framework, UI, build, despliegue y métricas técnicas finales siguen fuera del alcance actual.
 - B024–B030 requieren entradas aprobadas suficientes; B032 requiere todas las puertas acumuladas; B033–B042 requieren además sus activadores opcionales.
-- B031 requiere hallazgos acumulados concretos, alcance correctivo exacto y rollback; no introduce contenido por cuota.
+- B031 no tiene hallazgos correctivos tras preflight: 164 entidades, 12 comparaciones, 4 escenarios y 4 rutas canónicas, todas sin estados `draft` ni `pending`; no introduce contenido por cuota.
 
 ## Protocolo de reanudación rápida
 
