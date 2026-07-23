@@ -56,7 +56,7 @@ La autorización:
 
 B031 no inicia: su preflight no encontró hallazgos concretos. Para reactivarlo se requiere un defecto trazable con archivo, regla, evidencia, alcance y rollback. B032 ya tiene modo oscuro y métricas aprobados, pero requiere la arquitectura, flujos, build y despliegue candidatos.
 
-Dirección UX autorizada el `2026-07-22`: la aplicación local inicia con exploración por dominios y combina biblioteca guiada (búsqueda, comparaciones, escenarios y rutas) con mapa de conocimiento. La búsqueda complementa la exploración y no sustituye la taxonomía como entrada principal.
+Dirección UX autorizada el `2026-07-22`: la aplicación local inicia con exploración por dominios y combina biblioteca guiada (búsqueda, comparaciones, escenarios y rutas) con mapa de conocimiento. La entrada principal visual es un mapa/diagrama de dominios; debe conservar una alternativa equivalente en lista y búsqueda para no depender de la percepción espacial. La búsqueda complementa la exploración y no sustituye la taxonomía como entrada principal.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
