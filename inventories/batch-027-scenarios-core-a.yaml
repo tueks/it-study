@@ -1,0 +1,10 @@
+# Inventario autorizado de B027
+schemaVersion: "2.0"
+batchId: batch-027-scenarios-core-a
+manifestVersion: v1
+status: authorized
+authority: [decision-0020-batch-plan-authorization, user-authorization-2026-07-22, docs/03-content-model.md, docs/08-production-batches.md]
+rules: { expectedCount: 2, authorizedMinimum: 2, authorizedMaximum: 2, editorialStatus: planned, ordinaryRelations: prohibited }
+entries:
+  - { id: scenario-incident-service-production, objective: "Comprender coordinación contextual ante degradación de un servicio.", participants: [entity-site-reliability-engineer, entity-backend-developer, entity-security-analyst, entity-product-manager], domains: [domain-infraestructura-operacion, domain-desarrollo-software, domain-ciberseguridad-riesgo, domain-producto-experiencia], concepts: [entity-monitoring, entity-senal-de-telemetria, entity-coordinacion-de-incidentes], artifacts: [entity-runbook, entity-architecture-decision-record], sources: [source-google-sre, source-nist-csf-2] }
+  - { id: scenario-integracion-datos-empresariales, objective: "Comprender coordinación entre procesos empresariales, integración y análisis de datos.", participants: [entity-business-analyst, entity-data-engineer, entity-enterprise-architect, entity-product-manager], domains: [domain-integracion-sistemas-empresariales, domain-datos-analitica, domain-ingenieria-software, domain-producto-experiencia], concepts: [entity-customer-relationship-management, entity-enterprise-resource-planning, entity-message-broker, entity-data-profiling], artifacts: [entity-data-dictionary, entity-api-contract], sources: [source-iiba-business-analysis-standard, source-acm-ieee-cc2020] }
