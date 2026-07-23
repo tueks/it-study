@@ -13,10 +13,10 @@ La fase documental de definición está completa y aprobada. El repositorio disp
 | Documentación normativa | Aprobada |
 | Contratos operativos | Aprobados |
 | Ejemplos e inventarios | Aprobados como referencias y planificación |
-| Inventario inicial | 164 candidatos en estado preliminar |
-| Producción editorial del MVP | En curso por lotes; B001 y B002 cerrados |
+| Contenido canónico | 164 entidades, 12 comparaciones, 4 escenarios y 4 rutas `approved` |
+| Producción editorial del MVP | B001–B030 cerrados; B031 sin alcance correctivo |
 | Estado operativo verificable | [`PROJECT-STATUS.md`](PROJECT-STATUS.md) |
-| Aplicación web | No implementada |
+| Aplicación local | Implementada en [`frontend/`](frontend/); B032 pendiente de métricas Core Web Vitals |
 | Autoridad final | Responsable del proyecto, conforme a `decision-0016-operational-ownership` |
 
 Los candidatos del inventario no son todavía contenido publicable. Cada entrada deberá completar investigación, producción, revisión independiente, aprobación e integración.
@@ -69,6 +69,10 @@ Los contratos de ejecución están en [`work/`](work/):
 - [Handoff a Codex](work/HANDOFF-TO-CODEX.md)
 
 El contrato técnico principal para Codex es [`AGENTS.md`](AGENTS.md).
+
+## Aplicación local
+
+Desde `frontend/`, ejecutar `pnpm install --frozen-lockfile`, `pnpm test`, `pnpm build` y `pnpm dev`. El generador consume exclusivamente Markdown canónico `approved` y genera datos locales no autoritativos. La evidencia vigente está en [`work/LOCAL-APPLICATION-VALIDATION.md`](work/LOCAL-APPLICATION-VALIDATION.md).
 
 ## Estructura del repositorio
 

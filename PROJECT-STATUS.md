@@ -5,10 +5,10 @@
 | Campo | Valor |
 |---|---|
 | Estado del documento | Vigente |
-| Fecha de corte | `2026-07-21` |
+| Fecha de corte | `2026-07-23` |
 | Rama verificada | `codex/batches-production` |
-| Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B030 `closed`; B031 bloqueado sin hallazgos correctivos; B032 pendiente de sus puertas acumuladas; B033–B042 inactivos. |
+| Baseline técnico verificado | `dc6f42f` — aplicación local compilada y validada interactivamente |
+| Estado del registro | B001–B030 `closed`; B031 sin alcance correctivo; B032 pendiente solo de métricas Core Web Vitals; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution`; `decision-0015`, `decision-0018` y `decision-0023` aceptadas el `2026-07-22`. |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -33,9 +33,9 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | Entidades canónicas | 164 archivos: 52 `ideas-orientations`, 26 `people-capabilities`, 24 `ways-of-working`, 36 `specifications-implementations`, 14 `results-measurement` y 12 `solutions-structures`. |
 | Comparaciones canónicas | 12 archivos `approved` bajo `content/editorial/comparisons/`. |
 | Escenarios canónicos | 4 archivos `approved` bajo `content/editorial/scenarios/`. |
-| Rutas canónicas | 2 archivos `approved` bajo `content/editorial/learning-paths/`. |
+| Rutas canónicas | 4 archivos `approved` bajo `content/editorial/learning-paths/`. |
 | Integridad de B001–B005 | Lotes `closed`; fuentes y taxonomía integradas con evidencia de reconciliación en sus entregas. |
-| Aplicación web | No implementada ni autorizada por implicación. |
+| Aplicación local | Implementada en `frontend/` con React, TypeScript y Vite; generador desde fuentes `approved`, portada, búsqueda, mapa accesible, formatos editoriales y temas claro/oscuro. `pnpm test` y `pnpm build` conformes; evidencia en `work/LOCAL-APPLICATION-VALIDATION.md`. |
 | Publicación | No iniciada; ningún cierre de lote equivale a publicación. |
 
 ## Autorización maestra de lotes
