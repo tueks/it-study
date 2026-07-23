@@ -1,3 +1,3 @@
 # Resumen B028
 
-Estado `in-review`; 2/2 escenarios producidos y el objetivo conjunto de cuatro escenarios queda cubierto al aceptarse.
+Estado `closed`; 2/2 escenarios aceptados, integrados y reconciliados; objetivo conjunto de cuatro escenarios alcanzado.
