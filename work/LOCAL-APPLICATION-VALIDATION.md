@@ -28,6 +28,7 @@ El generador falla de forma intencional ante frontmatter inválido: no omite con
 - `pnpm test`: conforme; catálogo con 164 entidades, 12 dominios y 20 estructuras aprobadas.
 - `pnpm build`: conforme; `dist/` generado en 416 ms.
 - Vite informa una advertencia no bloqueante sobre un chunk JavaScript de 513 kB sin comprimir (113.71 kB gzip). La interfaz inicial se mantiene local y funcional; evaluar división de código durante la puerta B032 junto con las mediciones reales de Core Web Vitals.
+- La comprobación interactiva en navegador queda pendiente de un runner local que acepte conexiones a `127.0.0.1`. En este entorno la conexión fue rechazada; no se amplió el servidor a `0.0.0.0` porque el alcance autorizado es exclusivamente local.
 
 ## Rollback local
 
