@@ -1,0 +1,10 @@
+# Inventario autorizado de B028
+schemaVersion: "2.0"
+batchId: batch-028-scenarios-core-b
+manifestVersion: v1
+status: authorized
+authority: [decision-0020-batch-plan-authorization, user-authorization-2026-07-22, docs/03-content-model.md, docs/08-production-batches.md]
+rules: { expectedCount: 2, authorizedMinimum: 1, authorizedMaximum: 2, editorialStatus: planned, ordinaryRelations: prohibited }
+entries:
+  - { id: scenario-api-segura-entre-servicios, objective: "Comprender decisiones contextuales para una API entre servicios.", participants: [entity-backend-developer, entity-security-analyst, entity-software-architect, entity-product-manager], domains: [domain-desarrollo-software, domain-ciberseguridad-riesgo, domain-integracion-sistemas-empresariales, domain-producto-experiencia], concepts: [entity-api-contract, entity-openapi-specification, entity-oauth-2-0, entity-transport-layer-security], artifacts: [entity-api-contract, entity-architecture-decision-record], sources: [source-nist-csf-2, source-acm-ieee-cc2020] }
+  - { id: scenario-calidad-datos-analitica, objective: "Comprender cómo límites de calidad afectan análisis de datos.", participants: [entity-data-engineer, entity-data-analyst, entity-business-analyst, entity-product-manager], domains: [domain-datos-analitica, domain-integracion-sistemas-empresariales, domain-ingenieria-software, domain-producto-experiencia], concepts: [entity-data-profiling, entity-data-dictionary, entity-relational-database, entity-data-warehouse], artifacts: [entity-data-dictionary, entity-architecture-decision-record], sources: [source-iso-iec-25012-2008, source-iiba-business-analysis-standard] }
