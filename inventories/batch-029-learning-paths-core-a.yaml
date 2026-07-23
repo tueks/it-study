@@ -1,0 +1,10 @@
+# Inventario autorizado de B029
+schemaVersion: "2.0"
+batchId: batch-029-learning-paths-core-a
+manifestVersion: v1
+status: authorized
+authority: [decision-0020-batch-plan-authorization, user-authorization-2026-07-22, docs/03-content-model.md, docs/08-production-batches.md]
+rules: { expectedCount: 2, authorizedMinimum: 2, authorizedMaximum: 2, editorialStatus: planned, ordinaryRelations: prohibited }
+entries:
+  - { id: path-fundamentos-redes-cloud, audience: "Personas de desarrollo", objective: "Comprender redes y cloud en contexto.", entries: [entity-sistema-de-computo, entity-red-de-computadoras, entity-hypertext-transfer-protocol, entity-cloud-computing], checkpoints: [entity-red-de-computadoras, entity-cloud-computing], sources: [source-nist-sp-800-145, source-acm-ieee-cc2020] }
+  - { id: path-datos-operacion-analitica, audience: "Personas que colaboran con datos", objective: "Comprender del dato operativo al análisis contextual.", entries: [entity-relational-database, entity-data-dictionary, entity-data-profiling, entity-data-warehouse], checkpoints: [entity-data-dictionary, entity-data-warehouse], sources: [source-iso-iec-25012-2008, source-iiba-business-analysis-standard] }
