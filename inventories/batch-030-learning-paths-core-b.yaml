@@ -1,0 +1,10 @@
+# Inventario autorizado de B030
+schemaVersion: "2.0"
+batchId: batch-030-learning-paths-core-b
+manifestVersion: v1
+status: authorized
+authority: [decision-0020-batch-plan-authorization, user-authorization-2026-07-22, docs/03-content-model.md, docs/08-production-batches.md]
+rules: { expectedCount: 2, authorizedMinimum: 1, authorizedMaximum: 2, editorialStatus: planned, ordinaryRelations: prohibited }
+entries:
+  - { id: path-integracion-api-segura, audience: "Personas de desarrollo", objective: "Comprender integración segura entre servicios.", entries: [entity-hypertext-transfer-protocol, entity-transport-layer-security, entity-oauth-2-0, entity-api-contract], checkpoints: [entity-transport-layer-security, entity-api-contract], sources: [source-nist-csf-2, source-acm-ieee-cc2020] }
+  - { id: path-contenedores-a-plataformas, audience: "Personas de plataforma", objective: "Comprender de contenedores a orquestación contextual.", entries: [entity-sistema-operativo, entity-container, entity-kubernetes, entity-cloud-computing], checkpoints: [entity-container, entity-kubernetes], sources: [source-google-sre, source-cncf-platforms-white-paper] }
