@@ -5,6 +5,7 @@ type Entity = {
   id: string
   title: string
   canonicalName?: string
+  englishName?: string
   summary?: string
   definition?: string
   type: string
@@ -28,6 +29,12 @@ const display = (value: string) => value
   .split('-')
   .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
   .join(' ')
+
+const initialism = (value: string) => value
+  .split(/\s+/)
+  .filter((word) => word.length > 1)
+  .map((word) => word[0])
+  .join('')
 
 function ThemeToggle() {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
@@ -63,7 +70,7 @@ function App() {
   const results = useMemo(() => {
     const terms = query.trim().toLocaleLowerCase('es')
     if (!terms) return []
-    return catalog.entities.filter((entity) => [entity.title, entity.canonicalName, entity.summary, entity.type, entity.primaryDomain, ...(entity.subdomains ?? [])]
+    return catalog.entities.filter((entity) => [entity.title, entity.canonicalName, entity.englishName, initialism(entity.title), initialism(entity.englishName ?? ''), entity.summary, entity.type, entity.primaryDomain, ...(entity.subdomains ?? [])]
       .filter(Boolean).join(' ').toLocaleLowerCase('es').includes(terms)).slice(0, 12)
   }, [query])
   const structures = [
