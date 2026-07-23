@@ -10,7 +10,7 @@
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
 | Estado del registro | B001–B030 `closed`; B031 bloqueado sin hallazgos correctivos; B032 pendiente de sus puertas acumuladas; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
-| Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution`; `decision-0015` y `decision-0018` aceptadas el `2026-07-22`. |
+| Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution`; `decision-0015`, `decision-0018` y `decision-0023` aceptadas el `2026-07-22`. |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
 
 Este documento registra el estado operativo comprobado del repositorio. En caso de diferencia, prevalecen las autoridades indicadas en `AGENTS.md`. Cada sesión debe volver a comprobar rama, commit y árbol de trabajo; el commit de corte identifica la evidencia revisada, no congela avances posteriores.
@@ -54,7 +54,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-B031 no inicia: su preflight no encontró hallazgos concretos. Para reactivarlo se requiere un defecto trazable con archivo, regla, evidencia, alcance y rollback. B032 ya tiene modo oscuro y métricas aprobados, pero requiere la arquitectura, flujos, build y despliegue candidatos.
+B031 no inicia: su preflight no encontró hallazgos concretos. Para reactivarlo se requiere un defecto trazable con archivo, regla, evidencia, alcance y rollback. La arquitectura local estática de la aplicación ya está aprobada; sigue preparar el plan técnico y luego implementar sus artefactos candidatos para B032.
 
 Dirección UX autorizada el `2026-07-22`: la aplicación local inicia con exploración por dominios y combina biblioteca guiada (búsqueda, comparaciones, escenarios y rutas) con mapa de conocimiento. La entrada principal visual es un mapa/diagrama de dominios; cada nodo está etiquetado y, al seleccionarlo, muestra subdominios, conteos y accesos a formatos relacionados. En móvil se sustituye por lista jerárquica; lista y búsqueda siguen siendo equivalentes para no depender de la percepción espacial. La búsqueda complementa la exploración y no sustituye la taxonomía como entrada principal.
 

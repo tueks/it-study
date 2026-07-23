@@ -1298,6 +1298,27 @@ El asunto inicialmente descrito como responsables, calendarios y métricas se di
 
 **Rollback.** Revertir el commit de integración preservando la entrega aceptada; cualquier cambio posterior de estructura exige migración autorizada y no modifica IDs.
 
+### decision-0023-local-static-application-architecture — Arquitectura local estática de la aplicación
+
+| Campo | Valor |
+|---|---|
+| `status` | `accepted` |
+| `decisionType` | `change` |
+| `decisionAreas` | `architecture`, `ux`, `quality`, `operational` |
+| `dateDecided` | `2026-07-22` |
+| `effectiveFrom` | `2026-07-22` |
+| `decisionMaker` | Responsable del proyecto |
+| `implementationStatus` | `planned` |
+| `authorityRefs` | `decision-0015-dark-mode-delivery`; `decision-0018-final-technical-metrics`; `decision-0022-canonical-entity-family-path` |
+
+**Decisión.** IT Study se implementa inicialmente como aplicación local estática con React, TypeScript y Vite. No incorpora backend, autenticación, cuentas, base de datos ni publicación externa. Un generador reproducible transforma exclusivamente fuentes canónicas `approved` en derivados locales consumidos por la interfaz; los derivados no son autoridad editorial.
+
+**UX aceptada.** La portada breve incluye búsqueda y acceso a «Explorar el mapa». La exploración inicia con mapa/diagrama de los dominios, con lista jerárquica y búsqueda equivalentes; la interfaz presenta fichas, comparaciones, escenarios y rutas. El tema claro/oscuro usa preferencia del sistema y control manual persistente.
+
+**Build y rollback.** `generate`, pruebas, `build` y `preview` se ejecutan localmente. El rollback consiste en revertir al commit y build local verificados; el build debe cumplir las puertas de `decision-0018`.
+
+**Límites.** No se altera contenido canónico desde componentes ni se adoptan relaciones persistidas fuera de las decisiones vigentes.
+
 ## 24. Matriz acumulativa de decisiones
 
 | ID | Título | Tipo / áreas | Estado | Fecha | Fuente de autoridad | Artefactos afectados | Próxima acción | Responsable | Sustituye o asunto relacionado |
