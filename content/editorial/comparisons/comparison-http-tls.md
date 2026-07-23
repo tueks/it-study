@@ -23,7 +23,7 @@ selectionGuidance:
   - { entryId: entity-hypertext-transfer-protocol, when: "La pregunta trata sobre solicitudes, respuestas y representación de recursos." }
   - { entryId: entity-transport-layer-security, when: "La pregunta trata sobre proteger el canal de comunicación entre extremos." }
 commonMistakes: ["Tratar HTTPS como un protocolo distinto que sustituye a HTTP y TLS sin reconocer la combinación.", "Suponer que TLS resuelve autorización o seguridad de toda la aplicación."]
-summary: HTTP y TLS son complementarios: uno organiza intercambio de aplicación y el otro protege el canal, sin reemplazarse mutuamente.
+summary: "HTTP y TLS son complementarios: uno organiza intercambio de aplicación y el otro protege el canal, sin reemplazarse mutuamente."
 sources: [source-iso-iec-ieee-24765-2017, source-nist-csf-2, source-it-study-content-model]
 priority: important
 knowledgeLevel: contextual-understanding
