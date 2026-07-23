@@ -8,7 +8,7 @@
 | Fecha de corte | `2026-07-21` |
 | Rama verificada | `codex/batches-production` |
 | Baseline técnico verificado | `a4351cc` — cierre reconciliado de `batch-005` |
-| Estado del registro | B001–B029 `closed`; B030 `in-review` con inventario autorizado; B033–B042 inactivos. |
+| Estado del registro | B001–B030 `closed`; B031 en preflight de corrección; B033–B042 inactivos. |
 | Autoridad | Responsable del proyecto |
 | Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution` |
 | Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
@@ -54,7 +54,7 @@ La autorización:
 
 ## Próxima acción ejecutable
 
-Obtener la aceptación editorial de B030 d1; después, promover, integrar, validar, reconciliar y cerrar sus rutas automáticamente.
+Ejecutar preflight de B031 sobre hallazgos acumulados y preparar únicamente correcciones con alcance exacto y rollback.
 
 La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
 
@@ -65,7 +65,7 @@ La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 
 - Las relaciones ordinarias no se inventan ni se persisten mediante una representación física todavía no decidida.
 - Arquitectura, framework, UI, build, despliegue y métricas técnicas finales siguen fuera del alcance actual.
 - B024–B030 requieren entradas aprobadas suficientes; B032 requiere todas las puertas acumuladas; B033–B042 requieren además sus activadores opcionales.
-- B030 tiene inventario autorizado y sus rutas usan referencias canónicas existentes; no persiste relaciones globales nuevas.
+- B031 requiere hallazgos acumulados concretos, alcance correctivo exacto y rollback; no introduce contenido por cuota.
 
 ## Protocolo de reanudación rápida
 
