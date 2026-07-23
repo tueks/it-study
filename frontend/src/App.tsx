@@ -63,10 +63,15 @@ function EntityCard({ entity }: { entity: Entity }) {
 function App() {
   const [query, setQuery] = useState('')
   const [selectedDomain, setSelectedDomain] = useState(catalog.domains[0]?.id ?? '')
+  const [selectedSubdomain, setSelectedSubdomain] = useState<string | null>(null)
+  const [showAllEntries, setShowAllEntries] = useState(false)
   const [exploring, setExploring] = useState(false)
   const mapHeading = useRef<HTMLHeadingElement>(null)
   const selected = catalog.domains.find((domain) => domain.id === selectedDomain)
   const selectedEntities = catalog.entities.filter((entity) => entity.primaryDomain === selectedDomain)
+  const filteredEntities = selectedSubdomain
+    ? selectedEntities.filter((entity) => entity.subdomains?.includes(selectedSubdomain))
+    : selectedEntities
   const results = useMemo(() => {
     const terms = query.trim().toLocaleLowerCase('es')
     if (!terms) return []
@@ -81,6 +86,11 @@ function App() {
   function explore() {
     setExploring(true)
     requestAnimationFrame(() => mapHeading.current?.focus())
+  }
+  function selectDomain(domainId: string) {
+    setSelectedDomain(domainId)
+    setSelectedSubdomain(null)
+    setShowAllEntries(false)
   }
 
   return <div className="app-shell">
@@ -100,7 +110,7 @@ function App() {
         <button className="primary" type="button" onClick={explore}>Explorar el mapa</button>
         {query && <section className="search-results" aria-live="polite" aria-label="Resultados de búsqueda">
           <h2>{results.length ? `Resultados para “${query}”` : 'Sin resultados'}</h2>
-          {results.map((entity) => <button key={entity.id} type="button" className="result" onClick={() => { setSelectedDomain(entity.primaryDomain ?? selectedDomain); explore() }}>
+          {results.map((entity) => <button key={entity.id} type="button" className="result" onClick={() => { selectDomain(entity.primaryDomain ?? selectedDomain); explore() }}>
             <strong>{entity.title}</strong><span>{entity.summary}</span>
           </button>)}
         </section>}
@@ -114,7 +124,7 @@ function App() {
         </div>
         <div className="map-layout">
           <nav className="domain-map" aria-label="Dominios de IT Study">
-            {catalog.domains.map((domain, index) => <button key={domain.id} type="button" className={`domain-node node-${index + 1} ${selectedDomain === domain.id ? 'selected' : ''}`} aria-pressed={selectedDomain === domain.id} onClick={() => setSelectedDomain(domain.id)}>
+            {catalog.domains.map((domain, index) => <button key={domain.id} type="button" className={`domain-node node-${index + 1} ${selectedDomain === domain.id ? 'selected' : ''}`} aria-pressed={selectedDomain === domain.id} onClick={() => selectDomain(domain.id)}>
               <span>{display(domain.id)}</span><small>{domain.entityCount} entradas</small>
             </button>)}
             <div className="map-core" aria-hidden="true">IT<br />Study</div>
@@ -124,9 +134,13 @@ function App() {
             <h3>{display(selected.id)}</h3>
             <p>{selected.entityCount} entradas aprobadas en el catálogo local.</p>
             <h4>Subdominios</h4>
-            <ul>{selected.subdomains.map((subdomain) => <li key={subdomain}>{display(subdomain)}</li>)}</ul>
-            <h4>Entradas destacadas</h4>
-            <div className="card-list">{selectedEntities.slice(0, 4).map((entity) => <EntityCard key={entity.id} entity={entity} />)}</div>
+            <div className="subdomain-list" aria-label="Filtrar por subdominio">
+              <button type="button" className={!selectedSubdomain ? 'filter-selected' : ''} aria-pressed={!selectedSubdomain} onClick={() => { setSelectedSubdomain(null); setShowAllEntries(false) }}>Todos</button>
+              {selected.subdomains.map((subdomain) => <button key={subdomain} type="button" className={selectedSubdomain === subdomain ? 'filter-selected' : ''} aria-pressed={selectedSubdomain === subdomain} onClick={() => { setSelectedSubdomain(subdomain); setShowAllEntries(true) }}>{display(subdomain)}</button>)}
+            </div>
+            <h4>{selectedSubdomain ? `Entradas de ${display(selectedSubdomain)}` : 'Entradas destacadas'}</h4>
+            <div className="card-list">{filteredEntities.slice(0, showAllEntries ? filteredEntities.length : 4).map((entity) => <EntityCard key={entity.id} entity={entity} />)}</div>
+            {filteredEntities.length > 4 && <button type="button" className="show-all" onClick={() => setShowAllEntries(!showAllEntries)}>{showAllEntries ? 'Mostrar solo destacadas' : `Ver las ${filteredEntities.length} entradas`}</button>}
           </aside>}
         </div>
       </section>}
