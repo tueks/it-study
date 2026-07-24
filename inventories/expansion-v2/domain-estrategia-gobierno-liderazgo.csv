@@ -1,0 +1,42 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-it-strategy,IT Strategy,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-estrategia-gobierno-it,essential,wave-10,batch-109-expansion-wave-10-04
+candidate-it-management,IT Management,process,ways-of-working,domain-estrategia-gobierno-liderazgo,subdomain-estrategia-gobierno-it,essential,wave-10,batch-109-expansion-wave-10-04
+candidate-it-policy,IT Policy,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-estrategia-gobierno-it,essential,wave-10,batch-109-expansion-wave-10-04
+candidate-it-standard,IT Standard,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-estrategia-gobierno-it,essential,wave-10,batch-109-expansion-wave-10-04
+candidate-it-guideline,IT Guideline,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-estrategia-gobierno-it,essential,wave-10,batch-109-expansion-wave-10-04
+candidate-decision-rights,Decision Rights,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-estrategia-gobierno-it,essential,wave-10,batch-109-expansion-wave-10-04
+candidate-it-governance-manager,IT Governance Manager,role,people-capabilities,domain-estrategia-gobierno-liderazgo,subdomain-estrategia-gobierno-it,essential,wave-10,batch-109-expansion-wave-10-04
+candidate-technology-portfolio,Technology Portfolio,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-estrategia-gobierno-it,important,wave-10,batch-109-expansion-wave-10-04
+candidate-vendor-management,Vendor Management,process,ways-of-working,domain-estrategia-gobierno-liderazgo,subdomain-estrategia-gobierno-it,important,wave-10,batch-109-expansion-wave-10-04
+candidate-technology-strategist,Technology Strategist,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-estrategia-gobierno-it,important,wave-10,batch-110-expansion-wave-10-05
+candidate-finops,FinOps,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-estrategia-gobierno-it,important,wave-10,batch-110-expansion-wave-10-05
+candidate-enterprise-architecture,Enterprise Architecture,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-arquitectura-empresarial,essential,wave-10,batch-110-expansion-wave-10-05
+candidate-business-architecture,Business Architecture,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-arquitectura-empresarial,essential,wave-10,batch-110-expansion-wave-10-05
+candidate-technology-architecture,Technology Architecture,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-arquitectura-empresarial,essential,wave-10,batch-110-expansion-wave-10-05
+candidate-capability-map,Capability Map,artifact,results-measurement,domain-estrategia-gobierno-liderazgo,subdomain-arquitectura-empresarial,essential,wave-10,batch-110-expansion-wave-10-05
+candidate-operating-model,Operating Model,model,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-arquitectura-empresarial,essential,wave-10,batch-110-expansion-wave-10-05
+candidate-enterprise-architecture-framework,Enterprise Architecture Framework,model,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-arquitectura-empresarial,essential,wave-10,batch-110-expansion-wave-10-05
+candidate-architecture-repository,Architecture Repository,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-arquitectura-empresarial,important,wave-10,batch-110-expansion-wave-10-05
+candidate-enterprise-architecture-lead,Enterprise Architecture Lead,role,people-capabilities,domain-estrategia-gobierno-liderazgo,subdomain-arquitectura-empresarial,important,wave-10,batch-110-expansion-wave-10-05
+candidate-it-director,IT Director,role,people-capabilities,domain-estrategia-gobierno-liderazgo,subdomain-arquitectura-empresarial,important,wave-10,batch-110-expansion-wave-10-05
+candidate-enterprise-roadmap,Enterprise Roadmap,artifact,results-measurement,domain-estrategia-gobierno-liderazgo,subdomain-arquitectura-empresarial,important,wave-10,batch-110-expansion-wave-10-05
+candidate-project,Project,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-portafolios-programas-proyectos,essential,wave-10,batch-111-expansion-wave-10-06
+candidate-program,Program,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-portafolios-programas-proyectos,essential,wave-10,batch-111-expansion-wave-10-06
+candidate-portfolio,Portfolio,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-portafolios-programas-proyectos,essential,wave-10,batch-111-expansion-wave-10-06
+candidate-project-management,Project Management,process,ways-of-working,domain-estrategia-gobierno-liderazgo,subdomain-portafolios-programas-proyectos,essential,wave-10,batch-111-expansion-wave-10-06
+candidate-program-management,Program Management,process,ways-of-working,domain-estrategia-gobierno-liderazgo,subdomain-portafolios-programas-proyectos,essential,wave-10,batch-111-expansion-wave-10-06
+candidate-project-management-office,Project Management Office,process,ways-of-working,domain-estrategia-gobierno-liderazgo,subdomain-portafolios-programas-proyectos,essential,wave-10,batch-111-expansion-wave-10-06
+candidate-project-manager,Project Manager,role,people-capabilities,domain-estrategia-gobierno-liderazgo,subdomain-portafolios-programas-proyectos,important,wave-10,batch-111-expansion-wave-10-06
+candidate-program-manager,Program Manager,role,people-capabilities,domain-estrategia-gobierno-liderazgo,subdomain-portafolios-programas-proyectos,important,wave-10,batch-111-expansion-wave-10-06
+candidate-delivery-manager,Delivery Manager,role,people-capabilities,domain-estrategia-gobierno-liderazgo,subdomain-portafolios-programas-proyectos,important,wave-10,batch-111-expansion-wave-10-06
+candidate-benefits-realization,Benefits Realization,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-portafolios-programas-proyectos,important,wave-10,batch-111-expansion-wave-10-06
+candidate-engineering-manager,Engineering Manager,role,people-capabilities,domain-estrategia-gobierno-liderazgo,subdomain-liderazgo-organizacion,essential,wave-10,batch-111-expansion-wave-10-06
+candidate-chief-information-officer,Chief Information Officer,position,people-capabilities,domain-estrategia-gobierno-liderazgo,subdomain-liderazgo-organizacion,essential,wave-10,batch-111-expansion-wave-10-06
+candidate-chief-information-security-officer,Chief Information Security Officer,position,people-capabilities,domain-estrategia-gobierno-liderazgo,subdomain-liderazgo-organizacion,essential,wave-10,batch-112-expansion-wave-10-07
+candidate-chief-data-officer,Chief Data Officer,position,people-capabilities,domain-estrategia-gobierno-liderazgo,subdomain-liderazgo-organizacion,essential,wave-10,batch-112-expansion-wave-10-07
+candidate-organizational-change-management,Organizational Change Management,process,ways-of-working,domain-estrategia-gobierno-liderazgo,subdomain-liderazgo-organizacion,essential,wave-10,batch-112-expansion-wave-10-07
+candidate-team-topologies,Team Topologies,practice,ways-of-working,domain-estrategia-gobierno-liderazgo,subdomain-liderazgo-organizacion,essential,wave-10,batch-112-expansion-wave-10-07
+candidate-raci-matrix,RACI Matrix,artifact,results-measurement,domain-estrategia-gobierno-liderazgo,subdomain-liderazgo-organizacion,important,wave-10,batch-112-expansion-wave-10-07
+candidate-delegation,Delegation,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-liderazgo-organizacion,important,wave-10,batch-112-expansion-wave-10-07
+candidate-decision-making,Decision-Making,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-liderazgo-organizacion,important,wave-10,batch-112-expansion-wave-10-07
+candidate-organizational-structure,Organizational Structure,concept,ideas-orientations,domain-estrategia-gobierno-liderazgo,subdomain-liderazgo-organizacion,important,wave-10,batch-112-expansion-wave-10-07
