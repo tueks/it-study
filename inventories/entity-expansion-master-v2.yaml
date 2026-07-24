@@ -1,0 +1,85 @@
+# Inventario maestro de expansión post-MVP.
+# Autoriza el universo y su asignación; no convierte candidatos en contenido aprobado.
+schemaVersion: "2.0"
+project: IT Study
+version: expansion-v2
+decisionRef: decision-0024-thousand-entity-expansion
+approvedAt: 2026-07-24
+approvedBy: Responsable del proyecto
+baseline:
+  canonicalEntities: 164
+  sourceInventory: inventories/initial-terms.csv
+  preserveExisting: true
+target:
+  canonicalEntities: 1000
+  plannedNew: 836
+  reserveCandidates: 60
+  waves: 10
+  technicalBatches: 70
+  batchRange: batch-043..batch-112
+policies:
+  singleMasterInventory: true
+  noPerBatchCandidateAdditions: true
+  noPerEntityHumanApproval: true
+  independentReviewRequired: true
+  automaticTechnicalClosure: true
+  substitutionsFromReserveOnly: true
+  preserveDomainTotals: true
+  externalPublicationAuthorized: false
+candidateFields:
+  - candidate_id
+  - canonical_name
+  - type
+  - family
+  - primary_domain
+  - subdomain
+  - priority
+  - wave
+  - recommended_batch
+shards:
+  - { domain: domain-fundamentos-computacion, existing: 15, plannedNew: 60, targetTotal: 75, file: inventories/expansion-v2/domain-fundamentos-computacion.csv }
+  - { domain: domain-sistemas-computo-ciberfisicos, existing: 11, plannedNew: 59, targetTotal: 70, file: inventories/expansion-v2/domain-sistemas-computo-ciberfisicos.csv }
+  - { domain: domain-desarrollo-software, existing: 15, plannedNew: 90, targetTotal: 105, file: inventories/expansion-v2/domain-desarrollo-software.csv }
+  - { domain: domain-ingenieria-software, existing: 15, plannedNew: 115, targetTotal: 130, file: inventories/expansion-v2/domain-ingenieria-software.csv }
+  - { domain: domain-redes-telecomunicaciones, existing: 11, plannedNew: 64, targetTotal: 75, file: inventories/expansion-v2/domain-redes-telecomunicaciones.csv }
+  - { domain: domain-infraestructura-operacion, existing: 16, plannedNew: 84, targetTotal: 100, file: inventories/expansion-v2/domain-infraestructura-operacion.csv }
+  - { domain: domain-ciberseguridad-riesgo, existing: 15, plannedNew: 85, targetTotal: 100, file: inventories/expansion-v2/domain-ciberseguridad-riesgo.csv }
+  - { domain: domain-datos-analitica, existing: 15, plannedNew: 80, targetTotal: 95, file: inventories/expansion-v2/domain-datos-analitica.csv }
+  - { domain: domain-inteligencia-artificial, existing: 11, plannedNew: 64, targetTotal: 75, file: inventories/expansion-v2/domain-inteligencia-artificial.csv }
+  - { domain: domain-integracion-sistemas-empresariales, existing: 13, plannedNew: 52, targetTotal: 65, file: inventories/expansion-v2/domain-integracion-sistemas-empresariales.csv }
+  - { domain: domain-producto-experiencia, existing: 13, plannedNew: 42, targetTotal: 55, file: inventories/expansion-v2/domain-producto-experiencia.csv }
+  - { domain: domain-estrategia-gobierno-liderazgo, existing: 14, plannedNew: 41, targetTotal: 55, file: inventories/expansion-v2/domain-estrategia-gobierno-liderazgo.csv }
+
+reserve:
+  file: inventories/entity-expansion-reserve-v2.csv
+  countedTowardTarget: false
+validation:
+  uniqueCandidateIds: 836
+  duplicateCandidateIds: 0
+  assignedCandidates: 836
+  unassignedCandidates: 0
+  waveCounts:
+    wave-01: 84
+    wave-02: 84
+    wave-03: 84
+    wave-04: 84
+    wave-05: 84
+    wave-06: 84
+    wave-07: 84
+    wave-08: 84
+    wave-09: 84
+    wave-10: 80
+  familyCounts:
+    ideas-orientations: 432
+    ways-of-working: 140
+    specifications-implementations: 131
+    people-capabilities: 76
+    results-measurement: 39
+    solutions-structures: 18
+  priorityCounts:
+    essential: 515
+    important: 301
+    specialized: 20
+productionStart:
+  nextBatch: batch-043-expansion-wave-01-01
+  gate: inventory-and-contract-merged
