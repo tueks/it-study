@@ -1,0 +1,85 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-infrastructure,Infrastructure,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-075-expansion-wave-05-05
+candidate-data-center,Data Center,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-075-expansion-wave-05-05
+candidate-compute-resource,Compute Resource,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-075-expansion-wave-05-05
+candidate-block-storage,Block Storage,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-075-expansion-wave-05-05
+candidate-file-storage,File Storage,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-075-expansion-wave-05-05
+candidate-object-storage,Object Storage,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-075-expansion-wave-05-05
+candidate-cloud-provider,Cloud Provider,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-075-expansion-wave-05-05
+candidate-public-cloud,Public Cloud,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-075-expansion-wave-05-05
+candidate-private-cloud,Private Cloud,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-076-expansion-wave-05-06
+candidate-hybrid-cloud,Hybrid Cloud,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-076-expansion-wave-05-06
+candidate-multi-cloud,Multi-Cloud,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-076-expansion-wave-05-06
+candidate-infrastructure-as-a-service,Infrastructure as a Service,service,specifications-implementations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-076-expansion-wave-05-06
+candidate-platform-as-a-service,Platform as a Service,platform,specifications-implementations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,essential,wave-05,batch-076-expansion-wave-05-06
+candidate-software-as-a-service,Software as a Service,service,specifications-implementations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,important,wave-05,batch-076-expansion-wave-05-06
+candidate-cloud-region,Cloud Region,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,important,wave-05,batch-076-expansion-wave-05-06
+candidate-availability-zone,Availability Zone,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,important,wave-05,batch-076-expansion-wave-05-06
+candidate-virtual-machine,Virtual Machine,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,important,wave-05,batch-076-expansion-wave-05-06
+candidate-hypervisor,Hypervisor,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,important,wave-05,batch-076-expansion-wave-05-06
+candidate-cloud-native,Cloud-Native,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,important,wave-05,batch-076-expansion-wave-05-06
+candidate-elasticity,Elasticity,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,important,wave-05,batch-076-expansion-wave-05-06
+candidate-autoscaling,Autoscaling,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-infraestructura-virtualizacion-cloud,specialized,wave-05,batch-077-expansion-wave-05-07
+candidate-container-image,Container Image,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-05,batch-077-expansion-wave-05-07
+candidate-container-registry,Container Registry,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-05,batch-077-expansion-wave-05-07
+candidate-container-runtime,Container Runtime,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-05,batch-077-expansion-wave-05-07
+candidate-container-orchestration,Container Orchestration,process,ways-of-working,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-05,batch-077-expansion-wave-05-07
+candidate-cluster,Cluster,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-05,batch-077-expansion-wave-05-07
+candidate-node,Node,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-05,batch-077-expansion-wave-05-07
+candidate-pod,Pod,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-05,batch-077-expansion-wave-05-07
+candidate-deployment-controller,Deployment Controller,process,ways-of-working,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-05,batch-077-expansion-wave-05-07
+candidate-cloud-engineer,Cloud Engineer,role,people-capabilities,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-05,batch-077-expansion-wave-05-07
+candidate-namespace-in-kubernetes,Namespace in Kubernetes,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-05,batch-077-expansion-wave-05-07
+candidate-service-in-kubernetes,Service in Kubernetes,service,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-05,batch-077-expansion-wave-05-07
+candidate-ingress,Ingress,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-06,batch-078-expansion-wave-06-01
+candidate-sidecar-container,Sidecar Container,pattern,solutions-structures,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,essential,wave-06,batch-078-expansion-wave-06-01
+candidate-kubernetes-administrator,Kubernetes Administrator,role,people-capabilities,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,important,wave-06,batch-078-expansion-wave-06-01
+candidate-persistent-volume,Persistent Volume,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,important,wave-06,batch-078-expansion-wave-06-01
+candidate-persistent-volume-claim,Persistent Volume Claim,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,important,wave-06,batch-078-expansion-wave-06-01
+candidate-helm,Helm,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,important,wave-06,batch-078-expansion-wave-06-01
+candidate-operator-pattern,Operator Pattern,pattern,solutions-structures,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,important,wave-06,batch-078-expansion-wave-06-01
+candidate-service-mesh,Service Mesh,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,important,wave-06,batch-078-expansion-wave-06-01
+candidate-container-security,Container Security,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,important,wave-06,batch-078-expansion-wave-06-01
+candidate-container-networking,Container Networking,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-contenedores-orquestacion,specialized,wave-06,batch-078-expansion-wave-06-01
+candidate-devops-engineer,DevOps Engineer,role,people-capabilities,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-078-expansion-wave-06-01
+candidate-continuous-integration-and-continuous-delivery,Continuous Integration and Continuous Delivery,process,ways-of-working,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-078-expansion-wave-06-01
+candidate-pipeline,Pipeline,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-079-expansion-wave-06-02
+candidate-build-pipeline,Build Pipeline,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-079-expansion-wave-06-02
+candidate-release-pipeline,Release Pipeline,process,ways-of-working,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-079-expansion-wave-06-02
+candidate-deployment-pipeline,Deployment Pipeline,process,ways-of-working,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-079-expansion-wave-06-02
+candidate-gitops,GitOps,practice,ways-of-working,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-079-expansion-wave-06-02
+candidate-configuration-as-code,Configuration as Code,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-079-expansion-wave-06-02
+candidate-policy-as-code,Policy as Code,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-079-expansion-wave-06-02
+candidate-platform-engineering,Platform Engineering,process,ways-of-working,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-079-expansion-wave-06-02
+candidate-developer-experience,Developer Experience,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-079-expansion-wave-06-02
+candidate-golden-path,Golden Path,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-079-expansion-wave-06-02
+candidate-self-service-platform,Self-Service Platform,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,essential,wave-06,batch-079-expansion-wave-06-02
+candidate-infrastructure-engineer,Infrastructure Engineer,role,people-capabilities,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,important,wave-06,batch-079-expansion-wave-06-02
+candidate-artifact-repository,Artifact Repository,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,important,wave-06,batch-080-expansion-wave-06-03
+candidate-package-registry,Package Registry,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,important,wave-06,batch-080-expansion-wave-06-03
+candidate-secrets-management,Secrets Management,technology,specifications-implementations,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,important,wave-06,batch-080-expansion-wave-06-03
+candidate-cloud-operations-engineer,Cloud Operations Engineer,role,people-capabilities,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,important,wave-06,batch-080-expansion-wave-06-03
+candidate-infrastructure-provisioning,Infrastructure Provisioning,process,ways-of-working,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,important,wave-06,batch-080-expansion-wave-06-03
+candidate-automation,Automation,practice,ways-of-working,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,important,wave-06,batch-080-expansion-wave-06-03
+candidate-chatops,ChatOps,practice,ways-of-working,domain-infraestructura-operacion,subdomain-devops-ingenieria-plataformas,specialized,wave-06,batch-080-expansion-wave-06-03
+candidate-observability,Observability,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-080-expansion-wave-06-03
+candidate-metric,Metric,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-080-expansion-wave-06-03
+candidate-log,Log,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-080-expansion-wave-06-03
+candidate-distributed-trace,Distributed Trace,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-080-expansion-wave-06-03
+candidate-span,Span,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-080-expansion-wave-06-03
+candidate-service-level-indicator,Service-Level Indicator,metric,results-measurement,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-081-expansion-wave-06-04
+candidate-service-level-objective,Service-Level Objective,metric,results-measurement,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-081-expansion-wave-06-04
+candidate-service-level-agreement,Service-Level Agreement,metric,results-measurement,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-081-expansion-wave-06-04
+candidate-error-budget,Error Budget,metric,results-measurement,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-081-expansion-wave-06-04
+candidate-reliability,Reliability,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-081-expansion-wave-06-04
+candidate-resilience,Resilience,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-081-expansion-wave-06-04
+candidate-fault-tolerance,Fault Tolerance,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-081-expansion-wave-06-04
+candidate-redundancy,Redundancy,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,essential,wave-06,batch-081-expansion-wave-06-04
+candidate-high-availability,High Availability,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,important,wave-06,batch-081-expansion-wave-06-04
+candidate-disaster-recovery,Disaster Recovery,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,important,wave-06,batch-081-expansion-wave-06-04
+candidate-recovery-point-objective,Recovery Point Objective,metric,results-measurement,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,important,wave-06,batch-081-expansion-wave-06-04
+candidate-recovery-time-objective,Recovery Time Objective,metric,results-measurement,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,important,wave-06,batch-081-expansion-wave-06-04
+candidate-backup,Backup,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,important,wave-06,batch-082-expansion-wave-06-05
+candidate-incident-commander,Incident Commander,role,people-capabilities,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,important,wave-06,batch-082-expansion-wave-06-05
+candidate-blameless-postmortem,Blameless Postmortem,concept,ideas-orientations,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,important,wave-06,batch-082-expansion-wave-06-05
+candidate-capacity-planning,Capacity Planning,process,ways-of-working,domain-infraestructura-operacion,subdomain-confiabilidad-sre-observabilidad,specialized,wave-06,batch-082-expansion-wave-06-05
