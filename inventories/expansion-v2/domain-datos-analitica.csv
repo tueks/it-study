@@ -1,0 +1,81 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-database-management-system,Database Management System,technology,specifications-implementations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-089-expansion-wave-07-05
+candidate-table,Table,concept,ideas-orientations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-089-expansion-wave-07-05
+candidate-row,Row,concept,ideas-orientations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-089-expansion-wave-07-05
+candidate-column,Column,concept,ideas-orientations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-089-expansion-wave-07-05
+candidate-schema,Schema,model,ideas-orientations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-089-expansion-wave-07-05
+candidate-primary-key,Primary Key,concept,ideas-orientations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-089-expansion-wave-07-05
+candidate-foreign-key,Foreign Key,concept,ideas-orientations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-089-expansion-wave-07-05
+candidate-database-index,Database Index,concept,ideas-orientations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-090-expansion-wave-07-06
+candidate-query,Query,concept,ideas-orientations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-090-expansion-wave-07-06
+candidate-transaction,Transaction,concept,ideas-orientations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-090-expansion-wave-07-06
+candidate-acid,ACID,standard,specifications-implementations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-090-expansion-wave-07-06
+candidate-normalization,Normalization,concept,ideas-orientations,domain-datos-analitica,subdomain-bases-datos,essential,wave-07,batch-090-expansion-wave-07-06
+candidate-denormalization,Denormalization,concept,ideas-orientations,domain-datos-analitica,subdomain-bases-datos,important,wave-07,batch-090-expansion-wave-07-06
+candidate-nosql-database,NoSQL Database,technology,specifications-implementations,domain-datos-analitica,subdomain-bases-datos,important,wave-07,batch-090-expansion-wave-07-06
+candidate-document-database,Document Database,technology,specifications-implementations,domain-datos-analitica,subdomain-bases-datos,important,wave-07,batch-090-expansion-wave-07-06
+candidate-key-value-database,Key–Value Database,technology,specifications-implementations,domain-datos-analitica,subdomain-bases-datos,important,wave-07,batch-090-expansion-wave-07-06
+candidate-graph-database,Graph Database,technology,specifications-implementations,domain-datos-analitica,subdomain-bases-datos,important,wave-07,batch-090-expansion-wave-07-06
+candidate-columnar-database,Columnar Database,technology,specifications-implementations,domain-datos-analitica,subdomain-bases-datos,important,wave-07,batch-090-expansion-wave-07-06
+candidate-database-administrator,Database Administrator,role,people-capabilities,domain-datos-analitica,subdomain-bases-datos,important,wave-07,batch-090-expansion-wave-07-06
+candidate-database-reliability-engineer,Database Reliability Engineer,role,people-capabilities,domain-datos-analitica,subdomain-bases-datos,specialized,wave-07,batch-091-expansion-wave-07-07
+candidate-data-engineering,Data Engineering,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-07,batch-091-expansion-wave-07-07
+candidate-data-ingestion,Data Ingestion,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-07,batch-091-expansion-wave-07-07
+candidate-batch-processing,Batch Processing,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-07,batch-091-expansion-wave-07-07
+candidate-stream-processing,Stream Processing,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-07,batch-091-expansion-wave-07-07
+candidate-change-data-capture,Change Data Capture,concept,ideas-orientations,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-07,batch-091-expansion-wave-07-07
+candidate-data-transformation,Data Transformation,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-07,batch-091-expansion-wave-07-07
+candidate-extract-load-transform,Extract Load Transform,concept,ideas-orientations,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-07,batch-091-expansion-wave-07-07
+candidate-data-orchestration,Data Orchestration,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-07,batch-091-expansion-wave-07-07
+candidate-workflow-orchestration,Workflow Orchestration,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-07,batch-091-expansion-wave-07-07
+candidate-data-integration,Data Integration,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-07,batch-091-expansion-wave-07-07
+candidate-data-replication,Data Replication,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-07,batch-091-expansion-wave-07-07
+candidate-data-synchronization,Data Synchronization,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,essential,wave-08,batch-092-expansion-wave-08-01
+candidate-data-validation,Data Validation,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,important,wave-08,batch-092-expansion-wave-08-01
+candidate-data-cleaning,Data Cleaning,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,important,wave-08,batch-092-expansion-wave-08-01
+candidate-data-enrichment,Data Enrichment,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,important,wave-08,batch-092-expansion-wave-08-01
+candidate-data-partitioning,Data Partitioning,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,important,wave-08,batch-092-expansion-wave-08-01
+candidate-data-sharding,Data Sharding,process,ways-of-working,domain-datos-analitica,subdomain-ingenieria-datos,important,wave-08,batch-092-expansion-wave-08-01
+candidate-data-lake,Data Lake,technology,specifications-implementations,domain-datos-analitica,subdomain-ingenieria-datos,important,wave-08,batch-092-expansion-wave-08-01
+candidate-data-lakehouse,Data Lakehouse,technology,specifications-implementations,domain-datos-analitica,subdomain-ingenieria-datos,important,wave-08,batch-092-expansion-wave-08-01
+candidate-analytics-engineer,Analytics Engineer,role,people-capabilities,domain-datos-analitica,subdomain-ingenieria-datos,specialized,wave-08,batch-092-expansion-wave-08-01
+candidate-data-architecture,Data Architecture,concept,ideas-orientations,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-092-expansion-wave-08-01
+candidate-data-governance,Data Governance,process,ways-of-working,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-092-expansion-wave-08-01
+candidate-metadata,Metadata,concept,ideas-orientations,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-092-expansion-wave-08-01
+candidate-metadata-management,Metadata Management,process,ways-of-working,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-093-expansion-wave-08-02
+candidate-data-catalog,Data Catalog,concept,ideas-orientations,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-093-expansion-wave-08-02
+candidate-master-data-management,Master Data Management,process,ways-of-working,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-093-expansion-wave-08-02
+candidate-reference-data,Reference Data,concept,ideas-orientations,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-093-expansion-wave-08-02
+candidate-data-stewardship,Data Stewardship,practice,ways-of-working,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-093-expansion-wave-08-02
+candidate-data-ownership,Data Ownership,practice,ways-of-working,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-093-expansion-wave-08-02
+candidate-data-domain,Data Domain,concept,ideas-orientations,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-093-expansion-wave-08-02
+candidate-data-product,Data Product,concept,ideas-orientations,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-093-expansion-wave-08-02
+candidate-data-mesh,Data Mesh,concept,ideas-orientations,domain-datos-analitica,subdomain-arquitectura-gestion-datos,essential,wave-08,batch-093-expansion-wave-08-02
+candidate-data-fabric,Data Fabric,concept,ideas-orientations,domain-datos-analitica,subdomain-arquitectura-gestion-datos,important,wave-08,batch-093-expansion-wave-08-02
+candidate-data-quality,Data Quality,concept,ideas-orientations,domain-datos-analitica,subdomain-arquitectura-gestion-datos,important,wave-08,batch-093-expansion-wave-08-02
+candidate-data-quality-dimension,Data Quality Dimension,metric,results-measurement,domain-datos-analitica,subdomain-arquitectura-gestion-datos,important,wave-08,batch-093-expansion-wave-08-02
+candidate-data-observability,Data Observability,concept,ideas-orientations,domain-datos-analitica,subdomain-arquitectura-gestion-datos,important,wave-08,batch-094-expansion-wave-08-03
+candidate-data-contract,Data Contract,artifact,results-measurement,domain-datos-analitica,subdomain-arquitectura-gestion-datos,important,wave-08,batch-094-expansion-wave-08-03
+candidate-data-lifecycle,Data Lifecycle,process,ways-of-working,domain-datos-analitica,subdomain-arquitectura-gestion-datos,important,wave-08,batch-094-expansion-wave-08-03
+candidate-data-architect,Data Architect,role,people-capabilities,domain-datos-analitica,subdomain-arquitectura-gestion-datos,important,wave-08,batch-094-expansion-wave-08-03
+candidate-data-security,Data Security,concept,ideas-orientations,domain-datos-analitica,subdomain-arquitectura-gestion-datos,specialized,wave-08,batch-094-expansion-wave-08-03
+candidate-business-intelligence,Business Intelligence,concept,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-094-expansion-wave-08-03
+candidate-analytics,Analytics,concept,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-094-expansion-wave-08-03
+candidate-descriptive-analytics,Descriptive Analytics,concept,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-094-expansion-wave-08-03
+candidate-diagnostic-analytics,Diagnostic Analytics,concept,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-094-expansion-wave-08-03
+candidate-predictive-analytics,Predictive Analytics,concept,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-094-expansion-wave-08-03
+candidate-prescriptive-analytics,Prescriptive Analytics,concept,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-094-expansion-wave-08-03
+candidate-online-transaction-processing,Online Transaction Processing,process,ways-of-working,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-094-expansion-wave-08-03
+candidate-online-analytical-processing,Online Analytical Processing,process,ways-of-working,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-095-expansion-wave-08-04
+candidate-data-mart,Data Mart,concept,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-095-expansion-wave-08-04
+candidate-semantic-layer,Semantic Layer,model,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-095-expansion-wave-08-04
+candidate-dashboard,Dashboard,artifact,results-measurement,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-095-expansion-wave-08-04
+candidate-report,Report,artifact,results-measurement,domain-datos-analitica,subdomain-bi-analitica,essential,wave-08,batch-095-expansion-wave-08-04
+candidate-data-visualization,Data Visualization,concept,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,important,wave-08,batch-095-expansion-wave-08-04
+candidate-key-performance-indicator-design,Key Performance Indicator Design,practice,ways-of-working,domain-datos-analitica,subdomain-bi-analitica,important,wave-08,batch-095-expansion-wave-08-04
+candidate-business-intelligence-developer,Business Intelligence Developer,role,people-capabilities,domain-datos-analitica,subdomain-bi-analitica,important,wave-08,batch-095-expansion-wave-08-04
+candidate-data-visualization-specialist,Data Visualization Specialist,role,people-capabilities,domain-datos-analitica,subdomain-bi-analitica,important,wave-08,batch-095-expansion-wave-08-04
+candidate-funnel-analysis,Funnel Analysis,process,ways-of-working,domain-datos-analitica,subdomain-bi-analitica,important,wave-08,batch-095-expansion-wave-08-04
+candidate-dimensional-modeling,Dimensional Modeling,model,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,important,wave-08,batch-095-expansion-wave-08-04
+candidate-star-schema,Star Schema,model,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,important,wave-08,batch-095-expansion-wave-08-04
+candidate-fact-table,Fact Table,concept,ideas-orientations,domain-datos-analitica,subdomain-bi-analitica,specialized,wave-08,batch-096-expansion-wave-08-05

@@ -5,13 +5,13 @@
 | Campo | Valor |
 |---|---|
 | Estado del documento | Vigente |
-| Fecha de corte | `2026-07-23` |
-| Rama verificada | `codex/batches-production` |
-| Baseline técnico verificado | `dc6f42f` — aplicación local compilada y validada interactivamente |
-| Estado del registro | B001–B030 `closed`; B031 sin alcance correctivo; B032 pendiente solo de métricas Core Web Vitals; B033–B042 inactivos. |
+| Fecha de corte | `2026-07-24` |
+| Rama verificada | `agent/expand-1000-entities-plan` |
+| Baseline técnico verificado | `cbb7087` en `main`; aplicación local compilada y validada interactivamente antes de esta expansión documental |
+| Estado del registro | B001–B030 `closed`; B031 sin alcance correctivo; B032 pendiente solo de métricas Core Web Vitals; B033–B042 inactivos; B043–B112 autorizados para la expansión post-MVP después de integrar su plan e inventario. |
 | Autoridad | Responsable del proyecto |
-| Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution`; `decision-0015`, `decision-0018` y `decision-0023` aceptadas el `2026-07-22`. |
-| Propósito | Punto de reanudación rápido; no sustituye contratos, manifiestos ni reportes de lote. |
+| Decisión aplicable | `decision-0021-recommended-master-plan-v2-execution`; `decision-0024-thousand-entity-expansion`; `decision-0015`, `decision-0018` y `decision-0023` aceptadas. |
+| Propósito | Punto de reanudación rápido; no sustituye contratos, inventarios ni reportes de lote. |
 
 Este documento registra el estado operativo comprobado del repositorio. En caso de diferencia, prevalecen las autoridades indicadas en `AGENTS.md`. Cada sesión debe volver a comprobar rama, commit y árbol de trabajo; el commit de corte identifica la evidencia revisada, no congela avances posteriores.
 
@@ -36,48 +36,65 @@ Este documento registra el estado operativo comprobado del repositorio. En caso 
 | Rutas canónicas | 4 archivos `approved` bajo `content/editorial/learning-paths/`. |
 | Integridad de B001–B005 | Lotes `closed`; fuentes y taxonomía integradas con evidencia de reconciliación en sus entregas. |
 | Aplicación local | Implementada en `frontend/` con React, TypeScript y Vite; generador desde fuentes `approved`, portada, búsqueda, mapa accesible, formatos editoriales y temas claro/oscuro. `pnpm test` y `pnpm build` conformes; evidencia en `work/LOCAL-APPLICATION-VALIDATION.md`. |
+| Expansión post-MVP | Meta autorizada de 1,000 entidades totales: 164 existentes y 836 nuevas. Inventario maestro completo, 12 shards por dominio, 60 candidatos de reserva, 10 ondas y 70 lotes técnicos B043–B112. Producción de fichas todavía no iniciada. |
 | Publicación | No iniciada; ningún cierre de lote equivale a publicación. |
 
-## Autorización maestra de lotes
+## Autorizaciones maestras de lotes
 
-El Responsable del proyecto autorizó el `2026-07-21` todos los IDs planificados `batch-003` a `batch-042`, conforme a `work/BATCH-AUTHORIZATION-REGISTER.md` y sin alterar su alcance normativo.
+El Responsable del proyecto autorizó el `2026-07-21` los IDs planificados `batch-003` a `batch-042`, conforme a `work/BATCH-AUTHORIZATION-REGISTER.md` y sin alterar su alcance normativo.
 
-La autorización:
+La autorización del MVP:
 
 - reserva los IDs y permite preparar su manifiesto y comenzar producción cuando su puerta de entrada esté satisfecha;
 - no satisface dependencias por adelantado;
-- no selecciona silenciosamente términos, relaciones, fuentes o IDs de contenido;
-- exige que el manifiesto o una instrucción equivalente enumere el alcance exacto antes de redactar;
 - no convierte inventarios en contenido `approved`;
-- no permite autoaceptación ni publicación; `decision-0021` permite a Codex integrar y cerrar automáticamente cada onda solo después de su aceptación expresa y de validaciones conformes;
-- mantiene B033–B042 condicionados al cierre del objetivo recomendado, evidencia de necesidad y máximos vigentes.
+- no permite publicación automática.
 
-## Próxima acción ejecutable
+El Responsable del proyecto autorizó el `2026-07-24` la expansión post-MVP mediante `decision-0024-thousand-entity-expansion` y `docs/11-thousand-entity-expansion-plan.md`.
 
-B031 no inicia: su preflight no encontró hallazgos concretos. Para reactivarlo se requiere un defecto trazable con archivo, regla, evidencia, alcance y rollback. La arquitectura local estática de la aplicación ya está aprobada; sigue preparar el plan técnico y luego implementar sus artefactos candidatos para B032.
+La autorización de expansión:
 
-Dirección UX autorizada el `2026-07-22`: la aplicación local inicia con exploración por dominios y combina biblioteca guiada (búsqueda, comparaciones, escenarios y rutas) con mapa de conocimiento. La entrada principal visual es un mapa/diagrama de dominios; cada nodo está etiquetado y, al seleccionarlo, muestra subdominios, conteos y accesos a formatos relacionados. En móvil se sustituye por lista jerárquica; lista y búsqueda siguen siendo equivalentes para no depender de la percepción espacial. La búsqueda complementa la exploración y no sustituye la taxonomía como entrada principal.
+- reserva `batch-043` a `batch-112`;
+- fija un universo completo de 836 candidatos antes de producir;
+- sustituye la aprobación humana por entidad, lote u onda por revisión independiente y validaciones operativas;
+- permite clasificación, fuentes, aliases, prerrequisitos, sustituciones e integración ordinarias sin escalar al Responsable del proyecto;
+- conserva su intervención para cambios materiales de producto, taxonomía, modelo, audiencia, idioma, meta o publicación;
+- no reabre las 164 entidades existentes salvo colisión, referencia rota o defecto que impida integración.
 
-La taxonomía alcanzó y cerró el objetivo recomendado de F1: 48 subdominios y 12 disciplinas. B006 inicia la producción de entidades ordinarias sin activar B033–B042 ni resolver decisiones pendientes.
+## Próximas acciones ejecutables
+
+B032 conserva su alcance técnico independiente: completar las métricas Core Web Vitals previstas para la aplicación local.
+
+La próxima acción de contenido, después de integrar esta rama, es iniciar `batch-043-expansion-wave-01-01` conforme a:
+
+- `docs/11-thousand-entity-expansion-plan.md`;
+- `work/EXPANSION-PRODUCTION-CONTRACT.md`;
+- `work/EXPANSION-WAVE-REGISTER.md`;
+- `inventories/entity-expansion-master-v2.yaml`;
+- el shard de dominio aplicable.
+
+No se requiere una nueva aprobación humana para iniciar o cerrar B043 cuando sus validaciones y revisión independiente sean conformes.
 
 ## Puertas y bloqueos preservados
 
-- `decision-0012`, `decision-0013`, `decision-0014` y `decision-0017` permanecen `proposed`; `decision-0015` y `decision-0018` son `accepted`.
+- `decision-0012`, `decision-0013`, `decision-0014` y `decision-0017` permanecen pendientes en su alcance original.
 - Un lote que dependa materialmente de cualquiera de ellas detiene solo ese alcance.
 - Las relaciones ordinarias no se inventan ni se persisten mediante una representación física todavía no decidida.
-- Arquitectura, framework, UI, build, despliegue y métricas técnicas finales siguen fuera del alcance actual.
-- B024–B030 requieren entradas aprobadas suficientes; B032 requiere todas las puertas acumuladas; B033–B042 requieren además sus activadores opcionales.
-- B031 no tiene hallazgos correctivos tras preflight: 164 entidades, 12 comparaciones, 4 escenarios y 4 rutas canónicas, todas sin estados `draft` ni `pending`; no introduce contenido por cuota.
+- La expansión no modifica arquitectura, framework, UI, build ni despliegue.
+- B031 no tiene hallazgos correctivos tras preflight: 164 entidades, 12 comparaciones, 4 escenarios y 4 rutas canónicas, todas sin estados `draft` ni `pending`.
+- Las nuevas entidades no cuentan como canónicas hasta completar producción, revisión independiente, integración y cierre técnico.
 
 ## Protocolo de reanudación rápida
 
 1. Leer `AGENTS.md` y este documento completos.
 2. Ejecutar `git status --short --branch` y comprobar el commit actual.
-3. Consultar `docs/10-decision-log.md`, en especial `decision-0020-batch-plan-authorization` y `decision-0021-recommended-master-plan-v2-execution`.
-4. Abrir `work/BATCH-AUTHORIZATION-REGISTER.md` y localizar el lote siguiente cuya puerta esté satisfecha.
-5. Leer completos el manifiesto vigente, inventario, contratos y decisiones aplicables.
-6. No iniciar redacción si faltan el alcance exacto, las dependencias, los IDs reservados o la revisión independiente prevista.
+3. Para el MVP y la aplicación, consultar las decisiones y contratos originales aplicables.
+4. Para la expansión, leer `docs/11-thousand-entity-expansion-plan.md` y `docs/decisions/decision-0024-thousand-entity-expansion.md`.
+5. Abrir `work/EXPANSION-WAVE-REGISTER.md` y localizar el primer lote no cerrado.
+6. Cargar únicamente los candidatos de ese lote desde los shards declarados por `inventories/entity-expansion-master-v2.yaml`.
+7. Aplicar `work/EXPANSION-PRODUCTION-CONTRACT.md`; no solicitar aprobación humana salvo una excepción material.
+8. Mantener producción, revisión e integración como roles distintos y registrar evidencia del cierre.
 
 ## Mantenimiento
 
-Actualizar este documento después de cada transición `integrated`, `closed`, `cancelled`, cambio de decisión o cambio material de próxima acción. Registrar hechos comprobados y referencias estables; no copiar aquí contenido editorial ni convertir este archivo en una autoridad paralela.
+Actualizar este documento después de cada onda completada, cambio de decisión, transición material de la expansión o cambio de próxima acción. Registrar hechos comprobados y referencias estables; no copiar aquí contenido editorial ni convertir este archivo en una autoridad paralela.

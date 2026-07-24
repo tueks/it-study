@@ -1,0 +1,60 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-hardware,Hardware,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,essential,wave-01,batch-048-expansion-wave-01-06
+candidate-processor-core,Processor Core,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,essential,wave-01,batch-048-expansion-wave-01-06
+candidate-register,Register,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,essential,wave-01,batch-048-expansion-wave-01-06
+candidate-instruction,Instruction,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,essential,wave-01,batch-048-expansion-wave-01-06
+candidate-machine-code,Machine Code,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,essential,wave-01,batch-048-expansion-wave-01-06
+candidate-arithmetic-logic-unit,Arithmetic Logic Unit,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,essential,wave-01,batch-048-expansion-wave-01-06
+candidate-control-unit,Control Unit,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,essential,wave-01,batch-048-expansion-wave-01-06
+candidate-system-bus,System Bus,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,essential,wave-01,batch-048-expansion-wave-01-06
+candidate-motherboard,Motherboard,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,essential,wave-01,batch-048-expansion-wave-01-06
+candidate-random-access-memory,Random-Access Memory,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,important,wave-01,batch-048-expansion-wave-01-06
+candidate-cache-memory,Cache Memory,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,important,wave-01,batch-048-expansion-wave-01-06
+candidate-persistent-storage,Persistent Storage,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,important,wave-01,batch-048-expansion-wave-01-06
+candidate-solid-state-drive,Solid-State Drive,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,important,wave-01,batch-049-expansion-wave-01-07
+candidate-graphics-processing-unit,Graphics Processing Unit,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,important,wave-01,batch-049-expansion-wave-01-07
+candidate-computer-hardware-engineer,Computer Hardware Engineer,role,people-capabilities,domain-sistemas-computo-ciberfisicos,subdomain-hardware-arquitectura-computadores,important,wave-01,batch-049-expansion-wave-01-07
+candidate-kernel,Kernel,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,essential,wave-01,batch-049-expansion-wave-01-07
+candidate-user-space,User Space,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,essential,wave-01,batch-049-expansion-wave-01-07
+candidate-kernel-space,Kernel Space,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,essential,wave-01,batch-049-expansion-wave-01-07
+candidate-system-call,System Call,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,essential,wave-01,batch-049-expansion-wave-01-07
+candidate-scheduler,Scheduler,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,essential,wave-01,batch-049-expansion-wave-01-07
+candidate-context-switch,Context Switch,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,essential,wave-01,batch-049-expansion-wave-01-07
+candidate-virtual-memory,Virtual Memory,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,essential,wave-01,batch-049-expansion-wave-01-07
+candidate-memory-paging,Memory Paging,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,essential,wave-01,batch-049-expansion-wave-01-07
+candidate-process-scheduling,Process Scheduling,process,ways-of-working,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,essential,wave-01,batch-049-expansion-wave-01-07
+candidate-inter-process-communication,Inter-Process Communication,process,ways-of-working,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,important,wave-02,batch-050-expansion-wave-02-01
+candidate-mutex,Mutex,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,important,wave-02,batch-050-expansion-wave-02-01
+candidate-semaphore,Semaphore,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,important,wave-02,batch-050-expansion-wave-02-01
+candidate-deadlock,Deadlock,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,important,wave-02,batch-050-expansion-wave-02-01
+candidate-device-driver,Device Driver,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,important,wave-02,batch-050-expansion-wave-02-01
+candidate-interrupt,Interrupt,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-sistemas-operativos,important,wave-02,batch-050-expansion-wave-02-01
+candidate-microcontroller,Microcontroller,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,essential,wave-02,batch-050-expansion-wave-02-01
+candidate-system-on-chip,System-on-Chip,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,essential,wave-02,batch-050-expansion-wave-02-01
+candidate-real-time-operating-system,Real-Time Operating System,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,essential,wave-02,batch-050-expansion-wave-02-01
+candidate-bootloader,Bootloader,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,essential,wave-02,batch-050-expansion-wave-02-01
+candidate-embedded-software,Embedded Software,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,essential,wave-02,batch-050-expansion-wave-02-01
+candidate-hardware-abstraction-layer,Hardware Abstraction Layer,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,essential,wave-02,batch-050-expansion-wave-02-01
+candidate-embedded-systems-engineer,Embedded Systems Engineer,role,people-capabilities,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,essential,wave-02,batch-051-expansion-wave-02-02
+candidate-firmware-engineer,Firmware Engineer,role,people-capabilities,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,essential,wave-02,batch-051-expansion-wave-02-02
+candidate-serial-peripheral-interface,Serial Peripheral Interface,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,essential,wave-02,batch-051-expansion-wave-02-02
+candidate-inter-integrated-circuit,Inter-Integrated Circuit,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,important,wave-02,batch-051-expansion-wave-02-02
+candidate-universal-asynchronous-receiver-transmitter,Universal Asynchronous Receiver-Transmitter,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,important,wave-02,batch-051-expansion-wave-02-02
+candidate-firmware-update,Firmware Update,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,important,wave-02,batch-051-expansion-wave-02-02
+candidate-bare-metal-programming,Bare-Metal Programming,practice,ways-of-working,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,important,wave-02,batch-051-expansion-wave-02-02
+candidate-watchdog-timer,Watchdog Timer,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-embebidos-firmware,important,wave-02,batch-051-expansion-wave-02-02
+candidate-cyber-physical-system,Cyber-Physical System,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,essential,wave-02,batch-051-expansion-wave-02-02
+candidate-sensor,Sensor,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,essential,wave-02,batch-051-expansion-wave-02-02
+candidate-actuator,Actuator,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,essential,wave-02,batch-051-expansion-wave-02-02
+candidate-edge-computing,Edge Computing,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,essential,wave-02,batch-051-expansion-wave-02-02
+candidate-iot-engineer,IoT Engineer,role,people-capabilities,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,essential,wave-02,batch-052-expansion-wave-02-03
+candidate-telemetry,Telemetry,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,essential,wave-02,batch-052-expansion-wave-02-03
+candidate-digital-twin,Digital Twin,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,essential,wave-02,batch-052-expansion-wave-02-03
+candidate-industrial-internet-of-things,Industrial Internet of Things,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,essential,wave-02,batch-052-expansion-wave-02-03
+candidate-robotics,Robotics,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,essential,wave-02,batch-052-expansion-wave-02-03
+candidate-autonomous-system,Autonomous System,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,important,wave-02,batch-052-expansion-wave-02-03
+candidate-robotics-engineer,Robotics Engineer,role,people-capabilities,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,important,wave-02,batch-052-expansion-wave-02-03
+candidate-supervisory-control-and-data-acquisition,Supervisory Control and Data Acquisition,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,important,wave-02,batch-052-expansion-wave-02-03
+candidate-programmable-logic-controller,Programmable Logic Controller,technology,specifications-implementations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,important,wave-02,batch-052-expansion-wave-02-03
+candidate-real-time-system,Real-Time System,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,important,wave-02,batch-052-expansion-wave-02-03
+candidate-machine-to-machine-communication,Machine-to-Machine Communication,concept,ideas-orientations,domain-sistemas-computo-ciberfisicos,subdomain-iot-sistemas-ciberfisicos,important,wave-02,batch-052-expansion-wave-02-03

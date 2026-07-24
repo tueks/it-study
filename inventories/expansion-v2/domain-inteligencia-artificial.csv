@@ -1,0 +1,65 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-ai-system,AI System,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,essential,wave-08,batch-096-expansion-wave-08-05
+candidate-intelligent-agent,Intelligent Agent,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,essential,wave-08,batch-096-expansion-wave-08-05
+candidate-knowledge-representation,Knowledge Representation,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,essential,wave-08,batch-096-expansion-wave-08-05
+candidate-reasoning-system,Reasoning System,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,essential,wave-08,batch-096-expansion-wave-08-05
+candidate-expert-system,Expert System,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,essential,wave-08,batch-096-expansion-wave-08-05
+candidate-search-in-artificial-intelligence,Search in Artificial Intelligence,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,essential,wave-08,batch-096-expansion-wave-08-05
+candidate-heuristic,Heuristic,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,essential,wave-08,batch-096-expansion-wave-08-05
+candidate-planning-in-artificial-intelligence,Planning in Artificial Intelligence,process,ways-of-working,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,essential,wave-08,batch-096-expansion-wave-08-05
+candidate-constraint-satisfaction-problem,Constraint Satisfaction Problem,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,essential,wave-08,batch-096-expansion-wave-08-05
+candidate-knowledge-graph,Knowledge Graph,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,essential,wave-08,batch-096-expansion-wave-08-05
+candidate-natural-language-processing,Natural Language Processing,process,ways-of-working,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,important,wave-08,batch-096-expansion-wave-08-05
+candidate-computer-vision,Computer Vision,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,important,wave-08,batch-097-expansion-wave-08-06
+candidate-speech-recognition,Speech Recognition,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,important,wave-08,batch-097-expansion-wave-08-06
+candidate-recommender-system,Recommender System,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,important,wave-08,batch-097-expansion-wave-08-06
+candidate-ai-researcher,AI Researcher,role,people-capabilities,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,important,wave-08,batch-097-expansion-wave-08-06
+candidate-multi-agent-system,Multi-Agent System,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-fundamentos-sistemas-inteligentes,important,wave-08,batch-097-expansion-wave-08-06
+candidate-dataset,Dataset,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,essential,wave-08,batch-097-expansion-wave-08-06
+candidate-training-data,Training Data,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,essential,wave-08,batch-097-expansion-wave-08-06
+candidate-validation-data,Validation Data,process,ways-of-working,domain-inteligencia-artificial,subdomain-machine-learning,essential,wave-08,batch-097-expansion-wave-08-06
+candidate-test-data,Test Data,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,essential,wave-08,batch-097-expansion-wave-08-06
+candidate-feature,Feature,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,essential,wave-08,batch-097-expansion-wave-08-06
+candidate-label,Label,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,essential,wave-08,batch-097-expansion-wave-08-06
+candidate-supervised-learning,Supervised Learning,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,essential,wave-08,batch-097-expansion-wave-08-06
+candidate-unsupervised-learning,Unsupervised Learning,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,essential,wave-08,batch-098-expansion-wave-08-07
+candidate-reinforcement-learning,Reinforcement Learning,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,essential,wave-08,batch-098-expansion-wave-08-07
+candidate-classification,Classification,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,essential,wave-08,batch-098-expansion-wave-08-07
+candidate-regression,Regression,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,important,wave-08,batch-098-expansion-wave-08-07
+candidate-clustering,Clustering,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,important,wave-08,batch-098-expansion-wave-08-07
+candidate-inference,Inference,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,important,wave-08,batch-098-expansion-wave-08-07
+candidate-overfitting,Overfitting,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,important,wave-08,batch-098-expansion-wave-08-07
+candidate-underfitting,Underfitting,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-machine-learning,important,wave-08,batch-098-expansion-wave-08-07
+candidate-applied-scientist,Applied Scientist,role,people-capabilities,domain-inteligencia-artificial,subdomain-machine-learning,important,wave-08,batch-098-expansion-wave-08-07
+candidate-transformer,Transformer,technology,specifications-implementations,domain-inteligencia-artificial,subdomain-ia-generativa,essential,wave-08,batch-098-expansion-wave-08-07
+candidate-token,Token,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-ia-generativa,essential,wave-08,batch-098-expansion-wave-08-07
+candidate-embedding,Embedding,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-ia-generativa,essential,wave-08,batch-098-expansion-wave-08-07
+candidate-vector-database,Vector Database,technology,specifications-implementations,domain-inteligencia-artificial,subdomain-ia-generativa,essential,wave-09,batch-099-expansion-wave-09-01
+candidate-prompt,Prompt,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-ia-generativa,essential,wave-09,batch-099-expansion-wave-09-01
+candidate-prompt-engineering,Prompt Engineering,practice,ways-of-working,domain-inteligencia-artificial,subdomain-ia-generativa,essential,wave-09,batch-099-expansion-wave-09-01
+candidate-retrieval-augmented-generation,Retrieval-Augmented Generation,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-ia-generativa,essential,wave-09,batch-099-expansion-wave-09-01
+candidate-foundation-model,Foundation Model,technology,specifications-implementations,domain-inteligencia-artificial,subdomain-ia-generativa,essential,wave-09,batch-099-expansion-wave-09-01
+candidate-diffusion-model,Diffusion Model,technology,specifications-implementations,domain-inteligencia-artificial,subdomain-ia-generativa,essential,wave-09,batch-099-expansion-wave-09-01
+candidate-multimodal-model,Multimodal Model,technology,specifications-implementations,domain-inteligencia-artificial,subdomain-ia-generativa,essential,wave-09,batch-099-expansion-wave-09-01
+candidate-ai-agent,AI Agent,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-ia-generativa,important,wave-09,batch-099-expansion-wave-09-01
+candidate-prompt-engineer,Prompt Engineer,role,people-capabilities,domain-inteligencia-artificial,subdomain-ia-generativa,important,wave-09,batch-099-expansion-wave-09-01
+candidate-function-calling,Function Calling,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-ia-generativa,important,wave-09,batch-099-expansion-wave-09-01
+candidate-hallucination,Hallucination,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-ia-generativa,important,wave-09,batch-099-expansion-wave-09-01
+candidate-context-window,Context Window,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-ia-generativa,important,wave-09,batch-099-expansion-wave-09-01
+candidate-fine-tuning,Fine-Tuning,practice,ways-of-working,domain-inteligencia-artificial,subdomain-ia-generativa,important,wave-09,batch-100-expansion-wave-09-02
+candidate-machine-learning-engineer,Machine Learning Engineer,role,people-capabilities,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,essential,wave-09,batch-100-expansion-wave-09-02
+candidate-data-scientist,Data Scientist,role,people-capabilities,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,essential,wave-09,batch-100-expansion-wave-09-02
+candidate-model-deployment,Model Deployment,model,ideas-orientations,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,essential,wave-09,batch-100-expansion-wave-09-02
+candidate-model-serving,Model Serving,model,ideas-orientations,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,essential,wave-09,batch-100-expansion-wave-09-02
+candidate-model-registry,Model Registry,artifact,results-measurement,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,essential,wave-09,batch-100-expansion-wave-09-02
+candidate-model-monitoring,Model Monitoring,model,ideas-orientations,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,essential,wave-09,batch-100-expansion-wave-09-02
+candidate-model-drift,Model Drift,model,ideas-orientations,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,essential,wave-09,batch-100-expansion-wave-09-02
+candidate-mlops-engineer,MLOps Engineer,role,people-capabilities,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,essential,wave-09,batch-100-expansion-wave-09-02
+candidate-precision,Precision,metric,results-measurement,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,essential,wave-09,batch-100-expansion-wave-09-02
+candidate-recall,Recall,metric,results-measurement,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,essential,wave-09,batch-100-expansion-wave-09-02
+candidate-f1-score,F1 Score,metric,results-measurement,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,important,wave-09,batch-100-expansion-wave-09-02
+candidate-confusion-matrix,Confusion Matrix,model,ideas-orientations,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,important,wave-09,batch-101-expansion-wave-09-03
+candidate-explainable-ai,Explainable AI,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,important,wave-09,batch-101-expansion-wave-09-03
+candidate-responsible-ai,Responsible AI,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,important,wave-09,batch-101-expansion-wave-09-03
+candidate-ai-fairness,AI Fairness,concept,ideas-orientations,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,important,wave-09,batch-101-expansion-wave-09-03
+candidate-ai-risk-management,AI Risk Management,process,ways-of-working,domain-inteligencia-artificial,subdomain-ingenieria-evaluacion-gobierno-ia,important,wave-09,batch-101-expansion-wave-09-03

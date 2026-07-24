@@ -1,0 +1,91 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-frontend,Frontend,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-052-expansion-wave-02-03
+candidate-web-application,Web Application,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-website,Website,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-web-browser,Web Browser,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-document-object-model,Document Object Model,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-html,HTML,standard,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-css,CSS,standard,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-javascript,JavaScript,standard,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-typescript,TypeScript,standard,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-responsive-web-design,Responsive Web Design,practice,ways-of-working,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-single-page-application,Single-Page Application,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-multi-page-application,Multi-Page Application,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-server-side-rendering,Server-Side Rendering,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-053-expansion-wave-02-04
+candidate-static-site-generation,Static Site Generation,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,essential,wave-02,batch-054-expansion-wave-02-05
+candidate-progressive-web-app,Progressive Web App,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,important,wave-02,batch-054-expansion-wave-02-05
+candidate-web-component,Web Component,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,important,wave-02,batch-054-expansion-wave-02-05
+candidate-state-management,State Management,process,ways-of-working,domain-desarrollo-software,subdomain-desarrollo-web-frontend,important,wave-02,batch-054-expansion-wave-02-05
+candidate-client-side-routing,Client-Side Routing,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,important,wave-02,batch-054-expansion-wave-02-05
+candidate-web-developer,Web Developer,role,people-capabilities,domain-desarrollo-software,subdomain-desarrollo-web-frontend,important,wave-02,batch-054-expansion-wave-02-05
+candidate-frontend-architect,Frontend Architect,role,people-capabilities,domain-desarrollo-software,subdomain-desarrollo-web-frontend,important,wave-02,batch-054-expansion-wave-02-05
+candidate-cross-browser-compatibility,Cross-Browser Compatibility,practice,ways-of-working,domain-desarrollo-software,subdomain-desarrollo-web-frontend,important,wave-02,batch-054-expansion-wave-02-05
+candidate-frontend-framework,Frontend Framework,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-web-frontend,important,wave-02,batch-054-expansion-wave-02-05
+candidate-design-token,Design Token,practice,ways-of-working,domain-desarrollo-software,subdomain-desarrollo-web-frontend,specialized,wave-02,batch-054-expansion-wave-02-05
+candidate-backend,Backend,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-054-expansion-wave-02-05
+candidate-server,Server,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-054-expansion-wave-02-05
+candidate-application-server,Application Server,technology,specifications-implementations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-web-server,Web Server,technology,specifications-implementations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-service,Service,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-microservice,Microservice,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-monolithic-application,Monolithic Application,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-modular-monolith,Modular Monolith,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-client-server-architecture,Client–Server Architecture,architectural-style,solutions-structures,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-business-logic,Business Logic,model,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-domain-model,Domain Model,model,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-api-developer,API Developer,role,people-capabilities,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-controller,Controller,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-service-layer,Service Layer,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,essential,wave-02,batch-055-expansion-wave-02-06
+candidate-data-access-layer,Data Access Layer,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,important,wave-02,batch-056-expansion-wave-02-07
+candidate-object-relational-mapping,Object–Relational Mapping,technology,specifications-implementations,domain-desarrollo-software,subdomain-backend-servicios,important,wave-02,batch-056-expansion-wave-02-07
+candidate-session,Session,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,important,wave-02,batch-056-expansion-wave-02-07
+candidate-cookie,Cookie,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,important,wave-02,batch-056-expansion-wave-02-07
+candidate-caching,Caching,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,important,wave-02,batch-056-expansion-wave-02-07
+candidate-background-job,Background Job,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,important,wave-02,batch-056-expansion-wave-02-07
+candidate-task-queue,Task Queue,technology,specifications-implementations,domain-desarrollo-software,subdomain-backend-servicios,important,wave-02,batch-056-expansion-wave-02-07
+candidate-connection-pool,Connection Pool,technology,specifications-implementations,domain-desarrollo-software,subdomain-backend-servicios,important,wave-02,batch-056-expansion-wave-02-07
+candidate-rate-limiting,Rate Limiting,concept,ideas-orientations,domain-desarrollo-software,subdomain-backend-servicios,specialized,wave-02,batch-056-expansion-wave-02-07
+candidate-mobile-application,Mobile Application,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-02,batch-056-expansion-wave-02-07
+candidate-native-application,Native Application,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-02,batch-056-expansion-wave-02-07
+candidate-cross-platform-application,Cross-Platform Application,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-02,batch-056-expansion-wave-02-07
+candidate-hybrid-application,Hybrid Application,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-03,batch-057-expansion-wave-03-01
+candidate-mobile-sdk,Mobile SDK,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-03,batch-057-expansion-wave-03-01
+candidate-application-package,Application Package,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-03,batch-057-expansion-wave-03-01
+candidate-mobile-developer,Mobile Developer,role,people-capabilities,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-03,batch-057-expansion-wave-03-01
+candidate-push-notification,Push Notification,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-03,batch-057-expansion-wave-03-01
+candidate-deep-link,Deep Link,technology,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-03,batch-057-expansion-wave-03-01
+candidate-mobile-lifecycle,Mobile Lifecycle,process,ways-of-working,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-03,batch-057-expansion-wave-03-01
+candidate-mobile-navigation,Mobile Navigation,practice,ways-of-working,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-03,batch-057-expansion-wave-03-01
+candidate-offline-first-application,Offline-First Application,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-03,batch-057-expansion-wave-03-01
+candidate-responsive-layout,Responsive Layout,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-03,batch-057-expansion-wave-03-01
+candidate-touch-interface,Touch Interface,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-movil,essential,wave-03,batch-057-expansion-wave-03-01
+candidate-device-capability,Device Capability,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-movil,important,wave-03,batch-057-expansion-wave-03-01
+candidate-mobile-permission,Mobile Permission,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-movil,important,wave-03,batch-058-expansion-wave-03-02
+candidate-application-sandbox,Application Sandbox,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-movil,important,wave-03,batch-058-expansion-wave-03-02
+candidate-mobile-backend-as-a-service,Mobile Backend as a Service,platform,specifications-implementations,domain-desarrollo-software,subdomain-desarrollo-movil,important,wave-03,batch-058-expansion-wave-03-02
+candidate-progressive-enhancement,Progressive Enhancement,concept,ideas-orientations,domain-desarrollo-software,subdomain-desarrollo-movil,important,wave-03,batch-058-expansion-wave-03-02
+candidate-adaptive-design,Adaptive Design,practice,ways-of-working,domain-desarrollo-software,subdomain-desarrollo-movil,important,wave-03,batch-058-expansion-wave-03-02
+candidate-cross-platform-developer,Cross-Platform Developer,role,people-capabilities,domain-desarrollo-software,subdomain-desarrollo-movil,important,wave-03,batch-058-expansion-wave-03-02
+candidate-mobile-release-engineer,Mobile Release Engineer,role,people-capabilities,domain-desarrollo-software,subdomain-desarrollo-movil,specialized,wave-03,batch-058-expansion-wave-03-02
+candidate-source-repository,Source Repository,technology,specifications-implementations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-058-expansion-wave-03-02
+candidate-commit,Commit,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-058-expansion-wave-03-02
+candidate-branch,Branch,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-058-expansion-wave-03-02
+candidate-merge,Merge,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-058-expansion-wave-03-02
+candidate-pull-request,Pull Request,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-058-expansion-wave-03-02
+candidate-codebase,Codebase,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-059-expansion-wave-03-03
+candidate-module,Module,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-059-expansion-wave-03-03
+candidate-package,Package,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-059-expansion-wave-03-03
+candidate-library,Library,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-059-expansion-wave-03-03
+candidate-framework,Framework,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-059-expansion-wave-03-03
+candidate-software-development-kit,Software Development Kit,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-059-expansion-wave-03-03
+candidate-dependency,Dependency,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-059-expansion-wave-03-03
+candidate-dependency-management,Dependency Management,process,ways-of-working,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-059-expansion-wave-03-03
+candidate-build,Build,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,essential,wave-03,batch-059-expansion-wave-03-03
+candidate-build-tool,Build Tool,technology,specifications-implementations,domain-desarrollo-software,subdomain-practicas-implementacion,important,wave-03,batch-059-expansion-wave-03-03
+candidate-configuration,Configuration,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,important,wave-03,batch-059-expansion-wave-03-03
+candidate-developer-advocate,Developer Advocate,role,people-capabilities,domain-desarrollo-software,subdomain-practicas-implementacion,important,wave-03,batch-059-expansion-wave-03-03
+candidate-refactoring,Refactoring,practice,ways-of-working,domain-desarrollo-software,subdomain-practicas-implementacion,important,wave-03,batch-060-expansion-wave-03-04
+candidate-error-handling,Error Handling,process,ways-of-working,domain-desarrollo-software,subdomain-practicas-implementacion,important,wave-03,batch-060-expansion-wave-03-04
+candidate-exception,Exception,concept,ideas-orientations,domain-desarrollo-software,subdomain-practicas-implementacion,important,wave-03,batch-060-expansion-wave-03-04
+candidate-logging,Logging,practice,ways-of-working,domain-desarrollo-software,subdomain-practicas-implementacion,important,wave-03,batch-060-expansion-wave-03-04
+candidate-full-stack-developer,Full-Stack Developer,role,people-capabilities,domain-desarrollo-software,subdomain-practicas-implementacion,specialized,wave-03,batch-060-expansion-wave-03-04

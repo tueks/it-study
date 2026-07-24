@@ -1,0 +1,43 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-product-management,Product Management,process,ways-of-working,domain-producto-experiencia,subdomain-producto-digital,essential,wave-09,batch-105-expansion-wave-09-07
+candidate-product-owner,Product Owner,role,people-capabilities,domain-producto-experiencia,subdomain-producto-digital,essential,wave-09,batch-105-expansion-wave-09-07
+candidate-product-strategy,Product Strategy,concept,ideas-orientations,domain-producto-experiencia,subdomain-producto-digital,essential,wave-09,batch-105-expansion-wave-09-07
+candidate-product-roadmap,Product Roadmap,artifact,results-measurement,domain-producto-experiencia,subdomain-producto-digital,essential,wave-10,batch-106-expansion-wave-10-01
+candidate-product-discovery,Product Discovery,concept,ideas-orientations,domain-producto-experiencia,subdomain-producto-digital,essential,wave-10,batch-106-expansion-wave-10-01
+candidate-product-delivery,Product Delivery,process,ways-of-working,domain-producto-experiencia,subdomain-producto-digital,essential,wave-10,batch-106-expansion-wave-10-01
+candidate-minimum-viable-product,Minimum Viable Product,concept,ideas-orientations,domain-producto-experiencia,subdomain-producto-digital,essential,wave-10,batch-106-expansion-wave-10-01
+candidate-product-market-fit,Product–Market Fit,concept,ideas-orientations,domain-producto-experiencia,subdomain-producto-digital,important,wave-10,batch-106-expansion-wave-10-01
+candidate-outcome,Outcome,concept,ideas-orientations,domain-producto-experiencia,subdomain-producto-digital,important,wave-10,batch-106-expansion-wave-10-01
+candidate-product-operations-manager,Product Operations Manager,role,people-capabilities,domain-producto-experiencia,subdomain-producto-digital,important,wave-10,batch-106-expansion-wave-10-01
+candidate-product-metric,Product Metric,metric,results-measurement,domain-producto-experiencia,subdomain-producto-digital,important,wave-10,batch-106-expansion-wave-10-01
+candidate-user-experience,User Experience,concept,ideas-orientations,domain-producto-experiencia,subdomain-investigacion-ux,essential,wave-10,batch-106-expansion-wave-10-01
+candidate-user-interface,User Interface,concept,ideas-orientations,domain-producto-experiencia,subdomain-investigacion-ux,essential,wave-10,batch-106-expansion-wave-10-01
+candidate-ux-researcher,UX Researcher,role,people-capabilities,domain-producto-experiencia,subdomain-investigacion-ux,essential,wave-10,batch-106-expansion-wave-10-01
+candidate-product-designer,Product Designer,role,people-capabilities,domain-producto-experiencia,subdomain-investigacion-ux,essential,wave-10,batch-106-expansion-wave-10-01
+candidate-information-architecture,Information Architecture,architectural-style,solutions-structures,domain-producto-experiencia,subdomain-investigacion-ux,essential,wave-10,batch-107-expansion-wave-10-02
+candidate-service-designer,Service Designer,role,people-capabilities,domain-producto-experiencia,subdomain-investigacion-ux,essential,wave-10,batch-107-expansion-wave-10-02
+candidate-persona,Persona,concept,ideas-orientations,domain-producto-experiencia,subdomain-investigacion-ux,essential,wave-10,batch-107-expansion-wave-10-02
+candidate-user-journey,User Journey,concept,ideas-orientations,domain-producto-experiencia,subdomain-investigacion-ux,important,wave-10,batch-107-expansion-wave-10-02
+candidate-user-flow,User Flow,concept,ideas-orientations,domain-producto-experiencia,subdomain-investigacion-ux,important,wave-10,batch-107-expansion-wave-10-02
+candidate-usability-testing,Usability Testing,process,ways-of-working,domain-producto-experiencia,subdomain-investigacion-ux,important,wave-10,batch-107-expansion-wave-10-02
+candidate-prototype,Prototype,concept,ideas-orientations,domain-producto-experiencia,subdomain-investigacion-ux,important,wave-10,batch-107-expansion-wave-10-02
+candidate-accessibility,Accessibility,concept,ideas-orientations,domain-producto-experiencia,subdomain-accesibilidad-diseno-inclusivo,essential,wave-10,batch-107-expansion-wave-10-02
+candidate-assistive-technology,Assistive Technology,concept,ideas-orientations,domain-producto-experiencia,subdomain-accesibilidad-diseno-inclusivo,essential,wave-10,batch-107-expansion-wave-10-02
+candidate-screen-reader,Screen Reader,concept,ideas-orientations,domain-producto-experiencia,subdomain-accesibilidad-diseno-inclusivo,essential,wave-10,batch-107-expansion-wave-10-02
+candidate-keyboard-navigation,Keyboard Navigation,practice,ways-of-working,domain-producto-experiencia,subdomain-accesibilidad-diseno-inclusivo,essential,wave-10,batch-107-expansion-wave-10-02
+candidate-focus-management,Focus Management,process,ways-of-working,domain-producto-experiencia,subdomain-accesibilidad-diseno-inclusivo,essential,wave-10,batch-107-expansion-wave-10-02
+candidate-color-contrast,Color Contrast,concept,ideas-orientations,domain-producto-experiencia,subdomain-accesibilidad-diseno-inclusivo,essential,wave-10,batch-108-expansion-wave-10-03
+candidate-alternative-text,Alternative Text,concept,ideas-orientations,domain-producto-experiencia,subdomain-accesibilidad-diseno-inclusivo,important,wave-10,batch-108-expansion-wave-10-03
+candidate-accessibility-specialist,Accessibility Specialist,role,people-capabilities,domain-producto-experiencia,subdomain-accesibilidad-diseno-inclusivo,important,wave-10,batch-108-expansion-wave-10-03
+candidate-semantic-html,Semantic HTML,concept,ideas-orientations,domain-producto-experiencia,subdomain-accesibilidad-diseno-inclusivo,important,wave-10,batch-108-expansion-wave-10-03
+candidate-universal-design,Universal Design,practice,ways-of-working,domain-producto-experiencia,subdomain-accesibilidad-diseno-inclusivo,important,wave-10,batch-108-expansion-wave-10-03
+candidate-business-analysis,Business Analysis,process,ways-of-working,domain-producto-experiencia,subdomain-analisis-negocio,essential,wave-10,batch-108-expansion-wave-10-03
+candidate-stakeholder-analysis,Stakeholder Analysis,process,ways-of-working,domain-producto-experiencia,subdomain-analisis-negocio,essential,wave-10,batch-108-expansion-wave-10-03
+candidate-process-modeling,Process Modeling,model,ideas-orientations,domain-producto-experiencia,subdomain-analisis-negocio,essential,wave-10,batch-108-expansion-wave-10-03
+candidate-business-process,Business Process,process,ways-of-working,domain-producto-experiencia,subdomain-analisis-negocio,essential,wave-10,batch-108-expansion-wave-10-03
+candidate-gap-analysis,Gap Analysis,process,ways-of-working,domain-producto-experiencia,subdomain-analisis-negocio,essential,wave-10,batch-108-expansion-wave-10-03
+candidate-swot-analysis,SWOT Analysis,process,ways-of-working,domain-producto-experiencia,subdomain-analisis-negocio,essential,wave-10,batch-108-expansion-wave-10-03
+candidate-value-proposition,Value Proposition,concept,ideas-orientations,domain-producto-experiencia,subdomain-analisis-negocio,important,wave-10,batch-108-expansion-wave-10-03
+candidate-business-case,Business Case,artifact,results-measurement,domain-producto-experiencia,subdomain-analisis-negocio,important,wave-10,batch-109-expansion-wave-10-04
+candidate-cost-benefit-analysis,Cost–Benefit Analysis,process,ways-of-working,domain-producto-experiencia,subdomain-analisis-negocio,important,wave-10,batch-109-expansion-wave-10-04
+candidate-business-process-analyst,Business Process Analyst,role,people-capabilities,domain-producto-experiencia,subdomain-analisis-negocio,important,wave-10,batch-109-expansion-wave-10-04

@@ -1,0 +1,116 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-software-engineering,Software Engineering,process,ways-of-working,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-060-expansion-wave-03-04
+candidate-requirement,Requirement,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-060-expansion-wave-03-04
+candidate-functional-requirement,Functional Requirement,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-060-expansion-wave-03-04
+candidate-non-functional-requirement,Non-Functional Requirement,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-060-expansion-wave-03-04
+candidate-business-requirement,Business Requirement,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-060-expansion-wave-03-04
+candidate-user-requirement,User Requirement,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-060-expansion-wave-03-04
+candidate-system-requirement,System Requirement,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-060-expansion-wave-03-04
+candidate-acceptance-criterion,Acceptance Criterion,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-061-expansion-wave-03-05
+candidate-requirement-traceability,Requirement Traceability,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-061-expansion-wave-03-05
+candidate-requirements-management,Requirements Management,process,ways-of-working,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-061-expansion-wave-03-05
+candidate-requirements-validation,Requirements Validation,process,ways-of-working,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-061-expansion-wave-03-05
+candidate-requirements-verification,Requirements Verification,process,ways-of-working,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-061-expansion-wave-03-05
+candidate-use-case,Use Case,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-061-expansion-wave-03-05
+candidate-requirements-engineer,Requirements Engineer,role,people-capabilities,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-061-expansion-wave-03-05
+candidate-user-scenario,User Scenario,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-061-expansion-wave-03-05
+candidate-stakeholder,Stakeholder,role,people-capabilities,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-061-expansion-wave-03-05
+candidate-scope,Scope,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-061-expansion-wave-03-05
+candidate-constraint,Constraint,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,essential,wave-03,batch-061-expansion-wave-03-05
+candidate-assumption,Assumption,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,important,wave-03,batch-061-expansion-wave-03-05
+candidate-business-rule,Business Rule,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,important,wave-03,batch-062-expansion-wave-03-06
+candidate-requirements-baseline,Requirements Baseline,artifact,results-measurement,domain-ingenieria-software,subdomain-ingenieria-requisitos,important,wave-03,batch-062-expansion-wave-03-06
+candidate-change-request,Change Request,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,important,wave-03,batch-062-expansion-wave-03-06
+candidate-traceability-matrix,Traceability Matrix,artifact,results-measurement,domain-ingenieria-software,subdomain-ingenieria-requisitos,important,wave-03,batch-062-expansion-wave-03-06
+candidate-specification,Specification,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,important,wave-03,batch-062-expansion-wave-03-06
+candidate-requirement-prioritization,Requirement Prioritization,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,important,wave-03,batch-062-expansion-wave-03-06
+candidate-systems-analyst,Systems Analyst,role,people-capabilities,domain-ingenieria-software,subdomain-ingenieria-requisitos,important,wave-03,batch-062-expansion-wave-03-06
+candidate-definition-of-ready,Definition of Ready,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,important,wave-03,batch-062-expansion-wave-03-06
+candidate-definition-of-done,Definition of Done,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,important,wave-03,batch-062-expansion-wave-03-06
+candidate-backlog-refinement,Backlog Refinement,concept,ideas-orientations,domain-ingenieria-software,subdomain-ingenieria-requisitos,specialized,wave-03,batch-062-expansion-wave-03-06
+candidate-software-architecture,Software Architecture,concept,ideas-orientations,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-062-expansion-wave-03-06
+candidate-solution-architecture,Solution Architecture,concept,ideas-orientations,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-062-expansion-wave-03-06
+candidate-application-architecture,Application Architecture,concept,ideas-orientations,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-system-architecture,System Architecture,concept,ideas-orientations,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-architectural-style,Architectural Style,concept,ideas-orientations,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-architecture-pattern,Architecture Pattern,pattern,solutions-structures,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-architecture-principle,Architecture Principle,principle,ideas-orientations,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-architectural-decision,Architectural Decision,concept,ideas-orientations,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-architectural-constraint,Architectural Constraint,concept,ideas-orientations,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-architectural-trade-off,Architectural Trade-off,concept,ideas-orientations,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-architecture-view,Architecture View,artifact,results-measurement,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-architecture-viewpoint,Architecture Viewpoint,artifact,results-measurement,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-reference-architecture,Reference Architecture,artifact,results-measurement,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-target-architecture,Target Architecture,artifact,results-measurement,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-03,batch-063-expansion-wave-03-07
+candidate-current-state-architecture,Current-State Architecture,artifact,results-measurement,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-04,batch-064-expansion-wave-04-01
+candidate-architecture-roadmap,Architecture Roadmap,artifact,results-measurement,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-04,batch-064-expansion-wave-04-01
+candidate-security-architect,Security Architect,role,people-capabilities,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-04,batch-064-expansion-wave-04-01
+candidate-solution-architect,Solution Architect,role,people-capabilities,domain-ingenieria-software,subdomain-diseno-arquitectura-software,essential,wave-04,batch-064-expansion-wave-04-01
+candidate-application-architect,Application Architect,role,people-capabilities,domain-ingenieria-software,subdomain-diseno-arquitectura-software,important,wave-04,batch-064-expansion-wave-04-01
+candidate-software-design,Software Design,practice,ways-of-working,domain-ingenieria-software,subdomain-diseno-arquitectura-software,important,wave-04,batch-064-expansion-wave-04-01
+candidate-design-pattern,Design Pattern,pattern,solutions-structures,domain-ingenieria-software,subdomain-diseno-arquitectura-software,important,wave-04,batch-064-expansion-wave-04-01
+candidate-anti-pattern,Anti-Pattern,pattern,solutions-structures,domain-ingenieria-software,subdomain-diseno-arquitectura-software,important,wave-04,batch-064-expansion-wave-04-01
+candidate-domain-driven-design,Domain-Driven Design,practice,ways-of-working,domain-ingenieria-software,subdomain-diseno-arquitectura-software,important,wave-04,batch-064-expansion-wave-04-01
+candidate-clean-architecture,Clean Architecture,architectural-style,solutions-structures,domain-ingenieria-software,subdomain-diseno-arquitectura-software,important,wave-04,batch-064-expansion-wave-04-01
+candidate-onion-architecture,Onion Architecture,architectural-style,solutions-structures,domain-ingenieria-software,subdomain-diseno-arquitectura-software,important,wave-04,batch-064-expansion-wave-04-01
+candidate-modular-architecture,Modular Architecture,architectural-style,solutions-structures,domain-ingenieria-software,subdomain-diseno-arquitectura-software,important,wave-04,batch-064-expansion-wave-04-01
+candidate-service-oriented-architecture,Service-Oriented Architecture,architectural-style,solutions-structures,domain-ingenieria-software,subdomain-diseno-arquitectura-software,important,wave-04,batch-065-expansion-wave-04-02
+candidate-ports-and-adapters,Ports and Adapters,pattern,solutions-structures,domain-ingenieria-software,subdomain-diseno-arquitectura-software,important,wave-04,batch-065-expansion-wave-04-02
+candidate-c4-model,C4 Model,standard,specifications-implementations,domain-ingenieria-software,subdomain-diseno-arquitectura-software,specialized,wave-04,batch-065-expansion-wave-04-02
+candidate-quality-assurance,Quality Assurance,concept,ideas-orientations,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-065-expansion-wave-04-02
+candidate-software-quality,Software Quality,concept,ideas-orientations,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-065-expansion-wave-04-02
+candidate-software-testing,Software Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-065-expansion-wave-04-02
+candidate-test-case,Test Case,artifact,results-measurement,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-065-expansion-wave-04-02
+candidate-test-plan,Test Plan,artifact,results-measurement,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-065-expansion-wave-04-02
+candidate-test-suite,Test Suite,artifact,results-measurement,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-065-expansion-wave-04-02
+candidate-test-coverage,Test Coverage,metric,results-measurement,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-065-expansion-wave-04-02
+candidate-unit-testing,Unit Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-065-expansion-wave-04-02
+candidate-integration-testing,Integration Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-065-expansion-wave-04-02
+candidate-system-testing,System Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-066-expansion-wave-04-03
+candidate-end-to-end-testing,End-to-End Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-066-expansion-wave-04-03
+candidate-acceptance-testing,Acceptance Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-066-expansion-wave-04-03
+candidate-regression-testing,Regression Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-066-expansion-wave-04-03
+candidate-test-engineer,Test Engineer,role,people-capabilities,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-066-expansion-wave-04-03
+candidate-qa-engineer,QA Engineer,role,people-capabilities,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-066-expansion-wave-04-03
+candidate-exploratory-testing,Exploratory Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-066-expansion-wave-04-03
+candidate-performance-testing,Performance Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-066-expansion-wave-04-03
+candidate-load-testing,Load Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,essential,wave-04,batch-066-expansion-wave-04-03
+candidate-stress-testing,Stress Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,important,wave-04,batch-066-expansion-wave-04-03
+candidate-security-testing,Security Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,important,wave-04,batch-066-expansion-wave-04-03
+candidate-test-automation-engineer,Test Automation Engineer,role,people-capabilities,domain-ingenieria-software,subdomain-calidad-pruebas,important,wave-04,batch-066-expansion-wave-04-03
+candidate-accessibility-testing,Accessibility Testing,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,important,wave-04,batch-067-expansion-wave-04-04
+candidate-static-analysis,Static Analysis,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,important,wave-04,batch-067-expansion-wave-04-04
+candidate-dynamic-analysis,Dynamic Analysis,process,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,important,wave-04,batch-067-expansion-wave-04-04
+candidate-test-automation,Test Automation,practice,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,important,wave-04,batch-067-expansion-wave-04-04
+candidate-test-double,Test Double,pattern,solutions-structures,domain-ingenieria-software,subdomain-calidad-pruebas,important,wave-04,batch-067-expansion-wave-04-04
+candidate-mock-object,Mock Object,concept,ideas-orientations,domain-ingenieria-software,subdomain-calidad-pruebas,important,wave-04,batch-067-expansion-wave-04-04
+candidate-test-driven-development,Test-Driven Development,practice,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,important,wave-04,batch-067-expansion-wave-04-04
+candidate-behavior-driven-development,Behavior-Driven Development,practice,ways-of-working,domain-ingenieria-software,subdomain-calidad-pruebas,specialized,wave-04,batch-067-expansion-wave-04-04
+candidate-software-development-life-cycle,Software Development Life Cycle,concept,ideas-orientations,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-067-expansion-wave-04-04
+candidate-software-maintenance,Software Maintenance,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-067-expansion-wave-04-04
+candidate-software-evolution,Software Evolution,concept,ideas-orientations,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-067-expansion-wave-04-04
+candidate-release-management,Release Management,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-067-expansion-wave-04-04
+candidate-deployment,Deployment,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-continuous-delivery,Continuous Delivery,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-continuous-deployment,Continuous Deployment,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-configuration-management,Configuration Management,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-change-management-in-software,Change Management in Software,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-versioning,Versioning,concept,ideas-orientations,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-semantic-versioning,Semantic Versioning,standard,specifications-implementations,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-backward-compatibility,Backward Compatibility,practice,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-forward-compatibility,Forward Compatibility,practice,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-deprecation,Deprecation,concept,ideas-orientations,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-migration,Migration,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-legacy-system,Legacy System,concept,ideas-orientations,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-068-expansion-wave-04-05
+candidate-technical-modernization,Technical Modernization,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,essential,wave-04,batch-069-expansion-wave-04-06
+candidate-reengineering,Reengineering,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,important,wave-04,batch-069-expansion-wave-04-06
+candidate-reverse-engineering,Reverse Engineering,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,important,wave-04,batch-069-expansion-wave-04-06
+candidate-software-documentation,Software Documentation,concept,ideas-orientations,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,important,wave-04,batch-069-expansion-wave-04-06
+candidate-release-engineer,Release Engineer,role,people-capabilities,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,important,wave-04,batch-069-expansion-wave-04-06
+candidate-software-lifecycle-management,Software Lifecycle Management,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,important,wave-04,batch-069-expansion-wave-04-06
+candidate-build-engineer,Build Engineer,role,people-capabilities,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,important,wave-04,batch-069-expansion-wave-04-06
+candidate-root-cause-analysis,Root Cause Analysis,process,ways-of-working,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,important,wave-04,batch-069-expansion-wave-04-06
+candidate-postmortem,Postmortem,concept,ideas-orientations,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,important,wave-04,batch-069-expansion-wave-04-06
+candidate-feature-flag,Feature Flag,pattern,solutions-structures,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,important,wave-04,batch-069-expansion-wave-04-06
+candidate-canary-release,Canary Release,pattern,solutions-structures,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,important,wave-04,batch-069-expansion-wave-04-06
+candidate-blue-green-deployment,Blue–Green Deployment,pattern,solutions-structures,domain-ingenieria-software,subdomain-ciclo-vida-evolucion,specialized,wave-04,batch-069-expansion-wave-04-06

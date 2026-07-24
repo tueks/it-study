@@ -1,0 +1,86 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-cybersecurity,Cybersecurity,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-082-expansion-wave-06-05
+candidate-information-security,Information Security,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-082-expansion-wave-06-05
+candidate-security-architecture,Security Architecture,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-082-expansion-wave-06-05
+candidate-security-control,Security Control,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-082-expansion-wave-06-05
+candidate-security-policy,Security Policy,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-082-expansion-wave-06-05
+candidate-security-standard,Security Standard,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-082-expansion-wave-06-05
+candidate-asset,Asset,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-082-expansion-wave-06-05
+candidate-attack,Attack,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-082-expansion-wave-06-05
+candidate-exploit,Exploit,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-083-expansion-wave-06-06
+candidate-threat-actor,Threat Actor,role,people-capabilities,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-083-expansion-wave-06-06
+candidate-attack-vector,Attack Vector,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-083-expansion-wave-06-06
+candidate-attack-surface,Attack Surface,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-083-expansion-wave-06-06
+candidate-defense-in-depth,Defense in Depth,principle,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-083-expansion-wave-06-06
+candidate-security-engineer,Security Engineer,role,people-capabilities,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,essential,wave-06,batch-083-expansion-wave-06-06
+candidate-trust-boundary,Trust Boundary,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,important,wave-06,batch-083-expansion-wave-06-06
+candidate-security-domain,Security Domain,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,important,wave-06,batch-083-expansion-wave-06-06
+candidate-secure-by-design,Secure by Design,principle,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,important,wave-06,batch-083-expansion-wave-06-06
+candidate-secure-by-default,Secure by Default,principle,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,important,wave-06,batch-083-expansion-wave-06-06
+candidate-risk-assessment,Risk Assessment,process,ways-of-working,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,important,wave-06,batch-083-expansion-wave-06-06
+candidate-security-requirement,Security Requirement,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,important,wave-06,batch-083-expansion-wave-06-06
+candidate-security-posture,Security Posture,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,important,wave-06,batch-084-expansion-wave-06-07
+candidate-security-model,Security Model,model,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-fundamentos-arquitectura-seguridad,specialized,wave-06,batch-084-expansion-wave-06-07
+candidate-identity-and-access-management,Identity and Access Management,process,ways-of-working,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-06,batch-084-expansion-wave-06-07
+candidate-digital-identity,Digital Identity,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-06,batch-084-expansion-wave-06-07
+candidate-authentication,Authentication,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-06,batch-084-expansion-wave-06-07
+candidate-authorization,Authorization,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-06,batch-084-expansion-wave-06-07
+candidate-credential,Credential,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-06,batch-084-expansion-wave-06-07
+candidate-password,Password,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-06,batch-084-expansion-wave-06-07
+candidate-passwordless-authentication,Passwordless Authentication,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-06,batch-084-expansion-wave-06-07
+candidate-multi-factor-authentication,Multi-Factor Authentication,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-06,batch-084-expansion-wave-06-07
+candidate-single-sign-on,Single Sign-On,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-06,batch-084-expansion-wave-06-07
+candidate-federated-identity,Federated Identity,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-06,batch-084-expansion-wave-06-07
+candidate-identity-provider,Identity Provider,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-07,batch-085-expansion-wave-07-01
+candidate-service-provider,Service Provider,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-07,batch-085-expansion-wave-07-01
+candidate-access-control,Access Control,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,essential,wave-07,batch-085-expansion-wave-07-01
+candidate-role-based-access-control,Role-Based Access Control,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,important,wave-07,batch-085-expansion-wave-07-01
+candidate-attribute-based-access-control,Attribute-Based Access Control,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,important,wave-07,batch-085-expansion-wave-07-01
+candidate-policy-based-access-control,Policy-Based Access Control,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,important,wave-07,batch-085-expansion-wave-07-01
+candidate-privileged-access-management,Privileged Access Management,process,ways-of-working,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,important,wave-07,batch-085-expansion-wave-07-01
+candidate-iam-engineer,IAM Engineer,role,people-capabilities,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,important,wave-07,batch-085-expansion-wave-07-01
+candidate-openid-connect,OpenID Connect,protocol,specifications-implementations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,important,wave-07,batch-085-expansion-wave-07-01
+candidate-security-assertion-markup-language,Security Assertion Markup Language,protocol,specifications-implementations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,important,wave-07,batch-085-expansion-wave-07-01
+candidate-public-key-infrastructure,Public Key Infrastructure,standard,specifications-implementations,domain-ciberseguridad-riesgo,subdomain-identidad-acceso,specialized,wave-07,batch-085-expansion-wave-07-01
+candidate-security-operations-center,Security Operations Center,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-085-expansion-wave-07-01
+candidate-security-information-and-event-management,Security Information and Event Management,process,ways-of-working,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-security-orchestration-automation-and-response,Security Orchestration Automation and Response,practice,ways-of-working,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-endpoint-detection-and-response,Endpoint Detection and Response,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-extended-detection-and-response,Extended Detection and Response,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-intrusion-detection-system,Intrusion Detection System,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-intrusion-prevention-system,Intrusion Prevention System,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-vulnerability-management,Vulnerability Management,process,ways-of-working,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-soc-analyst,SOC Analyst,role,people-capabilities,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-threat-intelligence,Threat Intelligence,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-threat-hunting,Threat Hunting,practice,ways-of-working,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-digital-forensics,Digital Forensics,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-malware,Malware,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,essential,wave-07,batch-086-expansion-wave-07-02
+candidate-ransomware,Ransomware,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,important,wave-07,batch-087-expansion-wave-07-03
+candidate-phishing,Phishing,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,important,wave-07,batch-087-expansion-wave-07-03
+candidate-social-engineering,Social Engineering,process,ways-of-working,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,important,wave-07,batch-087-expansion-wave-07-03
+candidate-penetration-testing,Penetration Testing,practice,ways-of-working,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,important,wave-07,batch-087-expansion-wave-07-03
+candidate-red-team,Red Team,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,important,wave-07,batch-087-expansion-wave-07-03
+candidate-blue-team,Blue Team,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,important,wave-07,batch-087-expansion-wave-07-03
+candidate-penetration-tester,Penetration Tester,role,people-capabilities,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,important,wave-07,batch-087-expansion-wave-07-03
+candidate-incident-responder,Incident Responder,role,people-capabilities,domain-ciberseguridad-riesgo,subdomain-operaciones-seguridad,specialized,wave-07,batch-087-expansion-wave-07-03
+candidate-governance-risk-and-compliance,Governance Risk and Compliance,process,ways-of-working,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-087-expansion-wave-07-03
+candidate-compliance,Compliance,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-087-expansion-wave-07-03
+candidate-privacy-by-design,Privacy by Design,practice,ways-of-working,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-087-expansion-wave-07-03
+candidate-data-protection,Data Protection,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-087-expansion-wave-07-03
+candidate-personal-data,Personal Data,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-088-expansion-wave-07-04
+candidate-sensitive-data,Sensitive Data,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-088-expansion-wave-07-04
+candidate-data-classification,Data Classification,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-088-expansion-wave-07-04
+candidate-data-retention,Data Retention,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-088-expansion-wave-07-04
+candidate-data-minimization,Data Minimization,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-088-expansion-wave-07-04
+candidate-privacy-officer,Privacy Officer,role,people-capabilities,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-088-expansion-wave-07-04
+candidate-privacy-impact-assessment,Privacy Impact Assessment,process,ways-of-working,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-088-expansion-wave-07-04
+candidate-data-protection-impact-assessment,Data Protection Impact Assessment,process,ways-of-working,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-088-expansion-wave-07-04
+candidate-risk-appetite,Risk Appetite,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,essential,wave-07,batch-088-expansion-wave-07-04
+candidate-risk-tolerance,Risk Tolerance,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,important,wave-07,batch-088-expansion-wave-07-04
+candidate-residual-risk,Residual Risk,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,important,wave-07,batch-088-expansion-wave-07-04
+candidate-inherent-risk,Inherent Risk,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,important,wave-07,batch-088-expansion-wave-07-04
+candidate-risk-treatment,Risk Treatment,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,important,wave-07,batch-089-expansion-wave-07-05
+candidate-risk-register,Risk Register,artifact,results-measurement,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,important,wave-07,batch-089-expansion-wave-07-05
+candidate-audit,Audit,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,important,wave-07,batch-089-expansion-wave-07-05
+candidate-grc-analyst,GRC Analyst,role,people-capabilities,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,important,wave-07,batch-089-expansion-wave-07-05
+candidate-third-party-risk,Third-Party Risk,concept,ideas-orientations,domain-ciberseguridad-riesgo,subdomain-privacidad-riesgo-cumplimiento,specialized,wave-07,batch-089-expansion-wave-07-05

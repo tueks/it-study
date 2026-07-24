@@ -1,0 +1,53 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-system-integration,System Integration,process,ways-of-working,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,essential,wave-09,batch-101-expansion-wave-09-03
+candidate-api-design,API Design,practice,ways-of-working,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,essential,wave-09,batch-101-expansion-wave-09-03
+candidate-api-versioning,API Versioning,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,essential,wave-09,batch-101-expansion-wave-09-03
+candidate-api-engineer,API Engineer,role,people-capabilities,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,essential,wave-09,batch-101-expansion-wave-09-03
+candidate-api-security,API Security,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,essential,wave-09,batch-101-expansion-wave-09-03
+candidate-web-service,Web Service,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,essential,wave-09,batch-101-expansion-wave-09-03
+candidate-soap,SOAP,protocol,specifications-implementations,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,essential,wave-09,batch-101-expansion-wave-09-03
+candidate-graphql,GraphQL,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,essential,wave-09,batch-102-expansion-wave-09-04
+candidate-grpc,gRPC,protocol,specifications-implementations,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,important,wave-09,batch-102-expansion-wave-09-04
+candidate-remote-procedure-call,Remote Procedure Call,protocol,specifications-implementations,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,important,wave-09,batch-102-expansion-wave-09-04
+candidate-webhook,Webhook,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,important,wave-09,batch-102-expansion-wave-09-04
+candidate-json,JSON,standard,specifications-implementations,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,important,wave-09,batch-102-expansion-wave-09-04
+candidate-xml,XML,standard,specifications-implementations,domain-integracion-sistemas-empresariales,subdomain-apis-interoperabilidad,important,wave-09,batch-102-expansion-wave-09-04
+candidate-message,Message,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,essential,wave-09,batch-102-expansion-wave-09-04
+candidate-event,Event,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,essential,wave-09,batch-102-expansion-wave-09-04
+candidate-command,Command,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,essential,wave-09,batch-102-expansion-wave-09-04
+candidate-message-queue,Message Queue,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,essential,wave-09,batch-102-expansion-wave-09-04
+candidate-topic,Topic,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,essential,wave-09,batch-102-expansion-wave-09-04
+candidate-publish-subscribe,Publish–Subscribe,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,essential,wave-09,batch-102-expansion-wave-09-04
+candidate-event-stream,Event Stream,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,essential,wave-09,batch-103-expansion-wave-09-05
+candidate-event-bus,Event Bus,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,essential,wave-09,batch-103-expansion-wave-09-05
+candidate-dead-letter-queue,Dead-Letter Queue,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,important,wave-09,batch-103-expansion-wave-09-05
+candidate-messaging-engineer,Messaging Engineer,role,people-capabilities,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,important,wave-09,batch-103-expansion-wave-09-05
+candidate-at-least-once-delivery,At-Least-Once Delivery,process,ways-of-working,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,important,wave-09,batch-103-expansion-wave-09-05
+candidate-at-most-once-delivery,At-Most-Once Delivery,process,ways-of-working,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,important,wave-09,batch-103-expansion-wave-09-05
+candidate-exactly-once-processing,Exactly-Once Processing,process,ways-of-working,domain-integracion-sistemas-empresariales,subdomain-mensajeria-eventos,important,wave-09,batch-103-expansion-wave-09-05
+candidate-middleware,Middleware,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,essential,wave-09,batch-103-expansion-wave-09-05
+candidate-enterprise-service-bus,Enterprise Service Bus,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,essential,wave-09,batch-103-expansion-wave-09-05
+candidate-integration-platform-as-a-service,Integration Platform as a Service,platform,specifications-implementations,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,essential,wave-09,batch-103-expansion-wave-09-05
+candidate-integration-architect,Integration Architect,role,people-capabilities,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,essential,wave-09,batch-103-expansion-wave-09-05
+candidate-orchestration,Orchestration,process,ways-of-working,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,essential,wave-09,batch-103-expansion-wave-09-05
+candidate-choreography,Choreography,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,essential,wave-09,batch-104-expansion-wave-09-06
+candidate-serialization,Serialization,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,essential,wave-09,batch-104-expansion-wave-09-06
+candidate-protocol-buffers,Protocol Buffers,protocol,specifications-implementations,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,essential,wave-09,batch-104-expansion-wave-09-06
+candidate-idempotency,Idempotency,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,important,wave-09,batch-104-expansion-wave-09-06
+candidate-retry-pattern,Retry Pattern,pattern,solutions-structures,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,important,wave-09,batch-104-expansion-wave-09-06
+candidate-timeout,Timeout,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,important,wave-09,batch-104-expansion-wave-09-06
+candidate-distributed-transaction,Distributed Transaction,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,important,wave-09,batch-104-expansion-wave-09-06
+candidate-eventual-consistency,Eventual Consistency,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-middleware-integracion,important,wave-09,batch-104-expansion-wave-09-06
+candidate-enterprise-system,Enterprise System,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,essential,wave-09,batch-104-expansion-wave-09-06
+candidate-system-of-record,System of Record,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,essential,wave-09,batch-104-expansion-wave-09-06
+candidate-system-of-engagement,System of Engagement,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,essential,wave-09,batch-104-expansion-wave-09-06
+candidate-business-process-management,Business Process Management,process,ways-of-working,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,essential,wave-09,batch-104-expansion-wave-09-06
+candidate-workflow-management-system,Workflow Management System,technology,specifications-implementations,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,essential,wave-09,batch-105-expansion-wave-09-07
+candidate-erp-consultant,ERP Consultant,role,people-capabilities,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,essential,wave-09,batch-105-expansion-wave-09-07
+candidate-supply-chain-management-system,Supply Chain Management System,technology,specifications-implementations,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,essential,wave-09,batch-105-expansion-wave-09-07
+candidate-human-capital-management-system,Human Capital Management System,technology,specifications-implementations,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,essential,wave-09,batch-105-expansion-wave-09-07
+candidate-customer-data-platform,Customer Data Platform,technology,specifications-implementations,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,important,wave-09,batch-105-expansion-wave-09-07
+candidate-crm-administrator,CRM Administrator,role,people-capabilities,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,important,wave-09,batch-105-expansion-wave-09-07
+candidate-electronic-data-interchange,Electronic Data Interchange,concept,ideas-orientations,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,important,wave-09,batch-105-expansion-wave-09-07
+candidate-business-to-business-integration,Business-to-Business Integration,process,ways-of-working,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,important,wave-09,batch-105-expansion-wave-09-07
+candidate-enterprise-integration-pattern,Enterprise Integration Pattern,pattern,solutions-structures,domain-integracion-sistemas-empresariales,subdomain-sistemas-empresariales,important,wave-09,batch-105-expansion-wave-09-07
