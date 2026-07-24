@@ -25,8 +25,8 @@ elements:
 - producto cartesiano
 relations:
 - targetId: entity-discrete-mathematics
-  relationType: part-of
-  note: Set theory forma parte de los fundamentos tratados habitualmente dentro de discrete mathematics para computación.
+  relationType: related-to
+  note: Set theory aporta parte del vocabulario fundacional utilizado por discrete mathematics en computación.
 examples:
 - title: Alfabeto y lenguaje
   explanation: Un alfabeto puede definirse como un conjunto de símbolos y un formal language como un conjunto de cadenas construidas con ellos.
