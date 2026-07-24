@@ -20,7 +20,10 @@ subdomains:
 prerequisites:
 - entity-computability
 - entity-maquina-de-turing
-- entity-lambda-calculus
+relations:
+- targetId: entity-lambda-calculus
+  relationType: related-to
+  note: Lambda calculus es uno de los formalismos clásicos equivalentes utilizados como evidencia del alcance de la tesis.
 examples:
 - title: Modelos equivalentes
   explanation: Cuando un procedimiento puede expresarse en lambda calculus, también puede representarse mediante una máquina de Turing para la misma clase de funciones computables.
