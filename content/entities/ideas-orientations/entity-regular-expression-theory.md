@@ -22,7 +22,6 @@ subdomains:
 - subdomain-teoria-modelos-computacion
 prerequisites:
 - entity-formal-language
-- entity-logica-booleana
 represents: Una descripción algebraica de un regular language.
 scope: Regular expressions formales, operaciones regulares y equivalencia expresiva con finite automata.
 elements:
