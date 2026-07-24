@@ -1,0 +1,61 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-computability,Computability,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,essential,wave-01,batch-043-expansion-wave-01-01
+candidate-decidability,Decidability,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,essential,wave-01,batch-043-expansion-wave-01-01
+candidate-formal-language,Formal Language,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,essential,wave-01,batch-043-expansion-wave-01-01
+candidate-automaton,Automaton,model,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,essential,wave-01,batch-043-expansion-wave-01-01
+candidate-finite-automaton,Finite Automaton,model,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,essential,wave-01,batch-043-expansion-wave-01-01
+candidate-pushdown-automaton,Pushdown Automaton,model,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,essential,wave-01,batch-043-expansion-wave-01-01
+candidate-context-free-grammar,Context-Free Grammar,model,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,essential,wave-01,batch-043-expansion-wave-01-01
+candidate-regular-expression-theory,Regular Expression Theory,model,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,essential,wave-01,batch-043-expansion-wave-01-01
+candidate-church-turing-thesis,Church–Turing Thesis,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,essential,wave-01,batch-043-expansion-wave-01-01
+candidate-lambda-calculus,Lambda Calculus,model,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,important,wave-01,batch-043-expansion-wave-01-01
+candidate-discrete-mathematics,Discrete Mathematics,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,important,wave-01,batch-043-expansion-wave-01-01
+candidate-set-theory,Set Theory,model,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,important,wave-01,batch-043-expansion-wave-01-01
+candidate-graph-theory,Graph Theory,model,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,important,wave-01,batch-044-expansion-wave-01-02
+candidate-propositional-logic,Propositional Logic,model,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,important,wave-01,batch-044-expansion-wave-01-02
+candidate-predicate-logic,Predicate Logic,model,ideas-orientations,domain-fundamentos-computacion,subdomain-teoria-modelos-computacion,important,wave-01,batch-044-expansion-wave-01-02
+candidate-bit,Bit,technology,specifications-implementations,domain-fundamentos-computacion,subdomain-informacion-representacion,essential,wave-01,batch-044-expansion-wave-01-02
+candidate-byte,Byte,technology,specifications-implementations,domain-fundamentos-computacion,subdomain-informacion-representacion,essential,wave-01,batch-044-expansion-wave-01-02
+candidate-binary-number-system,Binary Number System,technology,specifications-implementations,domain-fundamentos-computacion,subdomain-informacion-representacion,essential,wave-01,batch-044-expansion-wave-01-02
+candidate-hexadecimal-number-system,Hexadecimal Number System,technology,specifications-implementations,domain-fundamentos-computacion,subdomain-informacion-representacion,essential,wave-01,batch-044-expansion-wave-01-02
+candidate-number-base,Number Base,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-informacion-representacion,essential,wave-01,batch-044-expansion-wave-01-02
+candidate-character-encoding,Character Encoding,technology,specifications-implementations,domain-fundamentos-computacion,subdomain-informacion-representacion,essential,wave-01,batch-044-expansion-wave-01-02
+candidate-ascii,ASCII,standard,specifications-implementations,domain-fundamentos-computacion,subdomain-informacion-representacion,essential,wave-01,batch-044-expansion-wave-01-02
+candidate-unicode,Unicode,standard,specifications-implementations,domain-fundamentos-computacion,subdomain-informacion-representacion,essential,wave-01,batch-044-expansion-wave-01-02
+candidate-data-encoding,Data Encoding,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-informacion-representacion,essential,wave-01,batch-044-expansion-wave-01-02
+candidate-data-compression,Data Compression,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-informacion-representacion,important,wave-01,batch-045-expansion-wave-01-03
+candidate-lossless-compression,Lossless Compression,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-informacion-representacion,important,wave-01,batch-045-expansion-wave-01-03
+candidate-lossy-compression,Lossy Compression,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-informacion-representacion,important,wave-01,batch-045-expansion-wave-01-03
+candidate-information-theory,Information Theory,model,ideas-orientations,domain-fundamentos-computacion,subdomain-informacion-representacion,important,wave-01,batch-045-expansion-wave-01-03
+candidate-entropy,Entropy,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-informacion-representacion,important,wave-01,batch-045-expansion-wave-01-03
+candidate-floating-point-representation,Floating-Point Representation,technology,specifications-implementations,domain-fundamentos-computacion,subdomain-informacion-representacion,important,wave-01,batch-045-expansion-wave-01-03
+candidate-array,Array,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,essential,wave-01,batch-045-expansion-wave-01-03
+candidate-linked-list,Linked List,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,essential,wave-01,batch-045-expansion-wave-01-03
+candidate-stack,Stack,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,essential,wave-01,batch-045-expansion-wave-01-03
+candidate-queue,Queue,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,essential,wave-01,batch-045-expansion-wave-01-03
+candidate-deque,Deque,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,essential,wave-01,batch-045-expansion-wave-01-03
+candidate-hash-table,Hash Table,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,essential,wave-01,batch-045-expansion-wave-01-03
+candidate-tree,Tree,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,essential,wave-01,batch-046-expansion-wave-01-04
+candidate-binary-tree,Binary Tree,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,essential,wave-01,batch-046-expansion-wave-01-04
+candidate-binary-search-tree,Binary Search Tree,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,essential,wave-01,batch-046-expansion-wave-01-04
+candidate-heap,Heap,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,important,wave-01,batch-046-expansion-wave-01-04
+candidate-graph,Graph,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,important,wave-01,batch-046-expansion-wave-01-04
+candidate-trie,Trie,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,important,wave-01,batch-046-expansion-wave-01-04
+candidate-sorting-algorithm,Sorting Algorithm,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,important,wave-01,batch-046-expansion-wave-01-04
+candidate-search-algorithm,Search Algorithm,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,important,wave-01,batch-046-expansion-wave-01-04
+candidate-big-o-notation,Big O Notation,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-algoritmos-estructuras-datos,important,wave-01,batch-046-expansion-wave-01-04
+candidate-variable,Variable,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,essential,wave-01,batch-046-expansion-wave-01-04
+candidate-constant,Constant,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,essential,wave-01,batch-046-expansion-wave-01-04
+candidate-data-type,Data Type,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,essential,wave-01,batch-046-expansion-wave-01-04
+candidate-primitive-type,Primitive Type,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,essential,wave-01,batch-047-expansion-wave-01-05
+candidate-composite-type,Composite Type,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,essential,wave-01,batch-047-expansion-wave-01-05
+candidate-expression,Expression,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,essential,wave-01,batch-047-expansion-wave-01-05
+candidate-operator,Operator,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,essential,wave-01,batch-047-expansion-wave-01-05
+candidate-control-flow,Control Flow,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,essential,wave-01,batch-047-expansion-wave-01-05
+candidate-conditional-statement,Conditional Statement,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,essential,wave-01,batch-047-expansion-wave-01-05
+candidate-loop,Loop,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,important,wave-01,batch-047-expansion-wave-01-05
+candidate-iteration,Iteration,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,important,wave-01,batch-047-expansion-wave-01-05
+candidate-recursion,Recursion,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,important,wave-01,batch-047-expansion-wave-01-05
+candidate-input-output,Input/Output,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,important,wave-01,batch-047-expansion-wave-01-05
+candidate-syntax,Syntax,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,important,wave-01,batch-047-expansion-wave-01-05
+candidate-semantics,Semantics,concept,ideas-orientations,domain-fundamentos-computacion,subdomain-fundamentos-programacion,important,wave-01,batch-047-expansion-wave-01-05
