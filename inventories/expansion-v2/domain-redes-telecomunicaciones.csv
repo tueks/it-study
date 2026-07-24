@@ -1,0 +1,65 @@
+candidate_id,canonical_name,type,family,primary_domain,subdomain,priority,wave,recommended_batch
+candidate-osi-model,OSI Model,model,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,essential,wave-04,batch-070-expansion-wave-04-07
+candidate-tcp-ip-model,TCP/IP Model,model,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,essential,wave-04,batch-070-expansion-wave-04-07
+candidate-network-protocol,Network Protocol,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,essential,wave-04,batch-070-expansion-wave-04-07
+candidate-packet,Packet,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,essential,wave-04,batch-070-expansion-wave-04-07
+candidate-frame,Frame,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,essential,wave-04,batch-070-expansion-wave-04-07
+candidate-port,Port,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,essential,wave-04,batch-070-expansion-wave-04-07
+candidate-socket,Socket,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,essential,wave-04,batch-070-expansion-wave-04-07
+candidate-mac-address,MAC Address,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,essential,wave-04,batch-070-expansion-wave-04-07
+candidate-ip-address,IP Address,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,essential,wave-04,batch-070-expansion-wave-04-07
+candidate-ipv4,IPv4,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,essential,wave-04,batch-070-expansion-wave-04-07
+candidate-ipv6,IPv6,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,important,wave-04,batch-070-expansion-wave-04-07
+candidate-address-resolution-protocol,Address Resolution Protocol,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,important,wave-04,batch-070-expansion-wave-04-07
+candidate-internet-control-message-protocol,Internet Control Message Protocol,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,important,wave-05,batch-071-expansion-wave-05-01
+candidate-network-layer,Network Layer,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,important,wave-05,batch-071-expansion-wave-05-01
+candidate-transport-layer,Transport Layer,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,important,wave-05,batch-071-expansion-wave-05-01
+candidate-application-layer,Application Layer,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-fundamentos-protocolos-red,important,wave-05,batch-071-expansion-wave-05-01
+candidate-local-area-network,Local Area Network,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,essential,wave-05,batch-071-expansion-wave-05-01
+candidate-wide-area-network,Wide Area Network,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,essential,wave-05,batch-071-expansion-wave-05-01
+candidate-virtual-local-area-network,Virtual Local Area Network,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,essential,wave-05,batch-071-expansion-wave-05-01
+candidate-subnet,Subnet,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,essential,wave-05,batch-071-expansion-wave-05-01
+candidate-subnet-mask,Subnet Mask,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,essential,wave-05,batch-071-expansion-wave-05-01
+candidate-default-gateway,Default Gateway,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,essential,wave-05,batch-071-expansion-wave-05-01
+candidate-router,Router,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,essential,wave-05,batch-071-expansion-wave-05-01
+candidate-network-switch,Network Switch,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,essential,wave-05,batch-071-expansion-wave-05-01
+candidate-network-segmentation,Network Segmentation,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,essential,wave-05,batch-072-expansion-wave-05-02
+candidate-noc-analyst,NOC Analyst,role,people-capabilities,domain-redes-telecomunicaciones,subdomain-redes-empresariales,essential,wave-05,batch-072-expansion-wave-05-02
+candidate-network-architect,Network Architect,role,people-capabilities,domain-redes-telecomunicaciones,subdomain-redes-empresariales,important,wave-05,batch-072-expansion-wave-05-02
+candidate-border-gateway-protocol,Border Gateway Protocol,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,important,wave-05,batch-072-expansion-wave-05-02
+candidate-open-shortest-path-first,Open Shortest Path First,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,important,wave-05,batch-072-expansion-wave-05-02
+candidate-network-administrator,Network Administrator,role,people-capabilities,domain-redes-telecomunicaciones,subdomain-redes-empresariales,important,wave-05,batch-072-expansion-wave-05-02
+candidate-software-defined-networking,Software-Defined Networking,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,important,wave-05,batch-072-expansion-wave-05-02
+candidate-network-access-control,Network Access Control,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-redes-empresariales,important,wave-05,batch-072-expansion-wave-05-02
+candidate-dynamic-host-configuration-protocol,Dynamic Host Configuration Protocol,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,essential,wave-05,batch-072-expansion-wave-05-02
+candidate-network-address-translation,Network Address Translation,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,essential,wave-05,batch-072-expansion-wave-05-02
+candidate-proxy-server,Proxy Server,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,essential,wave-05,batch-072-expansion-wave-05-02
+candidate-reverse-proxy,Reverse Proxy,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,essential,wave-05,batch-072-expansion-wave-05-02
+candidate-virtual-private-network,Virtual Private Network,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,essential,wave-05,batch-073-expansion-wave-05-03
+candidate-content-delivery-network,Content Delivery Network,service,specifications-implementations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,essential,wave-05,batch-073-expansion-wave-05-03
+candidate-domain-name,Domain Name,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,essential,wave-05,batch-073-expansion-wave-05-03
+candidate-uniform-resource-locator,Uniform Resource Locator,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,essential,wave-05,batch-073-expansion-wave-05-03
+candidate-simple-mail-transfer-protocol,Simple Mail Transfer Protocol,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,essential,wave-05,batch-073-expansion-wave-05-03
+candidate-internet-message-access-protocol,Internet Message Access Protocol,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,essential,wave-05,batch-073-expansion-wave-05-03
+candidate-telecommunications-engineer,Telecommunications Engineer,role,people-capabilities,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,important,wave-05,batch-073-expansion-wave-05-03
+candidate-secure-shell,Secure Shell,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,important,wave-05,batch-073-expansion-wave-05-03
+candidate-file-transfer-protocol,File Transfer Protocol,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,important,wave-05,batch-073-expansion-wave-05-03
+candidate-network-time-protocol,Network Time Protocol,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,important,wave-05,batch-073-expansion-wave-05-03
+candidate-websocket,WebSocket,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,important,wave-05,batch-073-expansion-wave-05-03
+candidate-quic,QUIC,protocol,specifications-implementations,domain-redes-telecomunicaciones,subdomain-internet-servicios-red,important,wave-05,batch-073-expansion-wave-05-03
+candidate-network-monitoring,Network Monitoring,process,ways-of-working,domain-redes-telecomunicaciones,subdomain-operacion-redes,essential,wave-05,batch-074-expansion-wave-05-04
+candidate-network-management,Network Management,process,ways-of-working,domain-redes-telecomunicaciones,subdomain-operacion-redes,essential,wave-05,batch-074-expansion-wave-05-04
+candidate-bandwidth,Bandwidth,metric,results-measurement,domain-redes-telecomunicaciones,subdomain-operacion-redes,essential,wave-05,batch-074-expansion-wave-05-04
+candidate-throughput,Throughput,metric,results-measurement,domain-redes-telecomunicaciones,subdomain-operacion-redes,essential,wave-05,batch-074-expansion-wave-05-04
+candidate-jitter,Jitter,metric,results-measurement,domain-redes-telecomunicaciones,subdomain-operacion-redes,essential,wave-05,batch-074-expansion-wave-05-04
+candidate-packet-loss,Packet Loss,metric,results-measurement,domain-redes-telecomunicaciones,subdomain-operacion-redes,essential,wave-05,batch-074-expansion-wave-05-04
+candidate-round-trip-time,Round-Trip Time,metric,results-measurement,domain-redes-telecomunicaciones,subdomain-operacion-redes,essential,wave-05,batch-074-expansion-wave-05-04
+candidate-quality-of-service,Quality of Service,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-operacion-redes,essential,wave-05,batch-074-expansion-wave-05-04
+candidate-network-availability,Network Availability,metric,results-measurement,domain-redes-telecomunicaciones,subdomain-operacion-redes,essential,wave-05,batch-074-expansion-wave-05-04
+candidate-network-capacity-planning,Network Capacity Planning,process,ways-of-working,domain-redes-telecomunicaciones,subdomain-operacion-redes,essential,wave-05,batch-074-expansion-wave-05-04
+candidate-network-configuration,Network Configuration,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-operacion-redes,important,wave-05,batch-074-expansion-wave-05-04
+candidate-network-automation,Network Automation,practice,ways-of-working,domain-redes-telecomunicaciones,subdomain-operacion-redes,important,wave-05,batch-074-expansion-wave-05-04
+candidate-network-operations-center,Network Operations Center,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-operacion-redes,important,wave-05,batch-075-expansion-wave-05-05
+candidate-traffic-analysis,Traffic Analysis,process,ways-of-working,domain-redes-telecomunicaciones,subdomain-operacion-redes,important,wave-05,batch-075-expansion-wave-05-05
+candidate-packet-capture,Packet Capture,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-operacion-redes,important,wave-05,batch-075-expansion-wave-05-05
+candidate-traceroute,Traceroute,concept,ideas-orientations,domain-redes-telecomunicaciones,subdomain-operacion-redes,important,wave-05,batch-075-expansion-wave-05-05
