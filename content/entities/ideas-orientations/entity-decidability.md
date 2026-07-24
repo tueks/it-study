@@ -21,7 +21,7 @@ confusedWith:
 - entity-computability
 examples:
 - title: Pertenencia decidible
-  explanation: Determinar si una cadena contiene un número par de símbolos puede decidirse mediante un finite automaton que siempre termina.
+  explanation: Determinar si una cadena contiene una cantidad par de `1` puede decidirse mediante un finite automaton que siempre termina.
 limitations:
 - Solo aplica directamente a preguntas con respuesta sí/no; otros problemas deben formularse como problemas de decisión.
 - Un problema decidible puede seguir siendo computacionalmente costoso.
