@@ -22,7 +22,7 @@
 
 | Lote | Onda | Cantidad | Primer candidato | Último candidato | Estado |
 |---|---|---:|---|---|---|
-| `batch-043-expansion-wave-01-01` | `wave-01` | 12 | `candidate-computability` | `candidate-set-theory` | `authorized` |
+| `batch-043-expansion-wave-01-01` | `wave-01` | 12 | `candidate-computability` | `candidate-set-theory` | `in-review` |
 | `batch-044-expansion-wave-01-02` | `wave-01` | 12 | `candidate-graph-theory` | `candidate-data-encoding` | `authorized` |
 | `batch-045-expansion-wave-01-03` | `wave-01` | 12 | `candidate-data-compression` | `candidate-hash-table` | `authorized` |
 | `batch-046-expansion-wave-01-04` | `wave-01` | 12 | `candidate-tree` | `candidate-data-type` | `authorized` |
@@ -92,3 +92,10 @@
 | `batch-110-expansion-wave-10-05` | `wave-10` | 12 | `candidate-technology-strategist` | `candidate-enterprise-roadmap` | `authorized` |
 | `batch-111-expansion-wave-10-06` | `wave-10` | 12 | `candidate-project` | `candidate-chief-information-officer` | `authorized` |
 | `batch-112-expansion-wave-10-07` | `wave-10` | 8 | `candidate-chief-information-security-officer` | `candidate-organizational-structure` | `authorized` |
+
+## Transiciones registradas
+
+| Lote | Fecha | Desde | Hacia | Evidencia |
+|---|---|---|---|---|
+| `batch-043-expansion-wave-01-01` | `2026-07-24` | `authorized` | `in-production` | Preflight conforme y alcance exacto de 12 candidatos cargado. |
+| `batch-043-expansion-wave-01-01` | `2026-07-24` | `in-production` | `in-review` | Producción 12/12, autoevaluación y validación previa conformes. |
