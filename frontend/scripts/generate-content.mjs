@@ -10,7 +10,9 @@ async function markdownFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true })
   const files = await Promise.all(entries.map((entry) => {
     const path = join(directory, entry.name)
-    return entry.isDirectory() ? markdownFiles(path) : entry.name.endsWith('.md') ? [path] : []
+    if (entry.isDirectory()) return markdownFiles(path)
+    if (entry.name === 'AGENTS.md') return []
+    return entry.name.endsWith('.md') ? [path] : []
   }))
   return files.flat().sort()
 }
