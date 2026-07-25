@@ -16,11 +16,12 @@ language: en
 authorityLevel: strong
 notes: Referencia académica para la formulación, alcance y límites de la Church–Turing Thesis.
 availabilityStatus: available
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study research agent
 batch: batch-043-expansion-wave-01-01
 createdAt: '2026-07-24'
-verificationStatus: pending
+reviewedAt: '2026-07-24'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
