@@ -2,39 +2,41 @@
 
 ## Estado
 
-`pending-independent-review`
+`completed-independent-review`
 
-## Solicitudes realizadas
+## Revisión registrada
 
-- Se abrió el PR #4 con el lote completo en estado `in-review`.
-- Se solicitó revisión mediante la API de GitHub al reviewer `copilot-pull-request-reviewer[bot]`.
-- Se añadió una solicitud explícita `@copilot` en la conversación del PR con los criterios normativos aplicables.
+- PR: #4.
+- Fecha operativa: `2026-07-24` en la zona horaria del Responsable del proyecto.
+- Revisor: Responsable del proyecto, como rol humano distinto del agente productor.
+- Registro: review de GitHub `4777813589`.
+- Disposición: visto bueno operativo para integración interna y cierre del lote.
+- Publicación externa: no autorizada.
 
-## Resultado comprobado
+## Antecedentes
 
-Al momento de esta actualización:
+- Se solicitó inicialmente revisión al reviewer `copilot-pull-request-reviewer[bot]` mediante la API de GitHub.
+- Se añadió una solicitud explícita `@copilot` en la conversación del PR.
+- Copilot no emitió review, hilo ni comentario; su silencio no se utilizó como aprobación.
+- Posteriormente, el Responsable del proyecto registró una revisión expresa como rol independiente del productor.
 
-- reviews independientes registradas: 0;
-- hilos de revisión registrados: 0;
-- comentarios de Copilot registrados: 0;
-- hallazgos independientes disponibles para resolver: 0;
-- decisión independiente: no emitida.
+## Resultado
 
-La ausencia de comentarios no se interpreta como conformidad ni aprobación.
+- hallazgos bloqueantes adicionales: 0;
+- hallazgos mayores adicionales: 0;
+- hallazgos menores adicionales comunicados: 0;
+- correcciones pendientes derivadas de la revisión: 0;
+- decisión independiente: `approved-for-internal-integration`.
 
 ## Consecuencia operativa
 
-Conforme a `work/EXPANSION-PRODUCTION-CONTRACT.md` y `docs/09-quality-criteria.md`, el productor no puede aprobar silenciosamente su propio trabajo. Por tanto:
+La puerta de revisión independiente quedó satisfecha. Se autorizó continuar con:
 
-- las 12 entidades permanecen `in-review` / `pending`;
-- las 4 fuentes nuevas permanecen `in-review` / `pending`;
-- no se regenera el catálogo canónico con estas entradas;
-- no se ejecuta la puerta final de build;
-- no se actualiza el inventario como integrado;
-- no se fusiona el PR;
-- no se cierra el lote;
-- no se autoriza publicación externa.
+- promoción de 12 entidades a `approved` / `verified`;
+- promoción de 4 fuentes a `approved` / `verified`;
+- validación estructural y técnica;
+- regeneración del catálogo durante pruebas y build;
+- actualización del inventario y del registro de ondas;
+- fusión del PR y cierre del lote.
 
-## Acción que desbloquea
-
-Una revisión independiente registrada en el PR debe evaluar precisión, claridad, clasificación, fuentes, duplicados, aliases, dependencias, relaciones y suficiencia editorial. Después pueden corregirse hallazgos y continuar automáticamente con validación, integración y cierre si todas las puertas son conformes.
+El cierre no concede autorización para publicación externa del producto.
