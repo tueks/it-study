@@ -1,0 +1,175 @@
+name: Batch 044 validation
+
+on:
+  push:
+    branches:
+      - agent/batch-044-expansion-wave-01-02
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm install --no-audit --no-fund
+
+      - name: Validate batch content
+        working-directory: frontend
+        run: |
+          node --input-type=module <<'EOF'
+          import { readdir, readFile } from 'node:fs/promises'
+          import { join, relative, resolve } from 'node:path'
+          import { parse } from 'yaml'
+
+          const repo = resolve('..')
+          const batch = 'batch-044-expansion-wave-01-02'
+          const expected = new Set([
+            'entity-graph-theory',
+            'entity-propositional-logic',
+            'entity-predicate-logic',
+            'entity-bit',
+            'entity-byte',
+            'entity-binary-number-system',
+            'entity-hexadecimal-number-system',
+            'entity-number-base',
+            'entity-character-encoding',
+            'entity-ascii',
+            'entity-unicode',
+            'entity-data-encoding',
+          ])
+          const expectedSources = new Set([
+            'source-mit-ocw-computation-structures-2017',
+            'source-rfc-20-ascii',
+            'source-unicode-standard-17-0',
+            'source-unicode-utr-17-character-encoding-model',
+          ])
+
+          async function markdownFiles(dir) {
+            const entries = await readdir(dir, { withFileTypes: true })
+            const nested = await Promise.all(entries.map(async (entry) => {
+              const path = join(dir, entry.name)
+              if (entry.isDirectory()) return markdownFiles(path)
+              if (!entry.name.endsWith('.md') || entry.name === 'AGENTS.md') return []
+              return [path]
+            }))
+            return nested.flat().sort()
+          }
+
+          async function record(path) {
+            const text = await readFile(path, 'utf8')
+            const match = text.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+            if (!match) throw new Error(`Frontmatter ausente: ${relative(repo, path)}`)
+            const data = parse(match[1])
+            const body = text.slice(match[0].length).trim()
+            return { ...data, body, sourcePath: relative(repo, path).replaceAll('\\', '/') }
+          }
+
+          const entities = await Promise.all((await markdownFiles(join(repo, 'content/entities'))).map(record))
+          const sources = await Promise.all((await markdownFiles(join(repo, 'content/sources'))).map(record))
+          const batchEntities = entities.filter((item) => item.batch === batch)
+          const batchSources = sources.filter((item) => item.batch === batch)
+
+          const errors = []
+          const assert = (condition, message) => { if (!condition) errors.push(message) }
+          const ids = new Set()
+          for (const item of [...entities, ...sources]) {
+            assert(!ids.has(item.id), `ID duplicado global: ${item.id}`)
+            ids.add(item.id)
+          }
+
+          assert(batchEntities.length === 12, `Entidades del lote: ${batchEntities.length}, esperado 12`)
+          assert(batchSources.length === 4, `Fuentes del lote: ${batchSources.length}, esperado 4`)
+          assert(expected.size === batchEntities.filter((x) => expected.has(x.id)).length, 'El conjunto de entidades no coincide con el inventario')
+          assert(expectedSources.size === batchSources.filter((x) => expectedSources.has(x.id)).length, 'El conjunto de fuentes nuevas no coincide con el plan')
+
+          const entityIds = new Set(entities.map((x) => x.id))
+          const sourceIds = new Set(sources.map((x) => x.id))
+          const required = ['id','type','title','canonicalName','summary','definition','purpose','primaryDomain','sources','priority','knowledgeLevel','stability','editorialStatus','owner','batch','createdAt','verificationStatus','deprecated','contractVersion']
+
+          const aliasKeys = new Map()
+          const normalize = (value) => value.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
+
+          for (const item of batchEntities) {
+            for (const field of required) assert(item[field] !== undefined, `${item.id}: campo requerido ausente ${field}`)
+            assert(item.editorialStatus === 'in-review', `${item.id}: editorialStatus debe ser in-review`)
+            assert(item.verificationStatus === 'pending', `${item.id}: verificationStatus debe ser pending`)
+            assert(item.primaryDomain === 'domain-fundamentos-computacion', `${item.id}: dominio incorrecto`)
+            assert(Array.isArray(item.subdomains) && item.subdomains.length === 1, `${item.id}: subdomain inválido`)
+            assert(item.body.split(/\s+/).length >= 120, `${item.id}: cuerpo editorial menor a 120 palabras`)
+            if (item.type === 'model') {
+              for (const field of ['represents','scope','elements']) assert(item[field] !== undefined, `${item.id}: campo model ausente ${field}`)
+            }
+            if (item.type === 'technology') {
+              for (const field of ['capabilities','mechanisms','applicationContexts']) assert(item[field] !== undefined, `${item.id}: campo technology ausente ${field}`)
+            }
+            if (item.type === 'standard') {
+              for (const field of ['issuer','designation','version','status']) assert(item[field] !== undefined, `${item.id}: campo standard ausente ${field}`)
+            }
+            for (const source of item.sources ?? []) assert(sourceIds.has(source), `${item.id}: fuente inexistente ${source}`)
+            for (const field of ['prerequisites','related','confusedWith']) {
+              for (const target of item[field] ?? []) {
+                assert(target !== item.id, `${item.id}: autorreferencia en ${field}`)
+                assert(entityIds.has(target), `${item.id}: referencia inexistente ${target}`)
+              }
+            }
+            for (const relation of item.relations ?? []) {
+              assert(relation.targetId !== item.id, `${item.id}: autorrelación`)
+              assert(entityIds.has(relation.targetId), `${item.id}: relation target inexistente ${relation.targetId}`)
+              assert(Boolean(relation.relationType), `${item.id}: relationType ausente`)
+              assert(Boolean(relation.note), `${item.id}: relation note ausente`)
+            }
+            for (const alias of item.aliases ?? []) {
+              const key = normalize(alias.value)
+              const previous = aliasKeys.get(key)
+              assert(!previous || previous === item.id, `${item.id}: alias colisiona con ${previous}: ${alias.value}`)
+              aliasKeys.set(key, item.id)
+            }
+          }
+
+          for (const source of batchSources) {
+            for (const field of ['id','type','title','authorOrOrganization','sourceType','url','accessedAt','language','authorityLevel','availabilityStatus','editorialStatus','owner','batch','createdAt','verificationStatus','deprecated','contractVersion']) {
+              assert(source[field] !== undefined, `${source.id}: campo de fuente ausente ${field}`)
+            }
+            assert(source.editorialStatus === 'in-review', `${source.id}: editorialStatus debe ser in-review`)
+            assert(source.verificationStatus === 'pending', `${source.id}: verificationStatus debe ser pending`)
+          }
+
+          const graph = new Map(entities.map((x) => [x.id, (x.prerequisites ?? []).filter((id) => entityIds.has(id))]))
+          const visiting = new Set()
+          const visited = new Set()
+          function visit(id) {
+            if (visiting.has(id)) { errors.push(`Ciclo de prerequisites detectado en ${id}`); return }
+            if (visited.has(id)) return
+            visiting.add(id)
+            for (const dep of graph.get(id) ?? []) visit(dep)
+            visiting.delete(id)
+            visited.add(id)
+          }
+          for (const id of expected) visit(id)
+
+          if (errors.length) {
+            console.error(errors.map((x) => `- ${x}`).join('\n'))
+            process.exit(1)
+          }
+          console.log(`B044 válido: ${batchEntities.length} entidades, ${batchSources.length} fuentes, IDs y referencias conformes.`)
+          EOF
+
+      - name: Run tests
+        working-directory: frontend
+        run: npm test
+
+      - name: Run build
+        working-directory: frontend
+        run: npm run build
