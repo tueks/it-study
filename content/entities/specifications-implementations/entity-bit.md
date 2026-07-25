@@ -6,7 +6,7 @@ canonicalName: bit
 englishName: Bit
 aliases:
 - value: binary digit
-  kind: expansion
+  kind: alternate
   language: en
 - value: dígito binario
   kind: translation
