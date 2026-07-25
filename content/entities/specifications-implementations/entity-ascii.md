@@ -21,7 +21,7 @@ prerequisites:
 - entity-character-encoding
 - entity-bit
 issuer: American National Standards Institute
- designation: ANSI X3.4 / ASCII; RFC 20 network interchange profile
+designation: ANSI X3.4 / ASCII; RFC 20 network interchange profile
 version: ASCII-1968 family
 status: established-foundational-standard
 relations:
