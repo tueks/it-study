@@ -1,8 +1,8 @@
 # Reporte de lote — `batch-043-expansion-wave-01-01`
 
-## Estado previo a integración
+## Estado final
 
-`accepted`
+`closed`
 
 ## Resultado compacto
 
@@ -11,7 +11,7 @@
 | Planificado | 12 |
 | Producido | 12 |
 | Aprobado operativamente | 12 |
-| Preparado para integración | 12 |
+| Integrado | 12 |
 | Sustituido | 0 |
 | Descartado | 0 |
 | Candidatos de reserva usados | 0 |
@@ -46,6 +46,16 @@
 - Catálogo generado durante validación: 176 entidades, 12 dominios y 20 estructuras.
 - Advertencia no bloqueante: bundle principal superior a 500 kB después de minificación.
 
-## Integración
+## Integración y cierre
 
-La integración canónica se completará mediante la fusión del PR #4. Después de la fusión se registrarán el merge commit, las transiciones `integrated` y `closed`, el progreso del inventario y la próxima acción `batch-044-expansion-wave-01-02`.
+- PR integrado: #4.
+- Método: squash merge.
+- Merge commit: `63a0486b0e98003701e9867ac20a6b80495c7d3c`.
+- Registro de ondas: B043 transicionado de `accepted` a `integrated` y `closed`.
+- Inventario maestro: 12/836 entidades nuevas integradas; 824 pendientes; 176/1,000 entidades canónicas.
+- Progreso de `wave-01`: 12/84 entidades integradas.
+- Próximo lote ejecutable: `batch-044-expansion-wave-01-02`.
+
+## Disposición final
+
+El lote se encuentra cerrado técnica y editorialmente dentro del repositorio. El cierre no concede autorización para publicación externa del producto.
