@@ -10,7 +10,25 @@
 - 4 fuentes nuevas en `in-review` / `pending`.
 - Preflight y comprobación de duplicados disponibles.
 - Autoevaluación del productor disponible.
-- Validación automática pendiente de ejecución y registro.
+- Validación estructural previa disponible.
+- PR #5 abierto y fusionable.
+
+## Solicitudes de revisión
+
+- Se solicitó mediante GitHub al reviewer `copilot-pull-request-reviewer[bot]`.
+- Se publicó una mención explícita `@copilot` en el PR con criterios de precisión, clasificación, fuentes, aliases, dependencias y fronteras semánticas.
+- Comentario de solicitud: `5076532037`.
+
+## Resultado comprobado
+
+Al momento de esta actualización:
+
+- reviews independientes registradas: 0;
+- hilos de revisión registrados: 0;
+- hallazgos independientes disponibles: 0;
+- decisión independiente emitida: no.
+
+La ausencia de respuesta no se interpreta como aprobación.
 
 ## Revisión requerida
 
@@ -27,7 +45,7 @@ Una revisión independiente debe evaluar:
 
 ## Consecuencia operativa
 
-Mientras no exista una revisión independiente registrada y una validación conforme:
+Mientras no exista una revisión independiente registrada y una validación final conforme:
 
 - las fichas y fuentes permanecen `in-review` / `pending`;
 - no se regeneran derivados con estas entradas;
