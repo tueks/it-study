@@ -23,7 +23,7 @@
 | Lote | Onda | Cantidad | Primer candidato | Último candidato | Estado |
 |---|---|---:|---|---|---|
 | `batch-043-expansion-wave-01-01` | `wave-01` | 12 | `candidate-computability` | `candidate-set-theory` | `closed` |
-| `batch-044-expansion-wave-01-02` | `wave-01` | 12 | `candidate-graph-theory` | `candidate-data-encoding` | `authorized` |
+| `batch-044-expansion-wave-01-02` | `wave-01` | 12 | `candidate-graph-theory` | `candidate-data-encoding` | `in-review` |
 | `batch-045-expansion-wave-01-03` | `wave-01` | 12 | `candidate-data-compression` | `candidate-hash-table` | `authorized` |
 | `batch-046-expansion-wave-01-04` | `wave-01` | 12 | `candidate-tree` | `candidate-data-type` | `authorized` |
 | `batch-047-expansion-wave-01-05` | `wave-01` | 12 | `candidate-primitive-type` | `candidate-semantics` | `authorized` |
@@ -102,3 +102,5 @@
 | `batch-043-expansion-wave-01-01` | `2026-07-24` | `in-review` | `accepted` | Revisión independiente registrada, 12 entidades y 4 fuentes `approved` / `verified`, pruebas y build conformes. |
 | `batch-043-expansion-wave-01-01` | `2026-07-24` | `accepted` | `integrated` | PR #4 fusionado en `main` mediante commit `63a0486b0e98003701e9867ac20a6b80495c7d3c`. |
 | `batch-043-expansion-wave-01-01` | `2026-07-24` | `integrated` | `closed` | Inventario, reporte de lote y estado operativo actualizados; siguiente lote ejecutable B044. |
+| `batch-044-expansion-wave-01-02` | `2026-07-24` | `authorized` | `in-production` | Preflight conforme y alcance exacto de 12 candidatos cargado. |
+| `batch-044-expansion-wave-01-02` | `2026-07-24` | `in-production` | `in-review` | Producción 12/12, autoevaluación y validación estructural previa conformes. |
