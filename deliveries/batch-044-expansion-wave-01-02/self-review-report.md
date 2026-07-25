@@ -45,10 +45,15 @@ Se comprobaron de forma explícita las siguientes fronteras:
 
 ## Hallazgos y correcciones
 
-1. `entity-ascii.md`: se detectó una indentación inválida en `designation`; se corrigió antes de la validación.
+1. `entity-ascii.md`: se corrigió una indentación inválida en `designation`.
 2. `entity-byte.md`: se añadió la precisión histórica entre `byte` y `octet` para evitar universalizar el tamaño histórico.
 3. `entity-unicode.md`: se reforzó que Unicode es el estándar y UTF-8 una encoding form.
 4. `entity-data-encoding.md`: se separó explícitamente encoding de encryption, compression y serialization.
+5. `entity-bit.md`: el alias `binary digit` se normalizó de una clase no aprobada a `alternate`.
+6. `entity-byte.md`: el alias `octet` se normalizó de una clase personalizada a `alternate`.
+7. `source-rfc-20-ascii`: `sourceType` se normalizó a `standard` y su autoridad directa a `authoritative`.
+8. `source-unicode-standard-17-0`: `sourceType` se normalizó a `standard` y su autoridad directa a `authoritative`.
+9. `source-unicode-utr-17-character-encoding-model`: `sourceType` se normalizó a `official-documentation` y su autoridad directa a `authoritative`.
 
 ## Hallazgos abiertos
 
