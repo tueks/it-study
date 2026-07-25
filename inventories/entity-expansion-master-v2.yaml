@@ -81,5 +81,21 @@ validation:
     important: 301
     specialized: 20
 productionStart:
-  nextBatch: batch-043-expansion-wave-01-01
+  firstBatch: batch-043-expansion-wave-01-01
   gate: inventory-and-contract-merged
+productionProgress:
+  updatedAt: 2026-07-24
+  lastClosedBatch: batch-043-expansion-wave-01-01
+  lastIntegrationCommit: 63a0486b0e98003701e9867ac20a6b80495c7d3c
+  nextBatch: batch-044-expansion-wave-01-02
+  closedBatches: 1
+  totalBatches: 70
+  integratedNewEntities: 12
+  plannedNewEntities: 836
+  remainingNewEntities: 824
+  canonicalEntities: 176
+  targetCanonicalEntities: 1000
+  waveProgress:
+    wave-01:
+      integrated: 12
+      planned: 84
