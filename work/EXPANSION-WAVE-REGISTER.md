@@ -22,7 +22,7 @@
 
 | Lote | Onda | Cantidad | Primer candidato | Último candidato | Estado |
 |---|---|---:|---|---|---|
-| `batch-043-expansion-wave-01-01` | `wave-01` | 12 | `candidate-computability` | `candidate-set-theory` | `in-review` |
+| `batch-043-expansion-wave-01-01` | `wave-01` | 12 | `candidate-computability` | `candidate-set-theory` | `accepted` |
 | `batch-044-expansion-wave-01-02` | `wave-01` | 12 | `candidate-graph-theory` | `candidate-data-encoding` | `authorized` |
 | `batch-045-expansion-wave-01-03` | `wave-01` | 12 | `candidate-data-compression` | `candidate-hash-table` | `authorized` |
 | `batch-046-expansion-wave-01-04` | `wave-01` | 12 | `candidate-tree` | `candidate-data-type` | `authorized` |
@@ -99,3 +99,4 @@
 |---|---|---|---|---|
 | `batch-043-expansion-wave-01-01` | `2026-07-24` | `authorized` | `in-production` | Preflight conforme y alcance exacto de 12 candidatos cargado. |
 | `batch-043-expansion-wave-01-01` | `2026-07-24` | `in-production` | `in-review` | Producción 12/12, autoevaluación y validación previa conformes. |
+| `batch-043-expansion-wave-01-01` | `2026-07-24` | `in-review` | `accepted` | Revisión independiente registrada, 12 entidades y 4 fuentes `approved` / `verified`, pruebas y build conformes. |
