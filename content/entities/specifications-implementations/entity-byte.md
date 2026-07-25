@@ -6,7 +6,7 @@ canonicalName: byte
 englishName: Byte
 aliases:
 - value: octet
-  kind: contextual-alternate
+  kind: alternate
   language: en
 - value: octeto
   kind: translation
