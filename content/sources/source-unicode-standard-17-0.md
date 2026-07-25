@@ -3,7 +3,7 @@ id: source-unicode-standard-17-0
 type: source
 title: The Unicode Standard, Version 17.0
 authorOrOrganization: Unicode Consortium
-sourceType: technical-standard
+sourceType: standard
 url: https://www.unicode.org/versions/Unicode17.0.0/
 version: '17.0.0'
 publicationDate: '2025-09-09'
@@ -13,7 +13,7 @@ sectionsUsed:
 - 'Chapter 2: General Structure'
 - 'Chapter 3: Conformance'
 language: en
-authorityLevel: strong
+authorityLevel: authoritative
 notes: Especificación oficial usada para delimitar Unicode, code points, encoded characters y encoding forms UTF-8, UTF-16 y UTF-32. La ficha de entidad representa el estándar mantenido, no una única versión.
 availabilityStatus: available
 editorialStatus: in-review
