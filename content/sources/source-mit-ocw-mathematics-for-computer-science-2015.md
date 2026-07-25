@@ -15,11 +15,12 @@ language: en
 authorityLevel: strong
 notes: Curso institucional usado para delimitar discrete mathematics, sets, functions y su relación con computer science.
 availabilityStatus: available
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study research agent
 batch: batch-043-expansion-wave-01-01
 createdAt: '2026-07-24'
-verificationStatus: pending
+reviewedAt: '2026-07-24'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
