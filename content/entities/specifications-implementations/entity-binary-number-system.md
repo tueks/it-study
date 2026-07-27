@@ -40,7 +40,7 @@ relations:
   note: Hexadecimal compacta cada grupo de cuatro binary digits en un solo símbolo.
 examples:
 - title: Conversión a decimal
-  explanation: `1011₂` representa `1×8 + 0×4 + 1×2 + 1×1`, equivalente a 11 decimal.
+  explanation: '`1011₂` representa `1×8 + 0×4 + 1×2 + 1×1`, equivalente a 11 decimal.'
 limitations:
 - No define por sí solo cómo representar signo, fracciones, overflow o tipos numéricos concretos.
 - Una secuencia binaria necesita contexto para distinguir si representa un número u otro tipo de dato.
