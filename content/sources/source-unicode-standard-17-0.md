@@ -16,11 +16,12 @@ language: en
 authorityLevel: authoritative
 notes: Especificación oficial usada para delimitar Unicode, code points, encoded characters y encoding forms UTF-8, UTF-16 y UTF-32. La ficha de entidad representa el estándar mantenido, no una única versión.
 availabilityStatus: available
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study research agent
 batch: batch-044-expansion-wave-01-02
 createdAt: '2026-07-24'
-verificationStatus: pending
+reviewedAt: '2026-07-26'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
