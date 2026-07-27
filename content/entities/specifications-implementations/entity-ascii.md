@@ -42,13 +42,14 @@ sources:
 priority: essential
 knowledgeLevel: contextual-understanding
 stability: stable-foundation
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study production agent
 decisionRefs:
 - decision-0024-thousand-entity-expansion
 batch: batch-044-expansion-wave-01-02
 createdAt: '2026-07-24'
-verificationStatus: pending
+reviewedAt: '2026-07-26'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
