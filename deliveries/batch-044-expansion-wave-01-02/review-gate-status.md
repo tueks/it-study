@@ -2,16 +2,7 @@
 
 ## Estado
 
-`approved-for-internal-integration-pending-final-validation`
-
-## Trabajo revisado
-
-- 12 entidades completas.
-- 4 fuentes nuevas normalizadas.
-- Preflight y comprobación de duplicados disponibles.
-- Autoevaluación del productor disponible.
-- Validación estructural previa disponible.
-- PR #5 abierto y fusionable.
+`accepted-for-internal-integration`
 
 ## Revisión independiente registrada
 
@@ -22,23 +13,22 @@
 - Hallazgos adicionales comunicados: 0.
 - Publicación externa autorizada: no.
 
-La revisión autoriza continuar con promoción editorial, validación final e integración interna. No sustituye las pruebas técnicas finales ni concede permiso de publicación.
-
 ## Promoción editorial
 
 - Entidades: 12/12 en `approved` / `verified`.
 - Fuentes nuevas: 4/4 en `approved` / `verified`.
-- `reviewedAt`: registrado.
+- `reviewedAt`: registrado en todos los registros.
 - Hallazgos bloqueantes abiertos: 0.
 - Hallazgos mayores abiertos: 0.
 
-## Puerta restante
+## Validación final
 
-Antes de fusionar deben resultar conformes:
+- Workflow: `Batch 044 final validation`.
+- Run conforme: `30230064887`.
+- Validación de contenido: conforme.
+- `npm test`: conforme.
+- `npm run build`: conforme.
 
-- validación de YAML, IDs, aliases, fuentes, referencias y ciclos;
-- regeneración del catálogo;
-- `npm test`;
-- `npm run build`.
+## Disposición
 
-Si estas comprobaciones son conformes, el lote puede transicionar a `accepted` e integrarse. El cierre no autoriza publicación externa.
+El lote satisface la puerta de revisión y validación y puede fusionarse en `main`. La integración interna no concede autorización para publicación externa.
