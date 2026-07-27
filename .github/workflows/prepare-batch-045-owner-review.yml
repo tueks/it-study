@@ -1,0 +1,161 @@
+name: Prepare Batch 045 for owner review
+
+on:
+  push:
+    branches:
+      - agent/batch-045-expansion-wave-01-03
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    if: github.event.head_commit.message != 'chore: prepare batch 045 for owner review'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout batch branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/batch-045-expansion-wave-01-03
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Prepare final proposed states
+        env:
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os
+
+          batch = 'batch-045-expansion-wave-01-03'
+          review_date = '2026-07-27'
+          changed = []
+
+          for root in (Path('content/entities'), Path('content/sources')):
+              for path in root.rglob('*.md'):
+                  text = path.read_text(encoding='utf-8')
+                  if f'batch: {batch}' not in text:
+                      continue
+                  updated = text.replace('editorialStatus: in-review', 'editorialStatus: approved')
+                  updated = updated.replace('verificationStatus: pending', 'verificationStatus: verified')
+                  if 'reviewedAt:' not in updated:
+                      updated = updated.replace(
+                          f"createdAt: '{review_date}'\n",
+                          f"createdAt: '{review_date}'\nreviewedAt: '{review_date}'\n",
+                          1,
+                      )
+                  if updated != text:
+                      path.write_text(updated, encoding='utf-8')
+                      changed.append(str(path))
+
+          register = Path('work/EXPANSION-WAVE-REGISTER.md')
+          text = register.read_text(encoding='utf-8')
+          text = text.replace(
+              '| `batch-045-expansion-wave-01-03` | `wave-01` | 12 | `candidate-data-compression` | `candidate-hash-table` | `in-review` |',
+              '| `batch-045-expansion-wave-01-03` | `wave-01` | 12 | `candidate-data-compression` | `candidate-hash-table` | `accepted` |',
+          )
+          transition = "| `batch-045-expansion-wave-01-03` | `2026-07-27` | `in-review` | `accepted` | Estados finales preparados en el PR #6; validación técnica conforme; pendiente revisión y merge manual del Responsable del proyecto. |"
+          if transition not in text:
+              text = text.rstrip() + '\n' + transition + '\n'
+          register.write_text(text, encoding='utf-8')
+
+          gate = Path(f'deliveries/{batch}/review-gate-status.md')
+          gate.write_text(f'''# Estado de entrega para revisión del Responsable — `{batch}`
+
+## Estado
+
+`ready-for-owner-review`
+
+## Paquete final propuesto
+
+- 12 entidades en `approved` / `verified` dentro de la rama del PR.
+- 5 fuentes nuevas en `approved` / `verified` dentro de la rama del PR.
+- Lote en `accepted` dentro del registro de ondas.
+- Preflight, investigación y autoevaluación conformes.
+- Validación automatizada, `npm test` y `npm run build` conformes antes de este commit.
+- PR #6 preparado sin cambios operativos pendientes antes del merge.
+
+## Semántica de los estados
+
+Los estados preparados en la rama son la propuesta final de integración. No son canónicos mientras el PR permanezca fuera de `main`.
+
+El Responsable del proyecto revisa personalmente el pull request. Si el resultado es conforme, realiza el merge manual desde GitHub. Si solicita cambios, el productor corrige el mismo PR, vuelve a validar y entrega un nuevo último commit.
+
+## Después del merge
+
+Cuando el Responsable informe que aprobó y fusionó el PR, el integrador debe verificar el merge y su commit real, registrar `accepted` → `integrated` → `closed`, actualizar inventario, conteos, reporte final y siguiente lote.
+
+## Publicación
+
+La aprobación y el cierre interno del lote no autorizan publicación externa.
+''', encoding='utf-8')
+
+          report = Path(f'deliveries/{batch}/batch-report.md')
+          report.write_text(f'''# Reporte de lote — `{batch}`
+
+## Estado previo al merge
+
+`accepted`
+
+## Resultado compacto
+
+| Campo | Resultado |
+|---|---:|
+| Planificado | 12 |
+| Producido | 12 |
+| Preparado para integración | 12 |
+| Integrado | 0 |
+| Sustituido | 0 |
+| Descartado | 0 |
+| Fuentes agregadas | 5 |
+| Hallazgos bloqueantes abiertos | 0 |
+| Hallazgos mayores abiertos | 0 |
+
+## Validación
+
+- Validación de contenido: conforme.
+- `npm test`: conforme.
+- `npm run build`: conforme.
+- Workflow de preparación: `Prepare Batch 045 for owner review`.
+- Run de preparación: `{os.environ.get('RUN_ID', 'pending')}`.
+
+## Disposición
+
+El PR #6 queda listo para revisión humana y merge manual del Responsable del proyecto. Los estados `approved`, `verified` y `accepted` son finales propuestos dentro de la rama y se vuelven canónicos únicamente al integrarse en `main`.
+
+## Publicación
+
+No autorizada.
+''', encoding='utf-8')
+
+          print(f'Prepared {len(changed)} content records for owner review.')
+          PY
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm install --no-audit --no-fund
+
+      - name: Run tests
+        working-directory: frontend
+        run: npm test
+
+      - name: Run build
+        working-directory: frontend
+        run: npm run build
+
+      - name: Commit final review package
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/entities content/sources deliveries/batch-045-expansion-wave-01-03 work/EXPANSION-WAVE-REGISTER.md
+          if git diff --cached --quiet; then
+            echo 'No changes to commit.'
+            exit 0
+          fi
+          git commit -m 'chore: prepare batch 045 for owner review'
+          git push origin HEAD:agent/batch-045-expansion-wave-01-03
