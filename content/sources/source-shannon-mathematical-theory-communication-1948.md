@@ -18,11 +18,12 @@ language: en
 authorityLevel: authoritative
 notes: Publicación primaria fundacional utilizada para delimitar Information Theory, Entropy y la diferencia entre reproducción exacta y aproximada. No se usa para afirmar que toda aplicación moderna adopte una única definición operacional.
 availabilityStatus: available
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study research agent
 batch: batch-045-expansion-wave-01-03
 createdAt: '2026-07-27'
-verificationStatus: pending
+reviewedAt: '2026-07-27'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
