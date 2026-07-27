@@ -11,11 +11,15 @@
 - Preflight, plan de fuentes y comprobación de duplicados disponibles.
 - Autoevaluación del productor disponible.
 - Validación automatizada inicial conforme.
-- PR #6 abierto.
+- PR #6 abierto y fusionable.
 
 ## Nueva regla operativa
 
 El Responsable del proyecto revisará personalmente el pull request y realizará el merge manual cuando el resultado sea conforme. El workflow final del PR promoverá las fichas y fuentes a `approved` / `verified`, marcará el lote `accepted`, repetirá las validaciones y creará el último commit de entrega.
+
+## Ejecución
+
+La rama y `main` ya están reconciliadas respecto a los workflows temporales. Esta actualización dispara la preparación final del paquete.
 
 ## Publicación
 
