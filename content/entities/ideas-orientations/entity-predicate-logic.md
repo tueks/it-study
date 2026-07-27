@@ -35,7 +35,7 @@ relations:
   note: Conserva los conectores proposicionales y agrega estructura interna y quantifiers.
 examples:
 - title: Existencia de administrador
-  explanation: `EXISTS x: User(x) AND Admin(x)` expresa que al menos un elemento del dominio es usuario y administrador.
+  explanation: '`EXISTS x: User(x) AND Admin(x)` expresa que al menos un elemento del dominio es usuario y administrador.'
 limitations:
 - La interpretación depende del dominio y del significado asignado a predicates y términos.
 - La ficha cubre el modelo general introductorio y no distingue todos los sistemas de orden superior o lógicas especializadas.
