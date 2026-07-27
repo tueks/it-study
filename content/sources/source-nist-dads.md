@@ -16,11 +16,12 @@ language: en
 authorityLevel: strong
 notes: Diccionario institucional especializado utilizado para definiciones introductorias, operaciones y relaciones entre estructuras. No se usa para universalizar complejidades que dependen de implementación, carga o estrategia de almacenamiento.
 availabilityStatus: available
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study research agent
 batch: batch-045-expansion-wave-01-03
 createdAt: '2026-07-27'
-verificationStatus: pending
+reviewedAt: '2026-07-27'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
