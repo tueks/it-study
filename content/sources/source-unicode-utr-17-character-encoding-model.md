@@ -18,11 +18,12 @@ language: en
 authorityLevel: authoritative
 notes: Informe técnico oficial usado para separar repertoire, coded character set, encoding form, encoding scheme y transfer syntax, y para delimitar character encoding frente a data encoding.
 availabilityStatus: available
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study research agent
 batch: batch-044-expansion-wave-01-02
 createdAt: '2026-07-24'
-verificationStatus: pending
+reviewedAt: '2026-07-26'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
