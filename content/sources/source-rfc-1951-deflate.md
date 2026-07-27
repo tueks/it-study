@@ -17,11 +17,12 @@ language: en
 authorityLevel: authoritative
 notes: Especificación primaria de un formato lossless concreto. Se utiliza como ejemplo de combinación de referencias LZ77 y Huffman coding, no como definición universal de toda compresión sin pérdida. Los errata reportados no afectan las afirmaciones introductorias usadas.
 availabilityStatus: available
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study research agent
 batch: batch-045-expansion-wave-01-03
 createdAt: '2026-07-27'
-verificationStatus: pending
+reviewedAt: '2026-07-27'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
