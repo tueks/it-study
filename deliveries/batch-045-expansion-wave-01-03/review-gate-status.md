@@ -10,7 +10,8 @@
 - 5 fuentes nuevas en `in-review` / `pending`.
 - Preflight, plan de fuentes y comprobación de duplicados disponibles.
 - Autoevaluación del productor disponible.
-- Validación automatizada previa pendiente.
+- PR #6 abierto.
+- Workflow temporal de validación registrado en `main` y disparado mediante este commit.
 
 ## Revisión requerida
 
