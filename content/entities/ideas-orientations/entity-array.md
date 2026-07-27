@@ -9,7 +9,7 @@ aliases:
   kind: translation
   language: es
 - value: matriz unidimensional
-  kind: contextual
+  kind: alternate
   language: es
 summary: Estructura indexada que almacena una secuencia de elementos y permite acceder a una posición mediante un índice entero.
 definition: Un Array organiza elementos en posiciones numeradas. En implementaciones comunes ocupa una región contigua y tiene tamaño fijo, aunque lenguajes y bibliotecas pueden exponer dynamic arrays que administran capacidad y redimensionamiento.
