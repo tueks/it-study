@@ -10,26 +10,26 @@ No modifica el contenido de las 164 entidades de línea base ni autoriza publica
 
 ### Productor
 
-Investiga, selecciona fuentes, redacta, clasifica, propone aliases y prerrequisitos, ejecuta autoevaluación y corrige hallazgos.
+Investiga, selecciona fuentes, redacta, clasifica, propone aliases y prerrequisitos, ejecuta autoevaluación, corrige hallazgos y prepara el pull request en estado final revisable.
 
 ### Revisor independiente
 
-Evalúa precisión, claridad, clasificación, fuentes, duplicados, dependencias y conformidad. Puede:
+El Responsable del proyecto actúa como revisor humano independiente en la puerta final del pull request. Evalúa precisión, claridad, clasificación, fuentes, duplicados, dependencias y conformidad. Puede:
 
-- aprobar operativamente;
+- aprobar el pull request para integración;
 - solicitar cambios;
 - rechazar un candidato;
 - autorizar su sustitución por un candidato de reserva.
 
-El productor y el revisor no pueden ser el mismo rol en la misma unidad, aunque ambos sean agentes.
+El productor y el revisor no pueden ser el mismo rol en la misma unidad.
 
 ### Integrador
 
-Valida estructura e integración, incorpora contenido conforme, regenera derivados, ejecuta pruebas y cierra el lote técnico.
+Antes de entregar el pull request, valida estructura e integración, regenera derivados y ejecuta pruebas y build. Después del merge manual, verifica la integración, registra el commit real y cierra el lote técnico.
 
 ### Responsable del proyecto
 
-Interviene solo ante las excepciones materiales enumeradas en el plan.
+Revisa personalmente el pull request y, cuando el resultado sea conforme, realiza el merge manual desde GitHub. También interviene ante las excepciones materiales enumeradas en el plan.
 
 ## 3. Fuente de alcance
 
@@ -48,27 +48,52 @@ No se exige manifiesto individual adicional.
 2. Investigación y registro de fuentes.
 3. Producción de fichas.
 4. Autoevaluación del productor.
-5. Revisión independiente.
-6. Corrección de hallazgos.
-7. Validación estructural y técnica.
-8. Integración canónica.
-9. Regeneración de índices.
-10. Pruebas y build.
-11. Reporte breve y cierre.
-12. Continuación automática al siguiente lote.
+5. Corrección de hallazgos conocidos.
+6. Preparación de estados finales en la rama del pull request:
+   - entidades y fuentes en `approved` / `verified`;
+   - `reviewedAt` registrado;
+   - lote en `accepted`;
+   - reportes y evidencias actualizados.
+7. Regeneración de índices y derivados aplicables.
+8. Validación estructural y técnica final.
+9. Ejecución de pruebas y build.
+10. Entrega del pull request al Responsable del proyecto sin commits operativos pendientes.
+11. Revisión humana del pull request por el Responsable del proyecto.
+12. Corrección y nueva validación cuando se soliciten cambios.
+13. Merge manual por el Responsable del proyecto cuando el pull request sea conforme.
+14. Verificación post-merge del commit real.
+15. Registro de transiciones `integrated` y `closed`, actualización del inventario, conteos y siguiente lote.
+16. Continuación al siguiente lote.
+
+### 4.1 Estados preparados dentro del pull request
+
+Los valores `approved`, `verified` y `accepted` incluidos en la rama del pull request representan el estado final propuesto para integración. No son canónicos ni efectivos mientras permanezcan fuera de `main`.
+
+La aprobación humana y el merge manual del Responsable del proyecto hacen efectivos esos estados dentro del corpus canónico. Si el Responsable solicita cambios, el productor actualiza el mismo pull request, vuelve a ejecutar las validaciones y entrega un nuevo último commit.
+
+El productor no realiza el merge. Después de que el Responsable informe que aprobó y fusionó el pull request, el integrador verifica el estado en GitHub y completa únicamente los registros post-merge.
 
 ## 5. Puertas
 
-Un lote puede cerrarse cuando:
+Un pull request puede entregarse para revisión humana cuando:
 
-- todas sus entidades están integradas o sustituidas;
-- no hay bloqueantes ni mayores abiertos;
+- contiene exclusivamente el alcance autorizado;
+- todas sus entidades y fuentes tienen sus estados finales preparados;
+- no hay bloqueantes ni mayores conocidos abiertos;
 - IDs, rutas y nombres son únicos;
 - las referencias obligatorias resuelven;
 - las fuentes son válidas;
-- los estados son conformes;
-- los derivados se regeneran;
-- pruebas y build aplicables son conformes.
+- los derivados aplicables están regenerados;
+- pruebas y build aplicables son conformes;
+- el último commit no deja cambios operativos pendientes antes del merge.
+
+Un lote puede cerrarse cuando:
+
+- el Responsable del proyecto aprobó y fusionó el pull request;
+- el merge fue verificado en `main`;
+- todas sus entidades quedaron integradas o sustituidas;
+- no hay bloqueantes ni mayores abiertos;
+- el inventario, los conteos, el registro de ondas y el reporte final fueron actualizados.
 
 Los defectos menores pueden corregirse dentro del mismo lote sin escalar.
 
@@ -89,7 +114,7 @@ La sustitución debe:
 - usar un candidato de reserva;
 - conservar el total del dominio;
 - registrar candidato retirado, sustituto y razón;
-- no requerir autorización humana.
+- no requerir autorización humana adicional, salvo que el Responsable del proyecto cuestione la sustitución durante la revisión del pull request.
 
 ## 7. Reportes
 
@@ -97,6 +122,7 @@ Cada lote genera un reporte compacto:
 
 - planificado;
 - producido;
+- preparado para integración;
 - integrado;
 - sustituido;
 - descartado;
@@ -104,9 +130,10 @@ Cada lote genera un reporte compacto:
 - fuentes agregadas;
 - hallazgos;
 - resultado de validación;
-- commit.
+- pull request;
+- commit de merge verificado.
 
-Cada onda genera un resumen acumulativo. El Responsable del proyecto recibe reportes por onda, no expedientes por entidad.
+Cada onda genera un resumen acumulativo. El Responsable del proyecto revisa los pull requests y recibe reportes acumulativos por onda; no se requieren expedientes por entidad.
 
 ## 8. Bloqueos permitidos
 
@@ -126,11 +153,16 @@ Un defecto local bloquea únicamente su entidad o lote. Se usa una sustitución 
 - duplicar una entidad por idioma;
 - usar aliases como entidades;
 - cambiar IDs existentes;
-- integrar contenido sin revisión independiente;
+- presentar un pull request con estados o validaciones pendientes que deban corregirse antes del merge;
+- considerar los estados preparados en una rama como integración canónica antes del merge;
+- integrar contenido sin revisión humana del Responsable del proyecto;
+- realizar el merge desde el rol productor o integrador;
 - ocultar defectos con defaults o tolerancias;
 - considerar una cuota como evidencia de calidad;
 - publicar externamente.
 
 ## 10. Cierre
 
-El integrador puede transicionar automáticamente un lote técnico conforme de `in-review` a `accepted`, `integrated` y `closed` bajo la delegación de `decision-0024`. Esta transición es operativa y no concede autoridad para cambiar alcance o contratos.
+El lote permanece `accepted` mientras espera la revisión y el merge manual del Responsable del proyecto. Una vez verificado el merge en `main`, el integrador puede registrar las transiciones `accepted` → `integrated` → `closed`, actualizar los conteos y habilitar el siguiente lote.
+
+Estas transiciones son operativas y no conceden autoridad para cambiar alcance, taxonomía, modelo, audiencia, idioma o publicación.
