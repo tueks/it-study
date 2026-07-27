@@ -1,23 +1,8 @@
 # Validación final — `batch-044-expansion-wave-01-02`
 
-## Estado
+## Resultado
 
-`diagnostic-rerun-in-progress`
-
-## Comprobaciones estructurales previas
-
-- Archivos de entidad presentes: 12/12.
-- Archivos de fuente nuevos presentes: 4/4.
-- Candidatos fuera del inventario autorizado: 0.
-- IDs candidatos repetidos dentro del lote: 0.
-- Rutas repetidas dentro del lote: 0.
-- Dominio, subdominio, tipos y familias conformes: 12/12.
-- Estados editoriales posteriores a revisión: 12 entidades y 4 fuentes en `approved` / `verified`.
-- Campos especializados de `model`, `technology` y `standard` presentes.
-- Referencias hacia candidatos de lotes futuros: 0.
-- Autorrelaciones detectadas: 0.
-- Ciclos de prerequisites identificados en el diseño del lote: 0.
-- Fuentes nuevas referenciadas y registradas: 4/4.
+`conforming-for-internal-integration`
 
 ## Revisión independiente
 
@@ -25,12 +10,46 @@
 - Disposición: `approved-for-internal-integration`.
 - Hallazgos adicionales comunicados: 0.
 
-## Automatización
+## Promoción editorial
 
-La primera ejecución del workflow temporal `Batch 044 final validation` alcanzó la validación de contenido y falló antes de ejecutar tests y build. El workflow fue ajustado para conservar el diagnóstico completo como artefacto.
+- Entidades: 12/12 en `approved` / `verified`.
+- Fuentes nuevas: 4/4 en `approved` / `verified`.
+- `reviewedAt`: presente en 16/16 registros.
 
-Se solicitó una segunda ejecución sobre este commit. El resultado, la causa y cualquier corrección se registrarán aquí antes de fusionar.
+## Validación automatizada
 
-## Puerta
+- Workflow: `Batch 044 final validation`.
+- Run conforme: `30230064887`.
+- Commit validado: `abd18f5cb445c796e5f3f0c1bbd1bc1822743907`.
+- Validación de contenido: conforme.
+- `npm test`: conforme.
+- `npm run build`: conforme.
 
-No se autoriza integración hasta que la validación de contenido, `npm test` y `npm run build` sean conformes. La publicación externa permanece no autorizada.
+La validación automatizada comprobó:
+
+- 12 entidades y 4 fuentes coincidentes con el inventario autorizado;
+- IDs globales únicos;
+- estados `approved` / `verified` y fechas de revisión;
+- dominio y subdominios;
+- campos especializados de `model`, `technology` y `standard`;
+- resolución de fuentes, prerequisites y relaciones;
+- aliases con clases permitidas y sin colisiones internas;
+- source types permitidos;
+- ausencia de autorreferencias y ciclos de prerequisites;
+- generación y comprobación del catálogo;
+- compilación de la aplicación.
+
+## Hallazgos resueltos durante validación
+
+1. `entity-predicate-logic.md`: se entrecomilló un valor YAML que contenía `x:`.
+2. `entity-binary-number-system.md`: se entrecomilló un valor YAML que iniciaba con backtick.
+3. `entity-unicode.md`: se entrecomilló un valor YAML que iniciaba con backtick.
+
+Después de estas correcciones la ejecución completa fue conforme.
+
+## Estado operativo
+
+- Hallazgos bloqueantes abiertos: 0.
+- Hallazgos mayores abiertos: 0.
+- Integración canónica: autorizada internamente.
+- Publicación externa: no autorizada.
