@@ -15,11 +15,12 @@ language: en
 authorityLevel: strong
 notes: Curso institucional usado para delimitar bit, byte, positional number systems, binary, hexadecimal y representación digital; no se usa como estándar normativo.
 availabilityStatus: available
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study research agent
 batch: batch-044-expansion-wave-01-02
 createdAt: '2026-07-24'
-verificationStatus: pending
+reviewedAt: '2026-07-26'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
