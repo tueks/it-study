@@ -17,11 +17,12 @@ language: en
 authorityLevel: authoritative
 notes: Especificación histórica y normativa del uso de ASCII de 7 bits para intercambio; se utiliza para explicar repertorio, códigos de control y su incorporación habitual en bytes de 8 bits.
 availabilityStatus: available
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study research agent
 batch: batch-044-expansion-wave-01-02
 createdAt: '2026-07-24'
-verificationStatus: pending
+reviewedAt: '2026-07-26'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
