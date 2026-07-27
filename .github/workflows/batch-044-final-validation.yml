@@ -25,9 +25,12 @@ jobs:
         run: npm install --no-audit --no-fund
 
       - name: Validate batch 044 content
+        id: content_validation
         working-directory: frontend
+        shell: bash
         run: |
-          node --input-type=module <<'EOF'
+          set +e
+          node --input-type=module > ../batch-044-content-validation.log 2>&1 <<'EOF'
           import { readdir, readFile } from 'node:fs/promises'
           import { join, relative, resolve } from 'node:path'
           import { parse } from 'yaml'
@@ -154,6 +157,20 @@ jobs:
           }
           console.log(`B044 válido: ${batchEntities.length} entidades y ${batchSources.length} fuentes approved/verified.`)
           EOF
+          status=$?
+          cat ../batch-044-content-validation.log
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Upload content validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch-044-content-validation
+          path: batch-044-content-validation.log
+
+      - name: Enforce content validation
+        run: test "${{ steps.content_validation.outputs.status }}" = "0"
 
       - name: Run tests
         working-directory: frontend
