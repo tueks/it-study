@@ -2,7 +2,7 @@
 
 ## Estado
 
-`pending-independent-review`
+`preparing-owner-review-package`
 
 ## Trabajo disponible
 
@@ -21,36 +21,10 @@
 - `npm test`: conforme.
 - `npm run build`: conforme.
 
-## Solicitudes de revisión
+## Nueva regla operativa
 
-- Reviewer solicitado: `copilot-pull-request-reviewer[bot]`.
-- Mención explícita `@copilot` publicada con criterios conceptuales, editoriales y técnicos.
-- Comentario de solicitud: `5096562722`.
-- Reviews independientes registradas al momento de esta actualización: 0.
-- La ausencia de respuesta no se interpreta como aprobación.
+El Responsable del proyecto revisará personalmente el pull request y realizará el merge manual cuando el resultado sea conforme. Se activó la preparación automática del último commit para promover las fichas y fuentes, marcar el lote `accepted` y repetir las pruebas antes de entregar el PR.
 
-## Revisión requerida
+## Publicación
 
-Una revisión independiente debe evaluar:
-
-- precisión y claridad conceptual;
-- suficiencia para contextual understanding;
-- clasificación, tipo y familia;
-- fuentes, versión y alcance;
-- duplicados y aliases;
-- prerequisites, relaciones y referencias;
-- fronteras Data Compression/Lossless/Lossy;
-- fronteras Information Theory/Entropy;
-- precisión de Floating-Point Representation;
-- diferencias Array/Linked List y Stack/Queue/Deque;
-- garantías y límites de Hash Table.
-
-## Consecuencia operativa
-
-Mientras no exista una revisión independiente conforme:
-
-- las fichas y fuentes permanecen `in-review` / `pending`;
-- no se actualiza el inventario como integrado;
-- no se fusiona el lote;
-- no se marca `accepted`, `integrated` ni `closed`;
-- no se autoriza publicación externa.
+La preparación, aprobación y fusión interna no autorizan publicación externa.
