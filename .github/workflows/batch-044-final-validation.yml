@@ -1,0 +1,164 @@
+name: Batch 044 final validation
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout pull request
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm install --no-audit --no-fund
+
+      - name: Validate batch 044 content
+        working-directory: frontend
+        run: |
+          node --input-type=module <<'EOF'
+          import { readdir, readFile } from 'node:fs/promises'
+          import { join, relative, resolve } from 'node:path'
+          import { parse } from 'yaml'
+
+          const repo = resolve('..')
+          const batch = 'batch-044-expansion-wave-01-02'
+          const expected = new Set([
+            'entity-graph-theory',
+            'entity-propositional-logic',
+            'entity-predicate-logic',
+            'entity-bit',
+            'entity-byte',
+            'entity-binary-number-system',
+            'entity-hexadecimal-number-system',
+            'entity-number-base',
+            'entity-character-encoding',
+            'entity-ascii',
+            'entity-unicode',
+            'entity-data-encoding',
+          ])
+          const expectedSources = new Set([
+            'source-mit-ocw-computation-structures-2017',
+            'source-rfc-20-ascii',
+            'source-unicode-standard-17-0',
+            'source-unicode-utr-17-character-encoding-model',
+          ])
+          const allowedAliasKinds = new Set(['acronym','translation','notation','common','alternate','historical'])
+          const allowedSourceTypes = new Set(['primary-source','institutional-source','standard','official-documentation','academic-publication','secondary-source','vendor-source','historical-source'])
+
+          async function markdownFiles(dir) {
+            const entries = await readdir(dir, { withFileTypes: true })
+            const nested = await Promise.all(entries.map(async (entry) => {
+              const path = join(dir, entry.name)
+              if (entry.isDirectory()) return markdownFiles(path)
+              if (!entry.name.endsWith('.md') || entry.name === 'AGENTS.md') return []
+              return [path]
+            }))
+            return nested.flat().sort()
+          }
+
+          async function record(path) {
+            const text = await readFile(path, 'utf8')
+            const match = text.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+            if (!match) throw new Error(`Frontmatter ausente: ${relative(repo, path)}`)
+            const data = parse(match[1])
+            return { ...data, sourcePath: relative(repo, path).replaceAll('\\', '/') }
+          }
+
+          const entities = await Promise.all((await markdownFiles(join(repo, 'content/entities'))).map(record))
+          const sources = await Promise.all((await markdownFiles(join(repo, 'content/sources'))).map(record))
+          const batchEntities = entities.filter((item) => item.batch === batch)
+          const batchSources = sources.filter((item) => item.batch === batch)
+          const errors = []
+          const assert = (condition, message) => { if (!condition) errors.push(message) }
+
+          const globalIds = new Set()
+          for (const item of [...entities, ...sources]) {
+            assert(!globalIds.has(item.id), `ID duplicado global: ${item.id}`)
+            globalIds.add(item.id)
+          }
+
+          assert(batchEntities.length === 12, `Entidades del lote: ${batchEntities.length}, esperado 12`)
+          assert(batchSources.length === 4, `Fuentes del lote: ${batchSources.length}, esperado 4`)
+          assert(expected.size === batchEntities.filter((x) => expected.has(x.id)).length, 'Las entidades no coinciden con el inventario autorizado')
+          assert(expectedSources.size === batchSources.filter((x) => expectedSources.has(x.id)).length, 'Las fuentes no coinciden con el plan')
+
+          const entityIds = new Set(entities.map((x) => x.id))
+          const sourceIds = new Set(sources.map((x) => x.id))
+          const aliasOwner = new Map()
+          const normalize = (value) => value.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
+
+          for (const item of batchEntities) {
+            assert(item.editorialStatus === 'approved', `${item.id}: editorialStatus no approved`)
+            assert(item.verificationStatus === 'verified', `${item.id}: verificationStatus no verified`)
+            assert(Boolean(item.reviewedAt), `${item.id}: reviewedAt ausente`)
+            assert(item.primaryDomain === 'domain-fundamentos-computacion', `${item.id}: dominio incorrecto`)
+            assert(Array.isArray(item.subdomains) && item.subdomains.length === 1, `${item.id}: subdomain inválido`)
+            if (item.type === 'model') for (const field of ['represents','scope','elements']) assert(item[field] !== undefined, `${item.id}: campo model ausente ${field}`)
+            if (item.type === 'technology') for (const field of ['capabilities','mechanisms','applicationContexts']) assert(item[field] !== undefined, `${item.id}: campo technology ausente ${field}`)
+            if (item.type === 'standard') for (const field of ['issuer','designation','version','status']) assert(item[field] !== undefined, `${item.id}: campo standard ausente ${field}`)
+            for (const source of item.sources ?? []) assert(sourceIds.has(source), `${item.id}: fuente inexistente ${source}`)
+            for (const target of item.prerequisites ?? []) {
+              assert(target !== item.id, `${item.id}: autorreferencia de prerequisite`)
+              assert(entityIds.has(target), `${item.id}: prerequisite inexistente ${target}`)
+            }
+            for (const relation of item.relations ?? []) {
+              assert(relation.targetId !== item.id, `${item.id}: autorrelación`)
+              assert(entityIds.has(relation.targetId), `${item.id}: relación inexistente ${relation.targetId}`)
+              assert(Boolean(relation.relationType), `${item.id}: relationType ausente`)
+              assert(Boolean(relation.note), `${item.id}: note de relación ausente`)
+            }
+            for (const alias of item.aliases ?? []) {
+              assert(allowedAliasKinds.has(alias.kind), `${item.id}: alias kind no permitido ${alias.kind}`)
+              const key = normalize(alias.value)
+              const previous = aliasOwner.get(key)
+              assert(!previous || previous === item.id, `${item.id}: alias colisiona con ${previous}: ${alias.value}`)
+              aliasOwner.set(key, item.id)
+            }
+          }
+
+          for (const source of batchSources) {
+            assert(source.editorialStatus === 'approved', `${source.id}: editorialStatus no approved`)
+            assert(source.verificationStatus === 'verified', `${source.id}: verificationStatus no verified`)
+            assert(Boolean(source.reviewedAt), `${source.id}: reviewedAt ausente`)
+            assert(allowedSourceTypes.has(source.sourceType), `${source.id}: sourceType no permitido ${source.sourceType}`)
+          }
+
+          const graph = new Map(entities.map((x) => [x.id, (x.prerequisites ?? []).filter((id) => entityIds.has(id))]))
+          const visiting = new Set()
+          const visited = new Set()
+          function visit(id) {
+            if (visiting.has(id)) { errors.push(`Ciclo de prerequisites detectado en ${id}`); return }
+            if (visited.has(id)) return
+            visiting.add(id)
+            for (const dep of graph.get(id) ?? []) visit(dep)
+            visiting.delete(id)
+            visited.add(id)
+          }
+          for (const id of expected) visit(id)
+
+          if (errors.length) {
+            console.error(errors.map((x) => `- ${x}`).join('\n'))
+            process.exit(1)
+          }
+          console.log(`B044 válido: ${batchEntities.length} entidades y ${batchSources.length} fuentes approved/verified.`)
+          EOF
+
+      - name: Run tests
+        working-directory: frontend
+        run: npm test
+
+      - name: Run build
+        working-directory: frontend
+        run: npm run build
