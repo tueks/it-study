@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   validate:
+    if: github.head_ref == 'agent/batch-045-expansion-wave-01-03'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout pull request
