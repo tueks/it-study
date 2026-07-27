@@ -17,11 +17,12 @@ language: en
 authorityLevel: authoritative
 notes: Estándar oficial utilizado para delimitar floating-point formats, significand, exponent, rounding, infinities, NaN y signed zero. El acceso al texto normativo completo puede requerir suscripción; no se atribuyen detalles no comprobados.
 availabilityStatus: partially-available
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study research agent
 batch: batch-045-expansion-wave-01-03
 createdAt: '2026-07-27'
-verificationStatus: pending
+reviewedAt: '2026-07-27'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
