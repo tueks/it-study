@@ -6,7 +6,7 @@ canonicalName: deque
 englishName: Double-Ended Queue
 aliases:
 - value: double-ended queue
-  kind: expansion
+  kind: alternate
   language: en
 - value: cola de doble extremo
   kind: translation
