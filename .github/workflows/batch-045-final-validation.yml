@@ -6,19 +6,15 @@ on:
       - main
 
 permissions:
-  contents: write
-  pull-requests: read
+  contents: read
 
 jobs:
   validate:
     if: github.head_ref == 'agent/batch-045-expansion-wave-01-03'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout pull request branch
+      - name: Checkout pull request
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -29,7 +25,7 @@ jobs:
         working-directory: frontend
         run: npm install --no-audit --no-fund
 
-      - name: Validate batch 045 content
+      - name: Validate batch 045 final states
         working-directory: frontend
         run: |
           node --input-type=module <<'EOF'
@@ -106,17 +102,16 @@ jobs:
           const normalize = (value) => value.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
 
           for (const item of batchEntities) {
-            assert(['in-review','approved'].includes(item.editorialStatus), `${item.id}: editorialStatus inválido ${item.editorialStatus}`)
-            assert(['pending','verified'].includes(item.verificationStatus), `${item.id}: verificationStatus inválido ${item.verificationStatus}`)
-            assert((item.editorialStatus === 'approved') === (item.verificationStatus === 'verified'), `${item.id}: estados inconsistentes`)
-            if (item.editorialStatus === 'approved') assert(Boolean(item.reviewedAt), `${item.id}: reviewedAt ausente`)
+            assert(item.editorialStatus === 'approved', `${item.id}: editorialStatus no approved`)
+            assert(item.verificationStatus === 'verified', `${item.id}: verificationStatus no verified`)
+            assert(Boolean(item.reviewedAt), `${item.id}: reviewedAt ausente`)
             assert(item.primaryDomain === 'domain-fundamentos-computacion', `${item.id}: dominio incorrecto`)
             assert(Array.isArray(item.subdomains) && item.subdomains.length === 1, `${item.id}: subdomain inválido`)
             if (item.type === 'model') for (const field of ['represents','scope','elements']) assert(item[field] !== undefined, `${item.id}: campo model ausente ${field}`)
             if (item.type === 'technology') for (const field of ['problemSolved','capabilities','mechanisms','applicationContexts']) assert(item[field] !== undefined, `${item.id}: campo technology ausente ${field}`)
             for (const source of item.sources ?? []) assert(sourceIds.has(source), `${item.id}: fuente inexistente ${source}`)
             for (const target of item.prerequisites ?? []) {
-              assert(target !== item.id, `${item.id}: autorreferencia de prerequisite`)
+              assert(target !== item.id, `${item.id}: autorreferencia prerequisite`)
               assert(entityIds.has(target), `${item.id}: prerequisite inexistente ${target}`)
             }
             for (const target of item.related ?? []) {
@@ -133,10 +128,9 @@ jobs:
           }
 
           for (const source of batchSources) {
-            assert(['in-review','approved'].includes(source.editorialStatus), `${source.id}: editorialStatus inválido ${source.editorialStatus}`)
-            assert(['pending','verified'].includes(source.verificationStatus), `${source.id}: verificationStatus inválido ${source.verificationStatus}`)
-            assert((source.editorialStatus === 'approved') === (source.verificationStatus === 'verified'), `${source.id}: estados inconsistentes`)
-            if (source.editorialStatus === 'approved') assert(Boolean(source.reviewedAt), `${source.id}: reviewedAt ausente`)
+            assert(source.editorialStatus === 'approved', `${source.id}: editorialStatus no approved`)
+            assert(source.verificationStatus === 'verified', `${source.id}: verificationStatus no verified`)
+            assert(Boolean(source.reviewedAt), `${source.id}: reviewedAt ausente`)
             assert(allowedSourceTypes.has(source.sourceType), `${source.id}: sourceType no permitido ${source.sourceType}`)
           }
 
@@ -157,7 +151,7 @@ jobs:
             console.error(errors.map((x) => `- ${x}`).join('\n'))
             process.exit(1)
           }
-          console.log(`B045 válido: ${batchEntities.length} entidades y ${batchSources.length} fuentes.`)
+          console.log(`B045 válido para revisión del Responsable: ${batchEntities.length} entidades y ${batchSources.length} fuentes approved/verified.`)
           EOF
 
       - name: Run tests
@@ -167,125 +161,3 @@ jobs:
       - name: Run build
         working-directory: frontend
         run: npm run build
-
-      - name: Prepare final owner review package
-        env:
-          RUN_ID: ${{ github.run_id }}
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import os
-
-          batch = 'batch-045-expansion-wave-01-03'
-          review_date = '2026-07-27'
-          changed = 0
-
-          for root in (Path('content/entities'), Path('content/sources')):
-              for path in root.rglob('*.md'):
-                  text = path.read_text(encoding='utf-8')
-                  if f'batch: {batch}' not in text:
-                      continue
-                  updated = text.replace('editorialStatus: in-review', 'editorialStatus: approved')
-                  updated = updated.replace('verificationStatus: pending', 'verificationStatus: verified')
-                  if 'reviewedAt:' not in updated:
-                      updated = updated.replace(
-                          f"createdAt: '{review_date}'\n",
-                          f"createdAt: '{review_date}'\nreviewedAt: '{review_date}'\n",
-                          1,
-                      )
-                  if updated != text:
-                      path.write_text(updated, encoding='utf-8')
-                      changed += 1
-
-          register = Path('work/EXPANSION-WAVE-REGISTER.md')
-          text = register.read_text(encoding='utf-8')
-          text = text.replace(
-              '| `batch-045-expansion-wave-01-03` | `wave-01` | 12 | `candidate-data-compression` | `candidate-hash-table` | `in-review` |',
-              '| `batch-045-expansion-wave-01-03` | `wave-01` | 12 | `candidate-data-compression` | `candidate-hash-table` | `accepted` |',
-          )
-          transition = "| `batch-045-expansion-wave-01-03` | `2026-07-27` | `in-review` | `accepted` | Estados finales preparados en el PR #6; pendiente revisión y merge manual del Responsable del proyecto. |"
-          if transition not in text:
-              text = text.rstrip() + '\n' + transition + '\n'
-          register.write_text(text, encoding='utf-8')
-
-          gate = Path(f'deliveries/{batch}/review-gate-status.md')
-          gate.write_text(f'''# Estado de entrega para revisión del Responsable — `{batch}`
-
-## Estado
-
-`ready-for-owner-review`
-
-## Paquete final propuesto
-
-- 12 entidades en `approved` / `verified` dentro de la rama del PR.
-- 5 fuentes nuevas en `approved` / `verified` dentro de la rama del PR.
-- Lote en `accepted` dentro del registro de ondas.
-- Preflight, investigación, autoevaluación, validación, `npm test` y `npm run build` conformes.
-- PR #6 preparado sin cambios operativos pendientes antes del merge.
-
-## Semántica de los estados
-
-Los estados preparados en la rama son la propuesta final de integración. No son canónicos mientras el PR permanezca fuera de `main`.
-
-El Responsable del proyecto revisa personalmente el pull request y realiza el merge manual cuando el resultado es conforme. Si solicita cambios, el productor corrige el mismo PR, vuelve a validar y entrega un nuevo último commit.
-
-## Después del merge
-
-Cuando el Responsable informe que aprobó y fusionó el PR, el integrador verificará el merge y su commit real, registrará `accepted` → `integrated` → `closed` y actualizará inventario, conteos, reporte final y siguiente lote.
-
-## Publicación
-
-La aprobación y el cierre interno del lote no autorizan publicación externa.
-''', encoding='utf-8')
-
-          report = Path(f'deliveries/{batch}/batch-report.md')
-          report.write_text(f'''# Reporte de lote — `{batch}`
-
-## Estado previo al merge
-
-`accepted`
-
-## Resultado compacto
-
-| Campo | Resultado |
-|---|---:|
-| Planificado | 12 |
-| Producido | 12 |
-| Preparado para integración | 12 |
-| Integrado | 0 |
-| Sustituido | 0 |
-| Descartado | 0 |
-| Fuentes agregadas | 5 |
-| Hallazgos bloqueantes abiertos | 0 |
-| Hallazgos mayores abiertos | 0 |
-
-## Validación
-
-- Validación de contenido: conforme.
-- `npm test`: conforme.
-- `npm run build`: conforme.
-- GitHub Actions run: `{os.environ.get('RUN_ID', 'pending')}`.
-
-## Disposición
-
-El PR #6 queda listo para revisión humana y merge manual del Responsable del proyecto. Los estados `approved`, `verified` y `accepted` son finales propuestos dentro de la rama y se vuelven canónicos únicamente al integrarse en `main`.
-
-## Publicación
-
-No autorizada.
-''', encoding='utf-8')
-
-          print(f'Prepared {changed} records.')
-          PY
-
-      - name: Commit final review package
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add content/entities content/sources deliveries/batch-045-expansion-wave-01-03 work/EXPANSION-WAVE-REGISTER.md
-          if git diff --cached --quiet; then
-            echo 'Final review package already prepared.'
-            exit 0
-          fi
-          git commit -m 'chore: prepare batch 045 for owner review'
-          git push origin HEAD:${{ github.head_ref }}
