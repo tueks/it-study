@@ -1,47 +1,36 @@
-# Validación previa a revisión — `batch-044-expansion-wave-01-02`
+# Validación final — `batch-044-expansion-wave-01-02`
 
-## Resultado
+## Estado
 
-`conforming-for-independent-review-with-final-automation-pending`
+`diagnostic-rerun-in-progress`
 
-## Comprobaciones realizadas
+## Comprobaciones estructurales previas
 
-- Archivos de entidad presentes en el PR: 12/12.
+- Archivos de entidad presentes: 12/12.
 - Archivos de fuente nuevos presentes: 4/4.
 - Candidatos fuera del inventario autorizado: 0.
 - IDs candidatos repetidos dentro del lote: 0.
 - Rutas repetidas dentro del lote: 0.
-- Dominio y subdominio coinciden con el shard autorizado: 12/12.
-- Tipos y familias coinciden con el inventario: 12/12.
-- Estados editoriales: 12 entidades y 4 fuentes en `in-review` / `pending`.
-- Campos especializados incluidos:
-  - `model`: `represents`, `scope`, `elements`;
-  - `technology`: `capabilities`, `mechanisms`, `applicationContexts`;
-  - `standard`: `issuer`, `designation`, `version`, `status`.
-- Referencias utilizadas se limitan al baseline, B043 y B044.
+- Dominio, subdominio, tipos y familias conformes: 12/12.
+- Estados editoriales posteriores a revisión: 12 entidades y 4 fuentes en `approved` / `verified`.
+- Campos especializados de `model`, `technology` y `standard` presentes.
 - Referencias hacia candidatos de lotes futuros: 0.
 - Autorrelaciones detectadas: 0.
 - Ciclos de prerequisites identificados en el diseño del lote: 0.
 - Fuentes nuevas referenciadas y registradas: 4/4.
 
-## Corrección verificada
+## Revisión independiente
 
-La indentación incorrecta de `designation` en `entity-ascii.md` fue corregida antes de emitir este resultado.
+- Review de GitHub: `4783057979`.
+- Disposición: `approved-for-internal-integration`.
+- Hallazgos adicionales comunicados: 0.
 
-## Automatización y build
+## Automatización
 
-Se preparó un workflow temporal para analizar YAML, IDs, referencias, ciclos y ejecutar `npm test` / `npm run build`. No produjo un run consultable porque el workflow no existe en la rama base `main`; fue retirado y no se atribuyen resultados inexistentes.
+La primera ejecución del workflow temporal `Batch 044 final validation` alcanzó la validación de contenido y falló antes de ejecutar tests y build. El workflow fue ajustado para conservar el diagnóstico completo como artefacto.
 
-La puerta automatizada final queda reservada para después de la revisión independiente y de la promoción a `approved` / `verified`. En el estado actual, el generador canónico filtra las fichas `in-review`, por lo que todavía no deben incorporarse al catálogo generado.
-
-## Estado operativo
-
-- Integración canónica: no realizada.
-- Inventario como integrado: no actualizado.
-- Regeneración final del catálogo: pendiente.
-- `npm test` y `npm run build` finales: pendientes.
-- Publicación externa: no autorizada.
+Se solicitó una segunda ejecución sobre este commit. El resultado, la causa y cualquier corrección se registrarán aquí antes de fusionar.
 
 ## Puerta
 
-El lote puede avanzar a revisión independiente. Este reporte no autoriza integración ni cierre.
+No se autoriza integración hasta que la validación de contenido, `npm test` y `npm run build` sean conformes. La publicación externa permanece no autorizada.
