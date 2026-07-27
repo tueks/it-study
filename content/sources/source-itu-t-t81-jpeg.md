@@ -17,11 +17,12 @@ language: en
 authorityLevel: authoritative
 notes: Estándar oficial utilizado como ejemplo de compression con pérdida para imágenes de tonos continuos. El acceso completo está condicionado; se limita el uso a alcance, identidad y principios generales comprobables.
 availabilityStatus: partially-available
-editorialStatus: in-review
+editorialStatus: approved
 owner: IT Study research agent
 batch: batch-045-expansion-wave-01-03
 createdAt: '2026-07-27'
-verificationStatus: pending
+reviewedAt: '2026-07-27'
+verificationStatus: verified
 deprecated: false
 contractVersion: '1.0'
 ---
