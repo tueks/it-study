@@ -30,7 +30,7 @@ relations:
   note: Unicode preserva los valores ASCII en los primeros 128 code points para compatibilidad.
 examples:
 - title: Code point de una letra
-  explanation: `U+0041` identifica el carácter LATIN CAPITAL LETTER A; UTF-8 lo serializa como el byte hexadecimal `41`.
+  explanation: '`U+0041` identifica el carácter LATIN CAPITAL LETTER A; UTF-8 lo serializa como el byte hexadecimal `41`.'
 limitations:
 - Un code point no equivale siempre a un carácter percibido por una persona; un grapheme puede contener varios code points.
 - Unicode no especifica por sí solo la font, el diseño visual, la segmentación lingüística completa ni el significado contextual.
