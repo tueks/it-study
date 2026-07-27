@@ -1,26 +1,40 @@
-# Estado de la puerta de revisión — `batch-045-expansion-wave-01-03`
+# Estado de entrega para revisión del Responsable — `batch-045-expansion-wave-01-03`
 
 ## Estado
 
-`preparing-owner-review-package`
+`ready-for-owner-review`
 
-## Trabajo disponible
+## Paquete final propuesto
 
-- 12 entidades completas en `in-review` / `pending`.
-- 5 fuentes nuevas en `in-review` / `pending`.
-- Preflight, plan de fuentes y comprobación de duplicados disponibles.
-- Autoevaluación del productor disponible.
-- Validación automatizada inicial conforme.
-- PR #6 abierto y fusionable.
+- 12 entidades en `approved` / `verified` dentro de la rama del PR.
+- 5 fuentes nuevas en `approved` / `verified` dentro de la rama del PR.
+- Lote en `accepted` dentro del registro de ondas.
+- Preflight, investigación, autoevaluación y validación técnica inicial conformes.
+- PR #6 preparado sin cambios operativos pendientes antes del merge.
 
-## Nueva regla operativa
+## Semántica de los estados
 
-El Responsable del proyecto revisará personalmente el pull request y realizará el merge manual cuando el resultado sea conforme. El workflow final del PR promoverá las fichas y fuentes a `approved` / `verified`, marcará el lote `accepted`, repetirá las validaciones y creará el último commit de entrega.
+Los estados preparados en la rama son la propuesta final de integración. No son canónicos mientras el PR permanezca fuera de `main`.
 
-## Ejecución
+El Responsable del proyecto revisa personalmente el pull request. Si el resultado es conforme, realiza el merge manual desde GitHub. Si solicita cambios, el productor corrige el mismo PR, vuelve a validar y entrega un nuevo último commit.
 
-La rama y `main` ya están reconciliadas respecto a los workflows temporales. Esta actualización dispara la preparación final del paquete.
+## Validación registrada
+
+- Validación de contenido previa a la promoción de estados: conforme.
+- `npm test`: conforme.
+- `npm run build`: conforme.
+- GitHub Actions run registrado: `30303660888`.
+- La promoción posterior se limitó a metadatos de gobierno: `editorialStatus`, `reviewedAt`, `verificationStatus` y estado del lote.
+
+## Después del merge
+
+Cuando el Responsable informe que aprobó y fusionó el PR, el integrador debe:
+
+1. verificar el merge y su commit real;
+2. registrar `accepted` → `integrated` → `closed`;
+3. actualizar inventario, conteos, reporte final y siguiente lote;
+4. retirar las automatizaciones temporales de B045.
 
 ## Publicación
 
-La preparación, aprobación y fusión interna no autorizan publicación externa.
+La aprobación y el cierre interno del lote no autorizan publicación externa.
