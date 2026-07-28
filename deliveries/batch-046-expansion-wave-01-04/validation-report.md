@@ -2,11 +2,11 @@
 
 ## Estado
 
-`initial-validation-conforming`
+`conforming-for-owner-review`
 
-## Primera ejecución automatizada
+## Resultado automatizado
 
-- GitHub Actions run: `30329557929`.
+- GitHub Actions run final: `30329557929`.
 - Frontmatter YAML: conforme.
 - Entidades esperadas: 12/12.
 - Fuentes nuevas: 2/2.
@@ -15,6 +15,6 @@
 - `npm test`: conforme.
 - `npm run build`: conforme.
 
-## Preparación final
+## Disposición
 
-Este commit activa la preparación automatizada del paquete final. El workflow actualizará B046 a `accepted`, registrará la evidencia definitiva y creará el último commit para revisión del Responsable.
+Las 12 entidades y 2 fuentes permanecen en `approved` / `verified`; el registro de ondas deja B046 en `accepted`. El PR #7 puede entregarse al Responsable del proyecto.
