@@ -1,8 +1,8 @@
 # Reporte de lote — `batch-045-expansion-wave-01-03`
 
-## Estado previo al merge
+## Estado final
 
-`accepted`
+`closed`
 
 ## Resultado compacto
 
@@ -10,8 +10,7 @@
 |---|---:|
 | Planificado | 12 |
 | Producido | 12 |
-| Preparado para integración | 12 |
-| Integrado | 0 |
+| Integrado | 12 |
 | Sustituido | 0 |
 | Descartado | 0 |
 | Candidatos de reserva usados | 0 |
@@ -19,28 +18,34 @@
 | Hallazgos bloqueantes abiertos | 0 |
 | Hallazgos mayores abiertos | 0 |
 
-## Estados preparados
+## Estados canónicos
 
 - Entidades: 12/12 en `approved` / `verified`.
 - Fuentes: 5/5 en `approved` / `verified`.
-- Registro de ondas: B045 en `accepted`.
-- Estos estados se vuelven canónicos únicamente cuando el PR #6 se integra en `main`.
+- Registro de ondas: B045 en `closed`.
+- Los estados preparados se volvieron canónicos mediante la integración del PR #6 en `main`.
 
-## Validación
+## Validación técnica
 
 - Preflight y comprobación de duplicados: conformes.
 - Autoevaluación editorial: conforme.
-- Validación automatizada de contenido: conforme.
+- Validación automatizada del último commit: conforme.
+- GitHub Actions run final: `30311467573`.
+- Commit validado: `747dad0b2e3a9751c0853daf3ac1ad3dfe61d56c`.
 - `npm test`: conforme.
 - `npm run build`: conforme.
-- Último run técnico registrado antes de la promoción de metadatos: `30303660888`.
 
-## Disposición
+## Integración y cierre
 
-El PR #6 queda listo para revisión personal y merge manual del Responsable del proyecto. El productor y el integrador no realizarán la fusión.
+- PR integrado: #6.
+- Revisión: realizada personalmente por el Responsable del proyecto.
+- Método: merge manual desde GitHub.
+- Merge commit: `8f6316efae26dc2c050744dec027921b177c14e7`.
+- Registro de ondas: B045 transicionado de `accepted` a `integrated` y `closed`.
+- Inventario maestro: 36/836 entidades nuevas integradas; 800 pendientes; 200/1,000 entidades canónicas.
+- Progreso de `wave-01`: 36/84 entidades integradas.
+- Próximo lote ejecutable: `batch-046-expansion-wave-01-04`.
 
-Después del aviso de aprobación y merge, se verificará el commit real y se completarán las transiciones `integrated` y `closed`, junto con inventario, conteos y siguiente lote.
+## Disposición final
 
-## Publicación
-
-No autorizada.
+El lote se encuentra cerrado técnica y editorialmente dentro del repositorio. El cierre no concede autorización para publicación externa del producto.
