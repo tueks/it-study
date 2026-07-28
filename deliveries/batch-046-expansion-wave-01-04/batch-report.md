@@ -1,8 +1,8 @@
 # Reporte de lote — `batch-046-expansion-wave-01-04`
 
-## Estado previo a revisión
+## Estado previo al merge
 
-`in-review`
+`accepted`
 
 ## Resultado compacto
 
@@ -23,8 +23,18 @@
 
 - Entidades: 12/12 en `approved` / `verified`.
 - Fuentes: 2/2 en `approved` / `verified`.
-- Validación automatizada final: pendiente.
-- Merge: reservado al Responsable del proyecto.
+- Registro de ondas: B046 en `accepted`.
+
+## Validación
+
+- GitHub Actions run final: `30329557929`.
+- Validación de contenido: conforme.
+- `npm test`: conforme.
+- `npm run build`: conforme.
+
+## Disposición
+
+El PR #7 queda listo para revisión personal y merge manual del Responsable del proyecto. Los estados finales propuestos se vuelven canónicos únicamente al integrarse en `main`.
 
 ## Publicación
 
