@@ -17,6 +17,8 @@
 - No requiere aprobación individual del Responsable del proyecto.
 - Un cambio de cantidad entre lotes puede hacerse dentro de la misma onda si el total y el inventario no cambian.
 - Sustituciones usan el inventario de reserva y se registran en el reporte del lote.
+- Desde B045, el PR se entrega con estados finales propuestos; el Responsable del proyecto revisa y realiza el merge manual.
+- Los estados preparados en la rama se vuelven canónicos únicamente al integrarse en `main`.
 
 ## Registro
 
@@ -24,7 +26,7 @@
 |---|---|---:|---|---|---|
 | `batch-043-expansion-wave-01-01` | `wave-01` | 12 | `candidate-computability` | `candidate-set-theory` | `closed` |
 | `batch-044-expansion-wave-01-02` | `wave-01` | 12 | `candidate-graph-theory` | `candidate-data-encoding` | `closed` |
-| `batch-045-expansion-wave-01-03` | `wave-01` | 12 | `candidate-data-compression` | `candidate-hash-table` | `authorized` |
+| `batch-045-expansion-wave-01-03` | `wave-01` | 12 | `candidate-data-compression` | `candidate-hash-table` | `accepted` |
 | `batch-046-expansion-wave-01-04` | `wave-01` | 12 | `candidate-tree` | `candidate-data-type` | `authorized` |
 | `batch-047-expansion-wave-01-05` | `wave-01` | 12 | `candidate-primitive-type` | `candidate-semantics` | `authorized` |
 | `batch-048-expansion-wave-01-06` | `wave-01` | 12 | `candidate-hardware` | `candidate-persistent-storage` | `authorized` |
@@ -107,3 +109,6 @@
 | `batch-044-expansion-wave-01-02` | `2026-07-26` | `in-review` | `accepted` | Review `4783057979`, 12 entidades y 4 fuentes `approved` / `verified`, workflow run `30230196540`, tests y build conformes. |
 | `batch-044-expansion-wave-01-02` | `2026-07-26` | `accepted` | `integrated` | PR #5 fusionado en `main` mediante commit `7c2ddf58f0863a40d57524b8dedb3bdc61d267c2`. |
 | `batch-044-expansion-wave-01-02` | `2026-07-26` | `integrated` | `closed` | Inventario, reporte de lote y estado operativo actualizados; siguiente lote ejecutable B045. |
+| `batch-045-expansion-wave-01-03` | `2026-07-27` | `authorized` | `in-production` | Preflight conforme y alcance exacto de 12 candidatos cargado. |
+| `batch-045-expansion-wave-01-03` | `2026-07-27` | `in-production` | `in-review` | Producción 12/12, 5 fuentes, autoevaluación y workflow run `30303329268` conformes. |
+| `batch-045-expansion-wave-01-03` | `2026-07-27` | `in-review` | `accepted` | 12 entidades y 5 fuentes en `approved` / `verified`; paquete final preparado en PR #6 para revisión y merge manual del Responsable del proyecto. |
