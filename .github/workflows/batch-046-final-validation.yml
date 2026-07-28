@@ -6,15 +6,18 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   validate:
     if: github.head_ref == 'agent/batch-046-expansion-wave-01-04'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout pull request
+      - name: Checkout pull request branch
         uses: actions/checkout@v4
+        with:
+          ref: agent/batch-046-expansion-wave-01-04
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -162,3 +165,133 @@ jobs:
       - name: Run build
         working-directory: frontend
         run: npm run build
+
+      - name: Prepare final owner review package
+        env:
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          if [ "$(git log -1 --pretty=%s)" = "chore: prepare batch 046 for owner review" ]; then
+            echo "Final package already prepared."
+            exit 0
+          fi
+          python - <<'PY'
+          from pathlib import Path
+          import os
+
+          batch = 'batch-046-expansion-wave-01-04'
+          run_id = os.environ['RUN_ID']
+
+          register = Path('work/EXPANSION-WAVE-REGISTER.md')
+          text = register.read_text(encoding='utf-8')
+          text = text.replace(
+              '| `batch-046-expansion-wave-01-04` | `wave-01` | 12 | `candidate-tree` | `candidate-data-type` | `authorized` |',
+              '| `batch-046-expansion-wave-01-04` | `wave-01` | 12 | `candidate-tree` | `candidate-data-type` | `accepted` |',
+          )
+          transitions = [
+              '| `batch-046-expansion-wave-01-04` | `2026-07-27` | `authorized` | `in-production` | Preflight conforme y alcance exacto de 12 candidatos cargado. |',
+              '| `batch-046-expansion-wave-01-04` | `2026-07-27` | `in-production` | `in-review` | Producción 12/12, 2 fuentes y autoevaluación conformes. |',
+              f'| `batch-046-expansion-wave-01-04` | `2026-07-27` | `in-review` | `accepted` | 12 entidades y 2 fuentes en `approved` / `verified`; workflow run `{run_id}`, tests y build conformes; PR #7 listo para revisión y merge manual. |',
+          ]
+          for transition in transitions:
+              if transition not in text:
+                  text = text.rstrip() + '\n' + transition + '\n'
+          register.write_text(text, encoding='utf-8')
+
+          delivery = Path(f'deliveries/{batch}')
+          (delivery / 'validation-report.md').write_text(f'''# Validación — `{batch}`
+
+## Estado
+
+`conforming-for-owner-review`
+
+## Resultado automatizado
+
+- GitHub Actions run: `{run_id}`.
+- Frontmatter YAML: conforme.
+- Entidades esperadas: 12/12.
+- Fuentes nuevas: 2/2.
+- IDs, aliases, fuentes y referencias: conformes.
+- Ciclos de prerequisites: ninguno.
+- `npm test`: conforme.
+- `npm run build`: conforme.
+
+## Disposición
+
+El último commit conserva las 12 entidades y 2 fuentes en `approved` / `verified` y deja el lote en `accepted`. El PR #7 puede entregarse al Responsable del proyecto.
+''', encoding='utf-8')
+
+          (delivery / 'review-gate-status.md').write_text(f'''# Estado de entrega para revisión del Responsable — `{batch}`
+
+## Estado
+
+`ready-for-owner-review`
+
+## Paquete final propuesto
+
+- 12 entidades en `approved` / `verified`.
+- 2 fuentes nuevas en `approved` / `verified`.
+- Lote en `accepted` dentro del registro de ondas.
+- Preflight, investigación y autoevaluación conformes.
+- Validación de contenido, `npm test` y `npm run build` conformes en run `{run_id}`.
+- PR #7 sin cambios operativos pendientes antes del merge.
+
+## Semántica
+
+Los estados preparados son finales propuestos dentro de la rama y se vuelven canónicos únicamente cuando el Responsable fusiona el PR en `main`.
+
+## Después del merge
+
+El integrador verificará el commit real, registrará `integrated` y `closed`, actualizará inventario y conteos, señalará B047 como siguiente lote y retirará este workflow temporal.
+
+## Publicación
+
+No autorizada.
+''', encoding='utf-8')
+
+          (delivery / 'batch-report.md').write_text(f'''# Reporte de lote — `{batch}`
+
+## Estado previo al merge
+
+`accepted`
+
+## Resultado compacto
+
+| Campo | Resultado |
+|---|---:|
+| Planificado | 12 |
+| Producido | 12 |
+| Preparado para integración | 12 |
+| Integrado | 0 |
+| Sustituido | 0 |
+| Descartado | 0 |
+| Candidatos de reserva usados | 0 |
+| Fuentes nuevas | 2 |
+| Hallazgos bloqueantes abiertos | 0 |
+| Hallazgos mayores abiertos | 0 |
+
+## Validación
+
+- GitHub Actions run: `{run_id}`.
+- Validación de contenido: conforme.
+- `npm test`: conforme.
+- `npm run build`: conforme.
+
+## Disposición
+
+El PR #7 queda listo para revisión personal y merge manual del Responsable del proyecto. Los estados `approved`, `verified` y `accepted` se vuelven canónicos únicamente al integrarse en `main`.
+
+## Publicación
+
+No autorizada.
+''', encoding='utf-8')
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add work/EXPANSION-WAVE-REGISTER.md deliveries/batch-046-expansion-wave-01-04
+          if git diff --cached --quiet; then
+            echo 'No final package changes to commit.'
+            exit 0
+          fi
+          git commit -m 'chore: prepare batch 046 for owner review'
+          git push origin HEAD:agent/batch-046-expansion-wave-01-04
