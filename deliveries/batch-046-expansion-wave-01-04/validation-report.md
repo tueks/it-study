@@ -2,27 +2,19 @@
 
 ## Estado
 
-`automated-validation-pending`
+`initial-validation-conforming`
 
-## Validación estructural previa
+## Primera ejecución automatizada
 
-- 12 entidades producidas.
-- 2 fuentes nuevas registradas.
-- Estados `approved` / `verified` y `reviewedAt` presentes.
-- IDs, rutas y aliases sin duplicados conocidos.
-- Referencias hacia entidades y fuentes existentes o incluidas en el lote.
-- Sin autorreferencias ni ciclos de prerequisites identificados.
-- Alcance limitado a B046.
+- GitHub Actions run: `30329557929`.
+- Frontmatter YAML: conforme.
+- Entidades esperadas: 12/12.
+- Fuentes nuevas: 2/2.
+- IDs, aliases, fuentes y referencias: conformes.
+- Ciclos de prerequisites: ninguno.
+- `npm test`: conforme.
+- `npm run build`: conforme.
 
-## Puerta automatizada
+## Preparación final
 
-El workflow temporal `Batch 046 final validation` ejecutará sobre el último commit del PR:
-
-1. parsing de frontmatter YAML;
-2. conteo y IDs esperados;
-3. validación de aliases, fuentes y referencias;
-4. detección de ciclos de prerequisites;
-5. `npm test`;
-6. `npm run build`.
-
-El lote no se entregará al Responsable hasta que el workflow sea conforme.
+Este commit activa la preparación automatizada del paquete final. El workflow actualizará B046 a `accepted`, registrará la evidencia definitiva y creará el último commit para revisión del Responsable.
