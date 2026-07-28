@@ -27,7 +27,7 @@
 | `batch-043-expansion-wave-01-01` | `wave-01` | 12 | `candidate-computability` | `candidate-set-theory` | `closed` |
 | `batch-044-expansion-wave-01-02` | `wave-01` | 12 | `candidate-graph-theory` | `candidate-data-encoding` | `closed` |
 | `batch-045-expansion-wave-01-03` | `wave-01` | 12 | `candidate-data-compression` | `candidate-hash-table` | `closed` |
-| `batch-046-expansion-wave-01-04` | `wave-01` | 12 | `candidate-tree` | `candidate-data-type` | `authorized` |
+| `batch-046-expansion-wave-01-04` | `wave-01` | 12 | `candidate-tree` | `candidate-data-type` | `accepted` |
 | `batch-047-expansion-wave-01-05` | `wave-01` | 12 | `candidate-primitive-type` | `candidate-semantics` | `authorized` |
 | `batch-048-expansion-wave-01-06` | `wave-01` | 12 | `candidate-hardware` | `candidate-persistent-storage` | `authorized` |
 | `batch-049-expansion-wave-01-07` | `wave-01` | 12 | `candidate-solid-state-drive` | `candidate-process-scheduling` | `authorized` |
@@ -114,3 +114,6 @@
 | `batch-045-expansion-wave-01-03` | `2026-07-27` | `in-review` | `accepted` | 12 entidades y 5 fuentes en `approved` / `verified`; paquete final preparado en PR #6 para revisión y merge manual del Responsable del proyecto. |
 | `batch-045-expansion-wave-01-03` | `2026-07-27` | `accepted` | `integrated` | El Responsable del proyecto aprobó y fusionó manualmente el PR #6 en `main` mediante commit `8f6316efae26dc2c050744dec027921b177c14e7`. |
 | `batch-045-expansion-wave-01-03` | `2026-07-27` | `integrated` | `closed` | Inventario, reporte final, estado operativo y limpieza temporal actualizados; siguiente lote ejecutable B046. |
+| `batch-046-expansion-wave-01-04` | `2026-07-27` | `authorized` | `in-production` | Preflight conforme y alcance exacto de 12 candidatos cargado. |
+| `batch-046-expansion-wave-01-04` | `2026-07-27` | `in-production` | `in-review` | Producción 12/12, 2 fuentes y autoevaluación conformes. |
+| `batch-046-expansion-wave-01-04` | `2026-07-27` | `in-review` | `accepted` | 12 entidades y 2 fuentes en `approved` / `verified`; workflow run `30329557929`, tests y build conformes; PR #7 listo para revisión y merge manual. |
